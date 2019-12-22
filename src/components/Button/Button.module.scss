@@ -1,0 +1,38 @@
+@import '../../stylesheets/2-abstracts/abstracts-dir';
+
+.button {
+  background: $brand-main;
+  border-radius: 4px;
+  padding: 8px 12px;
+  height: 34px;
+  font-size: 1rem;
+  color: white;
+  border: none;
+  @include flex-center();
+  svg {
+    margin-right: 6px;
+  }
+
+  &:hover {
+    background: $brand-accent;
+    color: white;
+  }
+
+  &.outlined {
+    background: white;
+    border: 1px solid $brand-main;
+    color: $brand-main;
+    &:hover {
+      background: $brand-accent;
+      border: 1px solid $brand-accent;
+      color: white;
+    }
+  }
+
+  &.bigButton {
+    padding: 16px 24px;
+    height: auto;
+    font-size: 1.25rem;
+    color: white;
+  }
+}

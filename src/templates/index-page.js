@@ -1,10 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Link, graphql } from "gatsby";
+import styles from "./Home.module.scss";
 
 import Layout from "../components/Layout";
 import Features from "../components/Features";
 import BlogRoll from "../components/BlogRoll";
+import { Button } from "../components/Button/Button";
 
 export const IndexPageTemplate = ({
   image,
@@ -16,7 +18,7 @@ export const IndexPageTemplate = ({
   intro
 }) => (
   <div>
-    <div
+    {/* <div
       className="full-width-image margin-top-0"
       style={{
         backgroundImage: `url(${
@@ -47,7 +49,7 @@ export const IndexPageTemplate = ({
             padding: "0.25em"
           }}
         >
-          {title}MERONG
+          {title}
         </h1>
         <h3
           className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
@@ -63,6 +65,21 @@ export const IndexPageTemplate = ({
           {subheading}
         </h3>
       </div>
+    </div> */}
+    {/* 01. hero */}
+    <div className={styles.hero}>
+      <div className={styles.container}>
+        <div className={styles.text}>
+          <h1 className={styles.title}>
+            {title}
+            {/* We are making
+                <br /> <span>Healthier home</span> for you. */}
+          </h1>
+          <p className={styles.subtitle}>{subheading}</p>
+          <Button title="Talk To Us Now" bigButton />
+        </div>
+      </div>
+      <div className={styles.heroImage}></div>
     </div>
     <section className="section section--gradient">
       <div className="container">
