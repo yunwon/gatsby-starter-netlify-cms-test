@@ -1,0 +1,21 @@
+/* fonts */
+$font-stack: "Poppins", "Helvetica Neue Light", "Helvetica Neue", "Helvetica",
+  "Arial", sans-serif !default;
+
+/* colours */
+$lightGrey: #f7f7f7;
+$border-grey: #e0e0e0;
+$grey: #afafaf;
+$black: #333333;
+$brand-main: #135290;
+$brand-accent: #f7a346;
+
+$bg-color: rgba(19, 82, 144, 0.06);
+
+/* breakpoints */
+$break-xs: "(min-width: 576px)";
+$break-sm: "(min-width: 768px)";
+$break-md: "(min-width: 992px)";
+$break-lg: "(min-width: 1200px)";
+$break-xl: "(min-width: 1691px)";
+$break-xxl: "(min-width: 2561px)";

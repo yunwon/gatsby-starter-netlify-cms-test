@@ -1,0 +1,20 @@
+@import "../2-abstracts/abstracts-dir";
+
+.onlyShowInMobile {
+  display: block;
+  @media #{$break-md} {
+    display: none;
+  }
+}
+
+.onlyShowInDesktop {
+  display: none;
+  @media #{$break-md} {
+    display: block;
+  }
+}
+
+.flipImage {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
