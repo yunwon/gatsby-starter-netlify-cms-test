@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Link, graphql } from "gatsby";
-import styles from "./Home.module.scss";
+import styles from "./index-page.module.scss";
 
-import Layout from "../components/Layout";
+import Layout from "../layout/Layout";
 import Features from "../components/Features";
 import BlogRoll from "../components/BlogRoll";
 import { Button } from "../components/Button/Button";
@@ -73,10 +73,10 @@ export const IndexPageTemplate = ({
       </div>
       <div className={styles.cards}>
         <div className={styles.card}>
-          <img src={Insulation} alt="Insulation" />
+          <img src={Insulation} alt={whatwedo.whatwedoFirst.title} />
           <div>
-            <h4>{whatwedo.whatwedoFirst.firstTitle}</h4>
-            <p>{whatwedo.whatwedoFirst.firstDescription}</p>
+            <h4>{whatwedo.whatwedoFirst.title}</h4>
+            <p>{whatwedo.whatwedoFirst.description}</p>
             <LearnMoreButton />
           </div>
         </div>
@@ -93,53 +93,6 @@ export const IndexPageTemplate = ({
         </div>
       </div>
     </div>
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="section">
-          <div className="columns">
-            <div className="column is-10 is-offset-1">
-              <div className="content">
-                <div className="content">
-                  <div className="tile">
-                    <h1 className="title">{mainpitch.title}</h1>
-                  </div>
-                  <div className="tile">
-                    <h3 className="subtitle">{mainpitch.description}</h3>
-                  </div>
-                </div>
-                <div className="columns">
-                  <div className="column is-12">
-                    <h3 className="has-text-weight-semibold is-size-2">
-                      {heading}
-                    </h3>
-                    <p>{description}</p>
-                  </div>
-                </div>
-                <Features gridItems={intro.blurbs} />
-                <div className="columns">
-                  <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/products">
-                      See all products
-                    </Link>
-                  </div>
-                </div>
-                <div className="column is-12">
-                  <h3 className="has-text-weight-semibold is-size-2">
-                    Latest stories
-                  </h3>
-                  <BlogRoll />
-                  <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/blog">
-                      Read more
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
   </div>
 );
 
@@ -211,8 +164,8 @@ export const pageQuery = graphql`
         whatwedo {
           description
           whatwedoFirst {
-            firstTitle
-            firstDescription
+            title
+            description
           }
           whatwedoSecond {
             secondTitle

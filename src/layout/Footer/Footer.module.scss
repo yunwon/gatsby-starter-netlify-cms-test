@@ -1,0 +1,28 @@
+@import "src/stylesheets/2-abstracts/_abstracts-dir.scss";
+
+.wrapper {
+  background: $brand-main;
+  .container {
+    @include container-maxwidth();
+    @include flex-center(column);
+    padding: 1.25rem 0;
+    text-align: center;
+    @media #{$break-md} {
+      @include flex-center-justify(row);
+    }
+    .text {
+      @include flex-center(column);
+      color: white;
+      margin-top: 1.25rem;
+      p {
+        margin: 0.2rem 0;
+      }
+      span {
+        margin: 0 1rem;
+      }
+      @media #{$break-md} {
+        @include flex-center-justify(row);
+      }
+    }
+  }
+}
