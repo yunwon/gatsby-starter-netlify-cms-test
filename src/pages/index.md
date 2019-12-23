@@ -2,7 +2,7 @@
 templateKey: index-page
 title: We are making healthier home for you.
 image: /img/chemex.jpg
-heading: We are making healthier home for you.
+heading: We are making healthier home for you....
 subheading: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
   incididunt ut labore et.
@@ -18,7 +18,9 @@ whatwedo:
     tempor incididunt ut labore et dolore magna aliqua.
   whatwedoFirst:
     title: Insulation
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    description: >-
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua.
   whatwedoSecond:
     secondDescription: >-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -88,3 +90,4 @@ main:
     alt: Coffee beans
     image: /img/products-grid1.jpg
 ---
+
