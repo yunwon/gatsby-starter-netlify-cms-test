@@ -13,6 +13,7 @@ export const IndexPageTemplate = ({
   title,
   heading,
   subheading,
+  mainbutton,
   mainpitch,
   description,
   intro
@@ -76,7 +77,7 @@ export const IndexPageTemplate = ({
                 <br /> <span>Healthier home</span> for you. */}
           </h1>
           <p className={styles.subtitle}>{subheading}</p>
-          <Button title="Talk To Us Now" bigButton />
+          <Button title={mainbutton} bigButton />
         </div>
       </div>
       <div className={styles.heroImage}></div>
@@ -136,6 +137,7 @@ IndexPageTemplate.propTypes = {
   title: PropTypes.string,
   heading: PropTypes.string,
   subheading: PropTypes.string,
+  mainbutton: PropTypes.string,
   mainpitch: PropTypes.object,
   description: PropTypes.string,
   intro: PropTypes.shape({
@@ -153,6 +155,7 @@ const IndexPage = ({ data }) => {
         title={frontmatter.title}
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
+        mainbutton={frontmatter.mainbutton}
         mainpitch={frontmatter.mainpitch}
         description={frontmatter.description}
         intro={frontmatter.intro}
@@ -185,6 +188,7 @@ export const pageQuery = graphql`
         }
         heading
         subheading
+        mainbutton
         mainpitch {
           title
           description
