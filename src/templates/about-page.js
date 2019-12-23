@@ -4,24 +4,55 @@ import { graphql } from "gatsby";
 import Layout from "../layout/Layout";
 import Content, { HTMLContent } from "../components/Content";
 
+import styles from "./about-page.module.scss";
+import HeroSection from "../components/HeroSection/HeroSection";
+import BgImage from "../assets/services/insulation/hero.png";
+import Logo from "../assets/logo.svg";
+import SectionWithIcons from "../components/SectionWithIcons/SectionWithIcons";
+import About01 from "../assets/about/01.png";
+import About02 from "../assets/about/02.png";
+import About03 from "../assets/about/03.png";
+
 export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content;
 
   return (
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <div className="section">
-              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                {title}
-              </h2>
-              <PageContent className="content" content={content} />
-            </div>
-          </div>
+    <div>
+      <HeroSection
+        title="About Us"
+        subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Sit amet porttitor eget dolor morbi non arcu risus quis. "
+        bgImage={BgImage}
+      />
+      <div className={styles.aboutUs}>
+        <img src={Logo} alt="Logo" />
+        <div>
+          <p>
+            Snug Insulation Limited is a New Zealand Owned company focus on
+            saving energy in New Zealand homes since 2010. Our mission is on
+            providing Kiwi's with warm, dry and healthy places to both live &
+            work.
+            <br />
+            <br />
+            Our company is dedicated in providing reliable quality and energy
+            efficiency products and solutions. The aim, to create a more
+            environmentally sustainable building using the best of new
+            technologies.
+          </p>
         </div>
       </div>
-    </section>
+      <SectionWithIcons
+        title="Our Purpose"
+        subtitle="We are commited to looking after the earth's resources responsibly."
+        descriptionArray={[
+          "We set a new standard for living that will be better for our people and for our planet",
+          "We provide New Zealand householders with products and services to reduce their energy costs",
+          "We increase New Zealand householders’ comfort levels and make their homes more environmentally friendly"
+        ]}
+        icons={[About01, About02, About03]}
+      />
+    </div>
   );
 };
 

@@ -5,7 +5,6 @@ import styles from "./index-page.module.scss";
 
 import Layout from "../layout/Layout";
 import Features from "../components/Features";
-import BlogRoll from "../components/BlogRoll";
 import { Button } from "../components/Button/Button";
 import Slider from "../components/Slider/Slider";
 

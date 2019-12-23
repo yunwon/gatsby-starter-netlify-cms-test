@@ -119,7 +119,7 @@ const TemplateWrapper = ({ children }) => {
               Home
             </Link>
             <DropdownMenu />
-            <Link to="/product">Product</Link>
+            <Link to="/products">Product</Link>
             <Link to="/about">About Us</Link>
             <Link to="/support">Support</Link>
             <Link to="/contact">Contact Us</Link>
