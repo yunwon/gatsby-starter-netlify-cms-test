@@ -2,7 +2,7 @@
 templateKey: index-page
 title: Great coffee with a conscience
 image: /img/home-jumbotron.jpg
-heading: Great coffee with a conscience
+heading: We are making  <br /> <span>Healthier home</span> for you.
 subheading: Support sustainable farming while enjoying a cup
 mainbutton: Talk To Us Now
 mainpitch:
@@ -69,3 +69,4 @@ main:
     alt: Coffee beans
     image: /img/products-grid1.jpg
 ---
+
