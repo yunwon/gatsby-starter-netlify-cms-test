@@ -7,7 +7,7 @@ subheading: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
   incididunt ut labore et.
 mainbutton: Talk To Us Now
-eventtitle: SNUGNZ Winter Special
+eventtitle: SNUGNZ Summer Special
 eventdescription: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
   incididunt ut labore et dolore magna aliqua. Elit eget gravida cum sociis
