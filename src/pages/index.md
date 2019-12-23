@@ -25,7 +25,7 @@ whatwedo:
     secondDescription: >-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua.
-    secondTitle: Healthy Homes
+    secondTitle: Healthy Homes Merong
 mainpitch:
   title: Why Kaldi
   description: >
