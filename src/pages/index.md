@@ -1,25 +1,31 @@
 ---
 templateKey: index-page
 title: We are making healthier home for you.
-image: /img/home-jumbotron.jpg
+image: /img/chemex.jpg
 heading: We are making healthier home for you.
 subheading: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
   incididunt ut labore et.
 mainbutton: Talk To Us Now
 eventtitle: SNUGNZ Winter Special
-eventdescription:
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-  eiusmod tempor incididunt ut labore et dolore magna aliqua. Elit
-  eget gravida cum sociis natoque penatibus et.
+eventdescription: >-
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+  incididunt ut labore et dolore magna aliqua. Elit eget gravida cum sociis
+  natoque penatibus et.
 whatwedo:
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  description: >-
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua.
   whatwedoFirst:
+    firstDescription: >-
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua.
     firstTitle: Insulation
-    firstDescription: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
   whatwedoSecond:
-    secondTitle: Insulation
-    secondDescription: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    secondDescription: >-
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua.
+    secondTitle: Healthy Homes
 mainpitch:
   title: Why Kaldi
   description: >
@@ -84,3 +90,4 @@ main:
     alt: Coffee beans
     image: /img/products-grid1.jpg
 ---
+
