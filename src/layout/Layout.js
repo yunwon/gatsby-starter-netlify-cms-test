@@ -4,7 +4,7 @@ import { Link } from "gatsby";
 import useSiteMetadata from "../components/SiteMetadata";
 import { withPrefix } from "gatsby";
 
-import "../components/all.sass";
+//import "../components/all.sass";
 import "../stylesheets/index.scss";
 import styles from "./Layout.module.scss";
 

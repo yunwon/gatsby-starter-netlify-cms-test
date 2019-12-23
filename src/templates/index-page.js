@@ -16,6 +16,21 @@ import Polyester from "../assets/home/polyester.png";
 import GlassWool from "../assets/home/glasswool.png";
 import { LearnMoreButton } from "../components/LearnMoreButton/LearnMoreButton";
 import whyChooseUs01 from "../assets/home/whyChooseUs01.svg";
+import SectionWithIcons from "../components/SectionWithIcons/SectionWithIcons";
+
+import Quote from "../assets/home/quote.svg";
+
+const RenderTestimonial = ({ text, name, company }) => {
+  return (
+    <div className={styles.testimonials}>
+      <p className={styles.text}>{text}</p>
+      <div className={styles.profile}>
+        <p className={styles.name}>{name}</p>
+        <p className={styles.company}>{company}</p>
+      </div>
+    </div>
+  );
+};
 
 export const IndexPageTemplate = ({
   image,
@@ -92,6 +107,104 @@ export const IndexPageTemplate = ({
           </div>
         </div>
       </div>
+    </div>
+    {/* 04. Why Choose Us */}
+    <SectionWithIcons
+      title="Why Choose Us"
+      descriptionArray={[
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      ]}
+      icons={[whyChooseUs01, whyChooseUs01, whyChooseUs01]}
+    />
+    {/* 05. Our Products */}
+    <div className={styles.ourProducts}>
+      <div className={styles.title}>
+        <h2>Our Products</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <Link to="/product">
+          <LearnMoreButton />
+        </Link>
+      </div>
+      <div className={styles.cards}>
+        <div className={styles.card}>
+          <img src={Wool} alt="Wool products" />
+          <div>
+            <h5>Wool products</h5>
+            <p>
+              Natural wool insulation in blanket or batting form. Ideal for
+              walls of new buildings and ceilings in new and existing premises.
+            </p>
+          </div>
+        </div>
+        <div className={styles.card}>
+          <img src={Polyester} alt="Polyester" />
+          <div>
+            <h5>Polyester</h5>
+            <p>
+              Snug Insulation is proud to introduce our high-performance range
+              of 100% polyester thermal and acoustic insulation products,
+              designed for the residential and commercial buildings.
+            </p>
+          </div>
+        </div>
+        <div className={styles.card}>
+          <img src={GlassWool} alt="Glass Wool" />
+          <div>
+            <h5>Glass Wool</h5>
+            <p>
+              EarthWool is rot-proof, odourless, non-hygroscopic, does not
+              sustain vermin and will not encourage the growth of fungi, mould
+              or bacteria.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    {/* 06. Testimonials */}
+    <div className={styles.testimonials_container}>
+      <img src={Quote} alt="quote" />
+      <h2 className={styles.title}>Testimonials</h2>
+      <Slider>
+        <RenderTestimonial
+          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Elit eget
+                    gravida cum sociis natoque penatibus et."
+          name="John Doe"
+          company="ABC Ltd"
+        />
+        <RenderTestimonial
+          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Elit eget
+                    gravida cum sociis natoque penatibus et."
+          name="Jane Doe"
+          company="ABC Ltd"
+        />
+        <RenderTestimonial
+          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Elit eget
+                    gravida cum sociis natoque penatibus et."
+          name="John Doe"
+          company="ABC Ltd"
+        />
+      </Slider>
+    </div>
+    {/* 07. Contact Us */}
+    <div className={styles.contactUs}>
+      <div className={styles.container}>
+        <div className={styles.text}>
+          <h2>Talk To Us Now</h2>
+          <p className={styles.subtitle}>
+            Call us at <a href="tel:09-818-6606">09-818-6606</a>
+          </p>
+          <button className={styles.button}>Email Us</button>
+        </div>
+      </div>
+      <div className={styles.contactImage}></div>
     </div>
   </div>
 );
