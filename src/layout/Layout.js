@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 import { Link } from "gatsby";
 import useSiteMetadata from "../components/SiteMetadata";
 import { withPrefix } from "gatsby";
+import "typeface-poppins";
 
 //import "../components/all.sass";
 import "../stylesheets/index.scss";

@@ -39,6 +39,7 @@
     "react-helmet": "^5.2.0",
     "react-icons": "^3.8.0",
     "react-router-dom": "^5.1.2",
+    "typeface-poppins": "0.0.72",
     "uuid": "^3.2.1"
   },
   "keywords": [
