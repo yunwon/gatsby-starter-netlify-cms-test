@@ -1,9 +1,11 @@
 ---
 templateKey: index-page
-title: Great coffee with a conscience
+title: We are making healthier home for you.
 image: /img/home-jumbotron.jpg
-heading: We are making  <br /> <span>Healthier home</span> for you.
-subheading: Support sustainable farming while enjoying a cup
+heading: We are making healthier home for you.
+subheading: >-
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+  incididunt ut labore et.
 mainbutton: Talk To Us Now
 mainpitch:
   title: Why Kaldi
