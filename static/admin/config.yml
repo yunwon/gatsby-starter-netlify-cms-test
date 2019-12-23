@@ -50,6 +50,44 @@ collections:
           - { label: Heading, name: heading, widget: string }
           - { label: Subheading, name: subheading, widget: string }
           - { label: Mainbutton, name: mainbutton, widget: string }
+          - { label: EventTitle, name: eventtitle, widget: string }
+          - { label: eventdescription, name: eventdescription, widget: string }
+          - {
+              label: WhatWeDo,
+              name: whatwedo,
+              widget: object,
+              fields:
+                [
+                  { label: description, name: description, widget: string },
+                  {
+                    label: whatwedoFirst,
+                    name: whatwedoFirst,
+                    widget: object,
+                    fields:
+                      [
+                        { label: firstTitle, name: firstTitle, widget: string },
+                        {
+                          label: firstDescription,
+                          name: firstDescription,
+                          widget: text,
+                        }
+                      ],
+                  },
+                  {
+                    label: whatwedoSecond,
+                    name: whatwedoSecond,
+                    widget: object,
+                    fields:
+                      [
+                        { label: secondTitle, name: secondTitle, widget: string },
+                        {
+                          label: secondDescription,
+                          name: secondDescription,
+                          widget: text,
+                        },
+                      ]
+                  }
+          }
           - {
               label: Mainpitch,
               name: mainpitch,
