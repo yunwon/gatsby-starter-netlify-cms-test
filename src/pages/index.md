@@ -20,12 +20,12 @@ whatwedo:
     firstDescription: >-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua.
-    firstTitle: Insulation
+    firstTitle: Insulation Merong
   whatwedoSecond:
     secondDescription: >-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua.
-    secondTitle: Healthy Homes Merong
+    secondTitle: Healthy Homes
 mainpitch:
   title: Why Kaldi
   description: >
