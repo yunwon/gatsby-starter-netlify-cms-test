@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: We are making healthier home for you.
-subheading: >-
+subtitle: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
   incididunt ut labore et.
 mainButton: Talk To Us Now
@@ -25,19 +25,15 @@ whatWeDo:
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua.
 whyChooseUs:
-  title: Why Choose Us
   whyChooseUs01:
-    # icon: /img/whyChooseUs01.png
     description: >-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua.
   whyChooseUs02:
-    # icon: /img/whyChooseUs01.png
     description: >-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua.
   whyChooseUs03:
-    # icon: /img/whyChooseUs01.png
     description: >-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua.
@@ -48,15 +44,22 @@ ourProducts:
   ourProducts01:
     title: Wool products
     description: >-
-      Natural wool insulation in blanket or batting form. Ideal for walls of new buildings and ceilings in new and existing premises.
+      Natural wool insulation in blanket or batting form. Ideal for walls of new
+      buildings and ceilings in new and existing premises.
   ourProducts02:
     title: Polyester
     description: >-
-      Snug Insulation is proud to introduce our high-performance range of 100% polyester thermal and acoustic insulation products, designed for the residential and commercial buildings.
+      Snug Insulation is proud to introduce our high-performance range of 100%
+      polyester thermal and acoustic insulation products, designed for the
+      residential and commercial buildings.
   ourProducts03:
     title: Glass Wool
     description: >-
-      EarthWool is rot-proof, odourless, non-hygroscopic, does not sustain vermin and will not encourage the growth of fungi, mould or bacteria.
+      EarthWool is rot-proof, odourless, non-hygroscopic, does not sustain
+      vermin and will not encourage the growth of fungi, mould or bacteria.
+description: >-
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+  incididunt ut labore et.
 intro:
   blurbs:
     - image: /img/coffee.png
@@ -86,19 +89,19 @@ intro:
         space where you can hang out with fellow coffee lovers and learn about
         coffee making techniques. All of the artwork on display there is for
         sale. The full price you pay goes to the artist.
-  heading: What we offer
   description: >
     Kaldi is the ultimate spot for coffee lovers who want to learn about their
     java’s origin and support the farmers that grew it. We take coffee
     production, roasting and brewing seriously and we’re glad to pass that
     knowledge to anyone. This is an edit via identity...
+  heading: What we offer
 main:
-  heading: Great coffee with no compromises
   description: >
     We hold our coffee to the highest standards from the shrub to the cup.
     That’s why we’re meticulous and transparent about each step of the coffee’s
     journey. We personally visit each farm to make sure the conditions are
     optimal for the plants, farmers and the local environment.
+  heading: Great coffee with no compromises
   image1:
     alt: A close-up of a paper filter filled with ground coffee
     image: /img/products-grid3.jpg
@@ -109,3 +112,4 @@ main:
     alt: Coffee beans
     image: /img/products-grid1.jpg
 ---
+
