@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: We are making healthier home for you.
-subtitle: >-
+subTitle: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
   incididunt ut labore et.
 mainButton: Talk To Us Now
@@ -112,4 +112,3 @@ main:
     alt: Coffee beans
     image: /img/products-grid1.jpg
 ---
-

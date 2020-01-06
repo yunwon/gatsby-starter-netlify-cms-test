@@ -34,8 +34,7 @@ const RenderTestimonial = ({ text, name, company }) => {
 export const IndexPageTemplate = ({
   image,
   title,
-  heading,
-  subheading,
+  subtitle,
   mainButton,
   eventTitle,
   eventdescription,
@@ -54,7 +53,7 @@ export const IndexPageTemplate = ({
             We are making
             <br /> <span>Healthier home</span> for you.
           </h1>
-          <p className={styles.subtitle}>{subheading}</p>
+          <p className={styles.subtitle}>{subtitle}</p>
           <Button title={mainButton} bigButton />
         </div>
       </div>
@@ -109,9 +108,9 @@ export const IndexPageTemplate = ({
     <SectionWithIcons
       title="Why Choose Us"
       descriptionArray={[
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        whyChooseUs.whyChooseUs01.description,
+        whyChooseUs.whyChooseUs02.description,
+        whyChooseUs.whyChooseUs03.description
       ]}
       icons={[whyChooseUs01, whyChooseUs01, whyChooseUs01]}
     />
@@ -209,8 +208,7 @@ export const IndexPageTemplate = ({
 IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
-  heading: PropTypes.string,
-  subheading: PropTypes.string,
+  subTitle: PropTypes.string,
   eventTitle: PropTypes.string,
   eventdescription: PropTypes.string,
   mainButton: PropTypes.string,
@@ -231,8 +229,7 @@ const IndexPage = ({ data }) => {
       <IndexPageTemplate
         image={frontmatter.image}
         title={frontmatter.title}
-        heading={frontmatter.heading}
-        subheading={frontmatter.subheading}
+        subTitle={frontmatter.subTitle}
         eventTitle={frontmatter.eventTitle}
         eventdescription={frontmatter.eventdescription}
         whatWeDo={frontmatter.whatWeDo}
@@ -261,7 +258,7 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
         title
-        subheading
+        subTitle
         mainButton
         eventTitle
         eventdescription
@@ -277,7 +274,6 @@ export const pageQuery = graphql`
           }
         }
         whyChooseUs {
-          title
           whyChooseUs01 {
             description
           }
