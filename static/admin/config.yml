@@ -26,22 +26,24 @@ collections:
               default: "index-page",
             }
           - { label: Title, name: title, widget: string }
-          - { label: Image, name: image, widget: image }
-          - { label: Heading, name: heading, widget: string }
-          - { label: Subheading, name: subheading, widget: string }
-          - { label: Mainbutton, name: mainbutton, widget: string }
-          - { label: EventTitle, name: eventtitle, widget: string }
-          - { label: eventdescription, name: eventdescription, widget: string }
+          - { label: Subtitle, name: subtitle, widget: string }
+          - { label: "Main button", name: mainButton, widget: string }
+          - { label: "Event Title", name: eventTitle, widget: string }
+          - {
+              label: "Event Description",
+              name: eventdescription,
+              widget: string,
+            }
           - {
               label: "What We Do",
-              name: whatwedo,
+              name: whatWeDo,
               widget: object,
               fields:
                 [
                   { label: description, name: description, widget: string },
                   {
-                    label: whatwedoFirst,
-                    name: whatwedoFirst,
+                    label: whatWeDo01,
+                    name: whatWeDo01,
                     widget: object,
                     fields:
                       [
@@ -50,33 +52,89 @@ collections:
                       ],
                   },
                   {
-                    label: whatwedoSecond,
-                    name: whatwedoSecond,
+                    label: whatWeDo02,
+                    name: whatWeDo02,
                     widget: object,
                     fields:
                       [
-                        {
-                          label: secondTitle,
-                          name: secondTitle,
-                          widget: string,
-                        },
-                        {
-                          label: secondDescription,
-                          name: secondDescription,
-                          widget: text,
-                        },
+                        { label: Title, name: title, widget: string },
+                        { label: Description, name: description, widget: text },
                       ],
                   },
                 ],
             }
           - {
-              label: Mainpitch,
-              name: mainpitch,
+              label: Why Choose Us,
+              name: whyChooseUs,
               widget: object,
               fields:
                 [
-                  { label: Title, name: title, widget: string },
-                  { label: Description, name: description, widget: text },
+                  {
+                    label: Why Choose Us 01,
+                    name: whyChooseUs01,
+                    widget: object,
+                    fields: [
+                        # { label: Icon, name: icon, widget: image },
+                        { label: Description, name: description, widget: text },
+                      ],
+                  },
+                  {
+                    label: Why Choose Us 02,
+                    name: whyChooseUs02,
+                    widget: object,
+                    fields: [
+                        # { label: Icon, name: icon, widget: image },
+                        { label: Description, name: description, widget: text },
+                      ],
+                  },
+                  {
+                    label: Why Choose Us 03,
+                    name: whyChooseUs03,
+                    widget: object,
+                    fields: [
+                        # { label: Icon, name: icon, widget: image },
+                        { label: Description, name: description, widget: text },
+                      ],
+                  },
+                ],
+            }
+          - {
+              label: "Our Products",
+              name: ourProducts,
+              widget: object,
+              fields:
+                [
+                  { label: description, name: description, widget: string },
+                  {
+                    label: ourProducts01,
+                    name: ourProducts01,
+                    widget: object,
+                    fields:
+                      [
+                        { label: Title, name: title, widget: string },
+                        { label: Description, name: description, widget: text },
+                      ],
+                  },
+                  {
+                    label: ourProducts02,
+                    name: ourProducts02,
+                    widget: object,
+                    fields:
+                      [
+                        { label: Title, name: title, widget: string },
+                        { label: Description, name: description, widget: text },
+                      ],
+                  },
+                  {
+                    label: ourProducts03,
+                    name: ourProducts03,
+                    widget: object,
+                    fields:
+                      [
+                        { label: Title, name: title, widget: string },
+                        { label: Description, name: description, widget: text },
+                      ],
+                  },
                 ],
             }
           - { label: Description, name: description, widget: string }

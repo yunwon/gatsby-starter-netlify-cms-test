@@ -1,43 +1,62 @@
 ---
 templateKey: index-page
 title: We are making healthier home for you.
-image: /img/chemex.jpg
-heading: We are making healthier home for you....
 subheading: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
   incididunt ut labore et.
-mainbutton: Talk To Us Now
-eventtitle: SNUGNZ Summer Special
+mainButton: Talk To Us Now
+eventTitle: SNUGNZ Summer Special
 eventdescription: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
   incididunt ut labore et dolore magna aliqua. Elit eget gravida cum sociis
   natoque penatibus et.
-whatwedo:
+whatWeDo:
   description: >-
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua.
-  whatwedoFirst:
+  whatWeDo01:
     title: Insulation
     description: >-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua.
-  whatwedoSecond:
-    secondDescription: >-
+  whatWeDo02:
+    title: Healthy Homes
+    description: >-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua.
-    secondTitle: Healthy Homes
-mainpitch:
-  title: Why Kaldi
-  description: >
-    Kaldi is the coffee store for everyone who believes that great coffee
-    shouldn't just taste good, it should do good too. We source all of our beans
-    directly from small scale sustainable farmers and make sure part of the
-    profits are reinvested in their communities.
-description: >-
-  Kaldi is the ultimate spot for coffee lovers who want to learn about their
-  java’s origin and support the farmers that grew it. We take coffee production,
-  roasting and brewing seriously and we’re glad to pass that knowledge to
-  anyone.
+whyChooseUs:
+  title: Why Choose Us
+  whyChooseUs01:
+    # icon: /img/whyChooseUs01.png
+    description: >-
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua.
+  whyChooseUs02:
+    # icon: /img/whyChooseUs01.png
+    description: >-
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua.
+  whyChooseUs03:
+    # icon: /img/whyChooseUs01.png
+    description: >-
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua.
+ourProducts:
+  description: >-
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua.
+  ourProducts01:
+    title: Wool products
+    description: >-
+      Natural wool insulation in blanket or batting form. Ideal for walls of new buildings and ceilings in new and existing premises.
+  ourProducts02:
+    title: Polyester
+    description: >-
+      Snug Insulation is proud to introduce our high-performance range of 100% polyester thermal and acoustic insulation products, designed for the residential and commercial buildings.
+  ourProducts03:
+    title: Glass Wool
+    description: >-
+      EarthWool is rot-proof, odourless, non-hygroscopic, does not sustain vermin and will not encourage the growth of fungi, mould or bacteria.
 intro:
   blurbs:
     - image: /img/coffee.png
@@ -90,4 +109,3 @@ main:
     alt: Coffee beans
     image: /img/products-grid1.jpg
 ---
-

@@ -36,11 +36,12 @@ export const IndexPageTemplate = ({
   title,
   heading,
   subheading,
-  mainbutton,
-  eventtitle,
+  mainButton,
+  eventTitle,
   eventdescription,
-  whatwedo,
-  mainpitch,
+  whatWeDo,
+  whyChooseUs,
+  ourProducts,
   description,
   intro
 }) => (
@@ -54,7 +55,7 @@ export const IndexPageTemplate = ({
             <br /> <span>Healthier home</span> for you.
           </h1>
           <p className={styles.subtitle}>{subheading}</p>
-          <Button title={mainbutton} bigButton />
+          <Button title={mainButton} bigButton />
         </div>
       </div>
       <div className={styles.heroImage}></div>
@@ -63,17 +64,17 @@ export const IndexPageTemplate = ({
     <div className={styles.event}>
       <Slider>
         <div className={styles.eventInner}>
-          <h1>{eventtitle}</h1>
+          <h1>{eventTitle}</h1>
           <p>{eventdescription}</p>
           <LearnMoreButton />
         </div>
         <div className={styles.eventInner}>
-          <h1>{eventtitle}</h1>
+          <h1>{eventTitle}</h1>
           <p>{eventdescription}</p>
           <LearnMoreButton />
         </div>
         <div className={styles.eventInner}>
-          <h1>{eventtitle}</h1>
+          <h1>{eventTitle}</h1>
           <p>{eventdescription}</p>
           <LearnMoreButton />
         </div>
@@ -83,25 +84,22 @@ export const IndexPageTemplate = ({
     <div className={styles.whatWeDo}>
       <div className={styles.title}>
         <h2>What We Do</h2>
-        <p>{whatwedo.description}</p>
+        <p>{whatWeDo.description}</p>
       </div>
       <div className={styles.cards}>
         <div className={styles.card}>
-          <img src={Insulation} alt={whatwedo.whatwedoFirst.title} />
+          <img src={Insulation} alt={whatWeDo.whatWeDo01.title} />
           <div>
-            <h4>{whatwedo.whatwedoFirst.title}</h4>
-            <p>{whatwedo.whatwedoFirst.description}</p>
+            <h4>{whatWeDo.whatWeDo01.title}</h4>
+            <p>{whatWeDo.whatWeDo01.description}</p>
             <LearnMoreButton />
           </div>
         </div>
         <div className={styles.card}>
-          <img src={HealthyHomes} alt="Healthy Homes" />
+          <img src={HealthyHomes} alt={whatWeDo.whatWeDo02.title} />
           <div>
-            <h4>Healthy Homes</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
+            <h4>{whatWeDo.whatWeDo02.title}</h4>
+            <p>{whatWeDo.whatWeDo02.description}</p>
             <LearnMoreButton />
           </div>
         </div>
@@ -213,11 +211,12 @@ IndexPageTemplate.propTypes = {
   title: PropTypes.string,
   heading: PropTypes.string,
   subheading: PropTypes.string,
-  eventtitle: PropTypes.string,
+  eventTitle: PropTypes.string,
   eventdescription: PropTypes.string,
-  mainbutton: PropTypes.string,
-  whatwedo: PropTypes.object,
-  mainpitch: PropTypes.object,
+  mainButton: PropTypes.string,
+  whatWeDo: PropTypes.object,
+  whyChooseUs: PropTypes.object,
+  ourProducts: PropTypes.object,
   description: PropTypes.string,
   intro: PropTypes.shape({
     blurbs: PropTypes.array
@@ -234,11 +233,12 @@ const IndexPage = ({ data }) => {
         title={frontmatter.title}
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
-        eventtitle={frontmatter.eventtitle}
+        eventTitle={frontmatter.eventTitle}
         eventdescription={frontmatter.eventdescription}
-        whatwedo={frontmatter.whatwedo}
-        mainbutton={frontmatter.mainbutton}
-        mainpitch={frontmatter.mainpitch}
+        whatWeDo={frontmatter.whatWeDo}
+        mainButton={frontmatter.mainButton}
+        whyChooseUs={frontmatter.whyChooseUs}
+        ourProducts={frontmatter.ourProducts}
         description={frontmatter.description}
         intro={frontmatter.intro}
       />
@@ -261,32 +261,47 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
         title
-        image {
-          childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-        heading
         subheading
-        mainbutton
-        eventtitle
+        mainButton
+        eventTitle
         eventdescription
-        whatwedo {
+        whatWeDo {
           description
-          whatwedoFirst {
+          whatWeDo01 {
             title
             description
           }
-          whatwedoSecond {
-            secondTitle
-            secondDescription
+          whatWeDo02 {
+            title
+            description
           }
         }
-        mainpitch {
+        whyChooseUs {
           title
+          whyChooseUs01 {
+            description
+          }
+          whyChooseUs02 {
+            description
+          }
+          whyChooseUs03 {
+            description
+          }
+        }
+        ourProducts {
           description
+          ourProducts01 {
+            title
+            description
+          }
+          ourProducts02 {
+            title
+            description
+          }
+          ourProducts03 {
+            title
+            description
+          }
         }
         description
         intro {
