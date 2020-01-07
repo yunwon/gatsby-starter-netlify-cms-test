@@ -142,7 +142,7 @@ collections:
               default: "about-page",
             }
           - { label: Title, name: title, widget: string }
-          - { label: SubTitle, name: subtitle, widget: string }
+          - { label: SubTitle, name: subTitle, widget: string }
           - { label: Description, name: description, widget: text }
       - file: "src/pages/products/index.md"
         label: "Products Page"
