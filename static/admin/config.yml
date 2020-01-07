@@ -155,7 +155,7 @@ collections:
                     widget: list,
                     fields:
                       [
-                        { label: Image, name: image, widget: image }
+                        { label: Image, name: image, widget: image },
                         { label: Title, name: title, widget: string },
                         { label: Year, name: year, widget: string },
                         { label: Company, name: company, widget: string },
