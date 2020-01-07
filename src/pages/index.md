@@ -1,11 +1,11 @@
 ---
 templateKey: index-page
-title: We are making healthier home for you!!!!!!
+title: We are making healthier home for you.
 subtitle: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
   incididunt ut labore et.
 mainButton: Talk To Us Now
-eventTitle: SNUGNZ Winter Special
+eventTitle: SNUGNZ Summer Special
 eventdescription: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
   incididunt ut labore et dolore magna aliqua. Elit eget gravida cum sociis
@@ -58,3 +58,4 @@ ourProducts:
       vermin and will not encourage the growth of fungi, mould or bacteria.
     title: Glass Wool
 ---
+
