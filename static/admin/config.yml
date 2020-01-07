@@ -144,6 +144,36 @@ collections:
           - { label: Title, name: title, widget: string }
           - { label: SubTitle, name: subTitle, widget: string }
           - { label: Description, name: description, widget: text }
+          - {
+              label: Our Purpose,
+              name: ourPurpose,
+              widget: object,
+              fields:
+                [
+                  { label: description, name: description, widget: string },
+                  {
+                    label: Our Purpose 01,
+                    name: ourPurpose01,
+                    widget: object,
+                    fields:
+                      [{ label: Description, name: description, widget: text }],
+                  },
+                  {
+                    label: Our Purpose 02,
+                    name: ourPurpose02,
+                    widget: object,
+                    fields:
+                      [{ label: Description, name: description, widget: text }],
+                  },
+                  {
+                    label: Our Purpose 03,
+                    name: ourPurpose03,
+                    widget: object,
+                    fields:
+                      [{ label: Description, name: description, widget: text }],
+                  },
+                ],
+            }
       - file: "src/pages/products/index.md"
         label: "Products Page"
         name: "products"

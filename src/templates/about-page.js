@@ -17,6 +17,7 @@ export const AboutPageTemplate = ({
   title,
   subTitle,
   description,
+  ourPurpose,
   content,
   contentComponent
 }) => {
@@ -33,11 +34,11 @@ export const AboutPageTemplate = ({
       </div>
       <SectionWithIcons
         title="Our Purpose"
-        subtitle="We are commited to looking after the earth's resources responsibly."
+        subtitle={ourPurpose.description}
         descriptionArray={[
-          "We set a new standard for living that will be better for our people and for our planet",
-          "We provide New Zealand householders with products and services to reduce their energy costs",
-          "We increase New Zealand householders’ comfort levels and make their homes more environmentally friendly"
+          ourPurpose.ourPurpose01.description,
+          ourPurpose.ourPurpose02.description,
+          ourPurpose.ourPurpose03.description
         ]}
         icons={[About01, About02, About03]}
       />
@@ -49,6 +50,7 @@ AboutPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   subTitle: PropTypes.string,
   description: PropTypes.string,
+  ourPurpose: PropTypes.object,
   content: PropTypes.string,
   contentComponent: PropTypes.func
 };
@@ -62,6 +64,7 @@ const AboutPage = ({ data }) => {
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         subTitle={post.frontmatter.subTitle}
+        ourPurpose={post.frontmatter.ourPurpose}
         description={post.frontmatter.description}
         content={post.html}
       />
@@ -82,6 +85,18 @@ export const aboutPageQuery = graphql`
         title
         subTitle
         description
+        ourPurpose {
+          description
+          ourPurpose01 {
+            description
+          }
+          ourPurpose02 {
+            description
+          }
+          ourPurpose03 {
+            description
+          }
+        }
       }
     }
   }
