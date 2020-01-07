@@ -13,18 +13,17 @@ import About01 from "../assets/about/01.png";
 import About02 from "../assets/about/02.png";
 import About03 from "../assets/about/03.png";
 
-export const AboutPageTemplate = ({ title, content, contentComponent }) => {
+export const AboutPageTemplate = ({
+  title,
+  subTitle,
+  content,
+  contentComponent
+}) => {
   const PageContent = contentComponent || Content;
 
   return (
     <div>
-      <HeroSection
-        title="About Us"
-        subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-        Sit amet porttitor eget dolor morbi non arcu risus quis. "
-        bgImage={BgImage}
-      />
+      <HeroSection title={title} subtitle="sdfasdasdf" bgImage={BgImage} />
       <div className={styles.aboutUs}>
         <img src={Logo} alt="Logo" />
         <div>
@@ -58,6 +57,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
 
 AboutPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
+  subTitle: PropTypes.string,
   content: PropTypes.string,
   contentComponent: PropTypes.func
 };
@@ -70,6 +70,7 @@ const AboutPage = ({ data }) => {
       <AboutPageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
+        subTitle={post.frontmatter.subTitle}
         content={post.html}
       />
     </Layout>
@@ -83,11 +84,11 @@ AboutPage.propTypes = {
 export default AboutPage;
 
 export const aboutPageQuery = graphql`
-  query AboutPage($id: String!) {
-    markdownRemark(id: { eq: $id }) {
-      html
+  query AboutPageTemplate {
+    markdownRemark(frontmatter: { templateKey: { eq: "about-page" } }) {
       frontmatter {
         title
+        subTitle
       }
     }
   }

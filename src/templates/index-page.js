@@ -40,8 +40,7 @@ export const IndexPageTemplate = ({
   eventdescription,
   whatWeDo,
   whyChooseUs,
-  ourProducts,
-  description
+  ourProducts
 }) => (
   <div>
     {/* 01. hero */}
@@ -213,10 +212,7 @@ IndexPageTemplate.propTypes = {
   mainButton: PropTypes.string,
   whatWeDo: PropTypes.object,
   whyChooseUs: PropTypes.object,
-  ourProducts: PropTypes.object,
-  intro: PropTypes.shape({
-    blurbs: PropTypes.array
-  })
+  ourProducts: PropTypes.object
 };
 
 const IndexPage = ({ data }) => {
@@ -234,7 +230,6 @@ const IndexPage = ({ data }) => {
         mainButton={frontmatter.mainButton}
         whyChooseUs={frontmatter.whyChooseUs}
         ourProducts={frontmatter.ourProducts}
-        intro={frontmatter.intro}
       />
     </Layout>
   );
@@ -295,20 +290,6 @@ export const pageQuery = graphql`
             title
             description
           }
-        }
-        intro {
-          blurbs {
-            image {
-              childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-            text
-          }
-          heading
-          description
         }
       }
     }
