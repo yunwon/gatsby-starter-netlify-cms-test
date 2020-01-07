@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: We are making healthier home for you.
-subtitle: >-
+subTitle: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
   incididunt ut labore et.
 mainButton: Talk To Us Now
@@ -58,4 +58,3 @@ ourProducts:
       vermin and will not encourage the growth of fungi, mould or bacteria.
     title: Glass Wool
 ---
-
