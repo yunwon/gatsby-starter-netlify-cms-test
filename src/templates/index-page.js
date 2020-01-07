@@ -34,15 +34,14 @@ const RenderTestimonial = ({ text, name, company }) => {
 export const IndexPageTemplate = ({
   image,
   title,
-  subtitle,
+  subTitle,
   mainButton,
   eventTitle,
   eventdescription,
   whatWeDo,
   whyChooseUs,
   ourProducts,
-  description,
-  intro
+  description
 }) => (
   <div>
     {/* 01. hero */}
@@ -53,7 +52,7 @@ export const IndexPageTemplate = ({
             We are making
             <br /> <span>Healthier home</span> for you.
           </h1>
-          <p className={styles.subtitle}>{subtitle}</p>
+          <p className={styles.subtitle}>{subTitle}</p>
           <Button title={mainButton} bigButton />
         </div>
       </div>
@@ -215,7 +214,6 @@ IndexPageTemplate.propTypes = {
   whatWeDo: PropTypes.object,
   whyChooseUs: PropTypes.object,
   ourProducts: PropTypes.object,
-  description: PropTypes.string,
   intro: PropTypes.shape({
     blurbs: PropTypes.array
   })
@@ -236,7 +234,6 @@ const IndexPage = ({ data }) => {
         mainButton={frontmatter.mainButton}
         whyChooseUs={frontmatter.whyChooseUs}
         ourProducts={frontmatter.ourProducts}
-        description={frontmatter.description}
         intro={frontmatter.intro}
       />
     </Layout>
@@ -299,7 +296,6 @@ export const pageQuery = graphql`
             description
           }
         }
-        description
         intro {
           blurbs {
             image {
