@@ -107,7 +107,7 @@ export const IndexPageTemplate = ({
     <SectionWithIcons
       title="Why Choose Us"
       descriptionArray={[
-        whyChooseUs.whyChooseUs01.description,
+        whyChooseUs.whyChooseUsFirst.description,
         whyChooseUs.whyChooseUs02.description,
         whyChooseUs.whyChooseUs03.description
       ]}
@@ -271,7 +271,7 @@ export const pageQuery = graphql`
           }
         }
         whyChooseUs {
-          whyChooseUs01 {
+          whyChooseUsFirst {
             description
           }
           whyChooseUs02 {

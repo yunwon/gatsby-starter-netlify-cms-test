@@ -71,7 +71,7 @@ collections:
                 [
                   {
                     label: Why Choose Us 01,
-                    name: whyChooseUs01,
+                    name: whyChooseUsFirst,
                     widget: object,
                     fields: [
                         # { label: Icon, name: icon, widget: image },
