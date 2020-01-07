@@ -1,8 +1,11 @@
-@import "src/stylesheets/2-abstracts/_abstracts-dir.scss";
+@import "../stylesheets/2-abstracts/_abstracts-dir.scss";
 
-.bg {
-  background-color: $bg-color;
+.wrapper {
+  &:nth-child(even) {
+    background-color: $bg-color !important;
+  }
 }
+
 .section {
   @include container-maxwidth();
   @include articlePadding();
@@ -16,9 +19,11 @@
       margin-top: 1rem;
       margin-bottom: 0.5rem;
     }
+
     h5 {
       margin-bottom: 0.5rem;
       color: $brand-main;
+
       span {
         color: $grey;
         margin-right: 0.5rem;
@@ -35,16 +40,20 @@
 
   @media #{$break-md} {
     display: flex;
+
     div {
       text-align: left;
+
       h4 {
         margin-top: 0;
       }
     }
+
     img {
       width: 50%;
       height: auto;
       margin-right: 2.5rem;
+
       &.right {
         order: 2;
         margin-left: 2.5rem;

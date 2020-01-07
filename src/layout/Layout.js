@@ -41,9 +41,9 @@ const DropdownMenu = () => {
           onClose={handleClose}
           className="dropdownMenu"
         >
-          <Link to="/services/ourworks">Our Works</Link>
-          <Link to="/services/insulation">Insulation</Link>
-          <Link to="/services/healthyhomes">Healthy Homes</Link>
+          <Link to="/ourworks">Our Works</Link>
+          <Link to="/insulation">Insulation</Link>
+          <Link to="/healthyhomes">Healthy Homes</Link>
         </div>
       )}
     </div>
