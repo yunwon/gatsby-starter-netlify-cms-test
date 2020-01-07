@@ -12,7 +12,7 @@ description: >-
   aim, to create a more environmentally sustainable building using the best of
   new technologies.
 ourPurpose:
-  description: We are commited to looking after the earth's resources responsibly. jjjj
+  description: We are commited to looking after the earth's resources responsibly.
   ourPurpose01:
     description: >-
       We set a new standard for living that will be better for our people and
