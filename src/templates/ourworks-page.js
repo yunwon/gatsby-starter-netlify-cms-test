@@ -8,15 +8,20 @@ import styles from "./ourworks-page.module.scss";
 import HeroSection from "../components/HeroSection/HeroSection";
 import BgImage from "../assets/services/insulation/hero.png";
 import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
+import Img from "gatsby-image";
 
 const Works = ({ data }) => (
   <div>
     {data.map(workDetail => (
       <div className={styles.wrapper}>
         <div className={styles.section} key={workDetail.title}>
-          {/* <img src={workDetail.image} alt={workDetail.title} /> */}
           <div className={styles.image}>
-            <PreviewCompatibleImage imageInfo={workDetail.image} />
+            <PreviewCompatibleImage
+              imageInfo={{
+                image: workDetail.image,
+                alt: workDetail.title
+              }}
+            />
           </div>
           <div>
             <h4>{workDetail.title}</h4>
@@ -80,7 +85,7 @@ export const OurWorksPageQuery = graphql`
           workDetail {
             image {
               childImageSharp {
-                fluid(maxWidth: 2048, quality: 100) {
+                fluid {
                   ...GatsbyImageSharpFluid
                 }
               }
