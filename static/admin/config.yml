@@ -71,30 +71,24 @@ collections:
                 [
                   {
                     label: Why Choose Us 01,
-                    name: whyChooseUsFirst,
+                    name: whyChooseUs01,
                     widget: object,
-                    fields: [
-                        # { label: Icon, name: icon, widget: image },
-                        { label: Description, name: description, widget: text },
-                      ],
+                    fields:
+                      [{ label: Description, name: description, widget: text }],
                   },
                   {
                     label: Why Choose Us 02,
                     name: whyChooseUs02,
                     widget: object,
-                    fields: [
-                        # { label: Icon, name: icon, widget: image },
-                        { label: Description, name: description, widget: text },
-                      ],
+                    fields:
+                      [{ label: Description, name: description, widget: text }],
                   },
                   {
                     label: Why Choose Us 03,
                     name: whyChooseUs03,
                     widget: object,
-                    fields: [
-                        # { label: Icon, name: icon, widget: image },
-                        { label: Description, name: description, widget: text },
-                      ],
+                    fields:
+                      [{ label: Description, name: description, widget: text }],
                   },
                 ],
             }

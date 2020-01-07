@@ -25,15 +25,15 @@ whatWeDo:
       tempor incididunt ut labore et dolore magna aliqua.
     title: Healthy Homes
 whyChooseUs:
+  whyChooseUs01:
+    description: >-
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua.
   whyChooseUs02:
     description: >-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua.
   whyChooseUs03:
-    description: >-
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua.
-  whyChooseUsFirst:
     description: >-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua.
@@ -58,4 +58,3 @@ ourProducts:
       vermin and will not encourage the growth of fungi, mould or bacteria.
     title: Glass Wool
 ---
-
