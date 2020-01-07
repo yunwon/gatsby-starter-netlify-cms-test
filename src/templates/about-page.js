@@ -16,6 +16,7 @@ import About03 from "../assets/about/03.png";
 export const AboutPageTemplate = ({
   title,
   subTitle,
+  description,
   content,
   contentComponent
 }) => {
@@ -23,22 +24,11 @@ export const AboutPageTemplate = ({
 
   return (
     <div>
-      <HeroSection title={title} subtitle="sdfasdasdf" bgImage={BgImage} />
+      <HeroSection title={title} subtitle={subTitle} bgImage={BgImage} />
       <div className={styles.aboutUs}>
         <img src={Logo} alt="Logo" />
         <div>
-          <p>
-            Snug Insulation Limited is a New Zealand Owned company focus on
-            saving energy in New Zealand homes since 2010. Our mission is on
-            providing Kiwi's with warm, dry and healthy places to both live &
-            work.
-            <br />
-            <br />
-            Our company is dedicated in providing reliable quality and energy
-            efficiency products and solutions. The aim, to create a more
-            environmentally sustainable building using the best of new
-            technologies.
-          </p>
+          <p>{description}</p>
         </div>
       </div>
       <SectionWithIcons
@@ -58,6 +48,7 @@ export const AboutPageTemplate = ({
 AboutPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   subTitle: PropTypes.string,
+  description: PropTypes.string,
   content: PropTypes.string,
   contentComponent: PropTypes.func
 };
@@ -71,6 +62,7 @@ const AboutPage = ({ data }) => {
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         subTitle={post.frontmatter.subTitle}
+        description={post.frontmatter.description}
         content={post.html}
       />
     </Layout>
@@ -89,6 +81,7 @@ export const aboutPageQuery = graphql`
       frontmatter {
         title
         subTitle
+        description
       }
     }
   }
