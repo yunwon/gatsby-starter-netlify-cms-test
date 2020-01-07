@@ -47,10 +47,7 @@ export const IndexPageTemplate = ({
     <div className={styles.hero}>
       <div className={styles.container}>
         <div className={styles.text}>
-          <h1 className={styles.title}>
-            We are making
-            <br /> <span>Healthier home</span> for you.
-          </h1>
+          <h1 className={styles.title}>{title}</h1>
           <p className={styles.subtitle}>{subTitle}</p>
           <Button title={mainButton} bigButton />
         </div>
