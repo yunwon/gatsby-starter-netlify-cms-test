@@ -164,6 +164,18 @@ collections:
                   },
                 ],
             }
+      - file: "src/pages/insulation/index.md"
+        label: "Insulation"
+        name: "insulation"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "insulation-page",
+            }
+          - { label: Title, name: title, widget: string }
+          - { label: SubTitle, name: subTitle, widget: string }
       - file: "src/pages/about/index.md"
         label: "About"
         name: "about"
