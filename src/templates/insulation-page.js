@@ -9,26 +9,22 @@ import HeroSection from "../components/HeroSection/HeroSection";
 import BgImage from "../assets/services/insulation/hero.png";
 import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 
-const Works = ({ data }) => (
+const Section = ({ data }) => (
   <div>
-    {data.map(workDetail => (
+    {data.map(sectionDetail => (
       <div className={styles.wrapper}>
-        <div className={styles.section} key={workDetail.title}>
+        <div className={styles.section} key={sectionDetail.title}>
           <div className={styles.image}>
             <PreviewCompatibleImage
               imageInfo={{
-                image: workDetail.image,
-                alt: workDetail.title
+                image: sectionDetail.image,
+                alt: sectionDetail.title
               }}
             />
           </div>
           <div>
-            <h4>{workDetail.title}</h4>
-            <h5>
-              <span>{workDetail.year}</span>
-              {workDetail.company}
-            </h5>
-            <p>{workDetail.description}</p>
+            <h4>{sectionDetail.title}</h4>
+            <p>{sectionDetail.description}</p>
           </div>
         </div>
       </div>
@@ -36,17 +32,21 @@ const Works = ({ data }) => (
   </div>
 );
 
-export const InsulationPageTemplate = ({ title, subTitle }) => {
+export const InsulationPageTemplate = ({ title, subTitle, section }) => {
   return (
     <div>
       <HeroSection title={title} subtitle={subTitle} bgImage={BgImage} />
+      <Section data={section.sectionDetail} />
     </div>
   );
 };
 
 InsulationPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
-  subTitle: PropTypes.string
+  subTitle: PropTypes.string,
+  section: PropTypes.shape({
+    sectionDetail: PropTypes.array
+  })
 };
 
 const InsulationPage = ({ data }) => {
@@ -58,6 +58,7 @@ const InsulationPage = ({ data }) => {
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         subTitle={post.frontmatter.subTitle}
+        section={post.frontmatter.section}
       />
     </Layout>
   );
@@ -75,6 +76,13 @@ export const InsulationPageQuery = graphql`
       frontmatter {
         title
         subTitle
+        section {
+          sectionDetail {
+            image
+            title
+            description
+          }
+        }
       }
     }
   }
