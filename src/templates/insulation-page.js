@@ -15,12 +15,13 @@ const Section = ({ data }) => (
       <div className={styles.wrapper}>
         <div className={styles.section} key={sectionDetail.title}>
           <div className={styles.image}>
-            <PreviewCompatibleImage
+            <img src={sectionDetail.image} alt={sectionDetail.title} />
+            {/* <PreviewCompatibleImage
               imageInfo={{
                 image: sectionDetail.image,
                 alt: sectionDetail.title
               }}
-            />
+            /> */}
           </div>
           <div>
             <h4>{sectionDetail.title}</h4>
@@ -78,7 +79,13 @@ export const InsulationPageQuery = graphql`
         subTitle
         section {
           sectionDetail {
-            image
+            image {
+              childImageSharp {
+                fluid(maxWidth: 2048, quality: 100) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
             title
             description
           }
