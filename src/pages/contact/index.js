@@ -4,8 +4,8 @@ import Layout from "../../layout/Layout";
 import styles from "./index.module.scss";
 import { Button } from "../../components/Button/Button";
 import { FaPhone } from "react-icons/fa";
-import Dropdown from "react-dropdown";
-import "react-dropdown/style.css";
+// import Dropdown from "react-dropdown";
+// import "react-dropdown/style.css";
 
 const options = [
   { value: "g", label: "General Question" },
@@ -99,7 +99,7 @@ export default class Index extends React.Component {
                 />
               </div>
               <div className={styles.field}>
-                <label htmlFor={"phone"}>Phone</label>
+                <label htmlFor={"tel"}>Phone</label>
                 <input
                   placeholder="Phone Number"
                   type={"tel"}
@@ -122,7 +122,15 @@ export default class Index extends React.Component {
               </div>
               <div className={styles.field}>
                 <label htmlFor={"type"}>Type</label>
-                <Dropdown
+                <select name="type">
+                  <option value="General Question">General Question</option>
+                  <option value="Service and Support">
+                    Service and Support
+                  </option>
+                  <option value="Spare Parts">Spare Parts</option>
+                  <option value="Marketing">Marketing</option>
+                </select>
+                {/* <Dropdown
                   options={options}
                   onChange={this._onSelect}
                   value={defaultOption}
@@ -130,7 +138,7 @@ export default class Index extends React.Component {
                   className="select"
                   name={"type"}
                   id={"type"}
-                />
+                /> */}
               </div>
               <div className={styles.field}>
                 <label htmlFor={"message"}>Message</label>
