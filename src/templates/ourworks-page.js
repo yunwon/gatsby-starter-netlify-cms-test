@@ -59,7 +59,6 @@ const OurWorksPage = ({ data }) => {
   return (
     <Layout>
       <OurWorksPageTemplate
-        contentComponent={HTMLContent}
         title={post.frontmatter.title}
         subTitle={post.frontmatter.subTitle}
         works={post.frontmatter.works}

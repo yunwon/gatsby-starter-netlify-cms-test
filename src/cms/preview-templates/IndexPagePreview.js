@@ -16,6 +16,7 @@ const IndexPagePreview = ({ entry, getAsset }) => {
         eventdescription={data.eventdescription}
         whatWeDo={data.whatWeDo}
         whyChooseUs={data.whyChooseUs}
+        ourProducts={data.ourProducts}
       />
     );
   } else {
