@@ -15,19 +15,12 @@ const Section = ({ data }) => (
       <div className={styles.wrapper}>
         <div className={styles.section} key={sectionDetail.title}>
           <div className={styles.image}>
-            {/* <img src={sectionDetail.image} alt={sectionDetail.title} /> */}
             <Img
               src={sectionDetail.image}
               fluid={sectionDetail.image.childImageSharp.fluid}
               alt={sectionDetail.title}
               style={{ borderRadius: 4 }}
             />
-            {/* <PreviewCompatibleImage
-              imageInfo={{
-                image: sectionDetail.image,
-                alt: sectionDetail.title
-              }}
-            /> */}
           </div>
           <div className={styles.text}>
             <h4>{sectionDetail.title}</h4>
