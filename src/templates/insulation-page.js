@@ -55,7 +55,6 @@ const InsulationPage = ({ data }) => {
   return (
     <Layout>
       <InsulationPageTemplate
-        contentComponent={HTMLContent}
         title={post.frontmatter.title}
         subTitle={post.frontmatter.subTitle}
         section={post.frontmatter.section}
