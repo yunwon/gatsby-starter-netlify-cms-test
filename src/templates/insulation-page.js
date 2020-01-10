@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
+import Img from "gatsby-image";
 import { graphql } from "gatsby";
 import Layout from "../layout/Layout";
 import Content, { HTMLContent } from "../components/Content";
-
 import styles from "./insulation-page.module.scss";
 import HeroSection from "../components/HeroSection/HeroSection";
 import BgImage from "../assets/services/insulation/hero.png";
@@ -15,7 +15,13 @@ const Section = ({ data }) => (
       <div className={styles.wrapper}>
         <div className={styles.section} key={sectionDetail.title}>
           <div className={styles.image}>
-            <img src={sectionDetail.image} alt={sectionDetail.title} />
+            {/* <img src={sectionDetail.image} alt={sectionDetail.title} /> */}
+            <Img
+              src={sectionDetail.image}
+              fluid={sectionDetail.image.childImageSharp.fluid}
+              alt={sectionDetail.title}
+              style={{ borderRadius: 4 }}
+            />
             {/* <PreviewCompatibleImage
               imageInfo={{
                 image: sectionDetail.image,
@@ -23,7 +29,7 @@ const Section = ({ data }) => (
               }}
             /> */}
           </div>
-          <div>
+          <div className={styles.text}>
             <h4>{sectionDetail.title}</h4>
             <p>{sectionDetail.description}</p>
           </div>
@@ -81,7 +87,7 @@ export const InsulationPageQuery = graphql`
           sectionDetail {
             image {
               childImageSharp {
-                fluid(maxWidth: 2048, quality: 100) {
+                fluid {
                   ...GatsbyImageSharpFluid
                 }
               }

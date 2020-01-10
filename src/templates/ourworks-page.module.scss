@@ -50,14 +50,14 @@
     }
 
     .image {
-      width: 50%;
-      height: auto;
+      //width: 50%;
+      // height: auto;
       margin-right: 2.5rem;
 
-      &.right {
-        order: 2;
-        margin-left: 2.5rem;
-      }
+      // &.right {
+      //   order: 2;
+      //   margin-left: 2.5rem;
+      // }
     }
   }
 }
