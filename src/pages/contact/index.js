@@ -102,7 +102,7 @@ export default class Index extends React.Component {
                 <label htmlFor={"phone"}>Phone</label>
                 <input
                   placeholder="Phone Number"
-                  type={"phone"}
+                  type={"tel"}
                   name={"phone"}
                   onChange={this.handleChange}
                   id={"phone"}
