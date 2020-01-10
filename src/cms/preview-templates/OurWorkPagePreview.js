@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { OurWorkPageTemplate } from "../../templates/ourwork-page";
+import { OurWorkPageTemplate } from "../../templates/ourworks-page";
 
 const OurWorkPagePreview = ({ entry, getAsset }) => {
   const data = entry.getIn(["data"]).toJS();
