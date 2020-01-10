@@ -122,13 +122,11 @@ export default class Index extends React.Component {
               </div>
               <div className={styles.field}>
                 <label htmlFor={"type"}>Type</label>
-                <select name="type">
-                  <option value="General Question">General Question</option>
-                  <option value="Service and Support">
-                    Service and Support
-                  </option>
-                  <option value="Spare Parts">Spare Parts</option>
-                  <option value="Marketing">Marketing</option>
+                <select name={"type"} id={"type"}>
+                  <option value="g">General Question</option>
+                  <option value="ss">Service and Support</option>
+                  <option value="sp">Spare Parts</option>
+                  <option value="m">Marketing</option>
                 </select>
                 {/* <Dropdown
                   options={options}
