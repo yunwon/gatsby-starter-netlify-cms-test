@@ -1,4 +1,4 @@
-@import "src/stylesheets/2-abstracts/_abstracts-dir.scss";
+@import "../stylesheets/2-abstracts/_abstracts-dir.scss";
 
 .wrapper {
   @media #{$break-md} {
@@ -6,6 +6,7 @@
     width: 100%;
     min-height: calc(100vh - 130px - 90px);
   }
+
   .title {
     background-image: url("../../assets/contact/titleBg.png");
     background-repeat: no-repeat;
@@ -13,6 +14,7 @@
     background-size: cover;
     @include articlePadding();
     padding-bottom: 8rem;
+
     @media #{$break-md} {
       width: 50%;
     }
@@ -47,13 +49,16 @@
         margin: 0 0 0 auto;
         padding-right: 10rem;
       }
+
       @media #{$break-lg} {
         max-width: 585px;
       }
     }
   }
+
   .form {
     @include articlePadding();
+
     form {
       .field {
         @media #{$break-md} {
@@ -61,36 +66,45 @@
           align-items: center;
           margin: 0.6rem 0;
         }
+
         label {
           font-weight: bold;
           width: 100%;
           margin-bottom: 0.5rem;
+
           @media #{$break-md} {
             width: 140px;
           }
         }
+
         input,
         textarea {
           @include inputStyle();
           width: 100%;
           margin: 0.5rem 0 1rem 0;
+
           @media #{$break-md} {
             margin: 0;
           }
         }
+
         :global .select {
           width: 100%;
           margin: 0.5rem 0 1rem 0;
+
           @media #{$break-md} {
             margin: 0;
           }
+
           .Dropdown-control {
             @include inputStyle();
           }
+
           .Dropdown-menu {
             @include inputStyle();
             padding: unset;
           }
+
           .Dropdown-arrow {
             top: 50%;
             right: 1rem;
@@ -98,13 +112,16 @@
           }
         }
       }
+
       .submitButton {
         @media #{$break-md} {
           margin-top: 1.875rem;
         }
+
         button {
           width: 100%;
           margin: 0 auto;
+
           @media #{$break-md} {
             width: auto;
             margin: 0 0 0 auto;
@@ -119,6 +136,7 @@
       padding-left: 3rem;
       max-width: 480px;
     }
+
     @media #{$break-lg} {
       max-width: 585px;
     }
