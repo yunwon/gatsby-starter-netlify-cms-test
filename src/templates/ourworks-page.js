@@ -1,12 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
+import Img from "gatsby-image";
 import { graphql } from "gatsby";
 import Layout from "../layout/Layout";
 
 import styles from "./ourworks-page.module.scss";
 import HeroSection from "../components/HeroSection/HeroSection";
 import BgImage from "../assets/services/insulation/hero.png";
-import Img from "gatsby-image";
 
 const Works = ({ data }) => (
   <div>

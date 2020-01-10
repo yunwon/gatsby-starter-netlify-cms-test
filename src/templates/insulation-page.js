@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import Img from "gatsby-image";
 import { graphql } from "gatsby";
 import Layout from "../layout/Layout";
-import Content, { HTMLContent } from "../components/Content";
 import styles from "./insulation-page.module.scss";
 import HeroSection from "../components/HeroSection/HeroSection";
 import BgImage from "../assets/services/insulation/hero.png";
@@ -50,14 +49,13 @@ InsulationPageTemplate.propTypes = {
 };
 
 const InsulationPage = ({ data }) => {
-  const { markdownRemark: post } = data;
-
+  const { frontmatter } = data.markdownRemark;
   return (
     <Layout>
       <InsulationPageTemplate
-        title={post.frontmatter.title}
-        subTitle={post.frontmatter.subTitle}
-        section={post.frontmatter.section}
+        title={frontmatter.title}
+        subTitle={frontmatter.subTitle}
+        section={frontmatter.section}
       />
     </Layout>
   );
