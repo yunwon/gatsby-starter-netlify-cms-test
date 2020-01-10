@@ -99,11 +99,18 @@ export default class Index extends React.Component {
                 />
               </div>
               <div className={styles.field}>
-                <label>Phone</label>
-                <input placeholder="Phone Number" />
+                <label htmlFor={"phone"}>Phone</label>
+                <input
+                  placeholder="Phone Number"
+                  type={"phone"}
+                  name={"phone"}
+                  onChange={this.handleChange}
+                  id={"phone"}
+                  required={true}
+                />
               </div>
-              <div className={styles.field} htmlFor={"email"}>
-                <label>Email</label>
+              <div className={styles.field}>
+                <label htmlFor={"email"}>Email</label>
                 <input
                   placeholder="Your Email"
                   type={"email"}
@@ -114,17 +121,19 @@ export default class Index extends React.Component {
                 />
               </div>
               <div className={styles.field}>
-                <label>Type</label>
+                <label htmlFor={"type"}>Type</label>
                 <Dropdown
                   options={options}
                   onChange={this._onSelect}
                   value={defaultOption}
                   placeholder="Select an option"
                   className="select"
+                  name={"type"}
+                  id={"type"}
                 />
               </div>
-              <div className={styles.field} htmlFor={"message"}>
-                <label>Message</label>
+              <div className={styles.field}>
+                <label htmlFor={"message"}>Message</label>
                 <textarea
                   placeholder="Your Message"
                   rows={7}
