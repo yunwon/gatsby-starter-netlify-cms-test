@@ -1,13 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { OurWorkPageTemplate } from "../../templates/ourworks-page";
+import { OurWorksPageTemplate } from "../../templates/ourworks-page";
 
-const OurWorkPagePreview = ({ entry, getAsset }) => {
+const OurWorksPagePreview = ({ entry, getAsset }) => {
   const data = entry.getIn(["data"]).toJS();
 
   if (data) {
     return (
-      <OurWorkPageTemplate
+      <OurWorksPageTemplate
         title={data.title}
         subTitle={data.subTitle}
         works={data.works}
@@ -18,11 +18,11 @@ const OurWorkPagePreview = ({ entry, getAsset }) => {
   }
 };
 
-OurWorkPagePreview.propTypes = {
+OurWorksPagePreview.propTypes = {
   entry: PropTypes.shape({
     getIn: PropTypes.func
   }),
   getAsset: PropTypes.func
 };
 
-export default OurWorkPagePreview;
+export default OurWorksPagePreview;
