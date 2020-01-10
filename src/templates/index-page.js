@@ -4,7 +4,6 @@ import { Link, graphql } from "gatsby";
 import styles from "./index-page.module.scss";
 
 import Layout from "../layout/Layout";
-import Features from "../components/Features";
 import { Button } from "../components/Button/Button";
 import Slider from "../components/Slider/Slider";
 

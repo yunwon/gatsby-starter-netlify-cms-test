@@ -2,7 +2,6 @@ import React from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Layout from "../layout/Layout";
-import Content, { HTMLContent } from "../components/Content";
 
 import styles from "./ourworks-page.module.scss";
 import HeroSection from "../components/HeroSection/HeroSection";
@@ -54,14 +53,14 @@ OurWorksPageTemplate.propTypes = {
 };
 
 const OurWorksPage = ({ data }) => {
-  const { markdownRemark: post } = data;
+  const { frontmatter } = data.markdownRemark;
 
   return (
     <Layout>
       <OurWorksPageTemplate
-        title={post.frontmatter.title}
-        subTitle={post.frontmatter.subTitle}
-        works={post.frontmatter.works}
+        title={frontmatter.title}
+        subTitle={frontmatter.subTitle}
+        works={frontmatter.works}
       />
     </Layout>
   );
