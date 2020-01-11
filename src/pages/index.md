@@ -5,25 +5,39 @@ subTitle: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
   incididunt ut labore et.
 mainButton: Talk To Us Now
-eventTitle: SNUGNZ Summer Special
-eventdescription: >-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-  incididunt ut labore et dolore magna aliqua. Elit eget gravida cum sociis
-  natoque penatibus et.
+events:
+  event:
+    - title: SNUGNZ Summer Special 01
+      description:
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Elit eget gravida cum sociis
+        natoque penatibus et.
+    - title: SNUGNZ Summer Special 02
+      description:
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Elit eget gravida cum sociis
+        natoque penatibus et.
+    - title: SNUGNZ Summer Special 03
+      description:
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Elit eget gravida cum sociis
+        natoque penatibus et.
 whatWeDo:
+  title: What We Do
   description: >-
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua.
-  whatWeDo01:
-    description: >-
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua.
-    title: Insulation
-  whatWeDo02:
-    description: >-
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua.
-    title: Healthy Homes
+  whatWeDoDetail:
+    - title: Insulation
+      image: /img/chemex.jpg
+      description:
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+    - title: Healthy Homes
+      image: /img/chemex.jpg
+      description:
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
 whyChooseUs:
   whyChooseUs01:
     description: >-

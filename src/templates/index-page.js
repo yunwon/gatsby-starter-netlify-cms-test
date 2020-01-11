@@ -7,8 +7,6 @@ import Layout from "../layout/Layout";
 import { Button } from "../components/Button/Button";
 import Slider from "../components/Slider/Slider";
 
-import Insulation from "../assets/home/insulation.png";
-import HealthyHomes from "../assets/home/healthyHomes.png";
 import Wool from "../assets/home/woolproduct.png";
 import Polyester from "../assets/home/polyester.png";
 import GlassWool from "../assets/home/glasswool.png";
@@ -17,6 +15,8 @@ import whyChooseUs01 from "../assets/home/whyChooseUs01.svg";
 import SectionWithIcons from "../components/SectionWithIcons/SectionWithIcons";
 
 import Quote from "../assets/home/quote.svg";
+
+import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 
 const RenderTestimonial = ({ text, name, company }) => {
   return (
@@ -35,8 +35,7 @@ export const IndexPageTemplate = ({
   title,
   subTitle,
   mainButton,
-  eventTitle,
-  eventdescription,
+  events,
   whatWeDo,
   whyChooseUs,
   ourProducts
@@ -56,46 +55,38 @@ export const IndexPageTemplate = ({
     {/* 02. event banner */}
     <div className={styles.event}>
       <Slider>
-        <div className={styles.eventInner}>
-          <h1>{eventTitle}</h1>
-          <p>{eventdescription}</p>
-          <LearnMoreButton />
-        </div>
-        <div className={styles.eventInner}>
-          <h1>{eventTitle}</h1>
-          <p>{eventdescription}</p>
-          <LearnMoreButton />
-        </div>
-        <div className={styles.eventInner}>
-          <h1>{eventTitle}</h1>
-          <p>{eventdescription}</p>
-          <LearnMoreButton />
-        </div>
+        {events.event.map(event => (
+          <div className={styles.eventInner}>
+            <h1>{event.title}</h1>
+            <p>{event.description}</p>
+            <LearnMoreButton />
+          </div>
+        ))}
       </Slider>
     </div>
     {/* 03. What We Do */}
     <div className={styles.whatWeDo}>
       <div className={styles.title}>
-        <h2>What We Do</h2>
+        <h2>{whatWeDo.title}</h2>
         <p>{whatWeDo.description}</p>
       </div>
       <div className={styles.cards}>
-        <div className={styles.card}>
-          <img src={Insulation} alt={whatWeDo.whatWeDo01.title} />
-          <div>
-            <h4>{whatWeDo.whatWeDo01.title}</h4>
-            <p>{whatWeDo.whatWeDo01.description}</p>
-            <LearnMoreButton />
+        {whatWeDo.whatWeDoDetail.map(item => (
+          <div className={styles.card}>
+            <PreviewCompatibleImage
+              imageInfo={{
+                image: item.image,
+                alt: item.title
+              }}
+            />
+            {/* <img src={Insulation} alt={whatWeDo.whatWeDo01.title} /> */}
+            <div>
+              <h4>{item.title}</h4>
+              <p>{item.description}</p>
+              <LearnMoreButton />
+            </div>
           </div>
-        </div>
-        <div className={styles.card}>
-          <img src={HealthyHomes} alt={whatWeDo.whatWeDo02.title} />
-          <div>
-            <h4>{whatWeDo.whatWeDo02.title}</h4>
-            <p>{whatWeDo.whatWeDo02.description}</p>
-            <LearnMoreButton />
-          </div>
-        </div>
+        ))}
       </div>
     </div>
     {/* 04. Why Choose Us */}
@@ -203,8 +194,7 @@ IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
   subTitle: PropTypes.string,
-  eventTitle: PropTypes.string,
-  eventdescription: PropTypes.string,
+  events: PropTypes.object,
   mainButton: PropTypes.string,
   whatWeDo: PropTypes.object,
   whyChooseUs: PropTypes.object,
@@ -220,10 +210,9 @@ const IndexPage = ({ data }) => {
         image={frontmatter.image}
         title={frontmatter.title}
         subTitle={frontmatter.subTitle}
-        eventTitle={frontmatter.eventTitle}
-        eventdescription={frontmatter.eventdescription}
-        whatWeDo={frontmatter.whatWeDo}
+        events={frontmatter.events}
         mainButton={frontmatter.mainButton}
+        whatWeDo={frontmatter.whatWeDo}
         whyChooseUs={frontmatter.whyChooseUs}
         ourProducts={frontmatter.ourProducts}
       />
@@ -237,6 +226,7 @@ IndexPage.propTypes = {
       frontmatter: PropTypes.object
     })
   })
+  //data: PropTypes.object.isRequired
 };
 
 export default IndexPage;
@@ -248,16 +238,24 @@ export const pageQuery = graphql`
         title
         subTitle
         mainButton
-        eventTitle
-        eventdescription
-        whatWeDo {
-          description
-          whatWeDo01 {
+        events {
+          event {
             title
             description
           }
-          whatWeDo02 {
+        }
+        whatWeDo {
+          title
+          description
+          whatWeDoDetail {
             title
+            image {
+              childImageSharp {
+                fluid(maxWidth: 1000, quality: 100) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
             description
           }
         }

@@ -27,12 +27,24 @@ collections:
             }
           - { label: Title, name: title, widget: string }
           - { label: SubTitle, name: subTitle, widget: string }
-          - { label: "Main button", name: mainButton, widget: string }
-          - { label: "Event Title", name: eventTitle, widget: string }
+          - { label: MainButton, name: mainButton, widget: string }
           - {
-              label: "Event Description",
-              name: eventdescription,
-              widget: string,
+              label: Events,
+              name: events,
+              widget: object,
+              fields:
+                [
+                  {
+                    label: Event,
+                    name: event,
+                    widget: list,
+                    fields:
+                      [
+                        { label: Title, name: title, widget: string },
+                        { label: Description, name: description, widget: text },
+                      ],
+                  },
+                ],
             }
           - {
               label: "What We Do",
@@ -40,24 +52,16 @@ collections:
               widget: object,
               fields:
                 [
-                  { label: description, name: description, widget: string },
+                  { label: Title, name: title, widget: string },
+                  { label: Description, name: description, widget: string },
                   {
-                    label: whatWeDo01,
-                    name: whatWeDo01,
-                    widget: object,
+                    label: "What We Do Detail",
+                    name: whatWeDoDetail,
+                    widget: list,
                     fields:
                       [
                         { label: Title, name: title, widget: string },
-                        { label: Description, name: description, widget: text },
-                      ],
-                  },
-                  {
-                    label: whatWeDo02,
-                    name: whatWeDo02,
-                    widget: object,
-                    fields:
-                      [
-                        { label: Title, name: title, widget: string },
+                        { label: Image, name: image, widget: image },
                         { label: Description, name: description, widget: text },
                       ],
                   },

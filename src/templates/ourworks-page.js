@@ -16,12 +16,6 @@ const Works = ({ data }) => (
       <div className={styles.wrapper}>
         <div className={styles.section} key={workDetail.title}>
           <div className={styles.image}>
-            {/* <Img
-              src={workDetail.image}
-              fluid={workDetail.image.childImageSharp.fluid}
-              alt={workDetail.title}
-              style={{ borderRadius: 4 }}
-            /> */}
             <PreviewCompatibleImage
               imageInfo={{
                 image: workDetail.image,
