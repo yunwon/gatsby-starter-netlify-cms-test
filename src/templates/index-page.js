@@ -22,7 +22,8 @@ export const IndexPageTemplate = ({
   whatWeDo,
   whyChooseUs,
   ourProducts,
-  testimonials
+  testimonials,
+  contact
 }) => (
   <div>
     {/* 01. hero */}
@@ -133,11 +134,11 @@ export const IndexPageTemplate = ({
     <div className={styles.contactUs}>
       <div className={styles.container}>
         <div className={styles.text}>
-          <h2>Talk To Us Now</h2>
+          <h2>{contact.title}</h2>
           <p className={styles.subtitle}>
-            Call us at <a href="tel:09-818-6606">09-818-6606</a>
+            Call us at <a href={`tel:${contact.phoneNo}`}>{contact.phoneNo}</a>
           </p>
-          <button className={styles.button}>Email Us</button>
+          <button className={styles.button}>{contact.button}</button>
         </div>
       </div>
       <div className={styles.contactImage}></div>
@@ -154,7 +155,8 @@ IndexPageTemplate.propTypes = {
   whatWeDo: PropTypes.object,
   whyChooseUs: PropTypes.object,
   ourProducts: PropTypes.object,
-  testimonials: PropTypes.object
+  testimonials: PropTypes.object,
+  contact: PropTypes.object
 };
 
 const IndexPage = ({ data }) => {
@@ -172,6 +174,7 @@ const IndexPage = ({ data }) => {
         whyChooseUs={frontmatter.whyChooseUs}
         ourProducts={frontmatter.ourProducts}
         testimonials={frontmatter.testimonials}
+        contact={frontmatter.contact}
       />
     </Layout>
   );
@@ -249,6 +252,11 @@ export const pageQuery = graphql`
             name
             company
           }
+        }
+        contact {
+          title
+          phoneNo
+          button
         }
       }
     }

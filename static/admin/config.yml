@@ -137,6 +137,17 @@ collections:
                   },
                 ],
             }
+         - {
+              label: "Contact",
+              name: contact,
+              widget: object,
+              fields:
+                [
+                  { label: Title, name: title, widget: string },
+                  { label: SubTitle, name: subtitle, widget: string },
+                  { label: button, name: button, widget: string },
+                ],
+            }
       - file: "src/pages/ourworks/index.md"
         label: "Our Works"
         name: "ourworks"
@@ -204,7 +215,7 @@ collections:
               default: "about-page",
             }
           - { label: Title, name: title, widget: string }
-          - { label: SubTitle, name: subTitle, widget: string }
+          - { label: PhoneNo, name: phoneNo, widget: string }
           - { label: Description, name: description, widget: text }
           - {
               label: Our Purpose,

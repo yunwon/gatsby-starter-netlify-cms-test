@@ -31,12 +31,12 @@ whatWeDo:
     - description: >-
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua.
-      image: /img/glasswool.png
+      image: /img/home-insulation.png
       title: Insulation
     - description: >-
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua.
-      image: /img/glasswool.png
+      image: /img/home-healthyHomes.png
       title: Healthy Homes
 whyChooseUs:
   whyChooseUs01:
@@ -59,18 +59,18 @@ ourProducts:
     - description: >-
         Natural wool insulation in blanket or batting form. Ideal for walls of
         new buildings and ceilings in new and existing premises.
-      image: /img/glasswool.png
+      image: /img/home-woolproduct.png
       title: Wool products
     - description: >-
         Snug Insulation is proud to introduce our high-performance range of 100%
         polyester thermal and acoustic insulation products, designed for the
         residential and commercial buildings.
-      image: /img/glasswool.png
+      image: /img/home-polyester.png
       title: Polyester
     - description: >-
         EarthWool is rot-proof, odourless, non-hygroscopic, does not sustain
         vermin and will not encourage the growth of fungi, mould or bacteria.
-      image: /img/glasswool.png
+      image: /img/home-glasswool.png
       title: Glass Wool
   title: Our Products
 testimonials:
@@ -96,4 +96,8 @@ testimonials:
         tempor incididunt ut labore et dolore magna aliqua.
       name: John Doe
       company: ABC Ltd.
+contact:
+  title: Talk To Us Now
+  phoneNo: 09-818-6606
+  button: Email Us
 ---
