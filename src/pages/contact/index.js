@@ -149,6 +149,9 @@ export default class Index extends React.Component {
                   required={true}
                 />
               </div>
+              <div className={styles.field}>
+                <div data-netify-recaptcha="true"></div>
+              </div>
               <div className={styles.submitButton}>
                 <Button title="Submit" type="submit" />
               </div>
