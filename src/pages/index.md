@@ -31,12 +31,12 @@ whatWeDo:
     - description: >-
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua.
-      image: /img/home/insulation.png
+      image: /img/glasswool.png
       title: Insulation
     - description: >-
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua.
-      image: /img/home/healthyHomes.png
+      image: /img/glasswool.png
       title: Healthy Homes
 whyChooseUs:
   whyChooseUs01:
@@ -59,18 +59,41 @@ ourProducts:
     - description: >-
         Natural wool insulation in blanket or batting form. Ideal for walls of
         new buildings and ceilings in new and existing premises.
-      image: /img/home/woolproduct.png
+      image: /img/glasswool.png
       title: Wool products
     - description: >-
         Snug Insulation is proud to introduce our high-performance range of 100%
         polyester thermal and acoustic insulation products, designed for the
         residential and commercial buildings.
-      image: /img/home/polyester.png
+      image: /img/glasswool.png
       title: Polyester
     - description: >-
         EarthWool is rot-proof, odourless, non-hygroscopic, does not sustain
         vermin and will not encourage the growth of fungi, mould or bacteria.
-      image: /img/home/glasswool.png
+      image: /img/glasswool.png
       title: Glass Wool
   title: Our Products
+testimonials:
+  title: Testimonials
+  testimonialList:
+    - description: >-
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      name: John Doe
+      company: ABC Ltd.
+    - description: >-
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      name: John Doe
+      company: ABC Ltd.
+    - description: >-
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      name: John Doe
+      company: ABC Ltd.
+    - description: >-
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      name: John Doe
+      company: ABC Ltd.
 ---

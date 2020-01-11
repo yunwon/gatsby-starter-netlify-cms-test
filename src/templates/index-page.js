@@ -6,10 +6,6 @@ import styles from "./index-page.module.scss";
 import Layout from "../layout/Layout";
 import { Button } from "../components/Button/Button";
 import Slider from "../components/Slider/Slider";
-
-import Wool from "../assets/home/woolproduct.png";
-import Polyester from "../assets/home/polyester.png";
-import GlassWool from "../assets/home/glasswool.png";
 import { LearnMoreButton } from "../components/LearnMoreButton/LearnMoreButton";
 import whyChooseUs01 from "../assets/home/whyChooseUs01.svg";
 import SectionWithIcons from "../components/SectionWithIcons/SectionWithIcons";
@@ -18,27 +14,15 @@ import Quote from "../assets/home/quote.svg";
 
 import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 
-const RenderTestimonial = ({ text, name, company }) => {
-  return (
-    <div className={styles.testimonials}>
-      <p className={styles.text}>{text}</p>
-      <div className={styles.profile}>
-        <p className={styles.name}>{name}</p>
-        <p className={styles.company}>{company}</p>
-      </div>
-    </div>
-  );
-};
-
 export const IndexPageTemplate = ({
-  image,
   title,
   subTitle,
   mainButton,
   events,
   whatWeDo,
   whyChooseUs,
-  ourProducts
+  ourProducts,
+  testimonials
 }) => (
   <div>
     {/* 01. hero */}
@@ -132,29 +116,17 @@ export const IndexPageTemplate = ({
     {/* 06. Testimonials */}
     <div className={styles.testimonials_container}>
       <img src={Quote} alt="quote" />
-      <h2 className={styles.title}>Testimonials</h2>
+      <h2 className={styles.title}>{testimonials.title}</h2>
       <Slider>
-        <RenderTestimonial
-          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Elit eget
-                    gravida cum sociis natoque penatibus et."
-          name="John Doe"
-          company="ABC Ltd"
-        />
-        <RenderTestimonial
-          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Elit eget
-                    gravida cum sociis natoque penatibus et."
-          name="Jane Doe"
-          company="ABC Ltd"
-        />
-        <RenderTestimonial
-          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Elit eget
-                    gravida cum sociis natoque penatibus et."
-          name="John Doe"
-          company="ABC Ltd"
-        />
+        {testimonials.testimonialList.map(item => (
+          <div className={styles.testimonials}>
+            <p className={styles.text}>{item.description}</p>
+            <div className={styles.profile}>
+              <p className={styles.name}>{item.name}</p>
+              <p className={styles.company}>{item.company}</p>
+            </div>
+          </div>
+        ))}
       </Slider>
     </div>
     {/* 07. Contact Us */}
@@ -181,7 +153,8 @@ IndexPageTemplate.propTypes = {
   mainButton: PropTypes.string,
   whatWeDo: PropTypes.object,
   whyChooseUs: PropTypes.object,
-  ourProducts: PropTypes.object
+  ourProducts: PropTypes.object,
+  testimonials: PropTypes.object
 };
 
 const IndexPage = ({ data }) => {
@@ -198,6 +171,7 @@ const IndexPage = ({ data }) => {
         whatWeDo={frontmatter.whatWeDo}
         whyChooseUs={frontmatter.whyChooseUs}
         ourProducts={frontmatter.ourProducts}
+        testimonials={frontmatter.testimonials}
       />
     </Layout>
   );
@@ -266,6 +240,14 @@ export const pageQuery = graphql`
               }
             }
             description
+          }
+        }
+        testimonials {
+          title
+          testimonialList {
+            description
+            name
+            company
           }
         }
       }
