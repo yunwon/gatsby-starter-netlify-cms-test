@@ -73,12 +73,14 @@ export const IndexPageTemplate = ({
       <div className={styles.cards}>
         {whatWeDo.whatWeDoDetail.map(item => (
           <div className={styles.card}>
-            <PreviewCompatibleImage
-              imageInfo={{
-                image: item.image,
-                alt: item.title
-              }}
-            />
+            <div className={styles.image}>
+              <PreviewCompatibleImage
+                imageInfo={{
+                  image: item.image,
+                  alt: item.title
+                }}
+              />
+            </div>
             {/* <img src={Insulation} alt={whatWeDo.whatWeDo01.title} /> */}
             <div>
               <h4>{item.title}</h4>
@@ -102,48 +104,29 @@ export const IndexPageTemplate = ({
     {/* 05. Our Products */}
     <div className={styles.ourProducts}>
       <div className={styles.title}>
-        <h2>Our Products</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
+        <h2>{ourProducts.title}</h2>
+        <p>{ourProducts.description}</p>
         <Link to="/product">
           <LearnMoreButton />
         </Link>
       </div>
       <div className={styles.cards}>
-        <div className={styles.card}>
-          <img src={Wool} alt="Wool products" />
-          <div>
-            <h5>Wool products</h5>
-            <p>
-              Natural wool insulation in blanket or batting form. Ideal for
-              walls of new buildings and ceilings in new and existing premises.
-            </p>
+        {ourProducts.productList.map(item => (
+          <div className={styles.card}>
+            <div className={styles.image}>
+              <PreviewCompatibleImage
+                imageInfo={{
+                  image: item.image,
+                  alt: item.title
+                }}
+              />
+            </div>
+            <div>
+              <h5>{item.title}</h5>
+              <p>{item.description}</p>
+            </div>
           </div>
-        </div>
-        <div className={styles.card}>
-          <img src={Polyester} alt="Polyester" />
-          <div>
-            <h5>Polyester</h5>
-            <p>
-              Snug Insulation is proud to introduce our high-performance range
-              of 100% polyester thermal and acoustic insulation products,
-              designed for the residential and commercial buildings.
-            </p>
-          </div>
-        </div>
-        <div className={styles.card}>
-          <img src={GlassWool} alt="Glass Wool" />
-          <div>
-            <h5>Glass Wool</h5>
-            <p>
-              EarthWool is rot-proof, odourless, non-hygroscopic, does not
-              sustain vermin and will not encourage the growth of fungi, mould
-              or bacteria.
-            </p>
-          </div>
-        </div>
+        ))}
       </div>
     </div>
     {/* 06. Testimonials */}
@@ -271,17 +254,17 @@ export const pageQuery = graphql`
           }
         }
         ourProducts {
+          title
           description
-          ourProducts01 {
+          productList {
             title
-            description
-          }
-          ourProducts02 {
-            title
-            description
-          }
-          ourProducts03 {
-            title
+            image {
+              childImageSharp {
+                fluid {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
             description
           }
         }

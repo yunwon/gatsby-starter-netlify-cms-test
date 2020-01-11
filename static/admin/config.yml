@@ -102,34 +102,16 @@ collections:
               widget: object,
               fields:
                 [
+                  { label: Title, name: title, widget: string },
                   { label: description, name: description, widget: string },
                   {
-                    label: ourProducts01,
-                    name: ourProducts01,
-                    widget: object,
+                    label: "Product List",
+                    name: productList,
+                    widget: list,
                     fields:
                       [
                         { label: Title, name: title, widget: string },
-                        { label: Description, name: description, widget: text },
-                      ],
-                  },
-                  {
-                    label: ourProducts02,
-                    name: ourProducts02,
-                    widget: object,
-                    fields:
-                      [
-                        { label: Title, name: title, widget: string },
-                        { label: Description, name: description, widget: text },
-                      ],
-                  },
-                  {
-                    label: ourProducts03,
-                    name: ourProducts03,
-                    widget: object,
-                    fields:
-                      [
-                        { label: Title, name: title, widget: string },
+                        { label: Image, name: image, widget: image },
                         { label: Description, name: description, widget: text },
                       ],
                   },

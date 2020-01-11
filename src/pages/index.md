@@ -29,12 +29,12 @@ whatWeDo:
     tempor incididunt ut labore et dolore magna aliqua.
   whatWeDoDetail:
     - title: Insulation
-      image: /img/chemex.jpg
+      image: /img/glasswool.png
       description:
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua.
     - title: Healthy Homes
-      image: /img/chemex.jpg
+      image: /img/glasswool.png
       description:
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua.
@@ -52,23 +52,22 @@ whyChooseUs:
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua.
 ourProducts:
+  title: Our Products
   description: >-
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua.
-  ourProducts01:
-    description: >-
-      Natural wool insulation in blanket or batting form. Ideal for walls of new
-      buildings and ceilings in new and existing premises.
-    title: Wool products
-  ourProducts02:
-    description: >-
-      Snug Insulation is proud to introduce our high-performance range of 100%
-      polyester thermal and acoustic insulation products, designed for the
-      residential and commercial buildings.
-    title: Polyester
-  ourProducts03:
-    description: >-
-      EarthWool is rot-proof, odourless, non-hygroscopic, does not sustain
-      vermin and will not encourage the growth of fungi, mould or bacteria.
-    title: Glass Wool
+  productList:
+    - title: Wool products
+      image: /img/home/woolproduct.png
+      description: >-
+        Natural wool insulation in blanket or batting form. Ideal for walls of new
+        buildings and ceilings in new and existing premises.
+    - title: Polyester
+      image: /img/home/polyester.png
+      description: >-
+        Snug Insulation is proud to introduce our high-performance range of 100% polyester thermal and acoustic insulation products, designed for the residential and commercial buildings.
+    - title: Glass Wool
+      image: /img/home/glasswool.png
+      description: >-
+        EarthWool is rot-proof, odourless, non-hygroscopic, does not sustain vermin and will not encourage the growth of fungi, mould or bacteria.
 ---
