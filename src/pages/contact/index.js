@@ -25,7 +25,7 @@ function encode(data) {
 export default class Index extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { isValidated: false };
+    this.state = { isValidated: false, submitted: false };
   }
 
   handleChange = e => {
@@ -43,7 +43,7 @@ export default class Index extends React.Component {
         ...this.state
       })
     })
-      .then(() => navigate(form.getAttribute("action")))
+      .then(() => this.setState({ submitted: true }))
       .catch(error => alert(error));
   };
 
@@ -71,64 +71,64 @@ export default class Index extends React.Component {
             </div>
           </div>
           <div className={styles.form}>
-            <form
-              name="contact"
-              method="post"
-              action="/contact/thanks/"
-              data-netlify="true"
-              data-netlify-honeypot="bot-field"
-              onSubmit={this.handleSubmit}
-            >
-              {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
-              <input type="hidden" name="form-name" value="contact" />
-              <div hidden>
-                <label>
-                  Don’t fill this out:{" "}
-                  <input name="bot-field" onChange={this.handleChange} />
-                </label>
-              </div>
-              <div className={styles.field}>
-                <label htmlFor={"name"}>Name</label>
-                <input
-                  placeholder="Your Name"
-                  type={"text"}
-                  name={"name"}
-                  onChange={this.handleChange}
-                  id={"name"}
-                  required={true}
-                />
-              </div>
-              <div className={styles.field}>
-                <label htmlFor={"tel"}>Phone</label>
-                <input
-                  placeholder="Phone Number"
-                  type={"tel"}
-                  name={"phone"}
-                  onChange={this.handleChange}
-                  id={"phone"}
-                  required={true}
-                />
-              </div>
-              <div className={styles.field}>
-                <label htmlFor={"email"}>Email</label>
-                <input
-                  placeholder="Your Email"
-                  type={"email"}
-                  name={"email"}
-                  onChange={this.handleChange}
-                  id={"email"}
-                  required={true}
-                />
-              </div>
-              <div className={styles.field}>
-                <label htmlFor={"type"}>Type</label>
-                <select name={"type"} id={"type"}>
-                  <option value="g">General Question</option>
-                  <option value="ss">Service and Support</option>
-                  <option value="sp">Spare Parts</option>
-                  <option value="m">Marketing</option>
-                </select>
-                {/* <Dropdown
+            {!this.state.submitted ? (
+              <form
+                name="contact"
+                method="post"
+                data-netlify="true"
+                data-netlify-honeypot="bot-field"
+                onSubmit={this.handleSubmit}
+              >
+                {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
+                <input type="hidden" name="form-name" value="contact" />
+                <div hidden>
+                  <label>
+                    Don’t fill this out:{" "}
+                    <input name="bot-field" onChange={this.handleChange} />
+                  </label>
+                </div>
+                <div className={styles.field}>
+                  <label htmlFor={"name"}>Name</label>
+                  <input
+                    placeholder="Your Name"
+                    type={"text"}
+                    name={"name"}
+                    onChange={this.handleChange}
+                    id={"name"}
+                    required={true}
+                  />
+                </div>
+                <div className={styles.field}>
+                  <label htmlFor={"tel"}>Phone</label>
+                  <input
+                    placeholder="Phone Number"
+                    type={"tel"}
+                    name={"phone"}
+                    onChange={this.handleChange}
+                    id={"phone"}
+                    required={true}
+                  />
+                </div>
+                <div className={styles.field}>
+                  <label htmlFor={"email"}>Email</label>
+                  <input
+                    placeholder="Your Email"
+                    type={"email"}
+                    name={"email"}
+                    onChange={this.handleChange}
+                    id={"email"}
+                    required={true}
+                  />
+                </div>
+                <div className={styles.field}>
+                  <label htmlFor={"type"}>Type</label>
+                  <select name={"type"} id={"type"}>
+                    <option value="g">General Question</option>
+                    <option value="ss">Service and Support</option>
+                    <option value="sp">Spare Parts</option>
+                    <option value="m">Marketing</option>
+                  </select>
+                  {/* <Dropdown
                   options={options}
                   onChange={this._onSelect}
                   value={defaultOption}
@@ -137,25 +137,31 @@ export default class Index extends React.Component {
                   name={"type"}
                   id={"type"}
                 /> */}
+                </div>
+                <div className={styles.field}>
+                  <label htmlFor={"message"}>Message</label>
+                  <textarea
+                    placeholder="Your Message"
+                    rows={7}
+                    name={"message"}
+                    onChange={this.handleChange}
+                    id={"message"}
+                    required={true}
+                  />
+                </div>
+                <div className={styles.field}>
+                  <div data-netify-recaptcha="true"></div>
+                </div>
+                <div className={styles.submitButton}>
+                  <Button title="Submit" type="submit" />
+                </div>
+              </form>
+            ) : (
+              <div>
+                <h3>Thank you!</h3>
+                <p>Your enquiry has been submitted.</p>
               </div>
-              <div className={styles.field}>
-                <label htmlFor={"message"}>Message</label>
-                <textarea
-                  placeholder="Your Message"
-                  rows={7}
-                  name={"message"}
-                  onChange={this.handleChange}
-                  id={"message"}
-                  required={true}
-                />
-              </div>
-              <div className={styles.field}>
-                <div data-netify-recaptcha="true"></div>
-              </div>
-              <div className={styles.submitButton}>
-                <Button title="Submit" type="submit" />
-              </div>
-            </form>
+            )}
           </div>
         </div>
       </Layout>
