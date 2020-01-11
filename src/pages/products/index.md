@@ -1,14 +1,11 @@
 ---
 templateKey: "product-page"
 path: /products
-title: Our Coffee
-image: /img/02.png
-heading: Great coffee with a conscience
+title: Our Product
 description: >-
-  Kaldi is the ultimate spot for coffee lovers who want to learn about their
-  java’s origin and support the farmers that grew it. We take coffee production,
-  roasting and brewing seriously and we’re glad to pass that knowledge to
-  anyone.
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+  Sit amet porttitor eget dolor morbi non arcu risus quis.
 intro:
   blurbs:
     - image: /img/02.png

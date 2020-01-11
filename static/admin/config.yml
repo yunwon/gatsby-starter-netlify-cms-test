@@ -144,7 +144,7 @@ collections:
               fields:
                 [
                   { label: Title, name: title, widget: string },
-                  { label: SubTitle, name: subtitle, widget: string },
+                  { label: PhoneNo, name: phoneNo, widget: string },
                   { label: button, name: button, widget: string },
                 ],
             }
@@ -258,8 +258,6 @@ collections:
               default: "product-page",
             }
           - { label: Title, name: title, widget: string }
-          - { label: Image, name: image, widget: image }
-          - { label: Heading, name: heading, widget: string }
           - { label: Description, name: description, widget: string }
           - {
               label: Intro,
