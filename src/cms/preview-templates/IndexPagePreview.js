@@ -12,8 +12,7 @@ const IndexPagePreview = ({ entry, getAsset }) => {
         title={data.title}
         subTitle={data.subTitle}
         mainButton={data.mainButton}
-        eventTitle={data.eventTitle}
-        eventdescription={data.eventdescription}
+        events={data.events}
         whatWeDo={data.whatWeDo}
         whyChooseUs={data.whyChooseUs}
         ourProducts={data.ourProducts}
