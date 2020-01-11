@@ -31,12 +31,12 @@ whatWeDo:
     - description: >-
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua.
-      image: /home/insulation.png
+      image: /img/home/insulation.png
       title: Insulation
     - description: >-
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua.
-      image: /home/healthyHomes.png
+      image: /img/home/healthyHomes.png
       title: Healthy Homes
 whyChooseUs:
   whyChooseUs01:
@@ -74,4 +74,3 @@ ourProducts:
       title: Glass Wool
   title: Our Products
 ---
-
