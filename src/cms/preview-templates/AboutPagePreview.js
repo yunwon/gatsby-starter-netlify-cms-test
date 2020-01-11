@@ -1,19 +1,32 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { AboutPageTemplate } from '../../templates/about-page'
+import React from "react";
+import PropTypes from "prop-types";
+import { AboutPageTemplate } from "../../templates/about-page";
 
 const AboutPagePreview = ({ entry, widgetFor }) => (
   <AboutPageTemplate
-    title={entry.getIn(['data', 'title'])}
-    content={widgetFor('body')}
+    title={entry.getIn(["data", "title"])}
+    subTitle={entry.getIn(["data", "subTitle"])}
+    description={entry.getIn(["data", "description"])}
+    ourPurpose={{
+      description: entry.getIn(["data", "description"]),
+      ourPurpose01: {
+        description: entry.getIn(["data", "description"])
+      },
+      ourPurpose02: {
+        description: entry.getIn(["data", "description"])
+      },
+      ourPurpose03: {
+        description: entry.getIn(["data", "description"])
+      }
+    }}
   />
-)
+);
 
 AboutPagePreview.propTypes = {
   entry: PropTypes.shape({
-    getIn: PropTypes.func,
+    getIn: PropTypes.func
   }),
-  widgetFor: PropTypes.func,
-}
+  widgetFor: PropTypes.func
+};
 
-export default AboutPagePreview
+export default AboutPagePreview;

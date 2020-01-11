@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 import { navigate } from "gatsby-link";
 import Layout from "../../layout/Layout";
 import styles from "./index.module.scss";
@@ -157,9 +158,12 @@ export default class Index extends React.Component {
                 </div>
               </form>
             ) : (
-              <div>
+              <div className={styles.thanks}>
                 <h3>Thank you!</h3>
                 <p>Your enquiry has been submitted.</p>
+                <Link to="/">
+                  <Button title="Go to home" />
+                </Link>
               </div>
             )}
           </div>

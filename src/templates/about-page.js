@@ -2,7 +2,6 @@ import React from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Layout from "../layout/Layout";
-import Content, { HTMLContent } from "../components/Content";
 
 import styles from "./about-page.module.scss";
 import HeroSection from "../components/HeroSection/HeroSection";
@@ -17,12 +16,8 @@ export const AboutPageTemplate = ({
   title,
   subTitle,
   description,
-  ourPurpose,
-  content,
-  contentComponent
+  ourPurpose
 }) => {
-  const PageContent = contentComponent || Content;
-
   return (
     <div>
       <HeroSection title={title} subtitle={subTitle} bgImage={BgImage} />
@@ -56,17 +51,14 @@ AboutPageTemplate.propTypes = {
 };
 
 const AboutPage = ({ data }) => {
-  const { markdownRemark: post } = data;
-
+  const { frontmatter } = data.markdownRemark;
   return (
     <Layout>
       <AboutPageTemplate
-        contentComponent={HTMLContent}
-        title={post.frontmatter.title}
-        subTitle={post.frontmatter.subTitle}
-        ourPurpose={post.frontmatter.ourPurpose}
-        description={post.frontmatter.description}
-        content={post.html}
+        title={frontmatter.title}
+        subTitle={frontmatter.subTitle}
+        description={frontmatter.description}
+        ourPurpose={frontmatter.ourPurpose}
       />
     </Layout>
   );

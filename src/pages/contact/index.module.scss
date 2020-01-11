@@ -152,4 +152,24 @@
       max-width: 585px;
     }
   }
+
+  .thanks {
+    text-align: center;
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    button {
+      margin: 0 auto;
+    }
+
+    @media #{$break-md} {
+      text-align: left;
+
+      button {
+        margin: unset;
+      }
+    }
+  }
 }
