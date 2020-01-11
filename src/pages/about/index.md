@@ -10,7 +10,7 @@ description: >-
   dry and healthy places to both live & work. Our company is dedicated in
   providing reliable quality and energy efficiency products and solutions. The
   aim, to create a more environmentally sustainable building using the best of
-  new technologies.
+  new technologies.....
 ourPurpose:
   description: We are commited to looking after the earth's resources responsibly.
   ourPurpose01:
