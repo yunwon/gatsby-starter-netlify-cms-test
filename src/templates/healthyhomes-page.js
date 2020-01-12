@@ -7,7 +7,12 @@ import HeroSection from "../components/HeroSection/HeroSection";
 import BgImage from "../img/services/healthyhomes/hero.png";
 import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 
-export const HealthyHomesPageTemplate = ({ title, subTitle, standards }) => {
+export const HealthyHomesPageTemplate = ({
+  title,
+  subTitle,
+  standards,
+  keyDates
+}) => {
   return (
     <div>
       <HeroSection title={title} subtitle={subTitle} bgImage={BgImage} />
@@ -38,14 +43,27 @@ export const HealthyHomesPageTemplate = ({ title, subTitle, standards }) => {
           <p className={styles.subtitle}>{standards.extraDescription}</p>
         </div>
       </div>
+      {/* 02. key dates */}
+      <div className={styles.keyDates}>
+        <h2>{keyDates.title}</h2>
+        <div className={styles.text}>
+          {keyDates.list.map(item => (
+            <div>
+              <h5>{item.title}</h5>
+              <p>{item.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 };
 
 HealthyHomesPageTemplate.propTypes = {
-  title: PropTypes.string,
-  subTitle: PropTypes.string,
-  standards: PropTypes.object
+  data: PropTypes.object.isRequired
+  // title: PropTypes.string,
+  // subTitle: PropTypes.string,
+  // standards: PropTypes.object
 };
 
 const HealthyHomesPage = ({ data }) => {
@@ -56,6 +74,7 @@ const HealthyHomesPage = ({ data }) => {
         title={frontmatter.title}
         subTitle={frontmatter.subTitle}
         standards={frontmatter.standards}
+        keyDates={frontmatter.keyDates}
       />
     </Layout>
   );
@@ -87,6 +106,13 @@ export const HealthyHomesPageQuery = graphql`
             title
           }
           extraDescription
+        }
+        keyDates {
+          title
+          list {
+            title
+            description
+          }
         }
       }
     }

@@ -242,6 +242,24 @@ collections:
                   },
                 ],
             }
+          - {
+              label: Key Dates,
+              name: keyDates,
+              widget: object,
+              fields:
+                [
+                  {
+                    label: List,
+                    name: list,
+                    widget: list,
+                    fields:
+                      [
+                        { label: Title, name: title, widget: string },
+                        { label: Description, name: description, widget: text },
+                      ],
+                  },
+                ],
+            }
       - file: "src/pages/about/index.md"
         label: "About"
         name: "about"

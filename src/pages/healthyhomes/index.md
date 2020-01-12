@@ -19,4 +19,9 @@ standards:
       image: /img/draught.png
   extraDescription: For more information about each standard please find here -
     https://www.tenancy.govt.nz/healthy-homes/about-the-healthy-homes-standards/
+keyDates:
+  title: Key dates for landlords
+  list:
+    - title: From 1 July 2019
+      description: Landlords must include a signed statement with any new, varied or renewed tenancy agreement that they will comply, or already do comply, with the healthy homes standards.
 ---
