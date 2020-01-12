@@ -346,7 +346,6 @@ collections:
             }
           - { label: Title, name: title, widget: string }
           - { label: SubTitle, name: subTitle, widget: string, required: false }
-          - { label: Description, name: description, widget: string }
           - {
               label: ProductList,
               name: productList,

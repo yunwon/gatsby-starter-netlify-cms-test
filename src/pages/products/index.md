@@ -6,13 +6,14 @@ subTitle: >-
   sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
   Sit amet porttitor eget dolor morbi non arcu risus quis.
 productList:
-  - descriptionList:
+  - title: Natural Wool Product
+    image: /img/product-wool.jpg
+    id: wool
+    intro: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      Sit amet porttitor eget dolor morbi non arcu risus quis.
+    descriptionList:
       - title: Genuine Sheeps Wool
-        image: /img/product-wool.png
-        id: wool
-        intro: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Sit amet porttitor eget dolor morbi non arcu risus quis.
         description:
           - subDescription: >-
               Supa-Fill is genuine sheep's wool. This is unlike some other forms
@@ -124,4 +125,12 @@ productList:
               cases if EarthWool is exposed to UV radiation it may result in a
               white bleaching effect, however product performance is not
               diminished.
+      - title: Why is EarthWool softer and less itchy than traditional glasswool?
+        description:
+          - subDescription: >-
+              EarthWool® uses a combination of new technologies which make the product more comfortable to handle. Firstly, Knauf Insulation’s proprietary fiberisation process creates longer strands resulting in less ‘ends’ to reduce mechanical irritation. Secondly, Knauf Insulation’s patented ECOSE Technology results in a much softer, less ‘crunchy’ and less dusty insulation product compared to our traditional glasswool products made using formaldehyde. EarthWool is easy to cut
+      - title: How does the use of EarthWool affect the air quality in living areas?
+        description:
+          - subDescription: >-
+              With no added formaldehyde, EarthWool is suitable for use in households with allergies. Knauf has recently become the world’s first company to receive the coveted Eurofins Indoor Air Comfort Gold standard. The Gold standard certificate was awarded to Knauf Insulation’s revolutionary new EarthWool products made with ECOSE Technology.
 ---
