@@ -157,7 +157,7 @@ productList:
               ceilings and underfloors that will keep your home warm and dry in
               winter, cool in summer and energy-efficient all year round.
     id: polyester
-    image: /img/product-wool.jpg
+    image: /img/home-polyester.png
     intro: >-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Sit amet porttitor
@@ -192,7 +192,7 @@ productList:
               white bleaching effect, however product performance is not
               diminished.
     id: glassWool
-    image: /img/product-wool.jpg
+    image: /img/home-glasswool.png
     intro: >-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Sit amet porttitor
