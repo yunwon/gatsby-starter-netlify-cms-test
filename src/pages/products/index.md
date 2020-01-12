@@ -1,45 +1,43 @@
 ---
-templateKey: "product-page"
+templateKey: product-page
 title: Our Product
 subTitle: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
   sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
   Sit amet porttitor eget dolor morbi non arcu risus quis.
 productList:
-  - title: Natural Wool Product
-    image: /img/product-wool.jpg
-    id: wool
-    intro: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      Sit amet porttitor eget dolor morbi non arcu risus quis.
-    descriptionList:
+  - descriptionList:
       - title: Genuine Sheeps Wool
+        image: /img/product-wool.png
+        id: wool
+        intro: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Sit amet porttitor eget dolor morbi non arcu risus quis.
         description:
-          - subDescription:
-              Supa-Fill is genuine sheep's wool. This is unlike some other
-              forms of synthetic materials that make reference to "wool"
-              such as Rockwool etc. Supa-Filll is a renewable resource
-              produced naturally by sheep.
+          - subDescription: >-
+              Supa-Fill is genuine sheep's wool. This is unlike some other forms
+              of synthetic materials that make reference to "wool" such as
+              Rockwool etc. Supa-Filll is a renewable resource produced
+              naturally by sheep.
       - title: Batting and blanket wool fibre insulation
         description:
-          - subDescription:
+          - subDescription: >-
               Natural wool insulation in blanket or batting form. Ideal for
-              walls of new buildings and ceilings in new and existing
-              premises.
+              walls of new buildings and ceilings in new and existing premises.
       - title: Supa-Fill Machine Blown Wool Insulation
         description:
-          - subDescription:
-              Supa-Fill is a natural wool fibre lofted insulation that has
-              been treated and processed to provide a cost effective
-              efficient insulation.
+          - subDescription: >-
+              Supa-Fill is a natural wool fibre lofted insulation that has been
+              treated and processed to provide a cost effective efficient
+              insulation.
       - title: Batting and blanket wool fibre insulation
         description:
-          - subDescription:
-              Insulation material for walls and ceilings is available in
-              either wool blanket or batting form. It is available for
-              installation into the walls and ceilings of buildings.
-              Material is safe and healthy and requires no protective
-              clothing for handling or installing.
+          - subDescription: >-
+              Insulation material for walls and ceilings is available in either
+              wool blanket or batting form. It is available for installation
+              into the walls and ceilings of buildings. Material is safe and
+              healthy and requires no protective clothing for handling or
+              installing.
       - title: Benefits of Wool
         description:
           - subTitle: WOOL IS A NATURAL CHOICE
@@ -69,10 +67,26 @@ productList:
     descriptionList:
       - title: Thermally bonded with no chemical additives
         description:
-          - subDescription: Polyester insulation products are made from 100% polyester fibre, bonded using heat instead of traditional chemical binders. Polyester is naturally resistant to fire, moisture, vermin, insects, mould and bacteria, eliminating the need for any chemical additives. Our polyester insulation materials are non-toxic, non-irritating, non-allergenic and safe for anyone coming into contact with them. And that means no nasty itching and scratching and no ongoing health concerns for building occupiers.
+          - subDescription: >-
+              Polyester insulation products are made from 100% polyester fibre,
+              bonded using heat instead of traditional chemical binders.
+              Polyester is naturally resistant to fire, moisture, vermin,
+              insects, mould and bacteria, eliminating the need for any chemical
+              additives. Our polyester insulation materials are non-toxic,
+              non-irritating, non-allergenic and safe for anyone coming into
+              contact with them. And that means no nasty itching and scratching
+              and no ongoing health concerns for building occupiers.
       - title: Eco-friendly manufacture and recycling practices
         description:
-          - subDescription: Our Polyester products are committed to Quality and Environmental best practice through our ISO 9001 and ISO 14001 certified Quality and Environmental Management Systems. Our Polyester insulation products are made from only polyester fibres so they remain fully recyclable at the end of their lives. Polyester products are manufactured under our Zero Waste policy and using a low-energy production process, putting them among the most environmentally-friendly insulation solutions on the market.
+          - subDescription: >-
+              Our Polyester products are committed to Quality and Environmental
+              best practice through our ISO 9001 and ISO 14001 certified Quality
+              and Environmental Management Systems. Our Polyester insulation
+              products are made from only polyester fibres so they remain fully
+              recyclable at the end of their lives. Polyester products are
+              manufactured under our Zero Waste policy and using a low-energy
+              production process, putting them among the most
+              environmentally-friendly insulation solutions on the market.
       - title: Safe and friendly solutions for new and existing homes
         description:
           - subDescription: Whether your building, renovating or just upgrading insulation in an existing home, Snug Insualtion has the right products for the job. When it comes to your home and family it just makes sense to insulate with a trusted, safe and friendly insulation product such as our NZ made GreenStuf® - its warmth you can really feel. We’ve got a great range of thermal and acoustic solutions for walls, ceilings and underfloors that will keep your home warm and dry in winter, cool in summer and energy-efficient all year round.
@@ -85,31 +99,29 @@ productList:
     descriptionList:
       - title: What is EarthWool made of?
         description:
-          - subDescription:
-              EarthWool is made using recycled glass bottles (up to 80%
-              recycled content), sand and a revolutionary sustainable binder
-              making it the best choice for environmentally conscious
-              customers.
+          - subDescription: >-
+              EarthWool is made using recycled glass bottles (up to 80% recycled
+              content), sand and a revolutionary sustainable binder making it
+              the best choice for environmentally conscious customers.
       - title: Why is EarthWool different than other forms of insulation?
         description:
-          - subDescription:
-              Knauf Insulation’s new EarthWool products don’t look or feel
-              like any insulation you’ve ever experienced, that’s because
-              the natural brown colour represents a level of sustainability
-              and ease of handling never before achieved in New Zealand. The
-              colour and ‘super soft’ feel comes from a revolutionary
-              sustainable binder which does not contain the oil based
-              chemicals, added formaldehyde or artificial colours commonly
-              used in other insulation.
+          - subDescription: >-
+              Knauf Insulation’s new EarthWool products don’t look or feel like
+              any insulation you’ve ever experienced, that’s because the natural
+              brown colour represents a level of sustainability and ease of
+              handling never before achieved in New Zealand. The colour and
+              ‘super soft’ feel comes from a revolutionary sustainable binder
+              which does not contain the oil based chemicals, added formaldehyde
+              or artificial colours commonly used in other insulation.
       - title: Why is EarthWool brown?
         description:
-          - subDescription:
+          - subDescription: >-
               The distinctive brown colour of EarthWool® results from ECOSE®
-              Technology. This natural binding process leads to a natural
-              shade of earthy brown—free from dye or colorants. This is a
-              result of five years of intensive research and development as
-              part of our commitment to being at the forefront of
-              sustainability. In some cases if EarthWool is exposed to UV
-              radiation it may result in a white bleaching effect, however
-              product performance is not diminished.
+              Technology. This natural binding process leads to a natural shade
+              of earthy brown—free from dye or colorants. This is a result of
+              five years of intensive research and development as part of our
+              commitment to being at the forefront of sustainability. In some
+              cases if EarthWool is exposed to UV radiation it may result in a
+              white bleaching effect, however product performance is not
+              diminished.
 ---
