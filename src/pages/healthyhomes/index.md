@@ -27,6 +27,7 @@ standards:
       title: Draught stopping
   title: What the standards cover
 keyDates:
+  title: Key dates for landlords
   list:
     - description: >-
         Landlords must include a signed statement with any new, varied or
@@ -47,4 +48,3 @@ keyDates:
     - description: All rental homes must comply with the healthy homes standards.
       title: From 1 July 2024
 ---
-
