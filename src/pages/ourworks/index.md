@@ -61,6 +61,5 @@ works:
         vestibulum. Venenatis a condimentum vitae sapien pellentesque.
       image: /img/home-healthyHomes.png
       title: Ipsum suspendisse ultrices sdfasdfsa 04
-      year: '2018'
+      year: 2018
 ---
-
