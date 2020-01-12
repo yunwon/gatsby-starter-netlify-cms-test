@@ -1,9 +1,14 @@
 @import "src/stylesheets/2-abstracts/_abstracts-dir.scss";
 
+.outerContainer {
+  min-height: 100vh;
+}
 .main {
   padding-top: 60px;
+  min-height: calc(100vh - 100px);
   @media #{$break-md} {
     padding-top: 130px;
+    min-height: calc(100vh - 91px);
   }
 }
 

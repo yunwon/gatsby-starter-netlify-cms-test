@@ -17,7 +17,7 @@ works:
         dignissim suspendisse. Orci phasellus egestas tellus     rutrum. Blandit
         massa enim nec dui nunc. Ut diam quam nulla porttitor massa id neque
         aliquam vestibulum. Venenatis a condimentum vitae sapien pellentesque.
-      image: /img/02.png
+      image: /img/ourwork-01.png
       title: Ipsum suspendisse ultrices sdfasdfsa 01
       year: 2018
     - company: ABC Ltd.
@@ -31,7 +31,7 @@ works:
         dignissim suspendisse. Orci phasellus egestas tellus     rutrum. Blandit
         massa enim nec dui nunc. Ut diam quam nulla porttitor massa id neque
         aliquam vestibulum. Venenatis a condimentum vitae sapien pellentesque.
-      image: /img/02.png
+      image: /img/ourwork-01.png
       title: Ipsum suspendisse ultrices sdfasdfsa 02
       year: 2018
     - company: ABC Ltd.
@@ -45,7 +45,7 @@ works:
         dignissim suspendisse. Orci phasellus egestas tellus     rutrum. Blandit
         massa enim nec dui nunc. Ut diam quam nulla porttitor massa id neque
         aliquam vestibulum. Venenatis a condimentum vitae sapien pellentesque.
-      image: /img/02.png
+      image: /img/ourwork-01.png
       title: Ipsum suspendisse ultrices sdfasdfsa 03
       year: 2018
     - company: ABC Ltd.

@@ -23,14 +23,16 @@ export const HealthyHomesPageTemplate = ({
           <p className={styles.subtitle}>{standards.description}</p>
           <div className={styles.items}>
             {standards.icons.map(item => (
-              <div className={styles.item}>
-                <div className={styles.icon}>
-                  {console.log(item.title)}
+              <div
+              // className={styles.item}
+              >
+                <div className={styles.iconWrapper}>
                   <PreviewCompatibleImage
                     imageInfo={{
                       image: item.image,
                       alt: item.title
                     }}
+                    className={styles.icon}
                   />
                 </div>
                 <div className={styles.text}>
@@ -48,7 +50,7 @@ export const HealthyHomesPageTemplate = ({
         <h2>{keyDates.title}</h2>
         <div className={styles.text}>
           {keyDates.list.map(item => (
-            <div>
+            <div className={styles.paragraph}>
               <h5>{item.title}</h5>
               <p>{item.description}</p>
             </div>

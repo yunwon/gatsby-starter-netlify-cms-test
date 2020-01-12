@@ -14,14 +14,13 @@ export const InsulationPageTemplate = ({ title, subTitle, section }) => {
       {section.sectionDetail.map(item => (
         <div className={styles.wrapper}>
           <div className={styles.section} key={item.title}>
-            <div className={styles.image}>
-              <PreviewCompatibleImage
-                imageInfo={{
-                  image: item.image,
-                  alt: item.title
-                }}
-              />
-            </div>
+            <PreviewCompatibleImage
+              imageInfo={{
+                image: item.image,
+                alt: item.title
+              }}
+              className={styles.image}
+            />
             <div className={styles.text}>
               <h4>{item.title}</h4>
               <p>{item.description}</p>

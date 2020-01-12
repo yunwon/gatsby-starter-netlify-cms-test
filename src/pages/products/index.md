@@ -1,7 +1,7 @@
 ---
 templateKey: "product-page"
 title: Our Product
-description: >-
+subTitle: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
   sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
   Sit amet porttitor eget dolor morbi non arcu risus quis.
@@ -61,7 +61,7 @@ productList:
           - subTitle: WOOL IS ENVIRONMENTALLY FRIENDLY
             subDescription: We live in a country proud of its ecological approach towards environmental management. Wool is a natural product that emits no harmful chemicals that pollute our atmosphere, soil or water ways. Wool is safe to our environment and is a renewable resource.
   - title: Polyester
-    image: /img/product-wool.jpg
+    image: /img/product-polyester.png
     id: polyester
     intro: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -77,7 +77,7 @@ productList:
         description:
           - subDescription: Whether your building, renovating or just upgrading insulation in an existing home, Snug Insualtion has the right products for the job. When it comes to your home and family it just makes sense to insulate with a trusted, safe and friendly insulation product such as our NZ made GreenStuf® - its warmth you can really feel. We’ve got a great range of thermal and acoustic solutions for walls, ceilings and underfloors that will keep your home warm and dry in winter, cool in summer and energy-efficient all year round.
   - title: Glass Wool
-    image: /img/product-wool.jpg
+    image: /img/product-glasswool.jpg
     id: glassWool
     intro: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.

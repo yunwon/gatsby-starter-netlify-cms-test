@@ -29,6 +29,7 @@ export class ProductPageTemplate extends React.Component {
                     image: item.image,
                     alt: item.title
                   }}
+                  className={styles.cardImage}
                 />
                 <div>
                   <h5>{item.title}</h5>
@@ -43,48 +44,51 @@ export class ProductPageTemplate extends React.Component {
         </div>
         {/* 02. More Info */}
         {productList.map(product => (
-          <div className={styles.section} id={product.id}>
-            <h4>{product.title}</h4>
-            <PreviewCompatibleImage
-              imageInfo={{
-                image: product.image,
-                alt: product.title
-              }}
-            />
-            <div className={styles.description}>
-              {product.descriptionList.map(item => (
-                <Collapsible
-                  transitionTime={400}
-                  trigger={
-                    <div className="trigger">
-                      <h5>{item.title}</h5>
-                      <FaChevronDown />
-                    </div>
-                  }
-                  easing={"cubic-bezier(0.175, 0.885, 0.32, 2.275)"}
-                >
-                  {item.description.map(item => (
-                    <>
-                      {item.subTitle ? (
-                        <Collapsible
-                          transitionTime={400}
-                          trigger={
-                            <div className="trigger">
-                              <h6>{item.subTitle}</h6>
-                              <FaChevronDown />
-                            </div>
-                          }
-                          easing={"cubic-bezier(0.175, 0.885, 0.32, 2.275)"}
-                        >
+          <div className={styles.wrapper}>
+            <div className={styles.section} id={product.id}>
+              <h4>{product.title}</h4>
+              <PreviewCompatibleImage
+                imageInfo={{
+                  image: product.image,
+                  alt: product.title
+                }}
+                className={styles.image}
+              />
+              <div className={styles.description}>
+                {product.descriptionList.map(item => (
+                  <Collapsible
+                    transitionTime={400}
+                    trigger={
+                      <div className="trigger">
+                        <h5>{item.title}</h5>
+                        <FaChevronDown />
+                      </div>
+                    }
+                    easing={"cubic-bezier(0.175, 0.885, 0.32, 2.275)"}
+                  >
+                    {item.description.map(item => (
+                      <>
+                        {item.subTitle ? (
+                          <Collapsible
+                            transitionTime={400}
+                            trigger={
+                              <div className="trigger">
+                                <h6>{item.subTitle}</h6>
+                                <FaChevronDown />
+                              </div>
+                            }
+                            easing={"cubic-bezier(0.175, 0.885, 0.32, 2.275)"}
+                          >
+                            <p>{item.subDescription}</p>
+                          </Collapsible>
+                        ) : (
                           <p>{item.subDescription}</p>
-                        </Collapsible>
-                      ) : (
-                        <p>{item.subDescription}</p>
-                      )}
-                    </>
-                  ))}
-                </Collapsible>
-              ))}
+                        )}
+                      </>
+                    ))}
+                  </Collapsible>
+                ))}
+              </div>
             </div>
           </div>
         ))}
@@ -134,7 +138,7 @@ export const productPageQuery = graphql`
           title
           image {
             childImageSharp {
-              fluid {
+              fluid(maxWidth: 900) {
                 ...GatsbyImageSharpFluid
               }
             }

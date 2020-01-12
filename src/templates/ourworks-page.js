@@ -14,14 +14,14 @@ const Works = ({ data }) => (
     {data.map(workDetail => (
       <div className={styles.wrapper}>
         <div className={styles.section} key={workDetail.title}>
-          <div className={styles.image}>
-            <PreviewCompatibleImage
-              imageInfo={{
-                image: workDetail.image,
-                alt: workDetail.title
-              }}
-            />
-          </div>
+          <PreviewCompatibleImage
+            imageInfo={{
+              image: workDetail.image,
+              alt: workDetail.title
+            }}
+            className={styles.image}
+          />
+
           <div className={styles.text}>
             <h4>{workDetail.title}</h4>
             <h5>

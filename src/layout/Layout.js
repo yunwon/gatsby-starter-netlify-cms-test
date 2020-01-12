@@ -52,7 +52,7 @@ const DropdownMenu = () => {
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata();
   return (
-    <div id="outer-container">
+    <div id="outer-container" className={styles.outerContainer}>
       <Helmet>
         <html lang="en" />
         <title>{title}</title>
