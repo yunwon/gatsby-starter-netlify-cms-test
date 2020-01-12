@@ -1,12 +1,9 @@
 import React from "react";
 import { Link } from "gatsby";
-import { navigate } from "gatsby-link";
 import Layout from "../../layout/Layout";
 import styles from "./index.module.scss";
 import { Button } from "../../components/Button/Button";
 import { FaPhone } from "react-icons/fa";
-// import Dropdown from "react-dropdown";
-// import "react-dropdown/style.css";
 
 const options = [
   { value: "g", label: "General Question" },

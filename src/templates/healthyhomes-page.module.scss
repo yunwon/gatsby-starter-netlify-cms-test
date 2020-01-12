@@ -1,0 +1,68 @@
+@import "../stylesheets/2-abstracts/_abstracts-dir.scss";
+
+.standards {
+  background-color: rgba(19, 82, 144, 0.06);
+  .inner {
+    @include container-maxwidth();
+    @include articlePadding();
+    @include flex-center(column);
+    text-align: center;
+    .subtitle {
+      margin-top: 0.5rem;
+      font-size: 1rem;
+      max-width: 600px;
+      text-align: center;
+    }
+
+    .items {
+      @include flex-center(column);
+      margin-top: 1.875rem;
+      @media #{$break-md} {
+        @include flex-center(row);
+        margin-top: 2.5rem;
+      }
+
+      .item {
+        @include flex-center(row);
+        justify-content: flex-start;
+        text-align: left;
+        margin: 0 0 1.25rem 0;
+        .icon {
+          margin-bottom: 1rem;
+          width: 100%;
+          img {
+            // height: auto;
+            // width: 80px;
+          }
+          display: flex;
+          align-items: flex-end;
+          margin-right: 0.5rem;
+          @media #{$break-md} {
+            img {
+              //   height: 120px;
+              //   width: auto;
+            }
+          }
+        }
+        h5 {
+          margin: 0 0 0.5rem 0;
+        }
+        .text {
+          margin: 0 0 0 0.5rem;
+        }
+
+        @media #{$break-md} {
+          @include flex-center(column);
+          text-align: center;
+          padding: 1.25rem;
+          margin: 0 0 0 0.5rem;
+          flex: 1;
+
+          h5 {
+            margin: 1.25rem 0 0.5rem 0;
+          }
+        }
+      }
+    }
+  }
+}

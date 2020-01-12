@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Img from "gatsby-image";
 import { graphql } from "gatsby";
 import Layout from "../layout/Layout";
 import styles from "./insulation-page.module.scss";

@@ -5,7 +5,6 @@ import useSiteMetadata from "../components/SiteMetadata";
 import { withPrefix } from "gatsby";
 import "typeface-poppins";
 
-//import "../components/all.sass";
 import "../stylesheets/index.scss";
 import styles from "./Layout.module.scss";
 

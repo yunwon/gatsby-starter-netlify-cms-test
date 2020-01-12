@@ -2,25 +2,17 @@ import React from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Layout from "../layout/Layout";
-import Features from "../components/Features";
-import Testimonials from "../components/Testimonials";
-import Pricing from "../components/Pricing";
 import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 
 import styles from "./product-page.module.scss";
 import HeroSection from "../components/HeroSection/HeroSection";
 import BgImage from "../assets/product/hero.png";
-import WoolThumb from "../assets/home/woolproduct.png";
-import Wool from "../assets/product/wool.jpg";
-import Polyester from "../assets/home/polyester.png";
-import GlassWoolThumb from "../assets/home/glasswool.png";
-import GlassWool from "../assets/product/glasswool.jpg";
 import { LearnMoreButton } from "../components/LearnMoreButton/LearnMoreButton";
 
 import Collapsible from "react-collapsible";
 import { FaChevronDown } from "react-icons/fa";
 
-class ProductPageTemplate extends React.Component {
+export class ProductPageTemplate extends React.Component {
   render() {
     const { title, description, productList } = this.props;
 
@@ -32,7 +24,12 @@ class ProductPageTemplate extends React.Component {
           <div className={styles.cards}>
             {productList.map(item => (
               <div className={styles.card}>
-                <img src={item.image} alt={item.title} />
+                <PreviewCompatibleImage
+                  imageInfo={{
+                    image: item.image,
+                    alt: item.title
+                  }}
+                />
                 <div>
                   <h5>{item.title}</h5>
                   <p>{item.intro}</p>
@@ -48,7 +45,12 @@ class ProductPageTemplate extends React.Component {
         {productList.map(product => (
           <div className={styles.section} id={product.id}>
             <h4>{product.title}</h4>
-            <img src={product.image} alt={product.title} />
+            <PreviewCompatibleImage
+              imageInfo={{
+                image: product.image,
+                alt: product.title
+              }}
+            />
             <div className={styles.description}>
               {product.descriptionList.map(item => (
                 <Collapsible

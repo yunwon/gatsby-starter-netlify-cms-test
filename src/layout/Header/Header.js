@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import classNames from "classnames";
-//import { Link, NavLink } from "react-router-dom";
 import { Link } from "gatsby";
 import styles from "./Header.module.scss";
 import { slide as Menu } from "react-burger-menu";
@@ -72,7 +71,7 @@ export default class Header extends Component {
           <Menu
             right
             width={260}
-            customBurgerIcon={<img src={Burger} />}
+            customBurgerIcon={<img src={Burger} alt="open menu" />}
             pageWrapId={"page-wrap"}
             outerContainerId={"outer-container"}
           >

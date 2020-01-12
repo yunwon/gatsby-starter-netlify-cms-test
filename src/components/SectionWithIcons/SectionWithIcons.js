@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./SectionWithIcons.module.scss";
-import whyChooseUs01 from "../../assets/home/whyChooseUs01.svg";
 
 const RenderWhyChooseUs = ({ icon, title, description }) => {
   return (
