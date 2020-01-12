@@ -43,7 +43,7 @@ export const HealthyHomesPageTemplate = ({ title, subTitle, standards }) => {
 };
 
 HealthyHomesPageTemplate.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   subTitle: PropTypes.string,
   standards: PropTypes.object
 };

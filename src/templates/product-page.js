@@ -94,10 +94,11 @@ export class ProductPageTemplate extends React.Component {
 }
 
 ProductPageTemplate.propTypes = {
-  image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  title: PropTypes.string,
-  heading: PropTypes.string,
-  productList: PropTypes.array
+  data: PropTypes.object
+  // image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  // title: PropTypes.string,
+  // heading: PropTypes.string,
+  // productList: PropTypes.array
 };
 
 const ProductPage = ({ data }) => {

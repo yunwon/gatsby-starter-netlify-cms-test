@@ -186,7 +186,6 @@ IndexPage.propTypes = {
       frontmatter: PropTypes.object
     })
   })
-  //data: PropTypes.object.isRequired
 };
 
 export default IndexPage;

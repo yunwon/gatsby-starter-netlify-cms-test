@@ -42,12 +42,13 @@ export const AboutPageTemplate = ({
 };
 
 AboutPageTemplate.propTypes = {
-  title: PropTypes.string.isRequired,
-  subTitle: PropTypes.string,
-  description: PropTypes.string,
-  ourPurpose: PropTypes.object,
-  content: PropTypes.string,
-  contentComponent: PropTypes.func
+  data: PropTypes.object
+  // title: PropTypes.string.isRequired,
+  // subTitle: PropTypes.string,
+  // description: PropTypes.string,
+  // ourPurpose: PropTypes.object,
+  // content: PropTypes.string,
+  // contentComponent: PropTypes.func
 };
 
 const AboutPage = ({ data }) => {
@@ -65,7 +66,7 @@ const AboutPage = ({ data }) => {
 };
 
 AboutPage.propTypes = {
-  data: PropTypes.object.isRequired
+  data: PropTypes.object
 };
 
 export default AboutPage;
