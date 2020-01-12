@@ -248,7 +248,7 @@ collections:
                 ],
             }
       - file: "src/pages/products/index.md"
-        label: "Products Page"
+        label: "Products"
         name: "products"
         fields:
           - {
@@ -267,8 +267,8 @@ collections:
                 [
                   { label: Title, name: title, widget: string },
                   { label: Image, name: image, widget: image },
-                  { label: Id, name: id, widget: string }, 
-                  { label: Intro, name: intro, widget: text }, 
+                  { label: Id, name: id, widget: string },
+                  { label: Intro, name: intro, widget: text },
                   {
                     label: Description List,
                     name: descriptionList,

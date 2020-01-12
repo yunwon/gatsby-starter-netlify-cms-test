@@ -1,6 +1,5 @@
 ---
 templateKey: "product-page"
-path: /products
 title: Our Product
 description: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
