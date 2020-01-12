@@ -60,20 +60,20 @@
     margin-bottom: 1rem;
   }
 
-  div {
-    padding-top: 0;
-    order: 1;
+  // div {
+  //   padding-top: 0;
+  //   order: 1;
 
-    h5 {
-      margin-top: 1rem;
-      margin-bottom: 0.5rem;
-      color: $brand-main;
-    }
-    h6 {
-      margin-top: 1rem;
-      margin-bottom: 0.5rem;
-    }
-  }
+  //   h5 {
+  //     margin-top: 1rem;
+  //     margin-bottom: 0.5rem;
+  //     color: $brand-main;
+  //   }
+  //   h6 {
+  //     margin-top: 1rem;
+  //     margin-bottom: 0.5rem;
+  //   }
+  // }
 
   img {
     width: 100%;
@@ -94,11 +94,51 @@
   }
 
   .description {
-    overflow-y: scroll;
-    height: 500px;
-    padding-right: 1.5rem;
-    div {
-      margin-bottom: 2rem;
+    :global .Collapsible {
+      margin-top: 1rem;
+      border-bottom: 1px solid $border-grey;
+      &:last-child {
+        border-bottom: none;
+      }
+
+      .Collapsible__trigger {
+        cursor: pointer;
+        color: $brand-main;
+        .trigger {
+          @include flex-center-justify();
+          h5,
+          h6 {
+            color: $brand-main;
+            display: inline;
+          }
+          h6 {
+            color: $black;
+          }
+
+          svg {
+            vertical-align: middle;
+            margin-bottom: 2px;
+            margin-right: 0.5rem;
+          }
+        }
+
+        &.is-open {
+          svg {
+            transform: rotateZ(180deg);
+          }
+        }
+
+        &.is-disabled {
+          opacity: 0.5;
+          background-color: grey;
+        }
+      }
+      .Collapsible__contentOuter {
+        margin-top: 1rem;
+      }
+      .Collapsible__contentInner {
+        margin-bottom: 1rem;
+      }
     }
   }
 }

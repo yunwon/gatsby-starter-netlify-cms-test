@@ -260,21 +260,40 @@ collections:
           - { label: Title, name: title, widget: string }
           - { label: Description, name: description, widget: string }
           - {
-              label: Intro,
-              name: intro,
-              widget: object,
+              label: ProductList,
+              name: productList,
+              widget: list,
               fields:
                 [
-                  { label: Heading, name: heading, widget: string },
-                  { label: Description, name: description, widget: text },
+                  { label: Title, name: title, widget: string },
+                  { label: Image, name: image, widget: image },
+                  { label: Id, name: id, widget: string }, 
+                  { label: Intro, name: intro, widget: text }, 
                   {
-                    label: Blurbs,
-                    name: blurbs,
+                    label: Description List,
+                    name: descriptionList,
                     widget: list,
                     fields:
                       [
-                        { label: Image, name: image, widget: image },
-                        { label: Text, name: text, widget: text },
+                        { label: Title, name: title, widget: string },
+                        {
+                          label: Description,
+                          name: description,
+                          widget: list,
+                          fields:
+                            [
+                              {
+                                label: SubTitle,
+                                name: subTitle,
+                                widget: string,
+                              },
+                              {
+                                label: SubDescription,
+                                name: subDescription,
+                                widget: text,
+                              },
+                            ],
+                        },
                       ],
                   },
                 ],
