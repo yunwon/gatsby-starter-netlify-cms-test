@@ -26,7 +26,7 @@ collections:
               default: "index-page",
             }
           - { label: Title, name: title, widget: string }
-          - { label: SubTitle, name: subTitle, widget: string }
+          - { label: SubTitle, name: subTitle, widget: string, required: false }
           - { label: MainButton, name: mainButton, widget: string }
           - {
               label: Events,
@@ -41,7 +41,12 @@ collections:
                     fields:
                       [
                         { label: Title, name: title, widget: string },
-                        { label: Description, name: description, widget: text },
+                        {
+                          label: Description,
+                          name: description,
+                          widget: text,
+                          required: false,
+                        },
                       ],
                   },
                 ],
@@ -103,7 +108,12 @@ collections:
               fields:
                 [
                   { label: Title, name: title, widget: string },
-                  { label: description, name: description, widget: string },
+                  {
+                    label: description,
+                    name: description,
+                    widget: string,
+                    required: false,
+                  },
                   {
                     label: "Product List",
                     name: productList,
@@ -159,7 +169,7 @@ collections:
               default: "ourworks-page",
             }
           - { label: Title, name: title, widget: string }
-          - { label: SubTitle, name: subTitle, widget: string }
+          - { label: SubTitle, name: subTitle, widget: string, required: false }
           - {
               label: Works,
               name: works,
@@ -174,7 +184,7 @@ collections:
                       [
                         { label: Image, name: image, widget: image },
                         { label: Title, name: title, widget: string },
-                        { label: Year, name: year, widget: date, format: 'YY'},
+                        { label: Year, name: year, widget: date, format: "YY" },
                         { label: Company, name: company, widget: string },
                         { label: Description, name: description, widget: text },
                       ],
@@ -192,7 +202,7 @@ collections:
               default: "insulation-page",
             }
           - { label: Title, name: title, widget: string }
-          - { label: SubTitle, name: subTitle, widget: string }
+          - { label: SubTitle, name: subTitle, widget: string, required: false }
           - {
               label: Section,
               name: section,
@@ -215,7 +225,7 @@ collections:
               default: "healthyhomes-page",
             }
           - { label: Title, name: title, widget: string }
-          - { label: SubTitle, name: subTitle, widget: string }
+          - { label: SubTitle, name: subTitle, widget: string, required: false }
           - {
               label: Standards,
               name: standards,
@@ -223,7 +233,12 @@ collections:
               fields:
                 [
                   { label: Title, name: title, widget: string },
-                  { label: Description, name: description, widget: text },
+                  {
+                    label: Description,
+                    name: description,
+                    widget: text,
+                    required: false,
+                  },
                   {
                     label: Icons,
                     name: icons,
@@ -231,8 +246,18 @@ collections:
                     fields:
                       [
                         { label: Image, name: image, widget: image },
-                        { label: Title, name: title, widget: string },
-                        { label: Description, name: description, widget: text },
+                        {
+                          label: Title,
+                          name: title,
+                          widget: string,
+                          required: false,
+                        },
+                        {
+                          label: Description,
+                          name: description,
+                          widget: text,
+                          required: false,
+                        },
                       ],
                   },
                   {
@@ -271,7 +296,7 @@ collections:
               default: "about-page",
             }
           - { label: Title, name: title, widget: string }
-          - { label: PhoneNo, name: phoneNo, widget: string }
+          - { label: SubTitle, name: subTitle, widget: string, required: false }
           - { label: Description, name: description, widget: text }
           - {
               label: Our Purpose,
@@ -279,7 +304,12 @@ collections:
               widget: object,
               fields:
                 [
-                  { label: description, name: description, widget: string },
+                  {
+                    label: description,
+                    name: description,
+                    widget: string,
+                    required: false,
+                  },
                   {
                     label: Our Purpose 01,
                     name: ourPurpose01,
@@ -314,6 +344,7 @@ collections:
               default: "product-page",
             }
           - { label: Title, name: title, widget: string }
+          - { label: SubTitle, name: subTitle, widget: string, required: false }
           - { label: Description, name: description, widget: string }
           - {
               label: ProductList,
@@ -342,6 +373,7 @@ collections:
                                 label: SubTitle,
                                 name: subTitle,
                                 widget: string,
+                                required: false,
                               },
                               {
                                 label: SubDescription,

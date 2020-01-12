@@ -14,11 +14,11 @@ import { FaChevronDown } from "react-icons/fa";
 
 export class ProductPageTemplate extends React.Component {
   render() {
-    const { title, description, productList } = this.props;
+    const { title, subTitle, productList } = this.props;
 
     return (
       <div>
-        <HeroSection title={title} subtitle={description} bgImage={BgImage} />
+        <HeroSection title={title} subtitle={subTitle} bgImage={BgImage} />
         {/* 01. Overview */}
         <div className={styles.overview}>
           <div className={styles.cards}>
@@ -94,11 +94,10 @@ export class ProductPageTemplate extends React.Component {
 }
 
 ProductPageTemplate.propTypes = {
-  data: PropTypes.object
-  // image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  // title: PropTypes.string,
-  // heading: PropTypes.string,
-  // productList: PropTypes.array
+  image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  title: PropTypes.string,
+  heading: PropTypes.string,
+  productList: PropTypes.array
 };
 
 const ProductPage = ({ data }) => {
@@ -107,8 +106,8 @@ const ProductPage = ({ data }) => {
   return (
     <Layout>
       <ProductPageTemplate
-        image={frontmatter.image}
         title={frontmatter.title}
+        subTitle={frontmatter.subTitle}
         productList={frontmatter.productList}
       />
     </Layout>
@@ -130,7 +129,7 @@ export const productPageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "product-page" } }) {
       frontmatter {
         title
-        description
+        subTitle
         productList {
           title
           image {

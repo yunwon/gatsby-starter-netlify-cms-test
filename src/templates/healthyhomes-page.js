@@ -60,10 +60,10 @@ export const HealthyHomesPageTemplate = ({
 };
 
 HealthyHomesPageTemplate.propTypes = {
-  data: PropTypes.object.isRequired
-  // title: PropTypes.string,
-  // subTitle: PropTypes.string,
-  // standards: PropTypes.object
+  title: PropTypes.string,
+  subTitle: PropTypes.string,
+  standards: PropTypes.object,
+  keyDates: PropTypes.object
 };
 
 const HealthyHomesPage = ({ data }) => {

@@ -7,34 +7,28 @@ import HeroSection from "../components/HeroSection/HeroSection";
 import BgImage from "../assets/services/insulation/hero.png";
 import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 
-const Section = ({ data }) => (
-  <div>
-    {data.map(sectionDetail => (
-      <div className={styles.wrapper}>
-        <div className={styles.section} key={sectionDetail.title}>
-          <div className={styles.image}>
-            <PreviewCompatibleImage
-              imageInfo={{
-                image: sectionDetail.image,
-                alt: sectionDetail.title
-              }}
-            />
-          </div>
-          <div className={styles.text}>
-            <h4>{sectionDetail.title}</h4>
-            <p>{sectionDetail.description}</p>
-          </div>
-        </div>
-      </div>
-    ))}
-  </div>
-);
-
 export const InsulationPageTemplate = ({ title, subTitle, section }) => {
   return (
     <div>
       <HeroSection title={title} subtitle={subTitle} bgImage={BgImage} />
-      <Section data={section.sectionDetail} />
+      {section.sectionDetail.map(item => (
+        <div className={styles.wrapper}>
+          <div className={styles.section} key={item.title}>
+            <div className={styles.image}>
+              <PreviewCompatibleImage
+                imageInfo={{
+                  image: item.image,
+                  alt: item.title
+                }}
+              />
+            </div>
+            <div className={styles.text}>
+              <h4>{item.title}</h4>
+              <p>{item.description}</p>
+            </div>
+          </div>
+        </div>
+      ))}
     </div>
   );
 };
