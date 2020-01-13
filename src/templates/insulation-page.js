@@ -35,9 +35,7 @@ export const InsulationPageTemplate = ({ title, subTitle, section }) => {
 InsulationPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   subTitle: PropTypes.string,
-  section: PropTypes.shape({
-    sectionDetail: PropTypes.array
-  })
+  section: PropTypes.object
 };
 
 const InsulationPage = ({ data }) => {
