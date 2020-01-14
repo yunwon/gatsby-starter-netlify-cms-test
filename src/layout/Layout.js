@@ -64,6 +64,11 @@ const TemplateWrapper = ({ children }) => {
           href={`${withPrefix("/")}img/apple-touch-icon.png`}
         />
         <link
+          rel="android-chrome-192x192"
+          sizes="192x192"
+          href={`${withPrefix("/")}img/android-chrome-192x192.png`}
+        />
+        <link
           rel="icon"
           type="image/png"
           href={`${withPrefix("/")}img/favicon-32x32.png`}
