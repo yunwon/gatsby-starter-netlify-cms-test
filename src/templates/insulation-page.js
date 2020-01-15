@@ -7,27 +7,33 @@ import HeroSection from "../components/HeroSection/HeroSection";
 import BgImage from "../assets/services/insulation/hero.png";
 import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 
+const Section = ({ data }) => (
+  <div>
+    {data.map(item => (
+      <div className={styles.wrapper}>
+        <div className={styles.section} key={item.title}>
+          <PreviewCompatibleImage
+            imageInfo={{
+              image: item.image,
+              alt: item.title
+            }}
+            className={styles.image}
+          />
+          <div className={styles.text}>
+            <h4>{item.title}</h4>
+            <p>{item.description}</p>
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+);
+
 export const InsulationPageTemplate = ({ title, subTitle, section }) => {
   return (
     <div>
       <HeroSection title={title} subtitle={subTitle} bgImage={BgImage} />
-      {section.sectionDetail.map(item => (
-        <div className={styles.wrapper}>
-          <div className={styles.section} key={item.title}>
-            <PreviewCompatibleImage
-              imageInfo={{
-                image: item.image,
-                alt: item.title
-              }}
-              className={styles.image}
-            />
-            <div className={styles.text}>
-              <h4>{item.title}</h4>
-              <p>{item.description}</p>
-            </div>
-          </div>
-        </div>
-      ))}
+      <Section data={section.sectionDetail} />
     </div>
   );
 };
@@ -35,7 +41,9 @@ export const InsulationPageTemplate = ({ title, subTitle, section }) => {
 InsulationPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   subTitle: PropTypes.string,
-  section: PropTypes.object
+  section: PropTypes.shape({
+    sectionDetail: PropTypes.array
+  })
 };
 
 const InsulationPage = ({ data }) => {
