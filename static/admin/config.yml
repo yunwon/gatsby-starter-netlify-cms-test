@@ -10,7 +10,7 @@ backend:
 
 media_folder: static/img
 public_folder: /img
-        
+
 collections:
   - name: "pages"
     identifier_field: name
@@ -335,7 +335,6 @@ collections:
                   },
                 ],
             }
-          }
       - file: "src/pages/ourworks/index-cn.md"
         label: "Our Works in Chinese"
         name: "ourworks-cn"
@@ -346,7 +345,7 @@ collections:
               widget: "hidden",
               default: "ourworks-page-cn",
             }
-                    - { label: Title, name: title, widget: string }
+          - { label: Title, name: title, widget: string }
           - { label: SubTitle, name: subTitle, widget: string, required: false }
           - {
               label: Works,
@@ -369,7 +368,6 @@ collections:
                   },
                 ],
             }
-          }
       - file: "src/pages/insulation/index.md"
         label: "Insulation"
         name: "insulation"
@@ -660,4 +658,3 @@ collections:
                   },
                 ],
             }
-

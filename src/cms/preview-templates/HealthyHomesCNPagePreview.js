@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import HealthyHomesPageTemplate from "../../templates/healthyhomes-page";
 
-const HealthyHomesPagePreview = ({ entry, widgetFor }) => {
+const HealthyHomesCNPagePreview = ({ entry, widgetFor }) => {
   const data = entry.getIn(["data"]).toJS();
 
   if (data) {
@@ -19,11 +19,11 @@ const HealthyHomesPagePreview = ({ entry, widgetFor }) => {
   }
 };
 
-HealthyHomesPagePreview.propTypes = {
+HealthyHomesCNPagePreview.propTypes = {
   entry: PropTypes.shape({
     getIn: PropTypes.func
   }),
   widgetFor: PropTypes.func
 };
 
-export default HealthyHomesPagePreview;
+export default HealthyHomesCNPagePreview;

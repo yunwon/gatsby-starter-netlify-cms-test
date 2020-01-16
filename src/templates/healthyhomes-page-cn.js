@@ -4,7 +4,7 @@ import { graphql } from "gatsby";
 import Layout from "../layout/Layout";
 import HealthyHomesPageTemplate from "./components/Services/healthyhomes";
 
-const HealthyHomesPage = ({ data }) => {
+const HealthyHomesCNPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
   return (
     <Layout>
@@ -18,15 +18,17 @@ const HealthyHomesPage = ({ data }) => {
   );
 };
 
-HealthyHomesPage.propTypes = {
+HealthyHomesCNPage.propTypes = {
   data: PropTypes.object
 };
 
-export default HealthyHomesPage;
+export default HealthyHomesCNPage;
 
-export const HealthyHomesPageQuery = graphql`
-  query HealthyHomesPageTemplate {
-    markdownRemark(frontmatter: { templateKey: { eq: "healthyhomes-page" } }) {
+export const HealthyHomesCNPageQuery = graphql`
+  query HealthyHomesCNPageTemplate {
+    markdownRemark(
+      frontmatter: { templateKey: { eq: "healthyhomes-page-cn" } }
+    ) {
       frontmatter {
         title
         subTitle

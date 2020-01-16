@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styles from "./ourworks-page.module.scss";
-import HeroSection from "../../../../components/HeroSection/HeroSection";
-import BgImage from "../../../../assets/services/insulation/hero.png";
-import PreviewCompatibleImage from "../../../../components/PreviewCompatibleImage";
+import HeroSection from "../../../components/HeroSection/HeroSection";
+import BgImage from "../../../assets/services/insulation/hero.png";
+import PreviewCompatibleImage from "../../../components/PreviewCompatibleImage";
 
 const Works = ({ data }) => (
   <div>

@@ -1,4 +1,4 @@
-@import "src/stylesheets/2-abstracts/_abstracts-dir.scss";
+@import "../../../stylesheets/2-abstracts/_abstracts-dir.scss";
 
 .wrapper {
   &:nth-child(even) {
@@ -28,6 +28,16 @@
     h4 {
       margin-top: 1rem;
       margin-bottom: 0.5rem;
+    }
+
+    h5 {
+      margin-bottom: 0.5rem;
+      color: $brand-main;
+
+      span {
+        color: $grey;
+        margin-right: 0.5rem;
+      }
     }
   }
 

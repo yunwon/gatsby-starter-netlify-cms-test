@@ -2,36 +2,35 @@ import React from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import LayoutCN from "../layout/LayoutCN";
-import OurWorksPageTemplate from "./components/Services/OurWorks.js";
+import InsulationPageTemplate from "./components/Services/Insulation.js";
 
-const OurWorksCNPage = ({ data }) => {
+const InsulationCNPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
-
   return (
     <LayoutCN>
-      <OurWorksPageTemplate
+      <InsulationPageTemplate
         title={frontmatter.title}
         subTitle={frontmatter.subTitle}
-        works={frontmatter.works}
+        section={frontmatter.section}
       />
     </LayoutCN>
   );
 };
 
-OurWorksCNPage.propTypes = {
+InsulationCNPage.propTypes = {
   data: PropTypes.object.isRequired
 };
 
-export default OurWorksCNPage;
+export default InsulationCNPage;
 
-export const ourWorksCNPageQuery = graphql`
-  query OurWorksCNPageTemplate {
-    markdownRemark(frontmatter: { templateKey: { eq: "ourworks-page-cn" } }) {
+export const InsulationCNPageQuery = graphql`
+  query InsulationCNPageTemplate {
+    markdownRemark(frontmatter: { templateKey: { eq: "insulation-page-cn" } }) {
       frontmatter {
         title
         subTitle
-        works {
-          workDetail {
+        section {
+          sectionDetail {
             image {
               childImageSharp {
                 fluid(maxWidth: 1000, quality: 100) {
@@ -40,8 +39,6 @@ export const ourWorksCNPageQuery = graphql`
               }
             }
             title
-            year
-            company
             description
           }
         }
