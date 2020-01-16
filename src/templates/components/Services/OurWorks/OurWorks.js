@@ -32,7 +32,7 @@ const Works = ({ data }) => (
   </div>
 );
 
-export const OurWorksPageTemplate = ({ title, subTitle, works }) => {
+const OurWorksPageTemplate = ({ title, subTitle, works }) => {
   return (
     <div>
       <HeroSection title={title} subtitle={subTitle} bgImage={BgImage} />
@@ -48,3 +48,5 @@ OurWorksPageTemplate.propTypes = {
     workDetail: PropTypes.array
   })
 };
+
+export default OurWorksPageTemplate;

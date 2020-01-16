@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { IndexPageTemplate } from "../../templates/components/Index/Index.js";
+import IndexPageTemplate from "../../templates/components/Index/Index.js";
 
 const IndexPagePreview = ({ entry, getAsset }) => {
   const data = entry.getIn(["data"]).toJS();

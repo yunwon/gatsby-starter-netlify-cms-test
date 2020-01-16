@@ -8,7 +8,7 @@ import ProductPagePreview from "./preview-templates/ProductPagePreview";
 import IndexPagePreview from "./preview-templates/IndexPagePreview";
 import IndexCNPagePreview from "./preview-templates/IndexCNPagePreview";
 import OurWorksPagePreview from "./preview-templates/OurWorksPagePreview";
-import OurWorksCNPagePreview from "./preview-templates/OurWorksPageCNPreview";
+import OurWorksCNPagePreview from "./preview-templates/OurWorksCNPagePreview";
 import InsulationPagePreview from "./preview-templates/InsulationPagePreview";
 import HealthyHomesPagePreview from "./preview-templates/HealthyHomesPagePreview";
 

@@ -13,7 +13,7 @@ import Quote from "../../../assets/home/quote.svg";
 
 import PreviewCompatibleImage from "../../../components/PreviewCompatibleImage";
 
-export const IndexPageTemplate = ({
+const IndexPageTemplate = ({
   title,
   subTitle,
   mainButton,
