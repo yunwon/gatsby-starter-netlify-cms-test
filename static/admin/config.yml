@@ -12,7 +12,8 @@ media_folder: static/img
 public_folder: /img
 
 parameters:
-    ourworks: &ourworks - { label: Title, name: title, widget: string }
+    ourworks: &ourworks {
+          - { label: Title, name: title, widget: string }
           - { label: SubTitle, name: subTitle, widget: string, required: false }
           - {
               label: Works,
@@ -35,7 +36,8 @@ parameters:
                   },
                 ],
             }
-
+          }
+        
 collections:
   - name: "pages"
     identifier_field: name
