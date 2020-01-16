@@ -40,9 +40,9 @@ const DropdownMenu = () => {
           onClose={handleClose}
           className="dropdownMenu"
         >
-          <Link to="/ourworks">Our Works</Link>
-          <Link to="/insulation">Insulation</Link>
-          <Link to="/healthyhomes">Healthy Homes</Link>
+          <Link to="/ourworks/index-cn">Our Works</Link>
+          <Link to="/insulation/index-cn">Insulation</Link>
+          <Link to="/healthyhomes/index-cn">Healthy Homes</Link>
         </div>
       )}
     </div>
@@ -120,8 +120,8 @@ const TemplateWrapper = ({ children }) => {
         // }
         menu={
           <>
-            <Link exact to="/">
-              Home
+            <Link exact to="/index-cn">
+              還不賴
             </Link>
             <DropdownMenu />
             <Link to="/products">Product</Link>
@@ -130,7 +130,7 @@ const TemplateWrapper = ({ children }) => {
             <Link to="/contact">Contact Us</Link>
           </>
         }
-        linkToHome="/"
+        linkToHome="/index-cn"
       />
       <div id="page-wrap" className={styles.main}>
         {children}

@@ -1,13 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { IndexCNPageTemplate } from "../../templates/index-page-cn";
+import { IndexPageTemplate } from "../../templates/components/Index/Index.js";
 
 const IndexCNPagePreview = ({ entry, getAsset }) => {
   const data = entry.getIn(["data"]).toJS();
 
   if (data) {
     return (
-      <IndexCNPageTemplate
+      <IndexPageTemplate
         image={data.image}
         title={data.title}
         subTitle={data.subTitle}

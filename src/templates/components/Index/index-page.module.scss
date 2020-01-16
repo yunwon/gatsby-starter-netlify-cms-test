@@ -1,0 +1,361 @@
+@import "../../../stylesheets/2-abstracts/_abstracts-dir.scss";
+
+//components
+
+.cards {
+  display: grid;
+
+  .card {
+    margin-bottom: 1.875rem;
+    flex: 1;
+
+    @media #{$break-md} {
+      margin-bottom: 0;
+      margin-right: 0.7rem;
+    }
+
+    &:last-child {
+      margin: 0;
+    }
+
+    .image {
+      width: 100%;
+      margin-bottom: 1rem;
+
+      @media #{$break-md} {
+        border-radius: 4px;
+      }
+    }
+
+    div {
+      padding: 0 1rem;
+
+      h5 {
+        margin-bottom: 6px;
+      }
+
+      button {
+        margin-top: 1rem;
+      }
+
+      @media #{$break-md} {
+        padding: 0;
+      }
+    }
+  }
+
+  @media #{$break-md} {
+    display: flex;
+    margin-left: 1.25rem;
+  }
+}
+
+// 01. hero
+.hero {
+  @media #{$break-md} {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .container {
+    padding: 1.875rem 1rem;
+
+    @media #{$break-md} {
+      margin: 0 0 0 auto;
+      padding: 4.375rem 0;
+      width: 50%;
+      max-width: 480px;
+    }
+
+    @media #{$break-lg} {
+      max-width: 585px;
+    }
+
+    .text {
+      @media #{$break-md} {
+        padding-left: 2rem;
+      }
+
+      @media #{$break-lg} {
+        padding-left: 0;
+      }
+
+      .title {
+        span {
+          color: $brand-main;
+        }
+      }
+
+      .subtitle {
+        font-size: 1rem;
+        margin-top: 0.5rem;
+      }
+
+      button {
+        margin-top: 2rem;
+      }
+    }
+  }
+
+  .heroImage {
+    background: no-repeat center center linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)),
+      url("../../../assets/home/hero.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 270px;
+
+    @media #{$break-md} {
+      background: no-repeat center center linear-gradient(to left,
+          rgba(255, 255, 255, 0),
+          rgba(255, 255, 255, 1)),
+        url("../../../assets/home/hero.png");
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      width: 50%;
+      min-height: 60vh;
+    }
+  }
+}
+
+// 02. event
+
+.event {
+  background: rgba(19, 82, 144, 0.16);
+
+  @include articlePadding();
+
+  .eventInner {
+    @include container-maxwidth();
+    @include flex-center();
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 1rem;
+
+    p {
+      max-width: 800px;
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+// 03. whatWeDo
+
+.whatWeDo {
+  @include container-maxwidth();
+  @include articlePadding($hasMobileImage: true);
+  @include flex-center();
+  flex-direction: column;
+
+  @media #{$break-md} {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .title {
+    text-align: center;
+    margin-bottom: 1.25rem;
+    padding: 0 1rem;
+
+    @media #{$break-md} {
+      text-align: left;
+      margin-bottom: 0;
+      padding: 0;
+    }
+  }
+}
+
+// 04. Why Choose Us
+
+.whyChooseUs {
+  background-color: rgba(19, 82, 144, 0.06);
+
+  .inner {
+    @include container-maxwidth();
+    @include articlePadding();
+    text-align: center;
+
+    .items {
+      @include flex-center(column);
+      margin-top: 1.875rem;
+
+      @media #{$break-md} {
+        @include flex-center(row);
+        margin-top: 2.5rem;
+      }
+
+      .item {
+        @include flex-center(row);
+        text-align: left;
+        margin: 0 0 1.25rem 0;
+
+        h5 {
+          margin: 0 0 0.5rem 0;
+        }
+
+        .text {
+          margin: 0 0 0 0.5rem;
+        }
+
+        @media #{$break-md} {
+          @include flex-center(column);
+          text-align: center;
+          padding: 1.25rem;
+          margin: 0 0 0 0.5rem;
+
+          h5 {
+            margin: 1.25rem 0 0.5rem 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+// 04. Our Products
+
+.ourProducts {
+  @include container-maxwidth();
+  @include articlePadding($hasMobileImage: true);
+  @include flex-center(column);
+
+  @media #{$break-md} {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .title {
+    text-align: center;
+    margin-bottom: 1.25rem;
+    padding: 0 1rem;
+    @include flex-center(column);
+
+    button {
+      margin-top: 1.25rem;
+    }
+
+    @media #{$break-md} {
+      align-items: flex-start;
+      text-align: left;
+      margin: 0 2rem 0 0;
+      padding: 0;
+    }
+  }
+}
+
+// 05. Testimonials
+
+.testimonials_container {
+  @include flex-center(column);
+  @include articlePadding();
+  background-color: rgba(19, 82, 144, 0.16);
+
+  .title {
+    text-align: center;
+    margin: 1.25rem 0;
+  }
+}
+
+.testimonials {
+  @include container-maxwidth();
+  @include flex-center(column);
+  text-align: center;
+
+  @media #{$break-md} {}
+
+  .text {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .profile {
+    margin: 1.25rem 0;
+    font-size: 1rem;
+
+    .company {
+      color: $brand-main;
+      font-weight: bold;
+    }
+  }
+}
+
+// 06. Contact Us
+.contactUs {
+  @media #{$break-md} {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .container {
+    padding: 1.875rem 1rem;
+
+    @media #{$break-md} {
+      margin: 0 auto 0 0;
+      padding: 4.375rem 0;
+      width: 50%;
+      max-width: 585px;
+    }
+
+    .text {
+      padding-right: 1rem;
+      text-align: center;
+
+      @media #{$break-md} {
+        text-align: right;
+      }
+
+      p {
+        font-size: 1.5rem;
+        margin-top: 0.5rem;
+
+        a {
+          color: $brand-main;
+        }
+      }
+
+      .button {
+        background: $brand-main;
+        border-radius: 4px;
+        padding: 10px 16px;
+        font-size: 18px;
+        color: white !important;
+        border: none;
+        margin-top: 2rem;
+
+        &:hover {
+          background: $brand-accent;
+          color: white !important;
+        }
+      }
+    }
+  }
+
+  .contactImage {
+    background: no-repeat center center linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)),
+      url("../../../assets/home/contact.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 270px;
+
+    @media #{$break-md} {
+      order: -1;
+      background: no-repeat center center linear-gradient(to right,
+          rgba(255, 255, 255, 0),
+          rgba(255, 255, 255, 1)),
+        url("../../../assets/home/contact.png");
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      width: 50%;
+    }
+  }
+}
