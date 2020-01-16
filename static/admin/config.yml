@@ -12,10 +12,9 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: "english_pages"
+  - name: "pages"
     identifier_field: name
-    label: "English Pages"
-    filter: { field: "language", value: "en" }
+    label: "Pages"
     files:
       - file: "src/pages/index.md"
         label: "Home"
@@ -388,11 +387,6 @@ collections:
                   },
                 ],
             }
-  - name: "chinese_pages"
-    identifier_field: name
-    label: "Chinese Pages"
-    filter: { field: "language", value: "cn" }
-    files:
       - file: "src/pages/index-cn.md"
         label: "Home in Chinese"
         name: "index-cn"
