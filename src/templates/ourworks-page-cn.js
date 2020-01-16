@@ -36,7 +36,7 @@ const Works = ({ data }) => (
   </div>
 );
 
-export const OurWorksPageTemplate = ({ title, subTitle, works }) => {
+export const OurWorksCNPageTemplate = ({ title, subTitle, works }) => {
   return (
     <div>
       <HeroSection title={title} subtitle={subTitle} bgImage={BgImage} />
@@ -45,7 +45,7 @@ export const OurWorksPageTemplate = ({ title, subTitle, works }) => {
   );
 };
 
-OurWorksPageTemplate.propTypes = {
+OurWorksCNPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   subTitle: PropTypes.string,
   works: PropTypes.shape({
@@ -53,12 +53,12 @@ OurWorksPageTemplate.propTypes = {
   })
 };
 
-const OurWorksPage = ({ data }) => {
+const OurWorksCNPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
 
   return (
     <Layout>
-      <OurWorksPageTemplate
+      <OurWorksCNPageTemplate
         title={frontmatter.title}
         subTitle={frontmatter.subTitle}
         works={frontmatter.works}
@@ -67,15 +67,15 @@ const OurWorksPage = ({ data }) => {
   );
 };
 
-OurWorksPage.propTypes = {
+OurWorksCNPage.propTypes = {
   data: PropTypes.object.isRequired
 };
 
-export default OurWorksPage;
+export default OurWorksCNPage;
 
-export const ourWorksPageQuery = graphql`
-  query OurWorksPageTemplate {
-    markdownRemark(frontmatter: { templateKey: { eq: "ourworks-page" } }) {
+export const ourWorksCNPageQuery = graphql`
+  query OurWorksCNPageTemplate {
+    markdownRemark(frontmatter: { templateKey: { eq: "ourworks-page-cn" } }) {
       frontmatter {
         title
         subTitle

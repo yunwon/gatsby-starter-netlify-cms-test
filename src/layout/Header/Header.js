@@ -37,7 +37,7 @@ export default class Header extends Component {
       <div className={styles.nav}>
         <div className={styles.secondaryNav}>
           <span className={styles.languages}>
-            <Link to="/">English</Link> | <Link to="/cn">Chinese</Link>
+            <Link to="/">English</Link> | <Link to="/index-cn">Chinese</Link>
           </span>
           <div className={styles.buttons}>
             <div className={styles.loginButton}>

@@ -3,11 +3,6 @@ const path = require("path");
 const { createFilePath } = require("gatsby-source-filesystem");
 const { fmImagesToRelative } = require("gatsby-remark-relative-images");
 
-// import _ from "lodash";
-// import path from "path";
-// import { createFilePath } from "gatsby-source-filesystem";
-// import { fmImagesToRelative } from "gatsby-remark-relative-images";
-
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions;
 
