@@ -392,7 +392,7 @@ collections:
     filter: { field: "language", value: "cn" }
     files:
       - file: "src/pages/index-cn.md"
-        label: "Home"
+        label: "Home in Chinese"
         name: "index"
         fields:
           - {
@@ -535,7 +535,7 @@ collections:
                 ],
             }
       - file: "src/pages/ourworks/index-cn.md"
-        label: "Our Works"
+        label: "Our Works in Chinese"
         name: "ourworks"
         fields:
           - {
@@ -568,7 +568,7 @@ collections:
                 ],
             }
       - file: "src/pages/insulation/index-cn.md"
-        label: "Insulation"
+        label: "Insulation in Chinese"
         name: "insulation"
         fields:
           - {
@@ -591,7 +591,7 @@ collections:
                 ],
             }
       - file: "src/pages/healthyhomes/index-cn.md"
-        label: "Healthy Homes"
+        label: "Healthy Homes in Chinese"
         name: "healthyhomes"
         fields:
           - {
