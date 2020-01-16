@@ -13,6 +13,7 @@ public_folder: /img
 
 collections:
   - name: "english_pages"
+    identifier_field: name
     label: "English Pages"
     filter: { field: "language", value: "en" }
     files:
@@ -388,6 +389,7 @@ collections:
                 ],
             }
   - name: "chinese_pages"
+    identifier_field: name
     label: "Chinese Pages"
     filter: { field: "language", value: "cn" }
     files:
