@@ -1,32 +1,32 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
-import Layout from "../layout/Layout";
+import LayoutCN from "../layout/LayoutCN";
 import AboutPageTemplate from "./components/About/About";
 
-const AboutPage = ({ data }) => {
+const AboutCNPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
   return (
-    <Layout>
+    <LayoutCN>
       <AboutPageTemplate
         title={frontmatter.title}
         subTitle={frontmatter.subTitle}
         description={frontmatter.description}
         ourPurpose={frontmatter.ourPurpose}
       />
-    </Layout>
+    </LayoutCN>
   );
 };
 
-AboutPage.propTypes = {
+AboutCNPage.propTypes = {
   data: PropTypes.object
 };
 
-export default AboutPage;
+export default AboutCNPage;
 
-export const aboutPageQuery = graphql`
-  query AboutPageTemplate {
-    markdownRemark(frontmatter: { templateKey: { eq: "about-page" } }) {
+export const aboutCNPageQuery = graphql`
+  query AboutCNPageTemplate {
+    markdownRemark(frontmatter: { templateKey: { eq: "about-page-cn" } }) {
       frontmatter {
         title
         subTitle

@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import AboutPageTemplate from "../../templates/components/About/About";
 
-const AboutPagePreview = ({ entry, widgetFor }) => (
+const AboutCNPagePreview = ({ entry, widgetFor }) => (
   <AboutPageTemplate
     title={entry.getIn(["data", "title"])}
     subTitle={entry.getIn(["data", "subTitle"])}
@@ -22,11 +22,11 @@ const AboutPagePreview = ({ entry, widgetFor }) => (
   />
 );
 
-AboutPagePreview.propTypes = {
+AboutCNPagePreview.propTypes = {
   entry: PropTypes.shape({
     getIn: PropTypes.func
   }),
   widgetFor: PropTypes.func
 };
 
-export default AboutPagePreview;
+export default AboutCNPagePreview;

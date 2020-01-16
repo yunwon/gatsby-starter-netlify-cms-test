@@ -1,20 +1,20 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
-import Layout from "../layout/Layout";
+import LayoutCN from "../layout/LayoutCN";
 import HealthyHomesPageTemplate from "./components/Services/healthyhomes";
 
 const HealthyHomesCNPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
   return (
-    <Layout>
+    <LayoutCN>
       <HealthyHomesPageTemplate
         title={frontmatter.title}
         subTitle={frontmatter.subTitle}
         standards={frontmatter.standards}
         keyDates={frontmatter.keyDates}
       />
-    </Layout>
+    </LayoutCN>
   );
 };
 

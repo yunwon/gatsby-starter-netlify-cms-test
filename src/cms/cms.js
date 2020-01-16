@@ -3,8 +3,9 @@ import uploadcare from "netlify-cms-media-library-uploadcare";
 import cloudinary from "netlify-cms-media-library-cloudinary";
 
 import AboutPagePreview from "./preview-templates/AboutPagePreview";
-import BlogPostPreview from "./preview-templates/BlogPostPreview";
+import AboutCNPagePreview from "./preview-templates/AboutCNPagePreview";
 import ProductPagePreview from "./preview-templates/ProductPagePreview";
+import ProductCNPagePreview from "./preview-templates/ProductCNPagePreview";
 import IndexPagePreview from "./preview-templates/IndexPagePreview";
 import IndexCNPagePreview from "./preview-templates/IndexCNPagePreview";
 import OurWorksPagePreview from "./preview-templates/OurWorksPagePreview";
@@ -26,5 +27,6 @@ CMS.registerPreviewTemplate("insulation-cn", InsulationCNPagePreview);
 CMS.registerPreviewTemplate("healthyhomes", HealthyHomesPagePreview);
 CMS.registerPreviewTemplate("healthyhomes-cn", HealthyHomesCNPagePreview);
 CMS.registerPreviewTemplate("about", AboutPagePreview);
+CMS.registerPreviewTemplate("about-cn", AboutCNPagePreview);
 CMS.registerPreviewTemplate("products", ProductPagePreview);
-CMS.registerPreviewTemplate("blog", BlogPostPreview);
+CMS.registerPreviewTemplate("products-cn", ProductCNPagePreview);

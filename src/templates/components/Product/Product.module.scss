@@ -1,4 +1,4 @@
-@import "../stylesheets/2-abstracts/_abstracts-dir.scss";
+@import "../../../stylesheets/2-abstracts/_abstracts-dir.scss";
 
 .overview {
   @include container-maxwidth();
@@ -8,13 +8,16 @@
 
   .cards {
     display: grid;
+
     .card {
       margin-bottom: 1.875rem;
       flex: 1;
+
       @media #{$break-md} {
         margin-bottom: 0;
         margin-right: 0.7rem;
       }
+
       &:last-child {
         margin: 0;
       }
@@ -29,9 +32,11 @@
       div {
         padding: 0 1rem;
         text-align: center;
+
         h5 {
           margin-bottom: 6px;
         }
+
         button {
           margin: 1rem auto 0 auto;
         }
@@ -58,6 +63,7 @@
   @include articlePadding();
   max-width: 900px;
   margin: 0 auto;
+
   h4 {
     margin-bottom: 1rem;
   }
@@ -79,6 +85,7 @@
     :global .Collapsible {
       margin-top: 1rem;
       border-bottom: 1px solid $border-grey;
+
       &:last-child {
         border-bottom: none;
       }
@@ -86,8 +93,10 @@
       .Collapsible__trigger {
         cursor: pointer;
         color: $brand-main;
+
         &:hover {
           .trigger {
+
             h5,
             h6,
             svg {
@@ -95,14 +104,17 @@
             }
           }
         }
+
         .trigger {
           @include flex-center-justify();
+
           h5,
           h6 {
             color: $brand-main;
             display: inline;
             margin-right: 1rem;
           }
+
           h6 {
             color: $black;
           }
@@ -125,9 +137,11 @@
           background-color: grey;
         }
       }
+
       .Collapsible__contentOuter {
         margin-top: 1rem;
       }
+
       .Collapsible__contentInner {
         margin-bottom: 1rem;
       }

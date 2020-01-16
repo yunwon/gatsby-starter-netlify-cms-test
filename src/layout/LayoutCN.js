@@ -31,7 +31,7 @@ const DropdownMenu = () => {
         aria-haspopup="true"
         onClick={handleClick}
       >
-        Services
+        還不賴
       </a>
       {show && (
         <div
@@ -40,9 +40,9 @@ const DropdownMenu = () => {
           onClose={handleClose}
           className="dropdownMenu"
         >
-          <Link to="/ourworks/index-cn">Our Works</Link>
-          <Link to="/insulation/index-cn">Insulation</Link>
-          <Link to="/healthyhomes/index-cn">Healthy Homes</Link>
+          <Link to="/ourworks/cn">還不賴</Link>
+          <Link to="/insulation/cn">還不賴</Link>
+          <Link to="/healthyhomes/cn">還不賴</Link>
         </div>
       )}
     </div>
@@ -120,17 +120,17 @@ const TemplateWrapper = ({ children }) => {
         // }
         menu={
           <>
-            <Link exact to="/index-cn">
+            <Link exact to="/cn">
               還不賴
             </Link>
             <DropdownMenu />
-            <Link to="/products">Product</Link>
-            <Link to="/about">About Us</Link>
-            <Link to="/support">Support</Link>
-            <Link to="/contact">Contact Us</Link>
+            <Link to="/products/cn">還不賴</Link>
+            <Link to="/about/cn">還不賴</Link>
+            <Link to="/support/cn">還不賴</Link>
+            <Link to="/contact/cn">還不賴</Link>
           </>
         }
-        linkToHome="/index-cn"
+        linkToHome="/cn"
       />
       <div id="page-wrap" className={styles.main}>
         {children}

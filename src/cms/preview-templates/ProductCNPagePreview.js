@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import ProductPageTemplate from "../../templates/components/Product/Product";
 
-const ProductPagePreview = ({ entry, getAsset }) => {
+const ProductCNPagePreview = ({ entry, getAsset }) => {
   const data = entry.getIn(["data"]).toJS();
 
   return (
@@ -16,11 +16,11 @@ const ProductPagePreview = ({ entry, getAsset }) => {
   );
 };
 
-ProductPagePreview.propTypes = {
+ProductCNPagePreview.propTypes = {
   entry: PropTypes.shape({
     getIn: PropTypes.func
   }),
   getAsset: PropTypes.func
 };
 
-export default ProductPagePreview;
+export default ProductCNPagePreview;

@@ -1,9 +1,10 @@
-@import "../stylesheets/2-abstracts/_abstracts-dir.scss";
+@import "../../../stylesheets/2-abstracts/_abstracts-dir.scss";
 
 .aboutUs {
   @include container-maxwidth();
   @include articlePadding();
   text-align: center;
+
   img {
     height: 120px;
   }
@@ -11,11 +12,13 @@
   @media #{$break-md} {
     @include flex-center();
     text-align: left;
+
     img {
       margin-right: 4rem;
       width: 290px;
       height: auto;
     }
+
     p {
       font-size: 1rem;
       line-height: 1.5rem;

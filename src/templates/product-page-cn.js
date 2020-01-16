@@ -1,24 +1,24 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
-import Layout from "../layout/Layout";
+import LayoutCN from "../layout/LayoutCN";
 import ProductPageTemplate from "./components/Product/Product";
 
-const ProductPage = ({ data }) => {
+const ProductCNPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
 
   return (
-    <Layout>
+    <LayoutCN>
       <ProductPageTemplate
         title={frontmatter.title}
         subTitle={frontmatter.subTitle}
         productList={frontmatter.productList}
       />
-    </Layout>
+    </LayoutCN>
   );
 };
 
-ProductPage.propTypes = {
+ProductCNPage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
       frontmatter: PropTypes.object
@@ -26,11 +26,11 @@ ProductPage.propTypes = {
   })
 };
 
-export default ProductPage;
+export default ProductCNPage;
 
-export const productPageQuery = graphql`
-  query ProductPageTemplate {
-    markdownRemark(frontmatter: { templateKey: { eq: "product-page" } }) {
+export const productCNPageQuery = graphql`
+  query ProductCNPageTemplate {
+    markdownRemark(frontmatter: { templateKey: { eq: "product-page-cn" } }) {
       frontmatter {
         title
         subTitle

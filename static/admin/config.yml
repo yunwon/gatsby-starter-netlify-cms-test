@@ -159,9 +159,9 @@ collections:
                   { label: button, name: button, widget: string },
                 ],
             }
-      - file: "src/pages/index-cn.md"
+      - file: "src/pages/cn.md"
         label: "Home in Chinese"
-        name: "index-cn"
+        name: "cn"
         fields:
           - {
               label: "Template Key",
@@ -335,7 +335,7 @@ collections:
                   },
                 ],
             }
-      - file: "src/pages/ourworks/index-cn.md"
+      - file: "src/pages/ourworks/cn.md"
         label: "Our Works in Chinese"
         name: "ourworks-cn"
         fields:
@@ -391,7 +391,7 @@ collections:
                   { label: Description, name: description, widget: text },
                 ],
             }
-      - file: "src/pages/insulation/index-cn.md"
+      - file: "src/pages/insulation/cn.md"
         label: "Insulation in Chinese"
         name: "insulation-cn"
         fields:
@@ -486,7 +486,7 @@ collections:
                   },
                 ],
             }
-      - file: "src/pages/healthyhomes/index-cn.md"
+      - file: "src/pages/healthyhomes/cn.md"
         label: "Healthy Homes in Chinese"
         name: "healthyhomes-cn"
         fields:
@@ -494,7 +494,7 @@ collections:
               label: "Template Key",
               name: "templateKey",
               widget: "hidden",
-              default: "healthyhomes-page",
+              default: "healthyhomes-page-cn",
             }
           - { label: Title, name: title, widget: string }
           - { label: SubTitle, name: subTitle, widget: string, required: false }
@@ -606,6 +606,54 @@ collections:
                   },
                 ],
             }
+      - file: "src/pages/about/cn.md"
+        label: "About in Chinese"
+        name: "about-cn"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "about-page-cn",
+            }
+          - { label: Title, name: title, widget: string }
+          - { label: SubTitle, name: subTitle, widget: string, required: false }
+          - { label: Description, name: description, widget: text }
+          - {
+              label: Our Purpose,
+              name: ourPurpose,
+              widget: object,
+              fields:
+                [
+                  {
+                    label: description,
+                    name: description,
+                    widget: string,
+                    required: false,
+                  },
+                  {
+                    label: Our Purpose 01,
+                    name: ourPurpose01,
+                    widget: object,
+                    fields:
+                      [{ label: Description, name: description, widget: text }],
+                  },
+                  {
+                    label: Our Purpose 02,
+                    name: ourPurpose02,
+                    widget: object,
+                    fields:
+                      [{ label: Description, name: description, widget: text }],
+                  },
+                  {
+                    label: Our Purpose 03,
+                    name: ourPurpose03,
+                    widget: object,
+                    fields:
+                      [{ label: Description, name: description, widget: text }],
+                  },
+                ],
+            }
       - file: "src/pages/products/index.md"
         label: "Products"
         name: "products"
@@ -658,3 +706,56 @@ collections:
                   },
                 ],
             }
+      - file: "src/pages/products/cn.md"
+        label: "Products in Chinese"
+        name: "products-cn"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "product-page-cn",
+            }
+          - { label: Title, name: title, widget: string }
+          - { label: SubTitle, name: subTitle, widget: string, required: false }
+          - {
+              label: ProductList,
+              name: productList,
+              widget: list,
+              fields:
+                [
+                  { label: Title, name: title, widget: string },
+                  { label: Image, name: image, widget: image },
+                  { label: Id, name: id, widget: string },
+                  { label: Intro, name: intro, widget: text },
+                  {
+                    label: Description List,
+                    name: descriptionList,
+                    widget: list,
+                    fields:
+                      [
+                        { label: Title, name: title, widget: string },
+                        {
+                          label: Description,
+                          name: description,
+                          widget: list,
+                          fields:
+                            [
+                              {
+                                label: SubTitle,
+                                name: subTitle,
+                                widget: string,
+                                required: false,
+                              },
+                              {
+                                label: SubDescription,
+                                name: subDescription,
+                                widget: text,
+                              },
+                            ],
+                        },
+                      ],
+                  },
+                ],
+            }
+
