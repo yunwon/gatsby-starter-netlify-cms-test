@@ -11,6 +11,31 @@ backend:
 media_folder: static/img
 public_folder: /img
 
+parameters:
+    ourworks: &ourworks - { label: Title, name: title, widget: string }
+          - { label: SubTitle, name: subTitle, widget: string, required: false }
+          - {
+              label: Works,
+              name: works,
+              widget: object,
+              fields:
+                [
+                  {
+                    label: Work Detail,
+                    name: workDetail,
+                    widget: list,
+                    fields:
+                      [
+                        { label: Image, name: image, widget: image },
+                        { label: Title, name: title, widget: string },
+                        { label: Year, name: year, widget: date, format: "YY" },
+                        { label: Company, name: company, widget: string },
+                        { label: Description, name: description, widget: text },
+                      ],
+                  },
+                ],
+            }
+
 collections:
   - name: "pages"
     identifier_field: name
@@ -169,29 +194,7 @@ collections:
               widget: "hidden",
               default: "ourworks-page",
             }
-          - { label: Title, name: title, widget: string }
-          - { label: SubTitle, name: subTitle, widget: string, required: false }
-          - {
-              label: Works,
-              name: works,
-              widget: object,
-              fields:
-                [
-                  {
-                    label: Work Detail,
-                    name: workDetail,
-                    widget: list,
-                    fields:
-                      [
-                        { label: Image, name: image, widget: image },
-                        { label: Title, name: title, widget: string },
-                        { label: Year, name: year, widget: date, format: "YY" },
-                        { label: Company, name: company, widget: string },
-                        { label: Description, name: description, widget: text },
-                      ],
-                  },
-                ],
-            }
+          *ourworks
       - file: "src/pages/insulation/index.md"
         label: "Insulation"
         name: "insulation"
@@ -540,29 +543,7 @@ collections:
               widget: "hidden",
               default: "ourworks-page-cn",
             }
-          - { label: Title, name: title, widget: string }
-          - { label: SubTitle, name: subTitle, widget: string, required: false }
-          - {
-              label: Works,
-              name: works,
-              widget: object,
-              fields:
-                [
-                  {
-                    label: Work Detail,
-                    name: workDetail,
-                    widget: list,
-                    fields:
-                      [
-                        { label: Image, name: image, widget: image },
-                        { label: Title, name: title, widget: string },
-                        { label: Year, name: year, widget: date, format: "YY" },
-                        { label: Company, name: company, widget: string },
-                        { label: Description, name: description, widget: text },
-                      ],
-                  },
-                ],
-            }
+          *ourworks
       - file: "src/pages/insulation/index-cn.md"
         label: "Insulation in Chinese"
         name: "insulation-cn"
