@@ -393,7 +393,7 @@ collections:
     files:
       - file: "src/pages/index-cn.md"
         label: "Home in Chinese"
-        name: "index"
+        name: "index-cn"
         fields:
           - {
               label: "Template Key",
@@ -536,7 +536,7 @@ collections:
             }
       - file: "src/pages/ourworks/index-cn.md"
         label: "Our Works in Chinese"
-        name: "ourworks"
+        name: "ourworks-cn"
         fields:
           - {
               label: "Template Key",
@@ -569,7 +569,7 @@ collections:
             }
       - file: "src/pages/insulation/index-cn.md"
         label: "Insulation in Chinese"
-        name: "insulation"
+        name: "insulation-cn"
         fields:
           - {
               label: "Template Key",
@@ -592,7 +592,7 @@ collections:
             }
       - file: "src/pages/healthyhomes/index-cn.md"
         label: "Healthy Homes in Chinese"
-        name: "healthyhomes"
+        name: "healthyhomes-cn"
         fields:
           - {
               label: "Template Key",
