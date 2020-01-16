@@ -10,33 +10,6 @@ backend:
 
 media_folder: static/img
 public_folder: /img
-
-parameters:
-    ourworks: &ourworks {
-          - { label: Title, name: title, widget: string }
-          - { label: SubTitle, name: subTitle, widget: string, required: false }
-          - {
-              label: Works,
-              name: works,
-              widget: object,
-              fields:
-                [
-                  {
-                    label: Work Detail,
-                    name: workDetail,
-                    widget: list,
-                    fields:
-                      [
-                        { label: Image, name: image, widget: image },
-                        { label: Title, name: title, widget: string },
-                        { label: Year, name: year, widget: date, format: "YY" },
-                        { label: Company, name: company, widget: string },
-                        { label: Description, name: description, widget: text },
-                      ],
-                  },
-                ],
-            }
-          }
         
 collections:
   - name: "pages"
@@ -186,6 +159,149 @@ collections:
                   { label: button, name: button, widget: string },
                 ],
             }
+      - file: "src/pages/index-cn.md"
+        label: "Home in Chinese"
+        name: "index-cn"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "index-page-cn",
+            }
+          - { label: Title, name: title, widget: string }
+          - { label: SubTitle, name: subTitle, widget: string, required: false }
+          - { label: MainButton, name: mainButton, widget: string }
+          - {
+              label: Events,
+              name: events,
+              widget: object,
+              fields:
+                [
+                  {
+                    label: Event,
+                    name: event,
+                    widget: list,
+                    fields:
+                      [
+                        { label: Title, name: title, widget: string },
+                        {
+                          label: Description,
+                          name: description,
+                          widget: text,
+                          required: false,
+                        },
+                      ],
+                  },
+                ],
+            }
+          - {
+              label: "What We Do",
+              name: whatWeDo,
+              widget: object,
+              fields:
+                [
+                  { label: Title, name: title, widget: string },
+                  { label: Description, name: description, widget: string },
+                  {
+                    label: "What We Do Detail",
+                    name: whatWeDoDetail,
+                    widget: list,
+                    fields:
+                      [
+                        { label: Title, name: title, widget: string },
+                        { label: Image, name: image, widget: image },
+                        { label: Description, name: description, widget: text },
+                      ],
+                  },
+                ],
+            }
+          - {
+              label: Why Choose Us,
+              name: whyChooseUs,
+              widget: object,
+              fields:
+                [
+                  {
+                    label: Why Choose Us 01,
+                    name: whyChooseUs01,
+                    widget: object,
+                    fields:
+                      [{ label: Description, name: description, widget: text }],
+                  },
+                  {
+                    label: Why Choose Us 02,
+                    name: whyChooseUs02,
+                    widget: object,
+                    fields:
+                      [{ label: Description, name: description, widget: text }],
+                  },
+                  {
+                    label: Why Choose Us 03,
+                    name: whyChooseUs03,
+                    widget: object,
+                    fields:
+                      [{ label: Description, name: description, widget: text }],
+                  },
+                ],
+            }
+          - {
+              label: "Our Products",
+              name: ourProducts,
+              widget: object,
+              fields:
+                [
+                  { label: Title, name: title, widget: string },
+                  {
+                    label: description,
+                    name: description,
+                    widget: string,
+                    required: false,
+                  },
+                  {
+                    label: "Product List",
+                    name: productList,
+                    widget: list,
+                    fields:
+                      [
+                        { label: Title, name: title, widget: string },
+                        { label: Image, name: image, widget: image },
+                        { label: Description, name: description, widget: text },
+                      ],
+                  },
+                ],
+            }
+          - {
+              label: "Testimonials",
+              name: testimonials,
+              widget: object,
+              fields:
+                [
+                  { label: Title, name: title, widget: string },
+                  {
+                    label: "Testimonial List",
+                    name: testimonialList,
+                    widget: list,
+                    fields:
+                      [
+                        { label: Description, name: description, widget: text },
+                        { label: Name, name: name, widget: string },
+                        { label: Company, name: company, widget: string },
+                      ],
+                  },
+                ],
+            }
+          - {
+              label: "Contact",
+              name: contact,
+              widget: object,
+              fields:
+                [
+                  { label: Title, name: title, widget: string },
+                  { label: PhoneNo, name: phoneNo, widget: string },
+                  { label: button, name: button, widget: string },
+                ],
+            }
       - file: "src/pages/ourworks/index.md"
         label: "Our Works"
         name: "ourworks"
@@ -196,7 +312,64 @@ collections:
               widget: "hidden",
               default: "ourworks-page",
             }
-          *ourworks
+          - { label: Title, name: title, widget: string }
+          - { label: SubTitle, name: subTitle, widget: string, required: false }
+          - {
+              label: Works,
+              name: works,
+              widget: object,
+              fields:
+                [
+                  {
+                    label: Work Detail,
+                    name: workDetail,
+                    widget: list,
+                    fields:
+                      [
+                        { label: Image, name: image, widget: image },
+                        { label: Title, name: title, widget: string },
+                        { label: Year, name: year, widget: date, format: "YY" },
+                        { label: Company, name: company, widget: string },
+                        { label: Description, name: description, widget: text },
+                      ],
+                  },
+                ],
+            }
+          }
+      - file: "src/pages/ourworks/index-cn.md"
+        label: "Our Works in Chinese"
+        name: "ourworks-cn"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "ourworks-page-cn",
+            }
+                    - { label: Title, name: title, widget: string }
+          - { label: SubTitle, name: subTitle, widget: string, required: false }
+          - {
+              label: Works,
+              name: works,
+              widget: object,
+              fields:
+                [
+                  {
+                    label: Work Detail,
+                    name: workDetail,
+                    widget: list,
+                    fields:
+                      [
+                        { label: Image, name: image, widget: image },
+                        { label: Title, name: title, widget: string },
+                        { label: Year, name: year, widget: date, format: "YY" },
+                        { label: Company, name: company, widget: string },
+                        { label: Description, name: description, widget: text },
+                      ],
+                  },
+                ],
+            }
+          }
       - file: "src/pages/insulation/index.md"
         label: "Insulation"
         name: "insulation"
@@ -220,9 +393,104 @@ collections:
                   { label: Description, name: description, widget: text },
                 ],
             }
+      - file: "src/pages/insulation/index-cn.md"
+        label: "Insulation in Chinese"
+        name: "insulation-cn"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "insulation-page-cn",
+            }
+          - { label: Title, name: title, widget: string }
+          - { label: SubTitle, name: subTitle, widget: string, required: false }
+          - {
+              label: Section,
+              name: section,
+              widget: list,
+              fields:
+                [
+                  { label: Image, name: image, widget: image },
+                  { label: Title, name: title, widget: string },
+                  { label: Description, name: description, widget: text },
+                ],
+            }
       - file: "src/pages/healthyhomes/index.md"
         label: "Healthy Homes"
         name: "healthyhomes"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "healthyhomes-page",
+            }
+          - { label: Title, name: title, widget: string }
+          - { label: SubTitle, name: subTitle, widget: string, required: false }
+          - {
+              label: Standards,
+              name: standards,
+              widget: object,
+              fields:
+                [
+                  { label: Title, name: title, widget: string },
+                  {
+                    label: Description,
+                    name: description,
+                    widget: text,
+                    required: false,
+                  },
+                  {
+                    label: Icons,
+                    name: icons,
+                    widget: list,
+                    fields:
+                      [
+                        { label: Image, name: image, widget: image },
+                        {
+                          label: Title,
+                          name: title,
+                          widget: string,
+                          required: false,
+                        },
+                        {
+                          label: Description,
+                          name: description,
+                          widget: text,
+                          required: false,
+                        },
+                      ],
+                  },
+                  {
+                    label: Extra Description,
+                    name: extraDescription,
+                    widget: text,
+                  },
+                ],
+            }
+          - {
+              label: Key Dates,
+              name: keyDates,
+              widget: object,
+              fields:
+                [
+                  { label: Title, name: title, widget: string },
+                  {
+                    label: List,
+                    name: list,
+                    widget: list,
+                    fields:
+                      [
+                        { label: Title, name: title, widget: string },
+                        { label: Description, name: description, widget: text },
+                      ],
+                  },
+                ],
+            }
+      - file: "src/pages/healthyhomes/index-cn.md"
+        label: "Healthy Homes in Chinese"
+        name: "healthyhomes-cn"
         fields:
           - {
               label: "Template Key",
@@ -392,252 +660,4 @@ collections:
                   },
                 ],
             }
-      - file: "src/pages/index-cn.md"
-        label: "Home in Chinese"
-        name: "index-cn"
-        fields:
-          - {
-              label: "Template Key",
-              name: "templateKey",
-              widget: "hidden",
-              default: "index-page-cn",
-            }
-          - { label: Title, name: title, widget: string }
-          - { label: SubTitle, name: subTitle, widget: string, required: false }
-          - { label: MainButton, name: mainButton, widget: string }
-          - {
-              label: Events,
-              name: events,
-              widget: object,
-              fields:
-                [
-                  {
-                    label: Event,
-                    name: event,
-                    widget: list,
-                    fields:
-                      [
-                        { label: Title, name: title, widget: string },
-                        {
-                          label: Description,
-                          name: description,
-                          widget: text,
-                          required: false,
-                        },
-                      ],
-                  },
-                ],
-            }
-          - {
-              label: "What We Do",
-              name: whatWeDo,
-              widget: object,
-              fields:
-                [
-                  { label: Title, name: title, widget: string },
-                  { label: Description, name: description, widget: string },
-                  {
-                    label: "What We Do Detail",
-                    name: whatWeDoDetail,
-                    widget: list,
-                    fields:
-                      [
-                        { label: Title, name: title, widget: string },
-                        { label: Image, name: image, widget: image },
-                        { label: Description, name: description, widget: text },
-                      ],
-                  },
-                ],
-            }
-          - {
-              label: Why Choose Us,
-              name: whyChooseUs,
-              widget: object,
-              fields:
-                [
-                  {
-                    label: Why Choose Us 01,
-                    name: whyChooseUs01,
-                    widget: object,
-                    fields:
-                      [{ label: Description, name: description, widget: text }],
-                  },
-                  {
-                    label: Why Choose Us 02,
-                    name: whyChooseUs02,
-                    widget: object,
-                    fields:
-                      [{ label: Description, name: description, widget: text }],
-                  },
-                  {
-                    label: Why Choose Us 03,
-                    name: whyChooseUs03,
-                    widget: object,
-                    fields:
-                      [{ label: Description, name: description, widget: text }],
-                  },
-                ],
-            }
-          - {
-              label: "Our Products",
-              name: ourProducts,
-              widget: object,
-              fields:
-                [
-                  { label: Title, name: title, widget: string },
-                  {
-                    label: description,
-                    name: description,
-                    widget: string,
-                    required: false,
-                  },
-                  {
-                    label: "Product List",
-                    name: productList,
-                    widget: list,
-                    fields:
-                      [
-                        { label: Title, name: title, widget: string },
-                        { label: Image, name: image, widget: image },
-                        { label: Description, name: description, widget: text },
-                      ],
-                  },
-                ],
-            }
-          - {
-              label: "Testimonials",
-              name: testimonials,
-              widget: object,
-              fields:
-                [
-                  { label: Title, name: title, widget: string },
-                  {
-                    label: "Testimonial List",
-                    name: testimonialList,
-                    widget: list,
-                    fields:
-                      [
-                        { label: Description, name: description, widget: text },
-                        { label: Name, name: name, widget: string },
-                        { label: Company, name: company, widget: string },
-                      ],
-                  },
-                ],
-            }
-          - {
-              label: "Contact",
-              name: contact,
-              widget: object,
-              fields:
-                [
-                  { label: Title, name: title, widget: string },
-                  { label: PhoneNo, name: phoneNo, widget: string },
-                  { label: button, name: button, widget: string },
-                ],
-            }
-      - file: "src/pages/ourworks/index-cn.md"
-        label: "Our Works in Chinese"
-        name: "ourworks-cn"
-        fields:
-          - {
-              label: "Template Key",
-              name: "templateKey",
-              widget: "hidden",
-              default: "ourworks-page-cn",
-            }
-          *ourworks
-      - file: "src/pages/insulation/index-cn.md"
-        label: "Insulation in Chinese"
-        name: "insulation-cn"
-        fields:
-          - {
-              label: "Template Key",
-              name: "templateKey",
-              widget: "hidden",
-              default: "insulation-page-cn",
-            }
-          - { label: Title, name: title, widget: string }
-          - { label: SubTitle, name: subTitle, widget: string, required: false }
-          - {
-              label: Section,
-              name: section,
-              widget: list,
-              fields:
-                [
-                  { label: Image, name: image, widget: image },
-                  { label: Title, name: title, widget: string },
-                  { label: Description, name: description, widget: text },
-                ],
-            }
-      - file: "src/pages/healthyhomes/index-cn.md"
-        label: "Healthy Homes in Chinese"
-        name: "healthyhomes-cn"
-        fields:
-          - {
-              label: "Template Key",
-              name: "templateKey",
-              widget: "hidden",
-              default: "healthyhomes-page",
-            }
-          - { label: Title, name: title, widget: string }
-          - { label: SubTitle, name: subTitle, widget: string, required: false }
-          - {
-              label: Standards,
-              name: standards,
-              widget: object,
-              fields:
-                [
-                  { label: Title, name: title, widget: string },
-                  {
-                    label: Description,
-                    name: description,
-                    widget: text,
-                    required: false,
-                  },
-                  {
-                    label: Icons,
-                    name: icons,
-                    widget: list,
-                    fields:
-                      [
-                        { label: Image, name: image, widget: image },
-                        {
-                          label: Title,
-                          name: title,
-                          widget: string,
-                          required: false,
-                        },
-                        {
-                          label: Description,
-                          name: description,
-                          widget: text,
-                          required: false,
-                        },
-                      ],
-                  },
-                  {
-                    label: Extra Description,
-                    name: extraDescription,
-                    widget: text,
-                  },
-                ],
-            }
-          - {
-              label: Key Dates,
-              name: keyDates,
-              widget: object,
-              fields:
-                [
-                  { label: Title, name: title, widget: string },
-                  {
-                    label: List,
-                    name: list,
-                    widget: list,
-                    fields:
-                      [
-                        { label: Title, name: title, widget: string },
-                        { label: Description, name: description, widget: text },
-                      ],
-                  },
-                ],
-            }
+
