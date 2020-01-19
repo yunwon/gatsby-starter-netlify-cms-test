@@ -42,7 +42,7 @@ const DropdownMenu = () => {
         >
           <Link to="/ourworks">Our Works</Link>
           <Link to="/insulation">Insulation</Link>
-          <Link to="/healthyhomes">Healthy Homes</Link>
+          <Link to="/">Healthy Homes</Link>
         </div>
       )}
     </div>
