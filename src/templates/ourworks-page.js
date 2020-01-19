@@ -2,11 +2,10 @@ import React from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Layout from "../layout/Layout";
-import OurWorksPageTemplate from "./components/Services/OurWorks.js";
+import OurWorksPageTemplate from "./components/Services/OurWorks";
 
 const OurWorksPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
-
   return (
     <Layout>
       <OurWorksPageTemplate
@@ -19,7 +18,7 @@ const OurWorksPage = ({ data }) => {
 };
 
 OurWorksPage.propTypes = {
-  data: PropTypes.object.isRequired
+  data: PropTypes.object
 };
 
 export default OurWorksPage;

@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import HealthyHomesPageTemplate from "../../templates/healthyhomes-page";
+import HealthyHomesPageTemplate from "../../templates/components/Services/HealthyHomes";
 
 const HealthyHomesPagePreview = ({ entry, widgetFor }) => {
   const data = entry.getIn(["data"]).toJS();

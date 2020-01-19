@@ -1,5 +1,5 @@
 ---
-templateKey: insulation-page
+templateKey: insulation-page-cn
 title: Insulation
 subTitle: >-
   還不賴，還不賴，還不賴，還不賴，還不賴，還不賴，還不賴，還不賴，還不賴，還不賴，還不賴，還不賴，還不賴，還不賴，還不賴，還不賴，還不賴，還不賴，還不賴，還不賴，還不賴，還不賴，還不賴，還不賴？這些做法，更慘的是連錢都沒有進來，聲稱這篇演講的講稿思考了30年，攸關生死存亡

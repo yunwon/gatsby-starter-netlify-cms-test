@@ -19,7 +19,7 @@ const OurWorksCNPage = ({ data }) => {
 };
 
 OurWorksCNPage.propTypes = {
-  data: PropTypes.object.isRequired
+  data: PropTypes.object
 };
 
 export default OurWorksCNPage;

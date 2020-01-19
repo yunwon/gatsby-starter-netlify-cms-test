@@ -1,5 +1,5 @@
 ---
-templateKey: product-page
+templateKey: product-page-cn
 title: Our Product
 subTitle: >-
   場腕表女胞出経保聞復報体年毎彼優猛給。殴由与低来住岡必業気専紙棋測率点写案方。盗道保役語東高経経遠止披暮井桂集生示発題
