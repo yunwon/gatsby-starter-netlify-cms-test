@@ -5,12 +5,7 @@ import HeroSection from "../../../components/HeroSection/HeroSection";
 import BgImage from "../../../img/services/healthyhomes/hero.png";
 import PreviewCompatibleImage from "../../../components/PreviewCompatibleImage";
 
-export const HealthyHomesPageTemplate = ({
-  title,
-  subTitle,
-  standards,
-  keyDates
-}) => {
+const HealthyHomesPageTemplate = ({ title, subTitle, standards, keyDates }) => {
   return (
     <div>
       <HeroSection title={title} subtitle={subTitle} bgImage={BgImage} />
