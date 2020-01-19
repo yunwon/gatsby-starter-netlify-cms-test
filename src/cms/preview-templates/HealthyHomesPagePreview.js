@@ -3,20 +3,14 @@ import PropTypes from "prop-types";
 import HealthyHomesPageTemplate from "../../templates/components/Services/HealthyHomes";
 
 const HealthyHomesPagePreview = ({ entry, widgetFor }) => {
-  const data = entry.getIn(["data"]).toJS();
-
-  if (data) {
-    return (
-      <HealthyHomesPageTemplate
-        title={data.title}
-        subTitle={data.subTitle}
-        standards={data.standards}
-        keyDates={data.keyDates}
-      />
-    );
-  } else {
-    return <div>Loading...</div>;
-  }
+  return (
+    <HealthyHomesPageTemplate
+      title={entry.getIn(["data", "title"])}
+      subTitle={entry.getIn(["data", "subTitle"])}
+      standards={entry.getIn(["data", "standards"])}
+      keyDates={entry.getIn(["data", "keyDates"])}
+    />
+  );
 };
 
 HealthyHomesPagePreview.propTypes = {
