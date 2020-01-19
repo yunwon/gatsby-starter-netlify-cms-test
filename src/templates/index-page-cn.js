@@ -26,11 +26,7 @@ const IndexCNPage = ({ data }) => {
 };
 
 IndexCNPage.propTypes = {
-  data: PropTypes.shape({
-    markdownRemark: PropTypes.shape({
-      frontmatter: PropTypes.object
-    })
-  })
+  data: PropTypes.object
 };
 
 export default IndexCNPage;

@@ -6,7 +6,6 @@ import IndexPageTemplate from "./components/Index/Index";
 
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
-
   return (
     <Layout>
       <IndexPageTemplate
@@ -26,11 +25,7 @@ const IndexPage = ({ data }) => {
 };
 
 IndexPage.propTypes = {
-  data: PropTypes.shape({
-    markdownRemark: PropTypes.shape({
-      frontmatter: PropTypes.object
-    })
-  })
+  data: PropTypes.object
 };
 
 export default IndexPage;
