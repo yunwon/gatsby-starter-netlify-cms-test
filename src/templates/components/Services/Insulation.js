@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import styles from "./insulation-page.module.scss";
+import styles from "./Insulation.module.scss";
 import HeroSection from "../../../components/HeroSection/HeroSection";
 import BgImage from "../../../assets/services/insulation/hero.png";
 import PreviewCompatibleImage from "../../../components/PreviewCompatibleImage";
