@@ -161,7 +161,7 @@ collections:
             }
       - file: "src/pages/cn.md"
         label: "Home in Chinese"
-        name: "cn"
+        name: "index-cn"
         fields:
           - {
               label: "Template Key",
