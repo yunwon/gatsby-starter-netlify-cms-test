@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import styles from "./healthyhomes.module.scss";
+import styles from "./HealthyHomes.module.scss";
 import HeroSection from "../../../components/HeroSection/HeroSection";
 import BgImage from "../../../img/services/healthyhomes/hero.png";
 import PreviewCompatibleImage from "../../../components/PreviewCompatibleImage";
