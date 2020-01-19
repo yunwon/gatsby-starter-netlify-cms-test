@@ -758,4 +758,141 @@ collections:
                   },
                 ],
             }
-
+      - file: "src/pages/contact/index.md"
+        label: "Contact"
+        name: "contact"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "contact-page",
+            }
+          - { label: Title, name: title, widget: string }
+          - { label: SubTitle, name: subTitle, widget: string, required: false }
+          - { label: PhoneNo, name: phoneNo, widget: string, required: false }
+          - {
+              label: Description,
+              name: description,
+              widget: text,
+              required: false,
+            }
+      - file: "src/pages/contact/cn.md"
+        label: "Contact"
+        name: "contact-cn"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "contact-page-cn",
+            }
+          - { label: Title, name: title, widget: string }
+          - { label: SubTitle, name: subTitle, widget: string, required: false }
+          - { label: PhoneNo, name: phoneNo, widget: string, required: false }
+          - {
+              label: Description,
+              name: description,
+              widget: text,
+              required: false,
+            }
+          - {
+              label: "Contact Form",
+              name: form,
+              widget: list,
+              fields:
+                [
+                  {
+                    label: Name,
+                    name: name,
+                    widget: object,
+                    fields:
+                      [
+                        { label: Name, name: name, widget: string },
+                        {
+                          label: Placeholder,
+                          name: placeholder,
+                          widget: string,
+                        },
+                      ],
+                  },
+                  {
+                    label: Phone,
+                    name: phone,
+                    widget: object,
+                    required: false,
+                    fields:
+                      [
+                        { label: Name, name: name, widget: string },
+                        {
+                          label: Placeholder,
+                          name: placeholder,
+                          widget: string,
+                        },
+                      ],
+                  },
+                  {
+                    label: Email,
+                    name: email,
+                    widget: object,
+                    fields:
+                      [
+                        { label: Name, name: name, widget: string },
+                        {
+                          label: Placeholder,
+                          name: placeholder,
+                          widget: string,
+                        },
+                      ],
+                  },
+                  {
+                    label: Type,
+                    name: type,
+                    widget: object,
+                    fields:
+                      [
+                        { label: Name, name: name, widget: string },
+                        {
+                          label: "Option",
+                          name: option,
+                          widget: list,
+                          fleids:
+                            [
+                              { label: "Select Option", name: name, widget: string },
+                              { label: "Value", name: value, widget: string },
+                            ]
+                        },
+                      ],
+                  },
+                  {
+                    label: Message,
+                    name: message,
+                    widget: object,
+                    fields:
+                      [
+                        { label: Name, name: name, widget: string },
+                        {
+                          label: Placeholder,
+                          name: placeholder,
+                          widget: string,
+                        },
+                      ],
+                  },
+                  { label: Submit Button, name: sumbit, widget: string },
+                ],
+            }
+          - {
+              label: "Submit Success Message",
+              name: submitSuccessMessage,
+              widget: object,
+              fields:
+                [
+                  { label: Title, name: title, widget: string },
+                  { label: Subtitle, name: subTitle, widget: string },
+                  {
+                    label: "Link to Home Button",
+                    name: linkToHome,
+                    widget: string,
+                  },
+                ],
+            },

@@ -1,4 +1,4 @@
-@import "../../stylesheets/2-abstracts/_abstracts-dir.scss";
+@import "../../../stylesheets/2-abstracts/_abstracts-dir.scss";
 
 .wrapper {
   @media #{$break-md} {
@@ -8,7 +8,7 @@
   }
 
   .title {
-    background-image: url("../../assets/contact/titleBg.png");
+    background-image: url("../../../assets/contact/titleBg.png");
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;

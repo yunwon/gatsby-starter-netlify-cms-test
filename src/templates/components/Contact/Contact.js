@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
-import Layout from "../../layout/Layout";
-import styles from "./index.module.scss";
-import { Button } from "../../components/Button/Button";
+import styles from "./Contact.module.scss";
+import { Button } from "../../../components/Button/Button";
 import { FaPhone } from "react-icons/fa";
 
 const options = [
@@ -20,7 +19,7 @@ function encode(data) {
     .join("&");
 }
 
-export default class Index extends React.Component {
+class ContactPageTemplate extends React.Component {
   constructor(props) {
     super(props);
     this.state = { isValidated: false, submitted: false };
@@ -47,25 +46,20 @@ export default class Index extends React.Component {
 
   render() {
     return (
-      <Layout>
+      <div>
         <div className={styles.wrapper}>
           <div className={styles.title}>
             <div className={styles.inner}>
-              <h2>Contact Us</h2>
+              <h2>{this.props.title}</h2>
               <p className={styles.callUs}>
-                Call us NOW to find out more on&nbsp;
-                <a href="tel:09-818-6606">
+                {this.props.subTitle}&nbsp;
+                <a href={`tel:${this.props.phoneNo}`}>
                   <FaPhone className="flipImage" />
-                  09-818-6606.
+                  {this.props.phoneNo}
                 </a>
               </p>
               <br />
-              <p>
-                If you can’t call now, complete as much information below as you
-                can and we’ll be in touch with you to talk through your
-                requirements. Your enquiry will be answered within 2 business
-                days by a representative of Snug Insulation Limited.
-              </p>
+              <p>{this.props.description}</p>
             </div>
           </div>
           <div className={styles.form}>
@@ -86,9 +80,9 @@ export default class Index extends React.Component {
                   </label>
                 </div>
                 <div className={styles.field}>
-                  <label htmlFor={"name"}>Name</label>
+                  <label htmlFor={"name"}>{this.props.form.name.name}</label>
                   <input
-                    placeholder="Your Name"
+                    placeholder={this.props.form.name.placeholder}
                     type={"text"}
                     name={"name"}
                     onChange={this.handleChange}
@@ -97,9 +91,9 @@ export default class Index extends React.Component {
                   />
                 </div>
                 <div className={styles.field}>
-                  <label htmlFor={"tel"}>Phone</label>
+                  <label htmlFor={"tel"}>{this.props.form.phone.name}</label>
                   <input
-                    placeholder="Phone Number"
+                    placeholder={this.props.form.phone.placeholder}
                     type={"tel"}
                     name={"phone"}
                     onChange={this.handleChange}
@@ -108,9 +102,9 @@ export default class Index extends React.Component {
                   />
                 </div>
                 <div className={styles.field}>
-                  <label htmlFor={"email"}>Email</label>
+                  <label htmlFor={"email"}>{this.props.form.email.name}</label>
                   <input
-                    placeholder="Your Email"
+                    placeholder={this.props.form.email.placeholder}
                     type={"email"}
                     name={"email"}
                     onChange={this.handleChange}
@@ -119,27 +113,19 @@ export default class Index extends React.Component {
                   />
                 </div>
                 <div className={styles.field}>
-                  <label htmlFor={"type"}>Type</label>
+                  <label htmlFor={"type"}>{this.props.form.type.name}</label>
                   <select name={"type"} id={"type"}>
-                    <option value="g">General Question</option>
-                    <option value="ss">Service and Support</option>
-                    <option value="sp">Spare Parts</option>
-                    <option value="m">Marketing</option>
+                    {this.props.form.type.option.map(item => (
+                      <option value={item.value}>{item.name}</option>
+                    ))}
                   </select>
-                  {/* <Dropdown
-                  options={options}
-                  onChange={this._onSelect}
-                  value={defaultOption}
-                  placeholder="Select an option"
-                  className="select"
-                  name={"type"}
-                  id={"type"}
-                /> */}
                 </div>
                 <div className={styles.field}>
-                  <label htmlFor={"message"}>Message</label>
+                  <label htmlFor={"message"}>
+                    {this.props.form.message.name}
+                  </label>
                   <textarea
-                    placeholder="Your Message"
+                    placeholder={this.props.form.message.placeholder}
                     rows={7}
                     name={"message"}
                     onChange={this.handleChange}
@@ -151,21 +137,23 @@ export default class Index extends React.Component {
                   <div data-netify-recaptcha="true"></div>
                 </div>
                 <div className={styles.submitButton}>
-                  <Button title="Submit" type="submit" />
+                  <Button title={this.props.form.submit} type="submit" />
                 </div>
               </form>
             ) : (
               <div className={styles.thanks}>
-                <h3>Thank you!</h3>
-                <p>Your enquiry has been submitted.</p>
+                <h3>{this.props.submitSuccessMessage.title}</h3>
+                <p>{this.props.submitSuccessMessage.subTitle}</p>
                 <Link to="/">
-                  <Button title="Go to home" />
+                  <Button title={this.props.submitSuccessMessage.linkToHome} />
                 </Link>
               </div>
             )}
           </div>
         </div>
-      </Layout>
+      </div>
     );
   }
 }
+
+export default ContactPageTemplate;
