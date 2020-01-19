@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import LayoutCN from "../layout/LayoutCN";
-import HealthyHomesPageTemplate from "./components/Services/healthyhomes";
+import HealthyHomesPageTemplate from "./components/Services/HealthyHomes";
 
 const HealthyHomesCNPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
