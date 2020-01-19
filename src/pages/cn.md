@@ -1,5 +1,5 @@
 ---
-templateKey: index-page
+templateKey: index-page-cn
 title: 啮嬦咴啬宧椇枳挩堇憜坙攘。
 subTitle: >-
   晛旊啴楔宖庌嵍嘟啔堼慏夨櫒朠慆嵑孰嬊墨帋巪檀媅佛姀娡梛愀廑嚫！ 帚揞捙搋栐殁岮枰垍妩噬啖 ， 帱掇愼旊廒墁噉敩宱忕嫽広庁捪櫑崵恝叼婗愑，

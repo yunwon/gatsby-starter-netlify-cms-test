@@ -26,7 +26,7 @@ export default AboutCNPage;
 
 export const aboutCNPageQuery = graphql`
   query AboutCNPageTemplate {
-    markdownRemark(frontmatter: { templateKey: { eq: "about-page" } }) {
+    markdownRemark(frontmatter: { templateKey: { eq: "about-page-cn" } }) {
       frontmatter {
         title
         subTitle

@@ -1,5 +1,5 @@
 ---
-templateKey: about-page
+templateKey: about-page-cn
 title: About Us
 subTitle: >-
   梁勝読料種量無関統治禁阜主変子。秋方代長毎三家歩高即祭除属枝。権人認愛竹図験特中者米労船木三組。
