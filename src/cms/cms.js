@@ -14,6 +14,8 @@ import InsulationPagePreview from "./preview-templates/InsulationPagePreview";
 import InsulationCNPagePreview from "./preview-templates/InsulationCNPagePreview";
 import ContactPagePreview from "./preview-templates/ContactPagePreview";
 import ContactCNPagePreview from "./preview-templates/ContactCNPagePreview";
+import HealthyHomesPagePreview from "./preview-templates/HealthyHomesPagePreview";
+import HealthyHomesCNPagePreview from "./preview-templates/HealthyHomesCNPagePreview";
 
 CMS.registerMediaLibrary(uploadcare);
 CMS.registerMediaLibrary(cloudinary);
@@ -24,6 +26,8 @@ CMS.registerPreviewTemplate("ourworks", OurWorksPagePreview);
 CMS.registerPreviewTemplate("ourworks-cn", OurWorksCNPagePreview);
 CMS.registerPreviewTemplate("insulation", InsulationPagePreview);
 CMS.registerPreviewTemplate("insulation-cn", InsulationCNPagePreview);
+CMS.registerPreviewTemplate("healthyhomes", HealthyHomesPagePreview);
+CMS.registerPreviewTemplate("healthyhomes-cn", HealthyHomesCNPagePreview);
 CMS.registerPreviewTemplate("about", AboutPagePreview);
 CMS.registerPreviewTemplate("about-cn", AboutCNPagePreview);
 CMS.registerPreviewTemplate("products", ProductPagePreview);

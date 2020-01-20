@@ -1,11 +1,13 @@
-@import "src/stylesheets/2-abstracts/_abstracts-dir.scss";
+@import "../stylesheets/2-abstracts/_abstracts-dir.scss";
 
 .outerContainer {
   min-height: 100vh;
 }
+
 .main {
   padding-top: 60px;
   min-height: calc(100vh - 100px);
+
   @media #{$break-md} {
     padding-top: 130px;
     min-height: calc(100vh - 91px);
@@ -21,6 +23,7 @@
   position: fixed;
   top: 120px;
   @include bigShadow();
+
   a {
     margin: 0.5rem 0 !important;
     text-align: left;

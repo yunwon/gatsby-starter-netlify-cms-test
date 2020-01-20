@@ -414,6 +414,150 @@ collections:
                   { label: Description, name: description, widget: text },
                 ],
             }
+      - file: "src/pages/healthyhomes/index.md"
+        label: "HealthyHomes"
+        name: "healthyhomes"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "healthyhomes-page",
+            }
+          - { label: Title, name: title, widget: string }
+          - { label: SubTitle, name: subTitle, widget: string, required: false }
+          - {
+              label: Standards,
+              name: standards,
+              widget: object,
+              fields:
+                [
+                  { label: Title, name: title, widget: string },
+                  {
+                    label: Description,
+                    name: description,
+                    widget: text,
+                    required: false,
+                  },
+                  {
+                    label: Icons,
+                    name: icons,
+                    widget: list,
+                    fields:
+                      [
+                        { label: Image, name: image, widget: image },
+                        {
+                          label: Title,
+                          name: title,
+                          widget: string,
+                          required: false,
+                        },
+                        {
+                          label: Description,
+                          name: description,
+                          widget: text,
+                          required: false,
+                        },
+                      ],
+                  },
+                  {
+                    label: Extra Description,
+                    name: extraDescription,
+                    widget: text,
+                  },
+                ],
+            }
+          - {
+              label: Key Dates,
+              name: keyDates,
+              widget: object,
+              fields:
+                [
+                  { label: Title, name: title, widget: string },
+                  {
+                    label: List,
+                    name: list,
+                    widget: list,
+                    fields:
+                      [
+                        { label: Title, name: title, widget: string },
+                        { label: Description, name: description, widget: text },
+                      ],
+                  },
+                ],
+            }
+      - file: "src/pages/healthyhomes/cn.md"
+        label: "HealthyHomes in Chinese"
+        name: "healthyhomes-cn"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "healthyhomes-page-cn",
+            }
+          - { label: Title, name: title, widget: string }
+          - { label: SubTitle, name: subTitle, widget: string, required: false }
+          - {
+              label: Standards,
+              name: standards,
+              widget: object,
+              fields:
+                [
+                  { label: Title, name: title, widget: string },
+                  {
+                    label: Description,
+                    name: description,
+                    widget: text,
+                    required: false,
+                  },
+                  {
+                    label: Icons,
+                    name: icons,
+                    widget: list,
+                    fields:
+                      [
+                        { label: Image, name: image, widget: image },
+                        {
+                          label: Title,
+                          name: title,
+                          widget: string,
+                          required: false,
+                        },
+                        {
+                          label: Description,
+                          name: description,
+                          widget: text,
+                          required: false,
+                        },
+                      ],
+                  },
+                  {
+                    label: Extra Description,
+                    name: extraDescription,
+                    widget: text,
+                  },
+                ],
+            }
+          - {
+              label: Key Dates,
+              name: keyDates,
+              widget: object,
+              fields:
+                [
+                  { label: Title, name: title, widget: string },
+                  {
+                    label: List,
+                    name: list,
+                    widget: list,
+                    fields:
+                      [
+                        { label: Title, name: title, widget: string },
+                        { label: Description, name: description, widget: text },
+                      ],
+                  },
+                ],
+            }
       - file: "src/pages/about/index.md"
         label: "About"
         name: "about"
