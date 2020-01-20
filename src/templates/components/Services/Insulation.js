@@ -31,7 +31,7 @@ const InsulationPageTemplate = ({ title, subTitle, section }) => {
   return (
     <div>
       <HeroSection title={title} subtitle={subTitle} bgImage={BgImage} />
-      <Section data={section.sectionDetail} />
+      <Section data={section} />
     </div>
   );
 };
@@ -39,9 +39,7 @@ const InsulationPageTemplate = ({ title, subTitle, section }) => {
 InsulationPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   subTitle: PropTypes.string,
-  section: PropTypes.shape({
-    sectionDetail: PropTypes.array
-  })
+  section: PropTypes.array
 };
 
 export default InsulationPageTemplate;

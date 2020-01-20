@@ -18,7 +18,7 @@ const InsulationCNPage = ({ data }) => {
 };
 
 InsulationCNPage.propTypes = {
-  data: PropTypes.object.isRequired
+  data: PropTypes.object
 };
 
 export default InsulationCNPage;
@@ -30,17 +30,15 @@ export const InsulationCNPageQuery = graphql`
         title
         subTitle
         section {
-          sectionDetail {
-            image {
-              childImageSharp {
-                fluid(maxWidth: 1000, quality: 100) {
-                  ...GatsbyImageSharpFluid
-                }
+          title
+          image {
+            childImageSharp {
+              fluid(maxWidth: 1000, quality: 100) {
+                ...GatsbyImageSharpFluid
               }
             }
-            title
-            description
           }
+          description
         }
       }
     }
