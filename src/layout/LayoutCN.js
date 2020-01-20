@@ -31,7 +31,7 @@ const DropdownMenu = () => {
         aria-haspopup="true"
         onClick={handleClick}
       >
-        還不賴
+        公司服务
       </a>
       {show && (
         <div
@@ -40,9 +40,9 @@ const DropdownMenu = () => {
           onClose={handleClose}
           className="dropdownMenu"
         >
-          <Link to="/ourworks/cn">還不賴</Link>
-          <Link to="/insulation/cn">還不賴</Link>
-          <Link to="/healthyhomes/cn">還不賴</Link>
+          <Link to="/ourworks/cn">我們的作品</Link>
+          <Link to="/insulation/cn">絕緣</Link>
+          <Link to="/healthyhomes/cn">健康的家</Link>
         </div>
       )}
     </div>
@@ -97,7 +97,7 @@ const TemplateWrapper = ({ children }) => {
         />
       </Helmet>
       <Header
-        login="Login"
+        language="Chinese"
         phoneNo="09-818-6606"
         // mobileMenu={
         //   <>
@@ -121,13 +121,13 @@ const TemplateWrapper = ({ children }) => {
         menu={
           <>
             <Link exact to="/cn">
-              還不賴
+              首页
             </Link>
             <DropdownMenu />
-            <Link to="/products/cn">還不賴</Link>
-            <Link to="/about/cn">還不賴</Link>
-            <Link to="/support/cn">還不賴</Link>
-            <Link to="/contact/cn">還不賴</Link>
+            <Link to="/products/cn">我们的产品</Link>
+            <Link to="/about/cn">公司介绍</Link>
+            <Link to="/support/cn">支持下载</Link>
+            <Link to="/contact/cn">联系我们</Link>
           </>
         }
         linkToHome="/cn"

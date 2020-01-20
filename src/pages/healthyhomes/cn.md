@@ -1,6 +1,6 @@
 ---
 templateKey: healthyhomes-page-cn
-title: Healthy Homes in Chinese
+title: Healthy Homes (Chinese)
 subTitle: >-
   New healthy homes standards for rental properties in New Zealand became law on 1 July 2019. The standards will play a significant role in maintaining and improving the quality of the rental properties. These standards will help ensure landlords have healthier, safer properties and lower maintenance costs for their investments.
 standards:

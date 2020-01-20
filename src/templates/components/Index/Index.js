@@ -32,7 +32,9 @@ const IndexPageTemplate = ({
         <div className={styles.text}>
           <h1 className={styles.title}>{title}</h1>
           <p className={styles.subtitle}>{subTitle}</p>
-          <Button title={mainButton} bigButton />
+          <Link to={language === "English" ? `/contact` : `/contact/cn`}>
+            <Button title={mainButton} bigButton />
+          </Link>
         </div>
       </div>
       <div className={styles.heroImage}></div>
@@ -44,7 +46,7 @@ const IndexPageTemplate = ({
           <div className={styles.eventInner}>
             <h1>{event.title}</h1>
             <p>{event.description}</p>
-            <LearnMoreButton />
+            <LearnMoreButton language={language} />
           </div>
         ))}
       </Slider>
@@ -56,23 +58,41 @@ const IndexPageTemplate = ({
         <p>{whatWeDo.description}</p>
       </div>
       <div className={styles.cards}>
-        {whatWeDo.whatWeDoDetail.map(item => (
-          <div className={styles.card}>
-            <div className={styles.image}>
-              <PreviewCompatibleImage
-                imageInfo={{
-                  image: item.image,
-                  alt: item.title
-                }}
-              />
-            </div>
-            <div>
-              <h4>{item.title}</h4>
-              <p>{item.description}</p>
-              <LearnMoreButton />
-            </div>
+        <div className={styles.card}>
+          <div className={styles.image}>
+            <PreviewCompatibleImage
+              imageInfo={{
+                image: whatWeDo.insulation.image,
+                alt: whatWeDo.insulation.title
+              }}
+            />
           </div>
-        ))}
+          <div>
+            <h4>{whatWeDo.insulation.title}</h4>
+            <p>{whatWeDo.insulation.description}</p>
+            <Link to={`/${whatWeDo.insulation.linkUri}`}>
+              <LearnMoreButton language={language} />
+            </Link>
+          </div>
+        </div>
+        <div className={styles.card}>
+          <div className={styles.image}>
+            <PreviewCompatibleImage
+              imageInfo={{
+                image: whatWeDo.healthyHomes.image,
+                alt: whatWeDo.healthyHomes.title
+              }}
+            />
+          </div>
+          <div>
+            <h4>{whatWeDo.healthyHomes.title}</h4>
+            <p>{whatWeDo.healthyHomes.description}</p>
+            {console.log(whatWeDo.insulation.linkUri)}
+            <Link to={`/${whatWeDo.healthyHomes.linkUri}`}>
+              <LearnMoreButton language={language} />
+            </Link>
+          </div>
+        </div>
       </div>
     </div>
     {/* 04. Why Choose Us */}
@@ -90,8 +110,8 @@ const IndexPageTemplate = ({
       <div className={styles.title}>
         <h2>{ourProducts.title}</h2>
         <p>{ourProducts.description}</p>
-        <Link to="/product">
-          <LearnMoreButton />
+        <Link to={language === "English" ? `/products` : `/products/cn`}>
+          <LearnMoreButton language={language} />
         </Link>
       </div>
       <div className={styles.cards}>

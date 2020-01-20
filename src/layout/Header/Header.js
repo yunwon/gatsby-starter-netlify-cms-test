@@ -3,8 +3,8 @@ import classNames from "classnames";
 import { Link } from "gatsby";
 import styles from "./Header.module.scss";
 import { slide as Menu } from "react-burger-menu";
-import Logo from "../../assets/logo.svg";
-import Burger from "../../assets/burger.svg";
+import Logo from "../../img/logo.svg";
+import Burger from "../../img/burger.svg";
 import { Button } from "../../components/Button/Button";
 import { FaPhone } from "react-icons/fa";
 
@@ -37,11 +37,14 @@ export default class Header extends Component {
       <div className={styles.nav}>
         <div className={styles.secondaryNav}>
           <span className={styles.languages}>
-            <Link to="/">English</Link> | <Link to="/cn">Chinese</Link>
+            <Link to="/">English</Link> | <Link to="/cn">简体中文</Link>
           </span>
           <div className={styles.buttons}>
             <div className={styles.loginButton}>
-              <Button title={this.props.login} outlined />
+              <Button
+                title={this.props.language === "Chinese" ? "登錄" : "Login"}
+                outlined
+              />
             </div>
             <div className={styles.phoneButton}>
               <a href="tel:09-818-6606">

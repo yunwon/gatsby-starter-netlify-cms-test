@@ -61,14 +61,27 @@ collections:
                   { label: Title, name: title, widget: string },
                   { label: Description, name: description, widget: string },
                   {
-                    label: "What We Do Detail",
-                    name: whatWeDoDetail,
-                    widget: list,
+                    label: "Insulation",
+                    name: insulation,
+                    widget: object,
                     fields:
                       [
                         { label: Title, name: title, widget: string },
                         { label: Image, name: image, widget: image },
                         { label: Description, name: description, widget: text },
+                        { label: Link Uri, name: linkUri, widget: string },
+                      ],
+                  },
+                  {
+                    label: "Healthy Homes",
+                    name: healthyHomes,
+                    widget: object,
+                    fields:
+                      [
+                        { label: Title, name: title, widget: string },
+                        { label: Image, name: image, widget: image },
+                        { label: Description, name: description, widget: text },
+                        { label: Link Uri, name: linkUri, widget: string },
                       ],
                   },
                 ],
@@ -160,7 +173,7 @@ collections:
                 ],
             }
       - file: "src/pages/cn.md"
-        label: "Home in Chinese"
+        label: "Home (Chinese)"
         name: "index-cn"
         fields:
           - {
@@ -336,7 +349,7 @@ collections:
                 ],
             }
       - file: "src/pages/ourworks/cn.md"
-        label: "Our Works in Chinese"
+        label: "Our Works (Chinese)"
         name: "ourworks-cn"
         fields:
           - {
@@ -392,7 +405,7 @@ collections:
                 ],
             }
       - file: "src/pages/insulation/cn.md"
-        label: "Insulation in Chinese"
+        label: "Insulation (Chinese)"
         name: "insulation-cn"
         fields:
           - {
@@ -487,7 +500,7 @@ collections:
                 ],
             }
       - file: "src/pages/healthyhomes/cn.md"
-        label: "HealthyHomes in Chinese"
+        label: "HealthyHomes (Chinese)"
         name: "healthyhomes-cn"
         fields:
           - {
@@ -607,7 +620,7 @@ collections:
                 ],
             }
       - file: "src/pages/about/cn.md"
-        label: "About in Chinese"
+        label: "About (Chinese)"
         name: "about-cn"
         fields:
           - {
@@ -707,7 +720,7 @@ collections:
                 ],
             }
       - file: "src/pages/products/cn.md"
-        label: "Products in Chinese"
+        label: "Products (Chinese)"
         name: "products-cn"
         fields:
           - {

@@ -13,6 +13,7 @@ const ProductPage = ({ data }) => {
         title={frontmatter.title}
         subTitle={frontmatter.subTitle}
         productList={frontmatter.productList}
+        language="English"
       />
     </Layout>
   );

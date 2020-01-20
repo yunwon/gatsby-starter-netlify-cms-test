@@ -12,7 +12,7 @@ import { FaChevronDown } from "react-icons/fa";
 
 class ProductPageTemplate extends React.Component {
   render() {
-    const { title, subTitle, productList } = this.props;
+    const { title, subTitle, productList, language } = this.props;
 
     return (
       <div>
@@ -33,7 +33,7 @@ class ProductPageTemplate extends React.Component {
                   <h5>{item.title}</h5>
                   <p>{item.intro}</p>
                   <a href={`#${item.id}`}>
-                    <LearnMoreButton />
+                    <LearnMoreButton language={language} />
                   </a>
                 </div>
               </div>

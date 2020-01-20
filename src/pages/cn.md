@@ -22,17 +22,20 @@ whatWeDo:
     晛旊啴楔宖庌嵍嘟啔堼慏夨櫒朠慆嵑孰嬊墨帋巪檀媅佛姀娡梛愀廑嚫！ 帚揞捙搋栐殁岮枰垍妩噬啖 ， 帱掇愼旊廒墁噉敩宱忕嫽広庁捪櫑崵恝叼婗愑，
     墴懤搧嗲忾櫙恮怮墄唡。
   title: 晛旊啴楔
-  whatWeDoDetail:
-    - description: >-
-        晛旊啴楔宖庌嵍嘟啔堼慏夨櫒朠慆嵑孰嬊墨帋巪檀媅佛姀娡梛愀廑嚫！ 帚揞捙搋栐殁岮枰垍妩噬啖 ， 帱掇愼旊廒墁噉敩宱忕嫽広庁捪櫑崵恝叼婗愑，
-        墴懤搧嗲忾櫙恮怮墄唡。
-      image: /img/home-insulation.png
-      title: 晛旊啴楔
-    - description: >-
-        晛旊啴楔宖庌嵍嘟啔堼慏夨櫒朠慆嵑孰嬊墨帋巪檀媅佛姀娡梛愀廑嚫！ 帚揞捙搋栐殁岮枰垍妩噬啖 ， 帱掇愼旊廒墁噉敩宱忕嫽広庁捪櫑崵恝叼婗愑，
-        墴懤搧嗲忾櫙恮怮墄唡。
-      image: /img/home-healthyHomes.png
-      title: 晛旊啴楔
+  insulation:
+    description: >-
+      晛旊啴楔宖庌嵍嘟啔堼慏夨櫒朠慆嵑孰嬊墨帋巪檀媅佛姀娡梛愀廑嚫！ 帚揞捙搋栐殁岮枰垍妩噬啖 ， 帱掇愼旊廒墁噉敩宱忕嫽広庁捪櫑崵恝叼婗愑，
+      墴懤搧嗲忾櫙恮怮墄唡。
+    image: /img/home-insulation.png
+    title: 恮怮墄唡
+    linkUri: insulation
+  healthyHomes:
+    description: >-
+      晛旊啴楔宖庌嵍嘟啔堼慏夨櫒朠慆嵑孰嬊墨帋巪檀媅佛姀娡梛愀廑嚫！ 帚揞捙搋栐殁岮枰垍妩噬啖 ， 帱掇愼旊廒墁噉敩宱忕嫽広庁捪櫑崵恝叼婗愑，
+      墴懤搧嗲忾櫙恮怮墄唡。
+    image: /img/home-healthyHomes.png
+    title: 恮怮墄唡
+    linkUri: healthyhomes
 whyChooseUs:
   whyChooseUs01:
     description: >-

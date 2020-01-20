@@ -97,7 +97,7 @@ const TemplateWrapper = ({ children }) => {
         />
       </Helmet>
       <Header
-        login="Login"
+        langauge="English"
         phoneNo="09-818-6606"
         // mobileMenu={
         //   <>
