@@ -135,7 +135,7 @@ const TemplateWrapper = ({ children }) => {
       <div id="page-wrap" className={styles.main}>
         {children}
       </div>
-      <Footer />
+      <Footer langauge="English" />
     </div>
   );
 };
