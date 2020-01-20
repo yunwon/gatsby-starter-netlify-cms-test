@@ -6,6 +6,7 @@ import { withPrefix } from "gatsby";
 import "typeface-poppins";
 
 import "../stylesheets/index.scss";
+import "normalize.css";
 import styles from "./Layout.module.scss";
 
 import Header from "./Header/Header";

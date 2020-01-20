@@ -18,13 +18,13 @@ form:
   type:
     name: Enquiry Type
     option:
-      - name: General Question
+      - label: General Question
         value: GQ
-      - name: Service and Support
+      - label: Service and Support
         value: SS
-      - name: Spare Parts
+      - label: Spare Parts
         value: SP
-      - name: Marketing
+      - label: Marketing
         value: M
   message:
     name: Message

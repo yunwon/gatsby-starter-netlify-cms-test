@@ -18,13 +18,13 @@ form:
   type:
     name: 治禁阜主変子
     option:
-      - name: General Question
+      - label: General Question
         value: GQ
-      - name: Service and Support
+      - label: Service and Support
         value: SS
-      - name: Spare Parts
+      - label: Spare Parts
         value: SP
-      - name: Marketing
+      - label: Marketing
         value: M
   message:
     name: 秋方代

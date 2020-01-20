@@ -50,7 +50,7 @@ export const ContactCNPageQuery = graphql`
           type {
             name
             option {
-              name
+              label
               value
             }
           }

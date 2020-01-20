@@ -854,7 +854,7 @@ collections:
                             [
                               {
                                 label: "Select Option",
-                                name: name,
+                                name: label,
                                 widget: string,
                               },
                               { label: "Value", name: value, widget: string },

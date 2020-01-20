@@ -3,15 +3,8 @@ import { Link } from "gatsby";
 import styles from "./Contact.module.scss";
 import { Button } from "../../../components/Button/Button";
 import { FaPhone } from "react-icons/fa";
-
-const options = [
-  { value: "g", label: "General Question" },
-  { value: "ss", label: "Service and Support" },
-  { value: "s", label: "Spare Parts" },
-  { value: "m", label: "Marketing" }
-];
-
-const defaultOption = options[0];
+import Dropdown from "react-dropdown";
+import "react-dropdown/style.css";
 
 function encode(data) {
   return Object.keys(data)
@@ -114,11 +107,17 @@ class ContactPageTemplate extends React.Component {
                 </div>
                 <div className={styles.field}>
                   <label htmlFor={"type"}>{this.props.form.type.name}</label>
-                  <select name={"type"} id={"type"}>
+                  {/* <select name={"type"} id={"type"}>
                     {this.props.form.type.option.map(item => (
                       <option value={item.value}>{item.name}</option>
                     ))}
-                  </select>
+                  </select> */}
+                  <Dropdown
+                    options={this.props.form.type.option}
+                    onChange={this._onSelect}
+                    placeholder="Select an option"
+                    className="select"
+                  />
                 </div>
                 <div className={styles.field}>
                   <label htmlFor={"message"}>
