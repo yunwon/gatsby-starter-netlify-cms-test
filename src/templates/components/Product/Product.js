@@ -21,7 +21,7 @@ class ProductPageTemplate extends React.Component {
         <div className={styles.overview}>
           <div className={styles.cards}>
             {productList.map(item => (
-              <div className={styles.card}>
+              <div className={styles.card} key={item.title}>
                 <PreviewCompatibleImage
                   imageInfo={{
                     image: item.image,
@@ -42,7 +42,7 @@ class ProductPageTemplate extends React.Component {
         </div>
         {/* 02. More Info */}
         {productList.map(product => (
-          <div className={styles.wrapper}>
+          <div className={styles.wrapper} key={product.id}>
             <div className={styles.section} id={product.id}>
               <h4>{product.title}</h4>
               <PreviewCompatibleImage
