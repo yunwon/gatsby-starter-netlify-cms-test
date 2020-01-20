@@ -6,6 +6,8 @@ import BgImage from "../../../assets/services/insulation/hero.png";
 import PreviewCompatibleImage from "../../../components/PreviewCompatibleImage";
 
 const HealthyHomesPageTemplate = ({ title, subTitle, standards, keyDates }) => {
+  console.log(standards.icons);
+  console.log(keyDates.list);
   return (
     <div>
       <HeroSection title={title} subtitle={subTitle} bgImage={BgImage} />
@@ -16,7 +18,7 @@ const HealthyHomesPageTemplate = ({ title, subTitle, standards, keyDates }) => {
           <p className={styles.subtitle}>{standards.description}</p>
           <div className={styles.items}>
             {standards.icons.map(item => (
-              <div>
+              <div key={item.title}>
                 <div className={styles.iconWrapper}>
                   <PreviewCompatibleImage
                     imageInfo={{
@@ -41,7 +43,7 @@ const HealthyHomesPageTemplate = ({ title, subTitle, standards, keyDates }) => {
         <h2>{keyDates.title}</h2>
         <div className={styles.text}>
           {keyDates.list.map(item => (
-            <div className={styles.paragraph}>
+            <div className={styles.paragraph} key={item.title}>
               <h5>{item.title}</h5>
               <p>{item.description}</p>
             </div>
