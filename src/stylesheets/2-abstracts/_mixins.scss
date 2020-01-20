@@ -35,6 +35,7 @@
   @media #{$break-md} {
     padding: 4.375rem 1rem;
   }
+
   @media #{$break-lg} {
     padding: 4.375rem 0rem;
   }
@@ -44,4 +45,11 @@
   border: 1px solid $border-grey;
   border-radius: 4px;
   padding: 0.8rem 1rem;
+}
+
+@mixin hoverTransition() {
+  transition: 0.25s;
+  transition-timing-function: ease-out;
+  -webkit-transition: 0.25s;
+  -webkit-transition-timing-function: ease-out;
 }

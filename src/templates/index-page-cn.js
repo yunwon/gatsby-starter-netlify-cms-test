@@ -20,6 +20,7 @@ const IndexCNPage = ({ data }) => {
         ourProducts={frontmatter.ourProducts}
         testimonials={frontmatter.testimonials}
         contact={frontmatter.contact}
+        language="Chinese"
       />
     </LayoutCN>
   );

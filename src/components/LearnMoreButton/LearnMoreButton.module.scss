@@ -8,6 +8,9 @@
   color: white !important;
   border: none;
   @include flex-center();
+  @include hoverTransition();
+  font-family: inherit;
+
   svg {
     margin-left: 6px;
   }

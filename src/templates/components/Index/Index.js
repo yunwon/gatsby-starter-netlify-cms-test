@@ -22,7 +22,8 @@ const IndexPageTemplate = ({
   whyChooseUs,
   ourProducts,
   testimonials,
-  contact
+  contact,
+  language
 }) => (
   <div>
     {/* 01. hero */}
@@ -65,7 +66,6 @@ const IndexPageTemplate = ({
                 }}
               />
             </div>
-            {/* <img src={Insulation} alt={whatWeDo.whatWeDo01.title} /> */}
             <div>
               <h4>{item.title}</h4>
               <p>{item.description}</p>
@@ -137,7 +137,9 @@ const IndexPageTemplate = ({
           <p className={styles.subtitle}>
             Call us at <a href={`tel:${contact.phoneNo}`}>{contact.phoneNo}</a>
           </p>
-          <button className={styles.button}>{contact.button}</button>
+          <Link to={language === "English" ? `/contact` : `/contact/cn`}>
+            <Button title={contact.button} bigButton />
+          </Link>
         </div>
       </div>
       <div className={styles.contactImage}></div>
@@ -155,7 +157,8 @@ IndexPageTemplate.propTypes = {
   whyChooseUs: PropTypes.object,
   ourProducts: PropTypes.object,
   testimonials: PropTypes.object,
-  contact: PropTypes.object
+  contact: PropTypes.object,
+  language: PropTypes.oneOf(["English", "Chinese"])
 };
 
 export default IndexPageTemplate;

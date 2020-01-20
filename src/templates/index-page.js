@@ -19,6 +19,7 @@ const IndexPage = ({ data }) => {
         ourProducts={frontmatter.ourProducts}
         testimonials={frontmatter.testimonials}
         contact={frontmatter.contact}
+        language="English"
       />
     </Layout>
   );
