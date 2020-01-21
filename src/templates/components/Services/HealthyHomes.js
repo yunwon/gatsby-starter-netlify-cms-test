@@ -17,23 +17,26 @@ const HealthyHomesPageTemplate = ({ title, subTitle, standards, keyDates }) => {
           <h2 className={styles.title}>{standards.title}</h2>
           <p className={styles.subtitle}>{standards.description}</p>
           <div className={styles.items}>
-            {standards.icons.map(item => (
-              <div key={item.title}>
-                <div className={styles.iconWrapper}>
-                  <PreviewCompatibleImage
-                    imageInfo={{
-                      image: item.image,
-                      alt: item.title
-                    }}
-                    className={styles.icon}
-                  />
+            {standards.icons.map(item => {
+              console.log(item);
+              return (
+                <div key={item.title}>
+                  <div className={styles.iconWrapper}>
+                    <PreviewCompatibleImage
+                      imageInfo={{
+                        image: item.image,
+                        alt: item.title
+                      }}
+                      className={styles.icon}
+                    />
+                  </div>
+                  <div className={styles.text}>
+                    {item.title && <h5>{item.title}</h5>}
+                    {item.description && <p>{item.description}</p>}
+                  </div>
                 </div>
-                <div className={styles.text}>
-                  {item.title && <h5>{item.title}</h5>}
-                  {item.description && <p>{item.description}</p>}
-                </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
           <p className={styles.subtitle}>{standards.extraDescription}</p>
         </div>
@@ -58,7 +61,12 @@ HealthyHomesPageTemplate.propTypes = {
   title: PropTypes.string,
   subTitle: PropTypes.string,
   standards: PropTypes.object,
-  keyDates: PropTypes.object
+  standards: PropTypes.shape({
+    icons: PropTypes.array
+  }),
+  keyDates: PropTypes.shape({
+    list: PropTypes.array
+  })
 };
 
 export default HealthyHomesPageTemplate;
