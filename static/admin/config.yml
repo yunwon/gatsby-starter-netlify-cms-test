@@ -224,6 +224,26 @@ collections:
                           widget: text,
                           required: false,
                         },
+                        {
+                          label: Event Modal,
+                          name: modal,
+                          widget: object,
+                          fields:
+                            [
+                              {
+                                label: Image,
+                                name: image,
+                                widget: image,
+                                required: false,
+                              },
+                              {
+                                label: Description,
+                                name: description,
+                                widget: text,
+                                required: false,
+                              },
+                            ],
+                        },
                       ],
                   },
                 ],
@@ -361,7 +381,12 @@ collections:
                       [
                         { label: Image, name: image, widget: image },
                         { label: Title, name: title, widget: string },
-                        { label: Year, name: year, widget: date, format: "YY" },
+                        {
+                          label: Year,
+                          name: year,
+                          widget: date,
+                          format: "YYYY",
+                        },
                         { label: Company, name: company, widget: string },
                         { label: Description, name: description, widget: text },
                       ],
@@ -394,7 +419,12 @@ collections:
                       [
                         { label: Image, name: image, widget: image },
                         { label: Title, name: title, widget: string },
-                        { label: Year, name: year, widget: date, format: "YY" },
+                        {
+                          label: Year,
+                          name: year,
+                          widget: date,
+                          format: "YYYY",
+                        },
                         { label: Company, name: company, widget: string },
                         { label: Description, name: description, widget: text },
                       ],
