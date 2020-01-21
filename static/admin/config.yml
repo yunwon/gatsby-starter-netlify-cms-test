@@ -59,7 +59,6 @@ collections:
                                   label: Image,
                                   name: image,
                                   widget: image,
-                                  media_library: config: multiple: true,
                                   required: false,
                                 },
                                 {
