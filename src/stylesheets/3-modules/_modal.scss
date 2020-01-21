@@ -1,0 +1,27 @@
+@import "../2-abstracts/abstracts-dir";
+
+/* Modal Styles
+========================================================================== */
+
+.modal-custom {
+  border-radius: 4px;
+  border: none;
+
+  .modal-content {
+  }
+
+  .modal-close {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    color: $border-grey;
+    cursor: pointer;
+    z-index: 1;
+
+    &:hover {
+      color: $grey;
+    }
+  }
+}

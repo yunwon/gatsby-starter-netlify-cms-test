@@ -42,6 +42,16 @@ export const pageQuery = graphql`
           event {
             title
             description
+            modal {
+              image {
+                childImageSharp {
+                  fluid(maxWidth: 1000, quality: 100) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
+              description
+            }
           }
         }
         whatWeDo {

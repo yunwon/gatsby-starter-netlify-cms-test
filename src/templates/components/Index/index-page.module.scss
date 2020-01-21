@@ -100,7 +100,8 @@
   }
 
   .heroImage {
-    background: no-repeat center center linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)),
+    background: no-repeat center center
+        linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)),
       url("../../../assets/home/hero.png");
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -109,9 +110,12 @@
     min-height: 270px;
 
     @media #{$break-md} {
-      background: no-repeat center center linear-gradient(to left,
-          rgba(255, 255, 255, 0),
-          rgba(255, 255, 255, 1)),
+      background: no-repeat center center
+          linear-gradient(
+            to left,
+            rgba(255, 255, 255, 0),
+            rgba(255, 255, 255, 1)
+          ),
         url("../../../assets/home/hero.png");
       -webkit-background-size: cover;
       -moz-background-size: cover;
@@ -266,7 +270,8 @@
   @include flex-center(column);
   text-align: center;
 
-  @media #{$break-md} {}
+  @media #{$break-md} {
+  }
 
   .text {
     max-width: 600px;
@@ -331,7 +336,8 @@
   }
 
   .contactImage {
-    background: no-repeat center center linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)),
+    background: no-repeat center center
+        linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)),
       url("../../../assets/home/contact.png");
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -341,9 +347,12 @@
 
     @media #{$break-md} {
       order: -1;
-      background: no-repeat center center linear-gradient(to right,
-          rgba(255, 255, 255, 0),
-          rgba(255, 255, 255, 1)),
+      background: no-repeat center center
+          linear-gradient(
+            to right,
+            rgba(255, 255, 255, 0),
+            rgba(255, 255, 255, 1)
+          ),
         url("../../../assets/home/contact.png");
       -webkit-background-size: cover;
       -moz-background-size: cover;

@@ -48,6 +48,31 @@ collections:
                           widget: text,
                           required: false,
                         },
+                        {
+                          label: Event Modal,
+                          name: modal,
+                          widget: object,
+                          fields:
+                            [
+                              {
+                                {
+                                  label: Image,
+                                  name: image,
+                                  widget: image,
+                                  media_library:
+                                    config:
+                                      multiple: true,
+                                  required: false,
+                                },
+                                {
+                                  label: Description,
+                                  name: description,
+                                  widget: text,
+                                  required: false,
+                                },
+                              },
+                            ],
+                        },
                       ],
                   },
                 ],

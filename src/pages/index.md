@@ -12,16 +12,34 @@ events:
         tempor incididunt ut labore et dolore magna aliqua. Elit eget gravida
         cum sociis natoque penatibus et.
       title: SNUGNZ Summer Special 01
+      modal:
+        image: /img/product-glasswool.jpg
+        description: >-
+          SNUGNZ Summer Special 01 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Elit eget gravida
+          cum sociis natoque penatibus et.
     - description: >-
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Elit eget gravida
         cum sociis natoque penatibus et.
       title: SNUGNZ Summer Special 02
+      modal:
+        image: /img/product-glasswool.jpg
+        description: >-
+          SNUGNZ Summer Special 02 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Elit eget gravida
+          cum sociis natoque penatibus et.
     - description: >-
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Elit eget gravida
         cum sociis natoque penatibus et.
       title: SNUGNZ Summer Special 03
+      modal:
+        image: /img/product-glasswool.jpg
+        description: >-
+          SNUGNZ Summer Special 03 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Elit eget gravida
+          cum sociis natoque penatibus et.
 whatWeDo:
   description: >-
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
