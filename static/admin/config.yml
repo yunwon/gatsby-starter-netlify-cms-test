@@ -54,7 +54,6 @@ collections:
                           widget: object,
                           fields:
                             [
-                              {
                                 {
                                   label: Image,
                                   name: image,
@@ -67,7 +66,6 @@ collections:
                                   widget: text,
                                   required: false,
                                 },
-                              },
                             ],
                         },
                       ],
