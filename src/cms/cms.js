@@ -1,6 +1,7 @@
 import CMS from "netlify-cms-app";
 import uploadcare from "netlify-cms-media-library-uploadcare";
 import cloudinary from "netlify-cms-media-library-cloudinary";
+import "typeface-poppins";
 
 import AboutPagePreview from "./preview-templates/AboutPagePreview";
 import AboutCNPagePreview from "./preview-templates/AboutCNPagePreview";
