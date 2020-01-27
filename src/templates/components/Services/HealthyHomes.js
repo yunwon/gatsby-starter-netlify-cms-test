@@ -6,8 +6,6 @@ import BgImage from "../../../assets/services/insulation/hero.png";
 import PreviewCompatibleImage from "../../../components/PreviewCompatibleImage";
 
 const HealthyHomesPageTemplate = ({ title, subTitle, standards, keyDates }) => {
-  console.log(standards.icons);
-  console.log(keyDates.list);
   return (
     <div>
       <HeroSection title={title} subtitle={subTitle} bgImage={BgImage} />
@@ -17,8 +15,7 @@ const HealthyHomesPageTemplate = ({ title, subTitle, standards, keyDates }) => {
           <h2 className={styles.title}>{standards.title}</h2>
           <p className={styles.subtitle}>{standards.description}</p>
           <div className={styles.items}>
-            {/* {standards.icons.map(item => {
-              console.log(item);
+            {standards.fiveStandards.iconList.map(item => {
               return (
                 <div key={item.title}>
                   <div className={styles.iconWrapper}>
@@ -32,11 +29,10 @@ const HealthyHomesPageTemplate = ({ title, subTitle, standards, keyDates }) => {
                   </div>
                   <div className={styles.text}>
                     {item.title && <h5>{item.title}</h5>}
-                    {item.description && <p>{item.description}</p>}
                   </div>
                 </div>
               );
-            })} */}
+            })}
           </div>
           <p className={styles.subtitle}>{standards.extraDescription}</p>
         </div>
@@ -45,7 +41,7 @@ const HealthyHomesPageTemplate = ({ title, subTitle, standards, keyDates }) => {
       <div className={styles.keyDates}>
         <h2>{keyDates.title}</h2>
         <div className={styles.text}>
-          {keyDates.list.map(item => (
+          {keyDates.keyDatesList.list.map(item => (
             <div className={styles.paragraph} key={item.title}>
               <h5>{item.title}</h5>
               <p>{item.description}</p>
@@ -60,22 +56,8 @@ const HealthyHomesPageTemplate = ({ title, subTitle, standards, keyDates }) => {
 HealthyHomesPageTemplate.propTypes = {
   title: PropTypes.string,
   subTitle: PropTypes.string,
-  standards: PropTypes.shape({
-    title: PropTypes.string,
-    description: PropTypes.string,
-    icons: PropTypes.arrayOf(
-      PropTypes.shape({
-        image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-        title: PropTypes.string,
-        description: PropTypes.string
-      })
-    ),
-    extraDescription: PropTypes.string
-  }),
-  keyDates: PropTypes.shape({
-    title: PropTypes.string,
-    list: PropTypes.array
-  })
+  standards: PropTypes.object,
+  keyDates: PropTypes.object
 };
 
 export default HealthyHomesPageTemplate;

@@ -35,24 +35,27 @@ export const healthyhomesCNPageQuery = graphql`
         standards {
           title
           description
-          icons {
-            image {
-              childImageSharp {
-                fluid(maxWidth: 1000, quality: 100) {
-                  ...GatsbyImageSharpFluid
+          fiveStandards {
+            iconList {
+              image {
+                childImageSharp {
+                  fluid(maxWidth: 1000, quality: 100) {
+                    ...GatsbyImageSharpFluid
+                  }
                 }
               }
+              title
             }
-            description
-            title
           }
           extraDescription
         }
         keyDates {
           title
-          list {
-            title
-            description
+          keyDatesList {
+            list {
+              title
+              description
+            }
           }
         }
       }
