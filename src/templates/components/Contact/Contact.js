@@ -76,7 +76,7 @@ class ContactPageTemplate extends React.Component {
                     <input name="bot-field" onChange={this.handleChange} />
                   </label>
                 </div>
-                <div className={styles.field}>
+                {/* <div className={styles.field}>
                   <label htmlFor="name">{formData.yourName.name}</label>
                   <input
                     placeholder={formData.yourName.placeholder}
@@ -111,11 +111,6 @@ class ContactPageTemplate extends React.Component {
                 </div>
                 <div className={styles.field}>
                   <label htmlFor={"type"}>{formData.type.name}</label>
-                  {/* <select name={"type"} id={"type"}>
-                    {this.props.form.type.option.map(item => (
-                      <option value={item.value}>{item.name}</option>
-                    ))}
-                  </select> */}
                   <Dropdown
                     options={formData.type.option}
                     onChange={this._onSelect}
@@ -135,7 +130,7 @@ class ContactPageTemplate extends React.Component {
                     id={"message"}
                     required={true}
                   />
-                </div>
+                </div> */}
                 <div className={styles.field}>
                   <div data-netify-recaptcha="true"></div>
                 </div>
