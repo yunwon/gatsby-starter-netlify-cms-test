@@ -6,7 +6,6 @@ import BgImage from "../../../assets/services/insulation/hero.png";
 import PreviewCompatibleImage from "../../../components/PreviewCompatibleImage";
 
 const HealthyHomesPageTemplate = ({ title, subTitle, standards, keyDates }) => {
-  console.log(standards.fiveStandards.iconList);
   return (
     <div>
       <HeroSection title={title} subtitle={subTitle} bgImage={BgImage} />
