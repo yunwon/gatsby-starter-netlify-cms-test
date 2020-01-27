@@ -16,7 +16,7 @@ const HealthyHomesPageTemplate = ({ title, subTitle, standards, keyDates }) => {
           <h2 className={styles.title}>{standards.title}</h2>
           <p className={styles.subtitle}>{standards.description}</p>
           <div className={styles.items}>
-            {standards.fiveStandards.iconList.map(item => (
+            {/* {standards.fiveStandards.iconList.map(item => (
               <div key={item.title}>
                 <div className={styles.iconWrapper}>
                   <PreviewCompatibleImage
@@ -31,7 +31,7 @@ const HealthyHomesPageTemplate = ({ title, subTitle, standards, keyDates }) => {
                   {item.title && <h5>{item.title}</h5>}
                 </div>
               </div>
-            ))}
+            ))} */}
           </div>
           <p className={styles.subtitle}>{standards.extraDescription}</p>
         </div>
