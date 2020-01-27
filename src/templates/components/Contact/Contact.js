@@ -86,7 +86,7 @@ class ContactPageTemplate extends React.Component {
                   />
                 </div>
                 <div className={styles.field}>
-                  <label htmlFor={"tel"}>{this.props.form.phone.name}</label>
+                  <label htmlFor={"phone"}>{this.props.form.phone.name}</label>
                   <input
                     placeholder={this.props.form.phone.placeholder}
                     type={"tel"}
