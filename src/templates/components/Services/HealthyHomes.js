@@ -23,7 +23,7 @@ const HealthyHomesPageTemplate = ({
           <div className={styles.items}>
             {fiveStandards.iconList.map(item => (
               <div key={item.title}>
-                <div className={styles.iconWrapper}>
+                {/* <div className={styles.iconWrapper}>
                   <PreviewCompatibleImage
                     imageInfo={{
                       image: item.image,
@@ -31,7 +31,7 @@ const HealthyHomesPageTemplate = ({
                     }}
                     className={styles.icon}
                   />
-                </div>
+                </div> */}
                 <div className={styles.text}>
                   {item.title && <h5>{item.title}</h5>}
                 </div>
