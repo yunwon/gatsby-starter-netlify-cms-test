@@ -60,7 +60,7 @@ const HealthyHomesPageTemplate = ({
       {/* 02. key dates */}
       <div className={styles.keyDates}>
         <h2>{keyDates.title}</h2>
-        <RenderKeyDatesList data={keyDatesList.list} />
+        {/* <RenderKeyDatesList data={keyDatesList.list} /> */}
       </div>
     </div>
   );
