@@ -520,13 +520,7 @@ collections:
                                 name: title,
                                 widget: string,
                                 required: false,
-                              },
-                              {
-                                label: Description,
-                                name: description,
-                                widget: text,
-                                required: false,
-                              },
+                              }
                             ],
                         },
                       ],
