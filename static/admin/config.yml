@@ -531,7 +531,7 @@ collections:
                       ],
                   },
                 ],
-            },
+            }
           - {
               label: Key Dates,
               name: keyDates,
