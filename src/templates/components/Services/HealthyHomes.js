@@ -60,7 +60,6 @@ const HealthyHomesPageTemplate = ({ title, subTitle, standards, keyDates }) => {
 HealthyHomesPageTemplate.propTypes = {
   title: PropTypes.string,
   subTitle: PropTypes.string,
-  standards: PropTypes.object,
   standards: PropTypes.shape({
     icons: PropTypes.array
   }),
