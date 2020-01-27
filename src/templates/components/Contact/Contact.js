@@ -73,9 +73,11 @@ class ContactPageTemplate extends React.Component {
                   </label>
                 </div>
                 <div className={styles.field}>
-                  <label htmlFor={"name"}>{this.props.form.name.name}</label>
+                  <label htmlFor={"name"}>
+                    {this.props.form.yourName.name}
+                  </label>
                   <input
-                    placeholder={this.props.form.name.placeholder}
+                    placeholder={this.props.form.yourName.placeholder}
                     type={"text"}
                     name={"name"}
                     onChange={this.handleChange}
@@ -117,6 +119,8 @@ class ContactPageTemplate extends React.Component {
                     onChange={this._onSelect}
                     placeholder="Select an option"
                     className="select"
+                    name={"type"}
+                    id={"type"}
                   />
                 </div>
                 <div className={styles.field}>

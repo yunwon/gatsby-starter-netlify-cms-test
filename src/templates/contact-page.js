@@ -35,7 +35,7 @@ export const ContactPageQuery = graphql`
         phoneNo
         description
         form {
-          name {
+          yourName {
             name
             placeholder
           }

@@ -848,7 +848,7 @@ collections:
                 [
                   {
                     label: Name,
-                    name: name,
+                    name: yourName,
                     widget: object,
                     fields:
                       [
