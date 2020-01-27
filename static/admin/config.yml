@@ -536,10 +536,7 @@ collections:
               label: Key Dates,
               name: keyDates,
               widget: object,
-              fields:
-                [
-                  { label: Title, name: title, widget: string },
-                ],
+              fields: [{ label: Title, name: title, widget: string }],
             }
           - {
               label: key Dates List,
@@ -563,7 +560,7 @@ collections:
                       ],
                   },
                 ],
-            },
+            }
       - file: "src/pages/healthyhomes/cn.md"
         label: "HealthyHomes (Chinese)"
         name: "healthyhomes-cn"
