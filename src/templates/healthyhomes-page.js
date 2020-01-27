@@ -12,6 +12,7 @@ const HealthyHomesPage = ({ data }) => {
         title={frontmatter.title}
         subTitle={frontmatter.subTitle}
         standards={frontmatter.standards}
+        fiveStandards={frontmatter.fiveStandards}
         keyDates={frontmatter.keyDates}
       />
     </Layout>
@@ -33,19 +34,19 @@ export const healthyhomesPageQuery = graphql`
         standards {
           title
           description
-          fiveStandards {
-            iconList {
-              image {
-                childImageSharp {
-                  fluid(maxWidth: 1000, quality: 100) {
-                    ...GatsbyImageSharpFluid
-                  }
+          extraDescription
+        }
+        fiveStandards {
+          iconList {
+            image {
+              childImageSharp {
+                fluid(maxWidth: 1000, quality: 100) {
+                  ...GatsbyImageSharpFluid
                 }
               }
-              title
             }
+            title
           }
-          extraDescription
         }
         keyDates {
           title

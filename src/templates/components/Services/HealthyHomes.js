@@ -5,7 +5,13 @@ import HeroSection from "../../../components/HeroSection/HeroSection";
 import BgImage from "../../../assets/services/insulation/hero.png";
 import PreviewCompatibleImage from "../../../components/PreviewCompatibleImage";
 
-const HealthyHomesPageTemplate = ({ title, subTitle, standards, keyDates }) => {
+const HealthyHomesPageTemplate = ({
+  title,
+  subTitle,
+  standards,
+  fiveStandards,
+  keyDates
+}) => {
   return (
     <div>
       <HeroSection title={title} subtitle={subTitle} bgImage={BgImage} />
@@ -15,7 +21,7 @@ const HealthyHomesPageTemplate = ({ title, subTitle, standards, keyDates }) => {
           <h2 className={styles.title}>{standards.title}</h2>
           <p className={styles.subtitle}>{standards.description}</p>
           <div className={styles.items}>
-            {/* {standards.fiveStandards.iconList.map(item => (
+            {fiveStandards.iconList.map(item => (
               <div key={item.title}>
                 <div className={styles.iconWrapper}>
                   <PreviewCompatibleImage
@@ -30,7 +36,7 @@ const HealthyHomesPageTemplate = ({ title, subTitle, standards, keyDates }) => {
                   {item.title && <h5>{item.title}</h5>}
                 </div>
               </div>
-            ))} */}
+            ))}
           </div>
           <p className={styles.subtitle}>{standards.extraDescription}</p>
         </div>
@@ -54,14 +60,16 @@ const HealthyHomesPageTemplate = ({ title, subTitle, standards, keyDates }) => {
 HealthyHomesPageTemplate.propTypes = {
   title: PropTypes.string,
   subTitle: PropTypes.string,
-  standards: PropTypes.shape({
-    title: PropTypes.string,
-    description: PropTypes.string,
-    fiveStandards: PropTypes.shape({
-      iconList: PropTypes.array
-    }),
-    extraDescription: PropTypes.string
-  }),
+  standards: PropTypes.object,
+  fiveStandards: PropTypes.object,
+  // standards: PropTypes.shape({
+  //   title: PropTypes.string,
+  //   description: PropTypes.string,
+  //   fiveStandards: PropTypes.shape({
+  //     iconList: PropTypes.array
+  //   }),
+  //   extraDescription: PropTypes.string
+  // }),
   keyDates: PropTypes.object
 };
 

@@ -503,33 +503,35 @@ collections:
                     required: false,
                   },
                   {
-                    label: Icons,
-                    name: fiveStandards,
-                    widget: object,
-                    fields:
-                        {
-                          label: Icon List,
-                          name: iconList,
-                          widget: list,
-                          fields:
-                            [
-                              { label: Image, name: image, widget: image },
-                              {
-                                label: Title,
-                                name: title,
-                                widget: string,
-                                required: false,
-                              }
-                            ],
-                        },
-                  },
-                  {
                     label: Extra Description,
                     name: extraDescription,
                     widget: text,
                   },
                 ],
             }
+          - {
+              label: Five Standards,
+              name: fiveStandards,
+              widget: object,
+              fields:
+                [
+                  {
+                    label: Icon List,
+                    name: iconList,
+                    widget: list,
+                    fields:
+                      [
+                        { label: Image, name: image, widget: image },
+                        {
+                          label: Title,
+                          name: title,
+                          widget: string,
+                          required: false,
+                        }
+                      ],
+                  },
+                ],
+            },
           - {
               label: Key Dates,
               name: keyDates,
