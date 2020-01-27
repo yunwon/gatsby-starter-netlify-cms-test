@@ -63,7 +63,13 @@ HealthyHomesPageTemplate.propTypes = {
   standards: PropTypes.shape({
     title: PropTypes.string,
     description: PropTypes.string,
-    icons: PropTypes.array,
+    icons: PropTypes.arrayOf(
+      PropTypes.shape({
+        image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+        title: PropTypes.string,
+        description: PropTypes.string
+      })
+    ),
     extraDescription: PropTypes.string
   }),
   keyDates: PropTypes.shape({
