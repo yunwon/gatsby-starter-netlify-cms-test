@@ -7,15 +7,20 @@ standards:
   title: What the standards cover
   description: The healthy homes standards incorporate five aspects of a property, which all contribute to a warm and dry home.
   icons:
-    - title: Heating
+    - title: >-
+        Heating
       image: /img/heating.png
-    - title: Insulation
+    - title: >-
+        Insulation
       image: /img/insulation.png
-    - title: Ventilation
+    - title: >-
+        Ventilation
       image: /img/ventilation.png
-    - title: Moisture ingress and drainage
+    - title: >-
+        Moisture ingress and drainage
       image: /img/moisture.png
-    - title: Draught stopping
+    - title: >-
+        Draught stopping
       image: /img/draught.png
   extraDescription: For more information about each standard please find here - https://www.tenancy.govt.nz/healthy-homes/about-the-healthy-homes-standards/
 keyDates:

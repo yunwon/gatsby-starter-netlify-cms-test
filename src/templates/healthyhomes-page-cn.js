@@ -43,6 +43,7 @@ export const healthyhomesCNPageQuery = graphql`
                 }
               }
             }
+            description
             title
           }
           extraDescription

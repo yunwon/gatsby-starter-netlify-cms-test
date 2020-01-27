@@ -18,6 +18,26 @@ class ContactPageTemplate extends React.Component {
     this.state = { isValidated: false, submitted: false };
   }
 
+  handleChange = e => {
+    e.preventDefault();
+    this.setState({ [e.target.name]: e.target.value });
+  };
+
+  handleSubmit = e => {
+    e.preventDefault();
+    const form = e.target;
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({
+        "form-name": form.getAttribute("name"),
+        ...this.state
+      })
+    })
+      .then(() => this.setState({ submitted: true }))
+      .catch(error => alert(error));
+  };
+
   render() {
     const formData = this.props.form;
     console.log(this.state);
@@ -91,6 +111,11 @@ class ContactPageTemplate extends React.Component {
                 </div>
                 <div className={styles.field}>
                   <label htmlFor={"type"}>{formData.type.name}</label>
+                  {/* <select name={"type"} id={"type"}>
+                    {this.props.form.type.option.map(item => (
+                      <option value={item.value}>{item.name}</option>
+                    ))}
+                  </select> */}
                   <Dropdown
                     options={formData.type.option}
                     onChange={this._onSelect}
@@ -132,26 +157,6 @@ class ContactPageTemplate extends React.Component {
       </div>
     );
   }
-
-  handleChange = e => {
-    e.preventDefault();
-    this.setState({ [e.target.name]: e.target.value });
-  };
-
-  handleSubmit = e => {
-    e.preventDefault();
-    const form = e.target;
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({
-        "form-name": form.getAttribute("name"),
-        ...this.state
-      })
-    })
-      .then(() => this.setState({ submitted: true }))
-      .catch(error => alert(error));
-  };
 }
 
 export default ContactPageTemplate;

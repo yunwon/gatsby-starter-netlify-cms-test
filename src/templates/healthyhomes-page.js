@@ -42,6 +42,7 @@ export const healthyhomesPageQuery = graphql`
               }
             }
             title
+            description
           }
           extraDescription
         }
