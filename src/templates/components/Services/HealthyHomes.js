@@ -9,18 +9,29 @@ const RenderIcons = ({ data }) => (
   <div className={styles.items}>
     {data.map(item => (
       <div key={item.title}>
-        {/* <div className={styles.iconWrapper}>
-        <PreviewCompatibleImage
-          imageInfo={{
-            image: item.image,
-            alt: item.title
-          }}
-          className={styles.icon}
-        />
-      </div> */}
+        <div className={styles.iconWrapper}>
+          <PreviewCompatibleImage
+            imageInfo={{
+              image: item.image,
+              alt: item.title
+            }}
+            className={styles.icon}
+          />
+        </div>
         <div className={styles.text}>
           <h5>{item.title}</h5>
         </div>
+      </div>
+    ))}
+  </div>
+);
+
+const RenderKeyDatesList = ({ data }) => (
+  <div className={styles.text}>
+    {data.map(item => (
+      <div className={styles.paragraph} key={item.title}>
+        <h5>{item.title}</h5>
+        <p>{item.description}</p>
       </div>
     ))}
   </div>
@@ -33,7 +44,6 @@ const HealthyHomesPageTemplate = ({
   fiveStandards,
   keyDates
 }) => {
-  console.log(fiveStandards.iconList);
   return (
     <div>
       <HeroSection title={title} subtitle={subTitle} bgImage={BgImage} />
@@ -49,14 +59,7 @@ const HealthyHomesPageTemplate = ({
       {/* 02. key dates */}
       <div className={styles.keyDates}>
         <h2>{keyDates.title}</h2>
-        <div className={styles.text}>
-          {keyDates.keyDatesList.list.map(item => (
-            <div className={styles.paragraph} key={item.title}>
-              <h5>{item.title}</h5>
-              <p>{item.description}</p>
-            </div>
-          ))}
-        </div>
+        <RenderKeyDatesList data={keyDates.keyDatesList.list} />
       </div>
     </div>
   );
@@ -67,14 +70,6 @@ HealthyHomesPageTemplate.propTypes = {
   subTitle: PropTypes.string,
   standards: PropTypes.object,
   fiveStandards: PropTypes.object,
-  // standards: PropTypes.shape({
-  //   title: PropTypes.string,
-  //   description: PropTypes.string,
-  //   fiveStandards: PropTypes.shape({
-  //     iconList: PropTypes.array
-  //   }),
-  //   extraDescription: PropTypes.string
-  // }),
   keyDates: PropTypes.object
 };
 
