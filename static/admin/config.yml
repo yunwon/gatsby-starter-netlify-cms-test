@@ -539,31 +539,31 @@ collections:
               fields:
                 [
                   { label: Title, name: title, widget: string },
+                ],
+            }
+          - {
+              label: key Dates List,
+              name: keyDatesList,
+              widget: object,
+              fields:
+                [
                   {
-                    label: key Dates List,
-                    name: keyDatesList,
-                    widget: object,
+                    label: List,
+                    name: list,
+                    widget: list,
                     fields:
                       [
+                        { label: Title, name: title, widget: string },
                         {
-                          label: List,
-                          name: list,
-                          widget: list,
-                          fields:
-                            [
-                              { label: Title, name: title, widget: string },
-                              {
-                                label: Description,
-                                name: description,
-                                widget: text,
-                                required: false,
-                              },
-                            ],
+                          label: Description,
+                          name: description,
+                          widget: text,
+                          required: false,
                         },
                       ],
                   },
                 ],
-            }
+            },
       - file: "src/pages/healthyhomes/cn.md"
         label: "HealthyHomes (Chinese)"
         name: "healthyhomes-cn"

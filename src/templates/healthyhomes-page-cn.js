@@ -14,6 +14,7 @@ const HealthyHomesCNPage = ({ data }) => {
         standards={frontmatter.standards}
         fiveStandards={frontmatter.fiveStandards}
         keyDates={frontmatter.keyDates}
+        keyDatesList={frontmatter.keyDatesList}
       />
     </LayoutCN>
   );
@@ -52,11 +53,11 @@ export const healthyhomesCNPageQuery = graphql`
         }
         keyDates {
           title
-          keyDatesList {
-            list {
-              title
-              description
-            }
+        }
+        keyDatesList {
+          list {
+            title
+            description
           }
         }
       }

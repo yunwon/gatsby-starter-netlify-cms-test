@@ -14,6 +14,7 @@ const HealthyHomesPage = ({ data }) => {
         standards={frontmatter.standards}
         fiveStandards={frontmatter.fiveStandards}
         keyDates={frontmatter.keyDates}
+        keyDatesList={frontmatter.keyDatesList}
       />
     </Layout>
   );
@@ -50,11 +51,11 @@ export const healthyhomesPageQuery = graphql`
         }
         keyDates {
           title
-          keyDatesList {
-            list {
-              title
-              description
-            }
+        }
+        keyDatesList {
+          list {
+            title
+            description
           }
         }
       }
