@@ -17,7 +17,7 @@ const HealthyHomesPageTemplate = ({ title, subTitle, standards, keyDates }) => {
           <h2 className={styles.title}>{standards.title}</h2>
           <p className={styles.subtitle}>{standards.description}</p>
           <div className={styles.items}>
-            {standards.icons.map(item => {
+            {/* {standards.icons.map(item => {
               console.log(item);
               return (
                 <div key={item.title}>
@@ -36,7 +36,7 @@ const HealthyHomesPageTemplate = ({ title, subTitle, standards, keyDates }) => {
                   </div>
                 </div>
               );
-            })}
+            })} */}
           </div>
           <p className={styles.subtitle}>{standards.extraDescription}</p>
         </div>
