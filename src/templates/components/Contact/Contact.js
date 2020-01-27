@@ -38,8 +38,9 @@ class ContactPageTemplate extends React.Component {
   };
 
   render() {
-    console.log(this.props.form);
     const formData = this.props.form;
+    console.log(this.state);
+
     return (
       <div>
         <div className={styles.wrapper}>
@@ -75,13 +76,13 @@ class ContactPageTemplate extends React.Component {
                   </label>
                 </div>
                 <div className={styles.field}>
-                  <label htmlFor={"name"}>{formData.yourName.name}</label>
+                  <label htmlFor="name">{formData.yourName.name}</label>
                   <input
                     placeholder={formData.yourName.placeholder}
-                    type={"text"}
-                    name={"name"}
+                    type="text"
+                    name="name"
                     onChange={this.handleChange}
-                    id={"name"}
+                    id="name"
                     required={true}
                   />
                 </div>
