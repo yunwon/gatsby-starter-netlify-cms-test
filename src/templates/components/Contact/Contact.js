@@ -38,6 +38,8 @@ class ContactPageTemplate extends React.Component {
   };
 
   render() {
+    console.log(this.props.form);
+    const formData = this.props.form;
     return (
       <div>
         <div className={styles.wrapper}>
@@ -73,11 +75,9 @@ class ContactPageTemplate extends React.Component {
                   </label>
                 </div>
                 <div className={styles.field}>
-                  <label htmlFor={"name"}>
-                    {this.props.form.yourName.name}
-                  </label>
+                  <label htmlFor={"name"}>{formData.yourName.name}</label>
                   <input
-                    placeholder={this.props.form.yourName.placeholder}
+                    placeholder={formData.yourName.placeholder}
                     type={"text"}
                     name={"name"}
                     onChange={this.handleChange}
@@ -86,9 +86,9 @@ class ContactPageTemplate extends React.Component {
                   />
                 </div>
                 <div className={styles.field}>
-                  <label htmlFor={"phone"}>{this.props.form.phone.name}</label>
+                  <label htmlFor={"phone"}>{formData.phone.name}</label>
                   <input
-                    placeholder={this.props.form.phone.placeholder}
+                    placeholder={formData.phone.placeholder}
                     type={"tel"}
                     name={"phone"}
                     onChange={this.handleChange}
@@ -97,9 +97,9 @@ class ContactPageTemplate extends React.Component {
                   />
                 </div>
                 <div className={styles.field}>
-                  <label htmlFor={"email"}>{this.props.form.email.name}</label>
+                  <label htmlFor={"email"}>{formData.email.name}</label>
                   <input
-                    placeholder={this.props.form.email.placeholder}
+                    placeholder={formData.email.placeholder}
                     type={"email"}
                     name={"email"}
                     onChange={this.handleChange}
@@ -108,14 +108,14 @@ class ContactPageTemplate extends React.Component {
                   />
                 </div>
                 <div className={styles.field}>
-                  <label htmlFor={"type"}>{this.props.form.type.name}</label>
+                  <label htmlFor={"type"}>{formData.type.name}</label>
                   {/* <select name={"type"} id={"type"}>
                     {this.props.form.type.option.map(item => (
                       <option value={item.value}>{item.name}</option>
                     ))}
                   </select> */}
                   <Dropdown
-                    options={this.props.form.type.option}
+                    options={formData.type.option}
                     onChange={this._onSelect}
                     placeholder="Select an option"
                     className="select"
@@ -124,11 +124,9 @@ class ContactPageTemplate extends React.Component {
                   />
                 </div>
                 <div className={styles.field}>
-                  <label htmlFor={"message"}>
-                    {this.props.form.message.name}
-                  </label>
+                  <label htmlFor={"message"}>{formData.message.name}</label>
                   <textarea
-                    placeholder={this.props.form.message.placeholder}
+                    placeholder={formData.message.placeholder}
                     rows={7}
                     name={"message"}
                     onChange={this.handleChange}
@@ -140,7 +138,7 @@ class ContactPageTemplate extends React.Component {
                   <div data-netify-recaptcha="true"></div>
                 </div>
                 <div className={styles.submitButton}>
-                  <Button title={this.props.form.submit} type="submit" />
+                  <Button title={formData.submit} type="submit" />
                 </div>
               </form>
             ) : (

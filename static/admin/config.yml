@@ -843,7 +843,7 @@ collections:
           - {
               label: "Contact Form",
               name: form,
-              widget: list,
+              widget: object,
               fields:
                 [
                   {
