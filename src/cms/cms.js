@@ -1,7 +1,6 @@
 import CMS from "netlify-cms-app";
 import uploadcare from "netlify-cms-media-library-uploadcare";
 import cloudinary from "netlify-cms-media-library-cloudinary";
-import "typeface-poppins";
 
 import AboutPagePreview from "./preview-templates/AboutPagePreview";
 import AboutCNPagePreview from "./preview-templates/AboutCNPagePreview";
@@ -21,6 +20,7 @@ import HealthyHomesCNPagePreview from "./preview-templates/HealthyHomesCNPagePre
 CMS.registerMediaLibrary(uploadcare);
 CMS.registerMediaLibrary(cloudinary);
 
+CMS.registerPreviewStyle("../stylesheets/index.scss");
 CMS.registerPreviewTemplate("index", IndexPagePreview);
 CMS.registerPreviewTemplate("index-cn", IndexCNPagePreview);
 CMS.registerPreviewTemplate("ourworks", OurWorksPagePreview);
