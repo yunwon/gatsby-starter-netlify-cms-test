@@ -5,6 +5,27 @@ import HeroSection from "../../../components/HeroSection/HeroSection";
 import BgImage from "../../../assets/services/insulation/hero.png";
 import PreviewCompatibleImage from "../../../components/PreviewCompatibleImage";
 
+const RenderIcons = ({ data }) => (
+  <div className={styles.items}>
+    {data.map(item => (
+      <div key={item.title}>
+        {/* <div className={styles.iconWrapper}>
+        <PreviewCompatibleImage
+          imageInfo={{
+            image: item.image,
+            alt: item.title
+          }}
+          className={styles.icon}
+        />
+      </div> */}
+        <div className={styles.text}>
+          <h5>{item.title}</h5>
+        </div>
+      </div>
+    ))}
+  </div>
+);
+
 const HealthyHomesPageTemplate = ({
   title,
   subTitle,
@@ -12,6 +33,7 @@ const HealthyHomesPageTemplate = ({
   fiveStandards,
   keyDates
 }) => {
+  console.log(fiveStandards.iconList);
   return (
     <div>
       <HeroSection title={title} subtitle={subTitle} bgImage={BgImage} />
@@ -20,24 +42,7 @@ const HealthyHomesPageTemplate = ({
         <div className={styles.inner}>
           <h2 className={styles.title}>{standards.title}</h2>
           <p className={styles.subtitle}>{standards.description}</p>
-          <div className={styles.items}>
-            {fiveStandards.iconList.map(item => (
-              <div key={item.title}>
-                {/* <div className={styles.iconWrapper}>
-                  <PreviewCompatibleImage
-                    imageInfo={{
-                      image: item.image,
-                      alt: item.title
-                    }}
-                    className={styles.icon}
-                  />
-                </div> */}
-                <div className={styles.text}>
-                  {item.title && <h5>{item.title}</h5>}
-                </div>
-              </div>
-            ))}
-          </div>
+          <RenderIcons data={fiveStandards.iconList} />
           <p className={styles.subtitle}>{standards.extraDescription}</p>
         </div>
       </div>

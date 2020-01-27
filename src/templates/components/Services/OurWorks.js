@@ -33,6 +33,7 @@ const Works = ({ data }) => (
 );
 
 const OurWorksPageTemplate = ({ title, subTitle, works }) => {
+  console.log(works.workDetail);
   return (
     <div>
       <HeroSection title={title} subtitle={subTitle} bgImage={BgImage} />
