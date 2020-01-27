@@ -527,7 +527,7 @@ collections:
                           name: title,
                           widget: string,
                           required: false,
-                        }
+                        },
                       ],
                   },
                 ],
@@ -552,6 +552,12 @@ collections:
                           fields:
                             [
                               { label: Title, name: title, widget: string },
+                              {
+                                label: Description,
+                                name: description,
+                                widget: text,
+                                required: false,
+                              },
                             ],
                         },
                       ],
