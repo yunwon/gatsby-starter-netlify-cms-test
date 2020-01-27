@@ -6,7 +6,7 @@ phoneNo: 09-818-6606
 description: >-
   梁勝読料種量無関統治禁阜主変子。秋方代長毎三家歩高即祭除属枝。権人認愛竹図験特中者米労船木三組。
 form:
-  name:
+  yourName:
     name: 梁勝読
     placeholder: Enter your name
   phone:
