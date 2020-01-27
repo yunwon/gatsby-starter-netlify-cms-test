@@ -75,37 +75,43 @@ class ContactPageTemplate extends React.Component {
                   </label>
                 </div>
                 <div className={styles.field}>
-                  <label htmlFor={"name"}>{formData.yourName.name}</label>
-                  <input
-                    placeholder={formData.yourName.placeholder}
-                    type={"text"}
-                    name={"name"}
-                    onChange={this.handleChange}
-                    id={"name"}
-                    required={true}
-                  />
+                  <label htmlFor={"name"}>
+                    {formData.yourName.name}
+                    <input
+                      placeholder={formData.yourName.placeholder}
+                      type={"text"}
+                      name={"name"}
+                      onChange={this.handleChange}
+                      id={"name"}
+                      required={true}
+                    />
+                  </label>
                 </div>
                 <div className={styles.field}>
-                  <label htmlFor={"phone"}>{formData.phone.name}</label>
-                  <input
-                    placeholder={formData.phone.placeholder}
-                    type={"tel"}
-                    name={"phone"}
-                    onChange={this.handleChange}
-                    id={"phone"}
-                    required={true}
-                  />
+                  <label htmlFor={"phone"}>
+                    {formData.phone.name}
+                    <input
+                      placeholder={formData.phone.placeholder}
+                      type={"tel"}
+                      name={"phone"}
+                      onChange={this.handleChange}
+                      id={"phone"}
+                      required={true}
+                    />
+                  </label>
                 </div>
                 <div className={styles.field}>
-                  <label htmlFor={"email"}>{formData.email.name}</label>
-                  <input
-                    placeholder={formData.email.placeholder}
-                    type={"email"}
-                    name={"email"}
-                    onChange={this.handleChange}
-                    id={"email"}
-                    required={true}
-                  />
+                  <label htmlFor={"email"}>
+                    {formData.email.name}
+                    <input
+                      placeholder={formData.email.placeholder}
+                      type={"email"}
+                      name={"email"}
+                      onChange={this.handleChange}
+                      id={"email"}
+                      required={true}
+                    />
+                  </label>
                 </div>
                 <div className={styles.field}>
                   <label htmlFor={"type"}>{formData.type.name}</label>
@@ -124,15 +130,17 @@ class ContactPageTemplate extends React.Component {
                   />
                 </div>
                 <div className={styles.field}>
-                  <label htmlFor={"message"}>{formData.message.name}</label>
-                  <textarea
-                    placeholder={formData.message.placeholder}
-                    rows={7}
-                    name={"message"}
-                    onChange={this.handleChange}
-                    id={"message"}
-                    required={true}
-                  />
+                  <label htmlFor={"message"}>
+                    {formData.message.name}
+                    <textarea
+                      placeholder={formData.message.placeholder}
+                      rows={7}
+                      name={"message"}
+                      onChange={this.handleChange}
+                      id={"message"}
+                      required={true}
+                    />
+                  </label>
                 </div>
                 <div className={styles.field}>
                   <div data-netify-recaptcha="true"></div>
