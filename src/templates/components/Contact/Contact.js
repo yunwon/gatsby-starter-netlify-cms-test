@@ -18,26 +18,6 @@ class ContactPageTemplate extends React.Component {
     this.state = { isValidated: false, submitted: false };
   }
 
-  handleChange = e => {
-    e.preventDefault();
-    this.setState({ [e.target.name]: e.target.value });
-  };
-
-  handleSubmit = e => {
-    e.preventDefault();
-    const form = e.target;
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({
-        "form-name": form.getAttribute("name"),
-        ...this.state
-      })
-    })
-      .then(() => this.setState({ submitted: true }))
-      .catch(error => alert(error));
-  };
-
   render() {
     const formData = this.props.form;
     console.log(this.state);
@@ -76,7 +56,7 @@ class ContactPageTemplate extends React.Component {
                     <input name="bot-field" onChange={this.handleChange} />
                   </label>
                 </div>
-                {/* <div className={styles.field}>
+                <div className={styles.field}>
                   <label htmlFor="name">{formData.yourName.name}</label>
                   <input
                     placeholder={formData.yourName.placeholder}
@@ -130,7 +110,7 @@ class ContactPageTemplate extends React.Component {
                     id={"message"}
                     required={true}
                   />
-                </div> */}
+                </div>
                 <div className={styles.field}>
                   <div data-netify-recaptcha="true"></div>
                 </div>
@@ -152,6 +132,26 @@ class ContactPageTemplate extends React.Component {
       </div>
     );
   }
+
+  handleChange = e => {
+    e.preventDefault();
+    this.setState({ [e.target.name]: e.target.value });
+  };
+
+  handleSubmit = e => {
+    e.preventDefault();
+    const form = e.target;
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({
+        "form-name": form.getAttribute("name"),
+        ...this.state
+      })
+    })
+      .then(() => this.setState({ submitted: true }))
+      .catch(error => alert(error));
+  };
 }
 
 export default ContactPageTemplate;
