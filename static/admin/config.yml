@@ -507,7 +507,6 @@ collections:
                     name: fiveStandards,
                     widget: object,
                     fields:
-                      [
                         {
                           label: Icon List,
                           name: iconList,
@@ -523,7 +522,6 @@ collections:
                               }
                             ],
                         },
-                      ],
                   },
                   {
                     label: Extra Description,
