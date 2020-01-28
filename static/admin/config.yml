@@ -514,6 +514,7 @@ collections:
               name: fiveStandards,
               widget: object,
               fields:
+                [
                   {
                     label: Icon List,
                     name: iconList,
@@ -529,18 +530,20 @@ collections:
                         },
                       ],
                   },
+                ],
             }
           - {
               label: Key Dates,
               name: keyDates,
               widget: object,
-              fields: { label: Title, name: title, widget: string },
+              fields: [{ label: Title, name: title, widget: string }],
             }
           - {
               label: key Dates List,
               name: keyDatesList,
               widget: object,
               fields:
+                [
                   {
                     label: List,
                     name: list,
@@ -556,6 +559,7 @@ collections:
                         },
                       ],
                   },
+                ],
             }
       - file: "src/pages/healthyhomes/cn.md"
         label: "HealthyHomes (Chinese)"
@@ -583,20 +587,8 @@ collections:
                     required: false,
                   },
                   {
-                    label: Extra Description,
-                    name: extraDescription,
-                    widget: text,
-                  },
-                ],
-            }
-          - {
-              label: Five Standards,
-              name: fiveStandards,
-              widget: object,
-              fields:
-                  {
-                    label: Icon List,
-                    name: iconList,
+                    label: Icons,
+                    name: icons,
                     widget: list,
                     fields:
                       [
@@ -607,27 +599,6 @@ collections:
                           widget: string,
                           required: false,
                         },
-                      ],
-                  },
-            }
-          - {
-              label: Key Dates,
-              name: keyDates,
-              widget: object,
-              fields: { label: Title, name: title, widget: string },
-            }
-          - {
-              label: key Dates List,
-              name: keyDatesList,
-              widget: object,
-              fields:
-                  {
-                    label: List,
-                    name: list,
-                    widget: list,
-                    fields:
-                      [
-                        { label: Title, name: title, widget: string },
                         {
                           label: Description,
                           name: description,
@@ -636,6 +607,31 @@ collections:
                         },
                       ],
                   },
+                  {
+                    label: Extra Description,
+                    name: extraDescription,
+                    widget: text,
+                  },
+                ],
+            }
+          - {
+              label: Key Dates,
+              name: keyDates,
+              widget: object,
+              fields:
+                [
+                  { label: Title, name: title, widget: string },
+                  {
+                    label: List,
+                    name: list,
+                    widget: list,
+                    fields:
+                      [
+                        { label: Title, name: title, widget: string },
+                        { label: Description, name: description, widget: text },
+                      ],
+                  },
+                ],
             }
       - file: "src/pages/about/index.md"
         label: "About"
