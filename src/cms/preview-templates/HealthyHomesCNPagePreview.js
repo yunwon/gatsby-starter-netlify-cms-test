@@ -8,7 +8,7 @@ const HealthyHomesCNPagePreview = ({ entry, widgetFor }) => {
       title={entry.getIn(["data", "title"])}
       subTitle={entry.getIn(["data", "subTitle"])}
       standards={entry.getIn(["data", "standards"])}
-      fiveStandards={entry.getIn(["data", "standards"])}
+      fiveStandards={entry.getIn(["data", "fiveStandards"])}
       keyDates={entry.getIn(["data", "keyDates"])}
       keyDatesList={entry.getIn(["data", "keyDatesList"])}
     />
