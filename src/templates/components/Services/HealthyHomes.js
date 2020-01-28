@@ -70,9 +70,13 @@ HealthyHomesPageTemplate.propTypes = {
   title: PropTypes.string,
   subTitle: PropTypes.string,
   standards: PropTypes.object,
-  fiveStandards: PropTypes.object,
+  fiveStandards: PropTypes.PropTypes.shape({
+    iconList: PropTypes.array
+  }),
   keyDates: PropTypes.object,
-  keyDatesList: PropTypes.object
+  keyDatesList: PropTypes.shape({
+    list: PropTypes.array
+  })
 };
 
 export default HealthyHomesPageTemplate;
