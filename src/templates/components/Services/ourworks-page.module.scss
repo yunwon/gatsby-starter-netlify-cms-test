@@ -42,9 +42,7 @@
   }
 
   .image {
-    width: 100%;
-    border-radius: 4px;
-    max-height: 400px;
+    @include cardImage($maxHeight: 400px);
   }
 
   @media #{$break-md} {

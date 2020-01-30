@@ -40,7 +40,7 @@ global.__PATH_PREFIX__ = "";
 
 // This is to utilized to override the window.___navigate method Gatsby defines and uses to report what path a Link would be taking us to
 window.___navigate = pathname => {
-  alert(`This would navigate to: https://www.memsql.com${pathname}`);
+  alert(`This would navigate to: https://snugnz.netlify.com${pathname}`);
 };
 
 CMS.registerMediaLibrary(uploadcare);
