@@ -2,7 +2,6 @@ import CMS from "netlify-cms-app";
 
 import "typeface-poppins";
 import "../stylesheets/index.scss";
-import "../templates/components/Index/index-page.module.scss";
 
 import uploadcare from "netlify-cms-media-library-uploadcare";
 import cloudinary from "netlify-cms-media-library-cloudinary";
@@ -47,10 +46,6 @@ window.___navigate = pathname => {
 CMS.registerMediaLibrary(uploadcare);
 CMS.registerMediaLibrary(cloudinary);
 
-CMS.registerPreviewStyle("../stylesheets/index.scss");
-CMS.registerPreviewStyle(
-  "../templates/components/Index/index-page.module.scss"
-);
 CMS.registerPreviewTemplate("index", IndexPagePreview);
 CMS.registerPreviewTemplate("index-cn", IndexCNPagePreview);
 CMS.registerPreviewTemplate("ourworks", OurWorksPagePreview);
