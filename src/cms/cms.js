@@ -46,7 +46,7 @@ window.___navigate = pathname => {
 CMS.registerMediaLibrary(uploadcare);
 CMS.registerMediaLibrary(cloudinary);
 
-//CMS.registerPreviewStyle("../stylesheets/index.scss");
+CMS.registerPreviewStyle("../stylesheets/index.scss");
 CMS.registerPreviewTemplate("index", IndexPagePreview);
 CMS.registerPreviewTemplate("index-cn", IndexCNPagePreview);
 CMS.registerPreviewTemplate("ourworks", OurWorksPagePreview);
