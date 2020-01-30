@@ -54,7 +54,7 @@
   -webkit-transition-timing-function: ease-out;
 }
 
-@mixin cardImage($maxHeight:400px) {
+@mixin cardImage($maxHeight:300px) {
   width: 100%;
   border-radius: 4px;
   max-height: $maxHeight;
@@ -62,7 +62,7 @@
   object-fit: cover;
 }
 
-@mixin card($desktopTextAlignLeft: true, $maxHeight:300) {
+@mixin card($desktopTextAlignLeft: true, $maxHeight:300px) {
   margin-bottom: 1.875rem;
   flex: 1;
 
