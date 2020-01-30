@@ -1,7 +1,7 @@
 import CMS from "netlify-cms-app";
 
 import "typeface-poppins";
-//import "../stylesheets/index.scss";
+import "../stylesheets/index.scss";
 
 import uploadcare from "netlify-cms-media-library-uploadcare";
 import cloudinary from "netlify-cms-media-library-cloudinary";
