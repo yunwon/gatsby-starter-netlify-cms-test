@@ -1,47 +1,11 @@
 @import "../../../stylesheets/2-abstracts/_abstracts-dir.scss";
 
 //components
-
 .cards {
   display: grid;
 
   .card {
-    margin-bottom: 1.875rem;
-    flex: 1;
-
-    @media #{$break-md} {
-      margin-bottom: 0;
-      margin-right: 0.7rem;
-    }
-
-    &:last-child {
-      margin: 0;
-    }
-
-    .image {
-      width: 100%;
-      margin-bottom: 1rem;
-
-      img {
-        border-radius: 4px;
-      }
-    }
-
-    div {
-      padding: 0 1rem;
-
-      h5 {
-        margin-bottom: 6px;
-      }
-
-      button {
-        margin-top: 1rem;
-      }
-
-      @media #{$break-md} {
-        padding: 0;
-      }
-    }
+    @include card();
   }
 
   @media #{$break-md} {
@@ -100,8 +64,7 @@
   }
 
   .heroImage {
-    background: no-repeat center center
-        linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)),
+    background: no-repeat center center linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)),
       url("../../../assets/home/hero.png");
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -110,12 +73,9 @@
     min-height: 270px;
 
     @media #{$break-md} {
-      background: no-repeat center center
-          linear-gradient(
-            to left,
-            rgba(255, 255, 255, 0),
-            rgba(255, 255, 255, 1)
-          ),
+      background: no-repeat center center linear-gradient(to left,
+          rgba(255, 255, 255, 0),
+          rgba(255, 255, 255, 1)),
         url("../../../assets/home/hero.png");
       -webkit-background-size: cover;
       -moz-background-size: cover;
@@ -131,7 +91,6 @@
 
 .event {
   background: rgba(19, 82, 144, 0.16);
-
   @include articlePadding();
 
   .eventInner {
@@ -152,9 +111,10 @@
 
 .whatWeDo {
   @include container-maxwidth();
-  @include articlePadding($hasMobileImage: true);
+  @include articlePadding();
   @include flex-center();
   flex-direction: column;
+  text-align: center;
 
   @media #{$break-md} {
     flex-direction: row;
@@ -167,9 +127,9 @@
     padding: 0 1rem;
 
     @media #{$break-md} {
-      text-align: left;
       margin-bottom: 0;
       padding: 0;
+      text-align: left;
     }
   }
 }
@@ -225,8 +185,9 @@
 
 .ourProducts {
   @include container-maxwidth();
-  @include articlePadding($hasMobileImage: true);
+  @include articlePadding();
   @include flex-center(column);
+  text-align: center;
 
   @media #{$break-md} {
     flex-direction: row;
@@ -270,8 +231,7 @@
   @include flex-center(column);
   text-align: center;
 
-  @media #{$break-md} {
-  }
+  @media #{$break-md} {}
 
   .text {
     max-width: 600px;
@@ -336,8 +296,7 @@
   }
 
   .contactImage {
-    background: no-repeat center center
-        linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)),
+    background: no-repeat center center linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)),
       url("../../../assets/home/contact.png");
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -347,12 +306,9 @@
 
     @media #{$break-md} {
       order: -1;
-      background: no-repeat center center
-          linear-gradient(
-            to right,
-            rgba(255, 255, 255, 0),
-            rgba(255, 255, 255, 1)
-          ),
+      background: no-repeat center center linear-gradient(to right,
+          rgba(255, 255, 255, 0),
+          rgba(255, 255, 255, 1)),
         url("../../../assets/home/contact.png");
       -webkit-background-size: cover;
       -moz-background-size: cover;

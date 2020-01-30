@@ -97,16 +97,15 @@ class IndexPageTemplate extends React.Component {
           </div>
           <div className={styles.cards}>
             <div className={styles.card}>
-              <div className={styles.image}>
-                <PreviewCompatibleImage
-                  imageInfo={{
-                    image: whatWeDo.insulation.image,
-                    alt: whatWeDo.insulation.title
-                  }}
-                />
-              </div>
+              <PreviewCompatibleImage
+                imageInfo={{
+                  image: whatWeDo.insulation.image,
+                  alt: whatWeDo.insulation.title
+                }}
+                className={styles.image}
+              />
               <div>
-                <h4>{whatWeDo.insulation.title}</h4>
+                <h5>{whatWeDo.insulation.title}</h5>
                 <p>{whatWeDo.insulation.description}</p>
                 <Link to={`/${whatWeDo.insulation.linkUri}`}>
                   <LearnMoreButton language={language} />
@@ -114,16 +113,15 @@ class IndexPageTemplate extends React.Component {
               </div>
             </div>
             <div className={styles.card}>
-              <div className={styles.image}>
-                <PreviewCompatibleImage
-                  imageInfo={{
-                    image: whatWeDo.healthyHomes.image,
-                    alt: whatWeDo.healthyHomes.title
-                  }}
-                />
-              </div>
+              <PreviewCompatibleImage
+                imageInfo={{
+                  image: whatWeDo.healthyHomes.image,
+                  alt: whatWeDo.healthyHomes.title
+                }}
+                className={styles.image}
+              />
               <div>
-                <h4>{whatWeDo.healthyHomes.title}</h4>
+                <h5>{whatWeDo.healthyHomes.title}</h5>
                 <p>{whatWeDo.healthyHomes.description}</p>
                 {console.log(whatWeDo.insulation.linkUri)}
                 <Link to={`/${whatWeDo.healthyHomes.linkUri}`}>
@@ -155,14 +153,13 @@ class IndexPageTemplate extends React.Component {
           <div className={styles.cards}>
             {ourProducts.productList.map(item => (
               <div className={styles.card}>
-                <div className={styles.image}>
-                  <PreviewCompatibleImage
-                    imageInfo={{
-                      image: item.image,
-                      alt: item.title
-                    }}
-                  />
-                </div>
+                <PreviewCompatibleImage
+                  imageInfo={{
+                    image: item.image,
+                    alt: item.title
+                  }}
+                  className={styles.image}
+                />
                 <div>
                   <h5>{item.title}</h5>
                   <p>{item.description}</p>
