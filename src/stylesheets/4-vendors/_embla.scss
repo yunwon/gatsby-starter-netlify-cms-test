@@ -29,8 +29,8 @@
   flex: 0 0 auto;
   width: 80%;
   position: relative;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  // padding-left: 1rem;
+  // padding-right: 1rem;
 
   @media #{$break-md} {
     padding: 0;
@@ -51,11 +51,11 @@
   //   color: white;
   //   font-weight: 300;
   //   line-height: 1;
-  //   content: counter(embla);
-  //   position: absolute;
-  //   top: 50%;
-  //   left: 50%;
-  //   transform: translate(-50%, -50%);
+  //content: counter(embla);
+  // position: absolute;
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
 }
 
 .embla__button {
