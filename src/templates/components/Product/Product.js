@@ -27,7 +27,7 @@ class ProductPageTemplate extends React.Component {
                     image: item.image,
                     alt: item.title
                   }}
-                  className={styles.cardImage}
+                  className={styles.image}
                 />
                 <div>
                   <h5>{item.title}</h5>

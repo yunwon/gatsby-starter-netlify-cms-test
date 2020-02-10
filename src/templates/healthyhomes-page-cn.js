@@ -12,7 +12,9 @@ const HealthyHomesCNPage = ({ data }) => {
         title={frontmatter.title}
         subTitle={frontmatter.subTitle}
         standards={frontmatter.standards}
+        fiveStandards={frontmatter.fiveStandards}
         keyDates={frontmatter.keyDates}
+        keyDatesList={frontmatter.keyDatesList}
       />
     </LayoutCN>
   );
@@ -35,20 +37,24 @@ export const healthyhomesCNPageQuery = graphql`
         standards {
           title
           description
-          icons {
+          extraDescription
+        }
+        fiveStandards {
+          iconList {
             image {
               childImageSharp {
-                fluid {
+                fluid(maxWidth: 1000, quality: 100) {
                   ...GatsbyImageSharpFluid
                 }
               }
             }
             title
           }
-          extraDescription
         }
         keyDates {
           title
+        }
+        keyDatesList {
           list {
             title
             description

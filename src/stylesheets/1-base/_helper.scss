@@ -2,6 +2,7 @@
 
 .onlyShowInMobile {
   display: block;
+
   @media #{$break-md} {
     display: none;
   }
@@ -9,6 +10,7 @@
 
 .onlyShowInDesktop {
   display: none;
+
   @media #{$break-md} {
     display: block;
   }

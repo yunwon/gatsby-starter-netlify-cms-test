@@ -6,7 +6,7 @@ phoneNo: 09-818-6606
 description: >-
   If you can’t call now, complete as much information below as you can and we’ll be in touch with you to talk through your requirements. Your enquiry will be answered within 2 business days by a representative of Snug Insulation Limited.
 form:
-  name:
+  yourName:
     name: Name
     placeholder: Enter your name
   phone:

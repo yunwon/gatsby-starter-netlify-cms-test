@@ -48,6 +48,26 @@ collections:
                           widget: text,
                           required: false,
                         },
+                        {
+                          label: Event Modal,
+                          name: modal,
+                          widget: object,
+                          fields:
+                            [
+                              {
+                                label: Image,
+                                name: image,
+                                widget: image,
+                                required: false,
+                              },
+                              {
+                                label: Description,
+                                name: description,
+                                widget: text,
+                                required: false,
+                              },
+                            ],
+                        },
                       ],
                   },
                 ],
@@ -204,6 +224,26 @@ collections:
                           widget: text,
                           required: false,
                         },
+                        {
+                          label: Event Modal,
+                          name: modal,
+                          widget: object,
+                          fields:
+                            [
+                              {
+                                label: Image,
+                                name: image,
+                                widget: image,
+                                required: false,
+                              },
+                              {
+                                label: Description,
+                                name: description,
+                                widget: text,
+                                required: false,
+                              },
+                            ],
+                        },
                       ],
                   },
                 ],
@@ -341,7 +381,12 @@ collections:
                       [
                         { label: Image, name: image, widget: image },
                         { label: Title, name: title, widget: string },
-                        { label: Year, name: year, widget: date, format: "YY" },
+                        {
+                          label: Year,
+                          name: year,
+                          widget: date,
+                          format: "YYYY",
+                        },
                         { label: Company, name: company, widget: string },
                         { label: Description, name: description, widget: text },
                       ],
@@ -374,7 +419,12 @@ collections:
                       [
                         { label: Image, name: image, widget: image },
                         { label: Title, name: title, widget: string },
-                        { label: Year, name: year, widget: date, format: "YY" },
+                        {
+                          label: Year,
+                          name: year,
+                          widget: date,
+                          format: "YYYY",
+                        },
                         { label: Company, name: company, widget: string },
                         { label: Description, name: description, widget: text },
                       ],
@@ -453,8 +503,21 @@ collections:
                     required: false,
                   },
                   {
-                    label: Icons,
-                    name: icons,
+                    label: Extra Description,
+                    name: extraDescription,
+                    widget: text,
+                  },
+                ],
+            }
+          - {
+              label: Five Standards,
+              name: fiveStandards,
+              widget: object,
+              fields:
+                [
+                  {
+                    label: Icon List,
+                    name: iconList,
                     widget: list,
                     fields:
                       [
@@ -465,18 +528,7 @@ collections:
                           widget: string,
                           required: false,
                         },
-                        {
-                          label: Description,
-                          name: description,
-                          widget: text,
-                          required: false,
-                        },
                       ],
-                  },
-                  {
-                    label: Extra Description,
-                    name: extraDescription,
-                    widget: text,
                   },
                 ],
             }
@@ -484,9 +536,14 @@ collections:
               label: Key Dates,
               name: keyDates,
               widget: object,
+              fields: [{ label: Title, name: title, widget: string }],
+            }
+          - {
+              label: key Dates List,
+              name: keyDatesList,
+              widget: object,
               fields:
                 [
-                  { label: Title, name: title, widget: string },
                   {
                     label: List,
                     name: list,
@@ -494,7 +551,12 @@ collections:
                     fields:
                       [
                         { label: Title, name: title, widget: string },
-                        { label: Description, name: description, widget: text },
+                        {
+                          label: Description,
+                          name: description,
+                          widget: text,
+                          required: false,
+                        },
                       ],
                   },
                 ],
@@ -793,12 +855,12 @@ collections:
           - {
               label: "Contact Form",
               name: form,
-              widget: list,
+              widget: object,
               fields:
                 [
                   {
                     label: Name,
-                    name: name,
+                    name: yourName,
                     widget: object,
                     fields:
                       [

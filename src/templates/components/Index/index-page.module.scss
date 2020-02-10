@@ -1,47 +1,11 @@
 @import "../../../stylesheets/2-abstracts/_abstracts-dir.scss";
 
 //components
-
 .cards {
   display: grid;
 
   .card {
-    margin-bottom: 1.875rem;
-    flex: 1;
-
-    @media #{$break-md} {
-      margin-bottom: 0;
-      margin-right: 0.7rem;
-    }
-
-    &:last-child {
-      margin: 0;
-    }
-
-    .image {
-      width: 100%;
-      margin-bottom: 1rem;
-
-      @media #{$break-md} {
-        border-radius: 4px;
-      }
-    }
-
-    div {
-      padding: 0 1rem;
-
-      h5 {
-        margin-bottom: 6px;
-      }
-
-      button {
-        margin-top: 1rem;
-      }
-
-      @media #{$break-md} {
-        padding: 0;
-      }
-    }
+    @include card();
   }
 
   @media #{$break-md} {
@@ -127,7 +91,6 @@
 
 .event {
   background: rgba(19, 82, 144, 0.16);
-
   @include articlePadding();
 
   .eventInner {
@@ -148,9 +111,10 @@
 
 .whatWeDo {
   @include container-maxwidth();
-  @include articlePadding($hasMobileImage: true);
+  @include articlePadding();
   @include flex-center();
   flex-direction: column;
+  text-align: center;
 
   @media #{$break-md} {
     flex-direction: row;
@@ -163,9 +127,9 @@
     padding: 0 1rem;
 
     @media #{$break-md} {
-      text-align: left;
       margin-bottom: 0;
       padding: 0;
+      text-align: left;
     }
   }
 }
@@ -221,8 +185,9 @@
 
 .ourProducts {
   @include container-maxwidth();
-  @include articlePadding($hasMobileImage: true);
+  @include articlePadding();
   @include flex-center(column);
+  text-align: center;
 
   @media #{$break-md} {
     flex-direction: row;
