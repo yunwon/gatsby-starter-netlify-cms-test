@@ -58,30 +58,6 @@ export const pageQuery = graphql`
         whatWeDo {
           title
           description
-          insulation {
-            title
-            image {
-              childImageSharp {
-                fluid(maxWidth: 1000, quality: 100) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-            description
-            linkUri
-          }
-          healthyHomes {
-            title
-            image {
-              childImageSharp {
-                fluid(maxWidth: 1000, quality: 100) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-            description
-            linkUri
-          }
         }
         whyChooseUs {
           whyChooseUs01 {
