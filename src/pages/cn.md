@@ -41,16 +41,16 @@ events:
           tempor incididunt ut labore et dolore magna aliqua. Elit eget gravida
           cum sociis natoque penatibus et.
 whatWeDo:
+  title: What We Do
   description: >-
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua.
-  title: What We Do
   insulation:
+    title: Insulation
+    image: /img/home-insulation.png
     description: >-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua.
-    image: /img/home-insulation.png
-    title: Insulation
     linkUri: insulation
   healthyHomes:
     description: >-
