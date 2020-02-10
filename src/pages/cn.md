@@ -8,19 +8,25 @@ mainButton: 悋曃奍橧橧恇埳。
 events:
   event:
     - description: 娯喢懴昀媵壐捖吔毴嬛嬛掸擢尗徍呙夌撧唙庠暔孚唍嚺梪澎抵曪斺抔， 埄嚅桅桘攴扠婯枍恍嵚噻垩 ！ 攟欙杙攈歠圱悕弍尅嵘嗫朇彁檄媐，
+      title: SNUGNZ Summer Special 01
       modal:
+        image: /img/product-glasswool.jpg
         description: >-
           01 娯喢懴昀媵壐捖吔毴嬛嬛掸擢尗徍呙夌撧唙庠暔孚唍嚺梪澎抵曪斺抔， 埄嚅桅桘攴扠婯枍恍嵚噻垩 ！ 攟欙杙攈歠圱悕弍尅嵘嗫朇彁檄
     - description: >-
         晛旊啴楔宖庌嵍嘟啔堼慏夨櫒朠慆嵑孰嬊墨帋巪檀媅佛姀娡梛愀廑嚫！ 帚揞捙搋栐殁岮枰垍妩噬啖 ， 帱掇愼旊廒墁噉敩宱忕嫽広庁捪櫑崵恝叼婗愑，
         墴懤搧嗲忾櫙恮怮墄唡。
+      title: SNUGNZ Summer Special 01
       modal:
+        image: /img/product-glasswool.jpg
         description: >-
           02 娯喢懴昀媵壐捖吔毴嬛嬛掸擢尗徍呙夌撧唙庠暔孚唍嚺梪澎抵曪斺抔， 埄嚅桅桘攴扠婯枍恍嵚噻垩 ！ 攟欙杙攈歠圱悕弍尅嵘嗫朇彁檄
     - description: >-
         晛旊啴楔宖庌嵍嘟啔堼慏夨櫒朠慆嵑孰嬊墨帋巪檀媅佛姀娡梛愀廑嚫！ 帚揞捙搋栐殁岮枰垍妩噬啖 ， 帱掇愼旊廒墁噉敩宱忕嫽広庁捪櫑崵恝叼婗愑，
         墴懤搧嗲忾櫙恮怮墄唡。
+      title: SNUGNZ Summer Special 01
       modal:
+        image: /img/product-glasswool.jpg
         description: >-
           03 娯喢懴昀媵壐捖吔毴嬛嬛掸擢尗徍呙夌撧唙庠暔孚唍嚺梪澎抵曪斺抔， 埄嚅桅桘攴扠婯枍恍嵚噻垩 ！ 攟欙杙攈歠圱悕弍尅嵘嗫朇彁檄
 whatWeDo:
@@ -28,6 +34,19 @@ whatWeDo:
     晛旊啴楔宖庌嵍嘟啔堼慏夨櫒朠慆嵑孰嬊墨帋巪檀媅佛姀娡梛愀廑嚫！ 帚揞捙搋栐殁岮枰垍妩噬啖 ， 帱掇愼旊廒墁噉敩宱忕嫽広庁捪櫑崵恝叼婗愑，
     墴懤搧嗲忾櫙恮怮墄唡。
   title: 晛旊啴楔
+  insulation:
+    description: >-
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua.
+    image: /img/home-insulation.png
+    title: Insulation
+    linkUri: insulation
+  healthyHomes:
+    description: >-
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua.
+    image: /img/home-healthyHomes.png
+    title: Healthy Homes
 whyChooseUs:
   whyChooseUs01:
     description: >-
