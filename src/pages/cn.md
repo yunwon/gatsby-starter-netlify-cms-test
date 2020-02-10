@@ -1,39 +1,50 @@
 ---
 templateKey: index-page-cn
-title: 啮嬦咴啬宧椇枳挩堇憜坙攘。
+title: We are making healthier home for you.
 subTitle: >-
-  晛旊啴楔宖庌嵍嘟啔堼慏夨櫒朠慆嵑孰嬊墨帋巪檀媅佛姀娡梛愀廑嚫！ 帚揞捙搋栐殁岮枰垍妩噬啖 ， 帱掇愼旊廒墁噉敩宱忕嫽広庁捪櫑崵恝叼婗愑，
-  墴懤搧嗲忾櫙恮怮墄唡。
-mainButton: 悋曃奍橧橧恇埳。
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+  incididunt ut labore et.
+mainButton: Talk To Us Now
 events:
   event:
-    - description: 娯喢懴昀媵壐捖吔毴嬛嬛掸擢尗徍呙夌撧唙庠暔孚唍嚺梪澎抵曪斺抔， 埄嚅桅桘攴扠婯枍恍嵚噻垩 ！ 攟欙杙攈歠圱悕弍尅嵘嗫朇彁檄媐，
-      title: SNUGNZ Summer Special 01
-      modal:
-        image: /img/product-glasswool.jpg
-        description: >-
-          01 娯喢懴昀媵壐捖吔毴嬛嬛掸擢尗徍呙夌撧唙庠暔孚唍嚺梪澎抵曪斺抔， 埄嚅桅桘攴扠婯枍恍嵚噻垩 ！ 攟欙杙攈歠圱悕弍尅嵘嗫朇彁檄
     - description: >-
-        晛旊啴楔宖庌嵍嘟啔堼慏夨櫒朠慆嵑孰嬊墨帋巪檀媅佛姀娡梛愀廑嚫！ 帚揞捙搋栐殁岮枰垍妩噬啖 ， 帱掇愼旊廒墁噉敩宱忕嫽広庁捪櫑崵恝叼婗愑，
-        墴懤搧嗲忾櫙恮怮墄唡。
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Elit eget gravida
+        cum sociis natoque penatibus et.
       title: SNUGNZ Summer Special 01
       modal:
         image: /img/product-glasswool.jpg
         description: >-
-          02 娯喢懴昀媵壐捖吔毴嬛嬛掸擢尗徍呙夌撧唙庠暔孚唍嚺梪澎抵曪斺抔， 埄嚅桅桘攴扠婯枍恍嵚噻垩 ！ 攟欙杙攈歠圱悕弍尅嵘嗫朇彁檄
+          SNUGNZ Summer Special 01 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Elit eget gravida
+          cum sociis natoque penatibus et.
     - description: >-
-        晛旊啴楔宖庌嵍嘟啔堼慏夨櫒朠慆嵑孰嬊墨帋巪檀媅佛姀娡梛愀廑嚫！ 帚揞捙搋栐殁岮枰垍妩噬啖 ， 帱掇愼旊廒墁噉敩宱忕嫽広庁捪櫑崵恝叼婗愑，
-        墴懤搧嗲忾櫙恮怮墄唡。
-      title: SNUGNZ Summer Special 01
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Elit eget gravida
+        cum sociis natoque penatibus et.
+      title: SNUGNZ Summer Special 02
       modal:
         image: /img/product-glasswool.jpg
         description: >-
-          03 娯喢懴昀媵壐捖吔毴嬛嬛掸擢尗徍呙夌撧唙庠暔孚唍嚺梪澎抵曪斺抔， 埄嚅桅桘攴扠婯枍恍嵚噻垩 ！ 攟欙杙攈歠圱悕弍尅嵘嗫朇彁檄
+          SNUGNZ Summer Special 02 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Elit eget gravida
+          cum sociis natoque penatibus et.
+    - description: >-
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Elit eget gravida
+        cum sociis natoque penatibus et.
+      title: SNUGNZ Summer Special 03
+      modal:
+        image: /img/product-glasswool.jpg
+        description: >-
+          SNUGNZ Summer Special 03 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Elit eget gravida
+          cum sociis natoque penatibus et.
 whatWeDo:
   description: >-
-    晛旊啴楔宖庌嵍嘟啔堼慏夨櫒朠慆嵑孰嬊墨帋巪檀媅佛姀娡梛愀廑嚫！ 帚揞捙搋栐殁岮枰垍妩噬啖 ， 帱掇愼旊廒墁噉敩宱忕嫽広庁捪櫑崵恝叼婗愑，
-    墴懤搧嗲忾櫙恮怮墄唡。
-  title: 晛旊啴楔
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua.
+  title: What We Do
   insulation:
     description: >-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -47,65 +58,67 @@ whatWeDo:
       tempor incididunt ut labore et dolore magna aliqua.
     image: /img/home-healthyHomes.png
     title: Healthy Homes
+    linkUri: healthyhomes
 whyChooseUs:
   whyChooseUs01:
     description: >-
-      晛旊啴楔宖庌嵍嘟啔堼慏夨櫒朠慆嵑孰嬊墨帋巪檀媅佛姀娡梛愀廑嚫！ 帚揞捙搋栐殁岮枰垍妩噬啖 ， 帱掇愼旊廒墁噉敩宱忕嫽広庁捪櫑崵恝叼婗愑，
-      墴懤搧嗲忾櫙恮怮墄唡。
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua.
   whyChooseUs02:
     description: >-
-      晛旊啴楔宖庌嵍嘟啔堼慏夨櫒朠慆嵑孰嬊墨帋巪檀媅佛姀娡梛愀廑嚫！ 帚揞捙搋栐殁岮枰垍妩噬啖 ， 帱掇愼旊廒墁噉敩宱忕嫽広庁捪櫑崵恝叼婗愑，
-      墴懤搧嗲忾櫙恮怮墄唡。
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua.
   whyChooseUs03:
     description: >-
-      晛旊啴楔宖庌嵍嘟啔堼慏夨櫒朠慆嵑孰嬊墨帋巪檀媅佛姀娡梛愀廑嚫！ 帚揞捙搋栐殁岮枰垍妩噬啖 ， 帱掇愼旊廒墁噉敩宱忕嫽広庁捪櫑崵恝叼婗愑，
-      墴懤搧嗲忾櫙恮怮墄唡。
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua.
 ourProducts:
   description: >-
-    晛旊啴楔宖庌嵍嘟啔堼慏夨櫒朠慆嵑孰嬊墨帋巪檀媅佛姀娡梛愀廑嚫！ 帚揞捙搋栐殁岮枰垍妩噬啖 ， 帱掇愼旊廒墁噉敩宱忕嫽広庁捪櫑崵恝叼婗愑，
-    墴懤搧嗲忾櫙恮怮墄唡。
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua.
   productList:
     - description: >-
-        晛旊啴楔宖庌嵍嘟啔堼慏夨櫒朠慆嵑孰嬊墨帋巪檀媅佛姀娡梛愀廑嚫！ 帚揞捙搋栐殁岮枰垍妩噬啖 ， 帱掇愼旊廒墁噉敩宱忕嫽広庁捪櫑崵恝叼婗愑，
-        墴懤搧嗲忾櫙恮怮墄唡。
+        Natural wool insulation in blanket or batting form. Ideal for walls of
+        new buildings and ceilings in new and existing premises.
       image: /img/home-woolproduct.png
-      title: 晛旊啴楔
+      title: Wool products
     - description: >-
-        晛旊啴楔宖庌嵍嘟啔堼慏夨櫒朠慆嵑孰嬊墨帋巪檀媅佛姀娡梛愀廑嚫！ 帚揞捙搋栐殁岮枰垍妩噬啖 ， 帱掇愼旊廒墁噉敩宱忕嫽広庁捪櫑崵恝叼婗愑，
-        墴懤搧嗲忾櫙恮怮墄唡。
+        Snug Insulation is proud to introduce our high-performance range of 100%
+        polyester thermal and acoustic insulation products, designed for the
+        residential and commercial buildings.
       image: /img/home-polyester.png
-      title: 晛旊啴楔
+      title: Polyester
     - description: >-
-        晛旊啴楔宖庌嵍嘟啔堼慏夨櫒朠慆嵑孰嬊墨帋巪檀媅佛姀娡梛愀廑嚫！ 帚揞捙搋栐殁岮枰垍妩噬啖 ， 帱掇愼旊廒墁噉敩宱忕嫽広庁捪櫑崵恝叼婗愑，
-        墴懤搧嗲忾櫙恮怮墄唡。
+        EarthWool is rot-proof, odourless, non-hygroscopic, does not sustain
+        vermin and will not encourage the growth of fungi, mould or bacteria.
       image: /img/home-glasswool.png
-      title: 晛旊啴楔
-  title: 晛旊啴楔
+      title: Glass Wool
+  title: Our Products
 testimonials:
-  testimonialList:
-    - company: ABC Ltd.
-      description: >-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
-      name: John Doe
-    - company: ABC Ltd.
-      description: >-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
-      name: John Doe
-    - company: ABC Ltd.
-      description: >-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
-      name: John Doe
-    - company: ABC Ltd.
-      description: >-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
-      name: John Doe
   title: Testimonials
+  testimonialList:
+    - description: >-
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      name: John Doe
+      company: ABC Ltd.
+    - description: >-
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      name: John Doe
+      company: ABC Ltd.
+    - description: >-
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      name: John Doe
+      company: ABC Ltd.
+    - description: >-
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      name: John Doe
+      company: ABC Ltd.
 contact:
-  button: Email Us
-  phoneNo: 09-818-6606
   title: Talk To Us Now
+  phoneNo: 09-818-6606
+  button: Email Us
 ---
