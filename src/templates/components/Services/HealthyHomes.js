@@ -60,7 +60,7 @@ const HealthyHomesPageTemplate = ({
       {/* 02. key dates */}
       <div className={styles.keyDates}>
         <h2>{keyDates.title}</h2>
-        {/* <RenderKeyDatesList data={keyDatesList.list} /> */}
+        <RenderKeyDatesList data={keyDatesList.list} />
       </div>
     </div>
   );
@@ -70,13 +70,9 @@ HealthyHomesPageTemplate.propTypes = {
   title: PropTypes.string,
   subTitle: PropTypes.string,
   standards: PropTypes.object,
-  fiveStandards: PropTypes.PropTypes.shape({
-    iconList: PropTypes.array
-  }),
+  fiveStandards: PropTypes.object,
   keyDates: PropTypes.object,
-  keyDatesList: PropTypes.shape({
-    list: PropTypes.array
-  })
+  keyDatesList: PropTypes.object
 };
 
 export default HealthyHomesPageTemplate;

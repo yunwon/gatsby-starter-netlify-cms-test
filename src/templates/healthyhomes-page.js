@@ -41,7 +41,7 @@ export const healthyhomesPageQuery = graphql`
           iconList {
             image {
               childImageSharp {
-                fluid(maxWidth: 1000, quality: 100) {
+                fluid {
                   ...GatsbyImageSharpFluid
                 }
               }
