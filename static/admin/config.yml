@@ -85,12 +85,34 @@ collections:
                     name: insulation,
                     widget: object,
                     fields:
-                      {
+                      [
                         { label: Title, name: title, widget: string },
-                        { label: Image, name: image, widget: image },
+                        {
+                          label: Image,
+                          name: image,
+                          widget: image,
+                          required: false,
+                        },
                         { label: Description, name: description, widget: text },
                         { label: Link Uri, name: linkUri, widget: string },
-                      },
+                      ],
+                  },
+                  {
+                    label: Healthy Homes,
+                    name: healthyHomes,
+                    widget: object,
+                    fields:
+                      [
+                        { label: Title, name: title, widget: string },
+                        {
+                          label: Image,
+                          name: image,
+                          widget: image,
+                          required: false,
+                        },
+                        { label: Description, name: description, widget: text },
+                        { label: Link Uri, name: linkUri, widget: string },
+                      ],
                   },
                 ],
             }

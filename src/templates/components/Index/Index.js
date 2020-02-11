@@ -95,7 +95,7 @@ class IndexPageTemplate extends React.Component {
             <h2>{whatWeDo.title}</h2>
             <p>{whatWeDo.description}</p>
           </div>
-          {/* <div className={styles.cards}>
+          <div className={styles.cards}>
             <div className={styles.card}>
               <PreviewCompatibleImage
                 imageInfo={{
@@ -129,7 +129,7 @@ class IndexPageTemplate extends React.Component {
                 </Link>
               </div>
             </div>
-          </div> */}
+          </div>
         </div>
         {/* 04. Why Choose Us */}
         <SectionWithIcons
@@ -206,7 +206,7 @@ class IndexPageTemplate extends React.Component {
 }
 
 IndexPageTemplate.propTypes = {
-  image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  image: PropTypes.object,
   title: PropTypes.string,
   subTitle: PropTypes.string,
   events: PropTypes.object,

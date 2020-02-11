@@ -57,6 +57,30 @@ export const pageQuery = graphql`
         whatWeDo {
           title
           description
+          insulation {
+            image {
+              childImageSharp {
+                fluid {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+            title
+            description
+            linkUri
+          }
+          healthyHomes {
+            image {
+              childImageSharp {
+                fluid {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+            title
+            description
+            linkUri
+          }
         }
         whyChooseUs {
           whyChooseUs01 {

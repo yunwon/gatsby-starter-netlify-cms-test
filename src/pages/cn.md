@@ -45,6 +45,21 @@ whatWeDo:
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua.
   title: What We Do
+  insulation:
+    title: Insulation
+    image: /img/home-insulation.png
+    description: >-
+      SNUGNZ Summer Special 03 Lorem ipsum dolor sit amet, consectetur
+      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Elit eget gravida cum sociis natoque penatibus et.
+    linkUri: insulation/cn
+  healthyHomes:
+    title: Healthy Homes
+    image: /img/home-healthyHomes.png
+    description: >-
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua.
+    linkUri: healthyhomes/cn
 whyChooseUs:
   whyChooseUs01:
     description: >-

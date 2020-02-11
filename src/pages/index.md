@@ -45,6 +45,20 @@ whatWeDo:
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua.
   title: What We Do
+  insulation:
+    title: Insulation
+    image: /img/home-insulation.png
+    description: >-
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua.
+    linkUri: insulation
+  healthyHomes:
+    title: Healthy Homes
+    image: /img/home-healthyHomes.png
+    description: >-
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua.
+    linkUri: healthyhomes
 whyChooseUs:
   whyChooseUs01:
     description: >-
