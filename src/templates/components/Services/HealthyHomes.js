@@ -10,13 +10,13 @@ const RenderIcons = ({ data }) => (
     {data.map(item => (
       <div key={item.title}>
         <div className={styles.iconWrapper}>
-          <PreviewCompatibleImage
+          {/* <PreviewCompatibleImage
             imageInfo={{
               image: item.image,
               alt: item.title
             }}
             className={styles.icon}
-          />
+          /> */}
         </div>
         <div className={styles.text}>
           <h5>{item.title}</h5>

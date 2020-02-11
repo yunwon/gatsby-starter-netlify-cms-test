@@ -9,16 +9,11 @@ standards:
   extraDescription: For more information about each standard please find here - https://www.tenancy.govt.nz/healthy-homes/about-the-healthy-homes-standards/
 fiveStandards:
   iconList:
-    - title: Heating
-      image: /img/heating.png
-    - title: Insulation
-      image: /img/insulation.png
+    - title: Heating Test
+    - title: Insulation Test
     - title: Ventilation
-      image: /img/ventilation.png
     - title: Moisture ingress and drainage
-      image: /img/moisture.png
     - title: Draught stopping
-      image: /img/draught.png
 keyDates:
   title: Key dates for landlords
 keyDatesList:

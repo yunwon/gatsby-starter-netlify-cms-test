@@ -17,16 +17,11 @@ standards:
   title: What the standards cover
 fiveStandards:
   iconList:
-    - image: /img/heating.png
-      title: Heating Test
-    - image: /img/insulation.png
-      title: Insulation Test
-    - image: /img/ventilation.png
-      title: Ventilation
-    - image: /img/moisture.png
-      title: Moisture ingress and drainage
-    - image: /img/draught.png
-      title: Draught stopping
+    - title: Heating Test
+    - title: Insulation Test
+    - title: Ventilation
+    - title: Moisture ingress and drainage
+    - title: Draught stopping
 keyDates:
   title: Key dates for landlords
 keyDatesList:
@@ -50,4 +45,3 @@ keyDatesList:
     - description: All rental homes must comply with the healthy homes standards.
       title: From 1 July 2024
 ---
-

@@ -39,13 +39,6 @@ export const healthyhomesPageQuery = graphql`
         }
         fiveStandards {
           iconList {
-            image {
-              childImageSharp {
-                fluid {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
             title
           }
         }
