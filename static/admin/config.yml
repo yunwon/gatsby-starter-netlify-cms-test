@@ -80,6 +80,18 @@ collections:
                 [
                   { label: Title, name: title, widget: string },
                   { label: Description, name: description, widget: string },
+                  {
+                    label: Insulation,
+                    name: insulation,
+                    widget: object,
+                    fields:
+                      {
+                        { label: Title, name: title, widget: string },
+                        { label: Image, name: image, widget: image },
+                        { label: Description, name: description, widget: text },
+                        { label: Link Uri, name: linkUri, widget: string },
+                      },
+                  },
                 ],
             }
           - {
