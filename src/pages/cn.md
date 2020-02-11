@@ -11,35 +11,35 @@ events:
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Elit eget gravida
         cum sociis natoque penatibus et.
-      modal:
-        description: >-
-          SNUGNZ Summer Special 01 Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Elit eget gravida cum sociis natoque penatibus et.
-        image: /img/product-glasswool.jpg
       title: SNUGNZ Summer Special 01
+      modal:
+        image: /img/product-glasswool.jpg
+        description: >-
+          SNUGNZ Summer Special 01 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Elit eget gravida
+          cum sociis natoque penatibus et.
     - description: >-
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Elit eget gravida
         cum sociis natoque penatibus et.
-      modal:
-        description: >-
-          SNUGNZ Summer Special 02 Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Elit eget gravida cum sociis natoque penatibus et.
-        image: /img/product-glasswool.jpg
       title: SNUGNZ Summer Special 02
+      modal:
+        image: /img/product-glasswool.jpg
+        description: >-
+          SNUGNZ Summer Special 02 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Elit eget gravida
+          cum sociis natoque penatibus et.
     - description: >-
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Elit eget gravida
         cum sociis natoque penatibus et.
-      modal:
-        description: >-
-          SNUGNZ Summer Special 03 Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Elit eget gravida cum sociis natoque penatibus et.
-        image: /img/product-glasswool.jpg
       title: SNUGNZ Summer Special 03
+      modal:
+        image: /img/product-glasswool.jpg
+        description: >-
+          SNUGNZ Summer Special 03 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Elit eget gravida
+          cum sociis natoque penatibus et.
 whatWeDo:
   description: >-
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -49,17 +49,16 @@ whatWeDo:
     title: Insulation
     image: /img/home-insulation.png
     description: >-
-      SNUGNZ Summer Special 03 Lorem ipsum dolor sit amet, consectetur
-      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-      magna aliqua. Elit eget gravida cum sociis natoque penatibus et.
-    linkUri: insulation/cn
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua.
+    linkUri: insulation
   healthyHomes:
     title: Healthy Homes
     image: /img/home-healthyHomes.png
     description: >-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua.
-    linkUri: healthyhomes/cn
+    linkUri: healthyhomes
 whyChooseUs:
   whyChooseUs01:
     description: >-
@@ -96,30 +95,30 @@ ourProducts:
       title: Glass Wool
   title: Our Products
 testimonials:
-  testimonialList:
-    - company: ABC Ltd.
-      description: >-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
-      name: John Doe
-    - company: ABC Ltd.
-      description: >-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
-      name: John Doe
-    - company: ABC Ltd.
-      description: >-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
-      name: John Doe
-    - company: ABC Ltd.
-      description: >-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
-      name: John Doe
   title: Testimonials
+  testimonialList:
+    - description: >-
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      name: John Doe
+      company: ABC Ltd.
+    - description: >-
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      name: John Doe
+      company: ABC Ltd.
+    - description: >-
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      name: John Doe
+      company: ABC Ltd.
+    - description: >-
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      name: John Doe
+      company: ABC Ltd.
 contact:
-  button: Email Us
-  phoneNo: 09-818-6606
   title: Talk To Us Now
+  phoneNo: 09-818-6606
+  button: Email Us
 ---
