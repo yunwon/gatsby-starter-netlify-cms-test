@@ -53,7 +53,7 @@ const HealthyHomesPageTemplate = ({
         <div className={styles.inner}>
           <h2 className={styles.title}>{standards.title}</h2>
           <p className={styles.subtitle}>{standards.description}</p>
-          <RenderIcons data={fiveStandards.iconList} />
+          {/* <RenderIcons data={fiveStandards.iconList} /> */}
           <p className={styles.subtitle}>{standards.extraDescription}</p>
         </div>
       </div>
