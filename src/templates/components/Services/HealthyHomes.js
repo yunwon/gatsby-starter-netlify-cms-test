@@ -5,6 +5,38 @@ import HeroSection from "../../../components/HeroSection/HeroSection";
 import BgImage from "../../../assets/services/insulation/hero.png";
 import PreviewCompatibleImage from "../../../components/PreviewCompatibleImage";
 
+const RenderIcons = ({ data }) => (
+  <div className={styles.items}>
+    {data.map(item => (
+      <div key={item.title}>
+        <div className={styles.iconWrapper}>
+          <PreviewCompatibleImage
+            imageInfo={{
+              image: item.image,
+              alt: item.title
+            }}
+            className={styles.icon}
+          />
+        </div>
+        <div className={styles.text}>
+          <h5>{item.title}</h5>
+        </div>
+      </div>
+    ))}
+  </div>
+);
+
+const RenderKeyDatesList = ({ data }) => (
+  <div className={styles.text}>
+    {data.map(item => (
+      <div className={styles.paragraph} key={item.title}>
+        <h5>{item.title}</h5>
+        <p>{item.description}</p>
+      </div>
+    ))}
+  </div>
+);
+
 const HealthyHomesPageTemplate = ({
   title,
   subTitle,
@@ -22,22 +54,7 @@ const HealthyHomesPageTemplate = ({
           <h2 className={styles.title}>{standards.title}</h2>
           <p className={styles.subtitle}>{standards.description}</p>
           <div className={styles.items}>
-            {fiveStandards.map(item => (
-              <div key={item.title}>
-                <div className={styles.iconWrapper}>
-                  <PreviewCompatibleImage
-                    imageInfo={{
-                      image: item.image,
-                      alt: item.title
-                    }}
-                    className={styles.icon}
-                  />
-                </div>
-                <div className={styles.text}>
-                  <h5>{item.title}</h5>
-                </div>
-              </div>
-            ))}
+            <RenderIcons data={fiveStandards} />
           </div>
           <p className={styles.subtitle}>{standards.extraDescription}</p>
         </div>
@@ -46,12 +63,7 @@ const HealthyHomesPageTemplate = ({
       <div className={styles.keyDates}>
         <h2>{keyDates.title}</h2>
         <div className={styles.text}>
-          {keyDatesList.map(item => (
-            <div className={styles.paragraph} key={item.title}>
-              <h5>{item.title}</h5>
-              <p>{item.description}</p>
-            </div>
-          ))}
+          <RenderKeyDatesList data={keyDatesList} />
         </div>
       </div>
     </div>
