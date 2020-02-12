@@ -14,7 +14,7 @@ standards:
   extraDescription: For more information about each standard please find here -
     https://www.tenancy.govt.nz/healthy-homes/about-the-healthy-homes-standards/
   title: What the standards cover?
-fiveStandards:
+standardIcons:
   - title: Heating Test
     image: /img/heating.png
   - title: Insulation Test

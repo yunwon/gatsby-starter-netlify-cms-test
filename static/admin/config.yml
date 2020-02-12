@@ -544,7 +544,7 @@ collections:
             }
           - {
               label: Five Standards,
-              name: fiveStandards,
+              name: standardIcons,
               widget: list,
               fields:
                 [
@@ -612,7 +612,7 @@ collections:
             }
           - {
               label: Five Standards,
-              name: fiveStandards,
+              name: standardIcons,
               widget: list,
               fields:
                 [

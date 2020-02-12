@@ -12,7 +12,7 @@ const HealthyHomesPage = ({ data }) => {
         title={frontmatter.title}
         subTitle={frontmatter.subTitle}
         standards={frontmatter.standards}
-        fiveStandards={frontmatter.fiveStandards}
+        standardIcons={frontmatter.standardIcons}
         keyDates={frontmatter.keyDates}
         keyDatesList={frontmatter.keyDatesList}
       />
@@ -37,7 +37,7 @@ export const healthyhomesPageQuery = graphql`
           description
           extraDescription
         }
-        fiveStandards {
+        standardIcons {
           image {
             childImageSharp {
               fluid(maxWidth: 1000, quality: 100) {

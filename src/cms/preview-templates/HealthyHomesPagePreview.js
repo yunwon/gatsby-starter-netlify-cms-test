@@ -11,7 +11,7 @@ const HealthyHomesPagePreview = ({ entry, widgetFor }) => {
         title={data.title}
         subTitle={data.subTitle}
         standards={data.standards}
-        fiveStandards={data.fiveStandards}
+        standardIcons={data.standardIcons}
         keyDates={data.keyDates}
         keyDatesList={data.keyDatesList}
       />

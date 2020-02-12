@@ -41,7 +41,7 @@ const HealthyHomesPageTemplate = ({
   title,
   subTitle,
   standards,
-  fiveStandards,
+  standardIcons,
   keyDates,
   keyDatesList
 }) => {
@@ -54,7 +54,7 @@ const HealthyHomesPageTemplate = ({
           <h2 className={styles.title}>{standards.title}</h2>
           <p className={styles.subtitle}>{standards.description}</p>
           <div className={styles.items}>
-            <RenderIcons data={fiveStandards} />
+            <RenderIcons data={standardIcons} />
           </div>
           <p className={styles.subtitle}>{standards.extraDescription}</p>
         </div>
@@ -74,7 +74,7 @@ HealthyHomesPageTemplate.propTypes = {
   title: PropTypes.string,
   subTitle: PropTypes.string,
   standards: PropTypes.object,
-  fiveStandards: PropTypes.array,
+  standardIcons: PropTypes.array,
   keyDates: PropTypes.object,
   keyDatesList: PropTypes.array
 };
