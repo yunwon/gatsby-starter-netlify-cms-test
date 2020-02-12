@@ -25,23 +25,22 @@ fiveStandards:
 keyDates:
   title: Key dates for landlords
 keyDatesList:
-  list:
-    - description: >-
-        Landlords must include a signed statement with any new, varied or
-        renewed tenancy agreement that they will comply, or already do comply,
-        with the healthy homes standards. Test
-      title: From 1 July 2019 Test
-    - description: >-
-        Landlords must include a statement of their current level of compliance
-        with the healthy homes standards in any new, varied or renewed tenancy
-        agreement.
-      title: From 1 July 2020 Test
-    - description: >-
-        Private landlords must ensure their rental properties comply with the
-        healthy homes standards within 90 days of any new, or renewed, tenancy.
-      title: From 1 July 2021
-    - description: All boarding houses must comply with the healthy homes standards.
-      title: From 1 July 2023
-    - description: All rental homes must comply with the healthy homes standards.
-      title: From 1 July 2024
+  - description: >-
+      Landlords must include a signed statement with any new, varied or
+      renewed tenancy agreement that they will comply, or already do comply,
+      with the healthy homes standards. Test
+    title: From 1 July 2019 Test
+  - description: >-
+      Landlords must include a statement of their current level of compliance
+      with the healthy homes standards in any new, varied or renewed tenancy
+      agreement.
+    title: From 1 July 2020 Test
+  - description: >-
+      Private landlords must ensure their rental properties comply with the
+      healthy homes standards within 90 days of any new, or renewed, tenancy.
+    title: From 1 July 2021
+  - description: All boarding houses must comply with the healthy homes standards.
+    title: From 1 July 2023
+  - description: All rental homes must comply with the healthy homes standards.
+    title: From 1 July 2024
 ---

@@ -60,7 +60,15 @@ const HealthyHomesPageTemplate = ({
       {/* 02. key dates */}
       <div className={styles.keyDates}>
         <h2>{keyDates.title}</h2>
-        <RenderKeyDatesList data={keyDatesList.list} />
+        {/* <RenderKeyDatesList data={keyDatesList.list} /> */}
+        <div className={styles.text}>
+          {keyDatesList.map(item => (
+            <div className={styles.paragraph} key={item.title}>
+              <h5>{item.title}</h5>
+              <p>{item.description}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
@@ -72,7 +80,7 @@ HealthyHomesPageTemplate.propTypes = {
   standards: PropTypes.object,
   fiveStandards: PropTypes.object,
   keyDates: PropTypes.object,
-  keyDatesList: PropTypes.object
+  keyDatesList: PropTypes.array
 };
 
 export default HealthyHomesPageTemplate;

@@ -46,10 +46,8 @@ export const healthyhomesPageQuery = graphql`
           title
         }
         keyDatesList {
-          list {
-            title
-            description
-          }
+          title
+          description
         }
       }
     }

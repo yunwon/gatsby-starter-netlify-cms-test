@@ -574,23 +574,15 @@ collections:
           - {
               label: key Dates List,
               name: keyDatesList,
-              widget: object,
+              widget: list,
               fields:
                 [
+                  { label: Title, name: title, widget: string },
                   {
-                    label: List,
-                    name: list,
-                    widget: list,
-                    fields:
-                      [
-                        { label: Title, name: title, widget: string },
-                        {
-                          label: Description,
-                          name: description,
-                          widget: text,
-                          required: false,
-                        },
-                      ],
+                    label: Description,
+                    name: description,
+                    widget: text,
+                    required: false,
                   },
                 ],
             }
@@ -620,8 +612,21 @@ collections:
                     required: false,
                   },
                   {
-                    label: Icons,
-                    name: icons,
+                    label: Extra Description,
+                    name: extraDescription,
+                    widget: text,
+                  },
+                ],
+            }
+          - {
+              label: Five Standards,
+              name: fiveStandards,
+              widget: object,
+              fields:
+                [
+                  {
+                    label: Icon List,
+                    name: iconList,
                     widget: list,
                     fields:
                       [
@@ -632,18 +637,7 @@ collections:
                           widget: string,
                           required: false,
                         },
-                        {
-                          label: Description,
-                          name: description,
-                          widget: text,
-                          required: false,
-                        },
                       ],
-                  },
-                  {
-                    label: Extra Description,
-                    name: extraDescription,
-                    widget: text,
                   },
                 ],
             }
@@ -651,18 +645,20 @@ collections:
               label: Key Dates,
               name: keyDates,
               widget: object,
+              fields: [{ label: Title, name: title, widget: string }],
+            }
+          - {
+              label: key Dates List,
+              name: keyDatesList,
+              widget: list,
               fields:
                 [
                   { label: Title, name: title, widget: string },
                   {
-                    label: List,
-                    name: list,
-                    widget: list,
-                    fields:
-                      [
-                        { label: Title, name: title, widget: string },
-                        { label: Description, name: description, widget: text },
-                      ],
+                    label: Description,
+                    name: description,
+                    widget: text,
+                    required: false,
                   },
                 ],
             }
