@@ -6,7 +6,11 @@ const HealthyHomesCNPagePreview = ({ entry, widgetFor }) => (
   <HealthyHomesPageTemplate
     title={entry.getIn(["data", "title"])}
     subTitle={entry.getIn(["data", "subTitle"])}
-    standards={entry.getIn(["data", "standards"])}
+    standards={{
+      title: entry.getIn(["data", "title"]),
+      description: entry.getIn(["data", "description"]),
+      extraDescription: entry.getIn(["data", "extraDescription"])
+    }}
     fiveStandards={entry.getIn(["data", "fiveStandards"])}
     keyDates={entry.getIn(["data", "keyDates"])}
     keyDatesList={entry.getIn(["data", "keyDatesList"])}

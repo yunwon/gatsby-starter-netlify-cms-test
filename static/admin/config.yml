@@ -548,7 +548,7 @@ collections:
               widget: list,
               fields:
                 [
-                  { label: Image, name: image, widget: image },
+                  { label: Image, name: image, widget: image, required: false },
                   {
                     label: Title,
                     name: title,
@@ -616,7 +616,7 @@ collections:
               widget: list,
               fields:
                 [
-                  { label: Image, name: image, widget: image },
+                  { label: Image, name: image, widget: image, required: false },
                   {
                     label: Title,
                     name: title,
