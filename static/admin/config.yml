@@ -557,12 +557,7 @@ collections:
                   },
                 ],
             }
-          - {
-              label: Key Dates,
-              name: keyDates,
-              widget: object,
-              fields: [{ label: Title, name: title, widget: string }],
-            }
+          - { label: Key Dates Title, name: keyDatesTitle, widget: string }
           - {
               label: key Dates List,
               name: keyDatesList,
@@ -611,7 +606,7 @@ collections:
                 ],
             }
           - {
-              label: Five Standards,
+              label: Standard Icons,
               name: standardIcons,
               widget: list,
               fields:
@@ -625,12 +620,7 @@ collections:
                   },
                 ],
             }
-          - {
-              label: Key Dates,
-              name: keyDates,
-              widget: object,
-              fields: [{ label: Title, name: title, widget: string }],
-            }
+          - { label: Key Dates Title, name: keyDatesTitle, widget: string }
           - {
               label: key Dates List,
               name: keyDatesList,

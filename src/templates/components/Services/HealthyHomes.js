@@ -42,7 +42,7 @@ const HealthyHomesPageTemplate = ({
   subTitle,
   standards,
   standardIcons,
-  keyDates,
+  keyDatesTitle,
   keyDatesList
 }) => {
   return (
@@ -61,7 +61,7 @@ const HealthyHomesPageTemplate = ({
       </div>
       {/* 02. key dates */}
       <div className={styles.keyDates}>
-        <h2>{keyDates.title}</h2>
+        <h2>{keyDatesTitle}</h2>
         <div className={styles.text}>
           <RenderKeyDatesList data={keyDatesList} />
         </div>
@@ -75,7 +75,7 @@ HealthyHomesPageTemplate.propTypes = {
   subTitle: PropTypes.string,
   standards: PropTypes.object,
   standardIcons: PropTypes.array,
-  keyDates: PropTypes.object,
+  keyDatesTitle: PropTypes.string,
   keyDatesList: PropTypes.array
 };
 

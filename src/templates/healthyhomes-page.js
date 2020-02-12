@@ -13,7 +13,7 @@ const HealthyHomesPage = ({ data }) => {
         subTitle={frontmatter.subTitle}
         standards={frontmatter.standards}
         standardIcons={frontmatter.standardIcons}
-        keyDates={frontmatter.keyDates}
+        keyDatesTitle={frontmatter.keyDatesTitle}
         keyDatesList={frontmatter.keyDatesList}
       />
     </Layout>
@@ -47,9 +47,7 @@ export const healthyhomesPageQuery = graphql`
           }
           title
         }
-        keyDates {
-          title
-        }
+        keyDatesTitle
         keyDatesList {
           title
           description

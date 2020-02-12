@@ -25,8 +25,7 @@ standardIcons:
     image: /img/moisture.png
   - title: Draught stopping
     image: /img/draught.png
-keyDates:
-  title: Key dates for landlords
+keyDatesTitle: Key dates for landlords
 keyDatesList:
   - description:
       Landlords must include a signed statement with any new, varied or
