@@ -5,38 +5,6 @@ import HeroSection from "../../../components/HeroSection/HeroSection";
 import BgImage from "../../../assets/services/insulation/hero.png";
 import PreviewCompatibleImage from "../../../components/PreviewCompatibleImage";
 
-const RenderIcons = ({ data }) => (
-  <div className={styles.items}>
-    {data.map(item => (
-      <div key={item.title}>
-        <div className={styles.iconWrapper}>
-          {/* <PreviewCompatibleImage
-            imageInfo={{
-              image: item.image,
-              alt: item.title
-            }}
-            className={styles.icon}
-          /> */}
-        </div>
-        <div className={styles.text}>
-          <h5>{item.title}</h5>
-        </div>
-      </div>
-    ))}
-  </div>
-);
-
-const RenderKeyDatesList = ({ data }) => (
-  <div className={styles.text}>
-    {data.map(item => (
-      <div className={styles.paragraph} key={item.title}>
-        <h5>{item.title}</h5>
-        <p>{item.description}</p>
-      </div>
-    ))}
-  </div>
-);
-
 const HealthyHomesPageTemplate = ({
   title,
   subTitle,
@@ -57,13 +25,13 @@ const HealthyHomesPageTemplate = ({
             {fiveStandards.map(item => (
               <div key={item.title}>
                 <div className={styles.iconWrapper}>
-                  {/* <PreviewCompatibleImage
+                  <PreviewCompatibleImage
                     imageInfo={{
                       image: item.image,
                       alt: item.title
                     }}
                     className={styles.icon}
-                  /> */}
+                  />
                 </div>
                 <div className={styles.text}>
                   <h5>{item.title}</h5>

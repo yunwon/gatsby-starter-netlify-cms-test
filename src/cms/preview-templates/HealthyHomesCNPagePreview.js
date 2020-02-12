@@ -2,20 +2,24 @@ import React from "react";
 import PropTypes from "prop-types";
 import HealthyHomesPageTemplate from "../../templates/components/Services/HealthyHomes";
 
-const HealthyHomesCNPagePreview = ({ entry, widgetFor }) => (
-  <HealthyHomesPageTemplate
-    title={entry.getIn(["data", "title"])}
-    subTitle={entry.getIn(["data", "subTitle"])}
-    standards={{
-      title: entry.getIn(["data", "title"]),
-      description: entry.getIn(["data", "description"]),
-      extraDescription: entry.getIn(["data", "extraDescription"])
-    }}
-    fiveStandards={entry.getIn(["data", "fiveStandards"])}
-    keyDates={entry.getIn(["data", "keyDates"])}
-    keyDatesList={entry.getIn(["data", "keyDatesList"])}
-  />
-);
+const HealthyHomesCNPagePreview = ({ entry, widgetFor }) => {
+  const data = entry.getIn(["data"]).toJS();
+
+  if (data) {
+    return (
+      <HealthyHomesPageTemplate
+        title={data.title}
+        subTitle={data.subTitle}
+        standards={data.standards}
+        fiveStandards={data.fiveStandards}
+        keyDates={data.keyDates}
+        keyDatesList={data.keyDatesList}
+      />
+    );
+  } else {
+    return <div>Loading...</div>;
+  }
+};
 
 HealthyHomesCNPagePreview.propTypes = {
   entry: PropTypes.shape({
