@@ -144,11 +144,20 @@ class ContactPageTemplate extends React.Component {
               //   </div>
               // </form>
               <form
+                name="contact"
                 method="post"
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
                 onSubmit={this.handleSubmit}
               >
+                {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
+                <input type="hidden" name="form-name" value="contact" />
+                <div hidden>
+                  <label>
+                    Don’t fill this out:{" "}
+                    <input name="bot-field" onChange={this.handleChange} />
+                  </label>
+                </div>
                 <label>
                   Name
                   <input type="text" name="name" id="name" />
