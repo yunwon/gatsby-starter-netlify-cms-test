@@ -53,14 +53,30 @@ const HealthyHomesPageTemplate = ({
         <div className={styles.inner}>
           <h2 className={styles.title}>{standards.title}</h2>
           <p className={styles.subtitle}>{standards.description}</p>
-          {/* <RenderIcons data={fiveStandards.iconList} /> */}
+          <div className={styles.items}>
+            {fiveStandards.map(item => (
+              <div key={item.title}>
+                <div className={styles.iconWrapper}>
+                  {/* <PreviewCompatibleImage
+                    imageInfo={{
+                      image: item.image,
+                      alt: item.title
+                    }}
+                    className={styles.icon}
+                  /> */}
+                </div>
+                <div className={styles.text}>
+                  <h5>{item.title}</h5>
+                </div>
+              </div>
+            ))}
+          </div>
           <p className={styles.subtitle}>{standards.extraDescription}</p>
         </div>
       </div>
       {/* 02. key dates */}
       <div className={styles.keyDates}>
         <h2>{keyDates.title}</h2>
-        {/* <RenderKeyDatesList data={keyDatesList.list} /> */}
         <div className={styles.text}>
           {keyDatesList.map(item => (
             <div className={styles.paragraph} key={item.title}>
@@ -78,7 +94,7 @@ HealthyHomesPageTemplate.propTypes = {
   title: PropTypes.string,
   subTitle: PropTypes.string,
   standards: PropTypes.object,
-  fiveStandards: PropTypes.object,
+  fiveStandards: PropTypes.array,
   keyDates: PropTypes.object,
   keyDatesList: PropTypes.array
 };

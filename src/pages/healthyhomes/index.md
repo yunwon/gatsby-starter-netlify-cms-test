@@ -16,12 +16,11 @@ standards:
     https://www.tenancy.govt.nz/healthy-homes/about-the-healthy-homes-standards/
   title: What the standards cover
 fiveStandards:
-  iconList:
-    - title: Heating Test
-    - title: Insulation Test
-    - title: Ventilation
-    - title: Moisture ingress and drainage
-    - title: Draught stopping
+  - title: Heating Test
+  - title: Insulation Test
+  - title: Ventilation
+  - title: Moisture ingress and drainage
+  - title: Draught stopping
 keyDates:
   title: Key dates for landlords
 keyDatesList:

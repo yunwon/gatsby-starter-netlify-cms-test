@@ -8,12 +8,11 @@ standards:
   description: The healthy homes standards incorporate five aspects of a property, which all contribute to a warm and dry home.
   extraDescription: For more information about each standard please find here - https://www.tenancy.govt.nz/healthy-homes/about-the-healthy-homes-standards/
 fiveStandards:
-  iconList:
-    - title: Heating Test
-    - title: Insulation Test
-    - title: Ventilation
-    - title: Moisture ingress and drainage
-    - title: Draught stopping
+  - title: Heating Test
+  - title: Insulation Test
+  - title: Ventilation
+  - title: Moisture ingress and drainage
+  - title: Draught stopping
 keyDates:
   title: Key dates for landlords
 keyDatesList:

@@ -40,9 +40,7 @@ export const healthyhomesCNPageQuery = graphql`
           extraDescription
         }
         fiveStandards {
-          iconList {
-            title
-          }
+          title
         }
         keyDates {
           title

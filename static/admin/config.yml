@@ -545,23 +545,15 @@ collections:
           - {
               label: Five Standards,
               name: fiveStandards,
-              widget: object,
+              widget: list,
               fields:
                 [
+                  { label: Image, name: image, widget: image },
                   {
-                    label: Icon List,
-                    name: iconList,
-                    widget: list,
-                    fields:
-                      [
-                        { label: Image, name: image, widget: image },
-                        {
-                          label: Title,
-                          name: title,
-                          widget: string,
-                          required: false,
-                        },
-                      ],
+                    label: Title,
+                    name: title,
+                    widget: string,
+                    required: false,
                   },
                 ],
             }
@@ -621,23 +613,15 @@ collections:
           - {
               label: Five Standards,
               name: fiveStandards,
-              widget: object,
+              widget: list,
               fields:
                 [
+                  { label: Image, name: image, widget: image },
                   {
-                    label: Icon List,
-                    name: iconList,
-                    widget: list,
-                    fields:
-                      [
-                        { label: Image, name: image, widget: image },
-                        {
-                          label: Title,
-                          name: title,
-                          widget: string,
-                          required: false,
-                        },
-                      ],
+                    label: Title,
+                    name: title,
+                    widget: string,
+                    required: false,
                   },
                 ],
             }
