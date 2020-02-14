@@ -94,6 +94,21 @@ ourProducts:
       image: /img/home-glasswool.png
       title: Glass Wool
   title: Our Products
+partners:
+  title: Our Partners and Suppliers
+  list:
+    - image: /img/home/daikin.png
+      title: daikin
+    - image: /img/home/dimplex.png
+      title: dimplex
+    - image: /img/home/smart-vent.png
+      title: smart-vent
+    - image: /img/home/pink-batts.png
+      title: pink-batts
+    - image: /img/home/panasonic.png
+      title: panasonic
+    - image: /img/home/sunshine-solar.png
+      title: sunshine-solar
 testimonials:
   testimonialList:
     - company: ABC Ltd.
@@ -122,4 +137,3 @@ contact:
   phoneNo: 09-818-6606
   title: Talk To Us Now
 ---
-

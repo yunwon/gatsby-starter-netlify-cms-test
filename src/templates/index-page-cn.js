@@ -18,6 +18,7 @@ const IndexCNPage = ({ data }) => {
         whatWeDo={frontmatter.whatWeDo}
         whyChooseUs={frontmatter.whyChooseUs}
         ourProducts={frontmatter.ourProducts}
+        partners={frontmatter.partners}
         testimonials={frontmatter.testimonials}
         contact={frontmatter.contact}
         language="Chinese"
@@ -107,6 +108,19 @@ export const pageQuery = graphql`
               }
             }
             description
+          }
+        }
+        partners {
+          title
+          list {
+            image {
+              childImageSharp {
+                fluid(maxWidth: 1000, quality: 100) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+            title
           }
         }
         testimonials {

@@ -172,6 +172,25 @@ collections:
                 ],
             }
           - {
+              label: "Partners",
+              name: partners,
+              widget: object,
+              fields:
+                [
+                  { label: Title, name: title, widget: string },
+                  {
+                    label: "List",
+                    name: list,
+                    widget: list,
+                    fields:
+                      [
+                        { label: Title, name: title, widget: string },
+                        { label: Image, name: image, widget: image }
+                      ],
+                  }
+                ],
+            },
+          - {
               label: "Testimonials",
               name: testimonials,
               widget: object,
@@ -357,6 +376,25 @@ collections:
                   },
                 ],
             }
+          - {
+              label: "Partners",
+              name: partners,
+              widget: object,
+              fields:
+                [
+                  { label: Title, name: title, widget: string },
+                  {
+                    label: "List",
+                    name: list,
+                    widget: list,
+                    fields:
+                      [
+                        { label: Title, name: title, widget: string },
+                        { label: Image, name: image, widget: image }
+                      ],
+                  }
+                ],
+            },
           - {
               label: "Testimonials",
               name: testimonials,

@@ -181,7 +181,7 @@
   }
 }
 
-// 04. Our Products
+// 05. Our Products
 
 .ourProducts {
   @include container-maxwidth();
@@ -213,7 +213,53 @@
   }
 }
 
-// 05. Testimonials
+// 06. Partners
+
+.partners {
+  background-color: rgba(19, 82, 144, 0.06);
+
+  .inner {
+    @include container-maxwidth();
+    max-width: 800px !important;
+    @include articlePadding();
+    text-align: center;
+
+    h2 {
+      margin-bottom: 2rem;
+
+      @media #{$break-md} {
+        margin-bottom: 4rem;
+      }
+    }
+
+    .logos {
+      display: grid;
+      gap: 1rem;
+      margin: 0 auto;
+
+      @media #{$break-sm} {
+        grid-template-columns: repeat(2, auto);
+      }
+
+      @media #{$break-md} {
+        grid-template-columns: repeat(3, auto);
+      }
+
+      .item {
+        @include flex-center();
+
+        .image {
+          width: 100%;
+          max-width: 160px;
+          margin-bottom: 2rem;
+          border-radius: 4px;
+        }
+      }
+    }
+  }
+}
+
+// 07. Testimonials
 
 .testimonials_container {
   @include flex-center(column);

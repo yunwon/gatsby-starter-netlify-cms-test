@@ -36,6 +36,7 @@ class IndexPageTemplate extends React.Component {
       whatWeDo,
       whyChooseUs,
       ourProducts,
+      partners,
       testimonials,
       contact,
       language
@@ -168,7 +169,26 @@ class IndexPageTemplate extends React.Component {
             ))}
           </div>
         </div>
-        {/* 06. Testimonials */}
+        {/* 06. Partners */}
+        <div className={styles.partners}>
+          <div className={styles.inner}>
+            <h2>{partners.title}</h2>
+            <div className={styles.logos}>
+              {partners.list.map(item => (
+                <div className={styles.item}>
+                  <PreviewCompatibleImage
+                    imageInfo={{
+                      image: item.image,
+                      alt: item.title
+                    }}
+                    className={styles.image}
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+        {/* 07. Testimonials */}
         <div className={styles.testimonials_container}>
           <img src={Quote} alt="quote" />
           <h2 className={styles.title}>{testimonials.title}</h2>
@@ -184,7 +204,7 @@ class IndexPageTemplate extends React.Component {
             ))}
           </Slider>
         </div>
-        {/* 07. Contact Us */}
+        {/* 08. Contact Us */}
         <div className={styles.contactUs}>
           <div className={styles.container}>
             <div className={styles.text}>
@@ -214,6 +234,7 @@ IndexPageTemplate.propTypes = {
   whatWeDo: PropTypes.object,
   whyChooseUs: PropTypes.object,
   ourProducts: PropTypes.object,
+  partners: PropTypes.object,
   testimonials: PropTypes.object,
   contact: PropTypes.object,
   language: PropTypes.oneOf(["English", "Chinese"])
