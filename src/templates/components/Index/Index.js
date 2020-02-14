@@ -9,7 +9,7 @@ import whyChooseUs01 from "../../../assets/home/whyChooseUs01.svg";
 import SectionWithIcons from "../../../components/SectionWithIcons/SectionWithIcons";
 import Quote from "../../../assets/home/quote.svg";
 import PreviewCompatibleImage from "../../../components/PreviewCompatibleImage";
-import { Modal } from "react-bootstrap";
+import { Carousel, Modal } from "react-bootstrap";
 
 class IndexPageTemplate extends React.Component {
   constructor(props) {
@@ -58,9 +58,9 @@ class IndexPageTemplate extends React.Component {
         </div>
         {/* 02. event banner */}
         <div className={styles.event}>
-          <Slider>
+          <Carousel>
             {events.event.map(event => (
-              <div>
+              <Carousel.Item>
                 <div className={styles.eventInner}>
                   <h1>{event.title}</h1>
                   <p>{event.description}</p>
@@ -81,14 +81,15 @@ class IndexPageTemplate extends React.Component {
                           image: event.modal.image,
                           alt: event.title
                         }}
+                        className="d-block w-100"
                       />
                       <p>{event.modal.description}</p>
                     </Modal.Body>
                   </Modal>
                 </div>
-              </div>
+              </Carousel.Item>
             ))}
-          </Slider>
+          </Carousel>
         </div>
         {/* 03. What We Do */}
         <div className={styles.whatWeDo}>
@@ -192,17 +193,19 @@ class IndexPageTemplate extends React.Component {
         <div className={styles.testimonials_container}>
           <img src={Quote} alt="quote" />
           <h2 className={styles.title}>{testimonials.title}</h2>
-          <Slider>
+          <Carousel>
             {testimonials.testimonialList.map(item => (
-              <div className={styles.testimonials}>
-                <p className={styles.text}>{item.description}</p>
-                <div className={styles.profile}>
-                  <p className={styles.name}>{item.name}</p>
-                  <p className={styles.company}>{item.company}</p>
+              <Carousel.Item>
+                <div className={styles.testimonials}>
+                  <p className={styles.text}>{item.description}</p>
+                  <div className={styles.profile}>
+                    <p className={styles.name}>{item.name}</p>
+                    <p className={styles.company}>{item.company}</p>
+                  </div>
                 </div>
-              </div>
+              </Carousel.Item>
             ))}
-          </Slider>
+          </Carousel>
         </div>
         {/* 08. Contact Us */}
         <div className={styles.contactUs}>

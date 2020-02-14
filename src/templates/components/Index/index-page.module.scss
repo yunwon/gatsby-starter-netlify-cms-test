@@ -91,7 +91,14 @@
 
 .event {
   background: rgba(19, 82, 144, 0.16);
-  @include articlePadding();
+
+  :global .carousel-inner {
+    padding: 3rem !important;
+
+    @media #{$break-md} {
+      padding: 4rem !important;
+    }
+  }
 
   .eventInner {
     @include container-maxwidth();
@@ -99,6 +106,13 @@
     flex-direction: column;
     text-align: center;
     margin-bottom: 1rem;
+
+
+
+    h1,
+    p {
+      padding: 0 0.5rem !important;
+    }
 
     p {
       max-width: 800px;
@@ -270,30 +284,38 @@
     text-align: center;
     margin: 1.25rem 0;
   }
-}
 
-.testimonials {
-  @include container-maxwidth();
-  @include flex-center(column);
-  text-align: center;
-
-  @media #{$break-md} {}
-
-  .text {
-    max-width: 600px;
-    margin: 0 auto;
+  :global .carousel {
+    width: 100%;
+    max-width: 1170px;
   }
 
-  .profile {
-    margin: 1.25rem 0;
-    font-size: 1rem;
+  .testimonials {
+    @include container-maxwidth();
+    @include flex-center(column);
+    text-align: center;
+    margin-bottom: 4rem;
 
-    .company {
-      color: $brand-main;
-      font-weight: bold;
+    .text {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .profile {
+      margin: 1.25rem 0;
+      font-size: 1rem;
+
+      .company {
+        color: $brand-main;
+        font-weight: bold;
+      }
     }
   }
 }
+
+
+
+
 
 // 06. Contact Us
 .contactUs {
