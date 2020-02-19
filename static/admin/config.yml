@@ -185,9 +185,9 @@ collections:
                     fields:
                       [
                         { label: Title, name: title, widget: string },
-                        { label: Image, name: image, widget: image }
+                        { label: Image, name: image, widget: image },
                       ],
-                  }
+                  },
                 ],
             }
           - {
@@ -390,11 +390,11 @@ collections:
                     fields:
                       [
                         { label: Title, name: title, widget: string },
-                        { label: Image, name: image, widget: image }
+                        { label: Image, name: image, widget: image },
                       ],
-                  }
+                  },
                 ],
-            },
+            }
           - {
               label: "Testimonials",
               name: testimonials,
