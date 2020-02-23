@@ -1,6 +1,6 @@
 ---
 templateKey: index-page
-title: 'We make warmer, drier, and healthier home for you.'
+title: 'We make warmer, drier & healthier home for you.'
 subTitle: >-
   10-years experience in providing kiwi's with warm, dry and healthy places to
   both live & work.
