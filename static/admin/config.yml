@@ -627,6 +627,7 @@ collections:
                     widget: string,
                     required: false,
                   },
+                  { label: LinkUri, name: linkUri, widget: string },
                 ],
             }
           - { label: Key Dates Title, name: keyDatesTitle, widget: string }
@@ -643,6 +644,28 @@ collections:
                     widget: text,
                     required: false,
                   },
+                  { label: Due Date, name: dueDate, widget: string },
+                ],
+            }
+          - {
+              label: What We Can Do For You,
+              name: whatWeCanDo,
+              widget: object,
+              fields:
+                [
+                  { label: Title, name: title, widget: string },
+                  { label: Subtitle, name: subTitle, widget: string },
+                  { label: Description, name: description, widget: text },
+                ],
+            }
+          - {
+              label: Book an Assessment,
+              name: contact,
+              widget: object,
+              fields:
+                [
+                  { label: Title, name: title, widget: string },
+                  { label: Button, name: button, widget: string },
                 ],
             }
       - file: "src/pages/healthyhomes/cn.md"
@@ -690,6 +713,7 @@ collections:
                     widget: string,
                     required: false,
                   },
+                  { label: LinkUri, name: linkUri, widget: string },
                 ],
             }
           - { label: Key Dates Title, name: keyDatesTitle, widget: string }
@@ -706,6 +730,28 @@ collections:
                     widget: text,
                     required: false,
                   },
+                  { label: Due Date, name: dueDate, widget: string },
+                ],
+            }
+          - {
+              label: What We Can Do For You,
+              name: whatWeCanDo,
+              widget: object,
+              fields:
+                [
+                  { label: Title, name: title, widget: string },
+                  { label: Subtitle, name: subTitle, widget: string },
+                  { label: Description, name: description, widget: text },
+                ],
+            }
+          - {
+              label: Book an Assessment,
+              name: contact,
+              widget: object,
+              fields:
+                [
+                  { label: Title, name: title, widget: string },
+                  { label: Button, name: button, widget: string },
                 ],
             }
       - file: "src/pages/about/index.md"

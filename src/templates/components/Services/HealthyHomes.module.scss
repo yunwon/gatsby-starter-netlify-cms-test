@@ -38,7 +38,7 @@
         margin: 0 0 1.25rem 0;
 
         .icon {
-          margin-bottom: 1rem;
+          margin-bottom: 0.5rem;
           width: 100%;
         }
       }
@@ -75,7 +75,20 @@
     }
 
     .paragraph {
+      padding-bottom: 1.5rem;
       margin-bottom: 1.5rem;
+      border-bottom: 1px solid $border-grey;
+    }
+    .countDown {
+      margin-top: 0.4rem;
+      svg {
+        color: $brand-main;
+        margin-right: 0.5rem;
+        margin-bottom: 2px;
+      }
+      :global .odometer-block {
+        color: $brand-main;
+      }
     }
   }
 
@@ -91,6 +104,114 @@
     .text {
       width: 50%;
       padding-top: 1rem;
+    }
+  }
+}
+
+.whatWeCanDo {
+  background-color: rgba(19, 82, 144, 0.06);
+
+  .inner {
+    @include container-maxwidth();
+    @include articlePadding();
+
+    .titleDiv {
+      margin-bottom: 2rem;
+      text-align: center;
+      h2 {
+        margin-bottom: 0.5rem;
+      }
+      @media #{$break-md} {
+        text-align: left;
+        min-width: 500px;
+        margin-right: 4rem;
+      }
+    }
+
+    .description {
+      text-align: center;
+    }
+
+    @media #{$break-md} {
+      display: flex;
+      .description {
+        margin-top: 0.6rem;
+        text-align: left;
+      }
+    }
+  }
+}
+
+// 06. Contact Us
+.contactUs {
+  @media #{$break-md} {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .container {
+    padding: 1.875rem 1rem;
+
+    @media #{$break-md} {
+      margin: 0 auto 0 0;
+      padding: 4.375rem 0;
+      width: 50%;
+      max-width: 585px;
+    }
+
+    .text {
+      padding-right: 1rem;
+      text-align: center;
+
+      p {
+        font-size: 1.5rem;
+        margin-top: 0.5rem;
+
+        a {
+          color: $brand-main;
+        }
+      }
+
+      button {
+        margin: 2rem auto 0 auto;
+      }
+
+      @media #{$break-md} {
+        text-align: right;
+
+        button {
+          float: right;
+          margin-top: 2rem;
+        }
+      }
+    }
+  }
+
+  .contactImage {
+    background: no-repeat center center
+        linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)),
+      url("../../../assets/home/contact.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 270px;
+
+    @media #{$break-md} {
+      order: -1;
+      background: no-repeat center center
+          linear-gradient(
+            to right,
+            rgba(255, 255, 255, 0),
+            rgba(255, 255, 255, 1)
+          ),
+        url("../../../assets/home/contact.png");
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      width: 50%;
     }
   }
 }

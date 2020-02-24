@@ -15,6 +15,9 @@ const HealthyHomesPage = ({ data }) => {
         standardIcons={frontmatter.standardIcons}
         keyDatesTitle={frontmatter.keyDatesTitle}
         keyDatesList={frontmatter.keyDatesList}
+        whatWeCanDo={frontmatter.whatWeCanDo}
+        contact={frontmatter.contact}
+        language="English"
       />
     </Layout>
   );
@@ -46,11 +49,22 @@ export const healthyhomesPageQuery = graphql`
             }
           }
           title
+          linkUri
         }
         keyDatesTitle
         keyDatesList {
           title
           description
+          dueDate
+        }
+        whatWeCanDo {
+          title
+          subtitle
+          description
+        }
+        contact {
+          title
+          button
         }
       }
     }

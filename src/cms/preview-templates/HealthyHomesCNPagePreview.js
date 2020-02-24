@@ -14,6 +14,8 @@ const HealthyHomesCNPagePreview = ({ entry, widgetFor }) => {
         standardIcons={data.standardIcons}
         keyDatesTitle={data.keyDatesTitle}
         keyDatesList={data.keyDatesList}
+        whatWeCanDo={data.whatWeCanDo}
+        contact={data.contact}
       />
     );
   } else {

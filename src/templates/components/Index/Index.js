@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import { Link } from "gatsby";
 import styles from "./index-page.module.scss";
 import { Button } from "../../../components/Button/Button";
-import Slider from "../../../components/Slider/Slider";
 import { LearnMoreButton } from "../../../components/LearnMoreButton/LearnMoreButton";
 import whyChooseUs01 from "../../../assets/home/whyChooseUs01.svg";
 import SectionWithIcons from "../../../components/SectionWithIcons/SectionWithIcons";
