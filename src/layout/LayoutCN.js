@@ -100,25 +100,6 @@ const TemplateWrapper = ({ children }) => {
       <Header
         language="Chinese"
         phoneNo="09-818-6606"
-        // mobileMenu={
-        //   <>
-        //     <Link exact to="/">
-        //       Home
-        //     </Link>
-        //     <div>
-        //       <span>Services</span>
-        //       <div>
-        //         <Link to="/services/ourworks">Our Works</Link>
-        //         <Link to="/services/insulation">Insulation</Link>
-        //         <Link to="/services/healthyhomes">Healthy Homes</Link>
-        //       </div>
-        //     </div>
-        //     <Link to="/product">Product</Link>
-        //     <Link to="/about">About Us</Link>
-        //     <Link to="/support">Support</Link>
-        //     <Link to="/contact">Contact Us</Link>
-        //   </>
-        // }
         menu={
           <>
             <Link exact to="/cn">

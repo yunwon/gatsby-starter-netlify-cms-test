@@ -83,6 +83,18 @@ export const pageQuery = graphql`
             description
             linkUri
           }
+          other {
+            image {
+              childImageSharp {
+                fluid {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+            title
+            description
+            linkUri
+          }
         }
         whyChooseUs {
           whyChooseUs01 {

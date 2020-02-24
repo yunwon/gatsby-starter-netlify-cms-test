@@ -5,47 +5,41 @@ import useSiteMetadata from "../components/SiteMetadata";
 import { withPrefix } from "gatsby";
 import "typeface-poppins";
 
-//import "normalize.css";
 import "../stylesheets/index.scss";
 import styles from "./Layout.module.scss";
 
 import Header from "./Header/Header";
 import Footer from "./Footer/Footer";
 
-const DropdownMenu = () => {
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const [show, setShow] = React.useState(false);
-
-  const handleClick = event => {
-    setAnchorEl(event.currentTarget);
-    setShow(show === false ? true : false);
-  };
-
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
-
+const InsulationDropdownMenu = () => {
   return (
-    <div>
-      <a
-        aria-controls="dropdown-menu"
-        aria-haspopup="true"
-        onClick={handleClick}
-      >
-        Services
-      </a>
-      {show && (
-        <div
-          id="dropdown-menu"
-          anchorEl={anchorEl}
-          onClose={handleClose}
-          className="dropdownMenu"
-        >
-          <Link to="/ourworks">Our Works</Link>
-          <Link to="/insulation">Insulation</Link>
-          <Link to="/healthyhomes">Healthy Homes</Link>
-        </div>
-      )}
+    <div className="dropdown">
+      <Link to="/insulation" className="dropbtn">
+        Insulation
+      </Link>
+      <div className="dropdown-content">
+        <Link to="/ourworks">Our Works</Link>
+        <Link to="/products">Products</Link>
+      </div>
+    </div>
+  );
+};
+
+const HealthyHomesDropdownMenu = () => {
+  return (
+    <div className="dropdown">
+      <Link to="/healthyhomes" className="dropbtn">
+        Healthy Homes
+      </Link>
+      <div className="dropdown-content">
+        <Link to="/heating-test">Heating Test</Link>
+        <Link to="/insulation-test">Insulation Test</Link>
+        <Link to="/ventilation-test">Ventilation Test</Link>
+        <Link to="/moisture-ingress-and-drainage-test">
+          Moisture Ingress and Drainage Test
+        </Link>
+        <Link to="/draught-stopping-test">Draught Stopping Test</Link>
+      </div>
     </div>
   );
 };
@@ -100,35 +94,25 @@ const TemplateWrapper = ({ children }) => {
       <Header
         langauge="English"
         phoneNo="09-818-6606"
-        // mobileMenu={
-        //   <>
-        //     <Link exact to="/">
-        //       Home
-        //     </Link>
-        //     <div>
-        //       <span>Services</span>
-        //       <div>
-        //         <Link to="/services/ourworks">Our Works</Link>
-        //         <Link to="/services/insulation">Insulation</Link>
-        //         <Link to="/services/healthyhomes">Healthy Homes</Link>
-        //       </div>
-        //     </div>
-        //     <Link to="/product">Product</Link>
-        //     <Link to="/about">About Us</Link>
-        //     <Link to="/support">Support</Link>
-        //     <Link to="/contact">Contact Us</Link>
-        //   </>
-        // }
         menu={
           <>
             <Link exact to="/">
               Home
             </Link>
-            <DropdownMenu />
-            <Link to="/products">Product</Link>
-            <Link to="/about">About Us</Link>
-            <Link to="/support">Support</Link>
-            <Link to="/contact">Contact Us</Link>
+            <InsulationDropdownMenu />
+            <HealthyHomesDropdownMenu />
+            <Link to="/other" className="primary-menu">
+              Other
+            </Link>
+            <Link to="/about" className="primary-menu">
+              About Us
+            </Link>
+            <Link to="/support" className="primary-menu">
+              Support
+            </Link>
+            <Link to="/contact" className="primary-menu">
+              Contact Us
+            </Link>
           </>
         }
         linkToHome="/"

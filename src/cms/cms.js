@@ -20,6 +20,8 @@ import ContactPagePreview from "./preview-templates/ContactPagePreview";
 import ContactCNPagePreview from "./preview-templates/ContactCNPagePreview";
 import HealthyHomesPagePreview from "./preview-templates/HealthyHomesPagePreview";
 import HealthyHomesCNPagePreview from "./preview-templates/HealthyHomesCNPagePreview";
+import OtherPagePreview from "./preview-templates/OtherPagePreview";
+import OtherPageCNPreview from "./preview-templates/OtherPageCNPreview";
 
 // The following window and global config settings below were taken from here.
 // https://github.com/gatsbyjs/gatsby/blob/master/docs/docs/visual-testing-with-storybook.md
@@ -54,6 +56,8 @@ CMS.registerPreviewTemplate("insulation", InsulationPagePreview);
 CMS.registerPreviewTemplate("insulation-cn", InsulationCNPagePreview);
 CMS.registerPreviewTemplate("healthyhomes", HealthyHomesPagePreview);
 CMS.registerPreviewTemplate("healthyhomes-cn", HealthyHomesCNPagePreview);
+CMS.registerPreviewTemplate("other", OtherPagePreview);
+CMS.registerPreviewTemplate("other-cn", OtherPageCNPreview);
 CMS.registerPreviewTemplate("about", AboutPagePreview);
 CMS.registerPreviewTemplate("about-cn", AboutCNPagePreview);
 CMS.registerPreviewTemplate("products", ProductPagePreview);

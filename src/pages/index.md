@@ -58,6 +58,13 @@ whatWeDo:
     image: /img/home-insulation.png
     linkUri: insulation
     title: Insulation
+  other:
+    description: >-
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua.
+    image: /img/home-insulation.png
+    linkUri: other
+    title: other
   title: What We Do
 whyChooseUs:
   whyChooseUs01:

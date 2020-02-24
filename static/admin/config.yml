@@ -114,6 +114,23 @@ collections:
                         { label: Link Uri, name: linkUri, widget: string },
                       ],
                   },
+                  {
+                    label: Other,
+                    name: other,
+                    widget: object,
+                    fields:
+                      [
+                        { label: Title, name: title, widget: string },
+                        {
+                          label: Image,
+                          name: image,
+                          widget: image,
+                          required: false,
+                        },
+                        { label: Description, name: description, widget: text },
+                        { label: Link Uri, name: linkUri, widget: string },
+                      ],
+                  },
                 ],
             }
           - {
@@ -305,6 +322,23 @@ collections:
                   {
                     label: Healthy Homes,
                     name: healthyHomes,
+                    widget: object,
+                    fields:
+                      [
+                        { label: Title, name: title, widget: string },
+                        {
+                          label: Image,
+                          name: image,
+                          widget: image,
+                          required: false,
+                        },
+                        { label: Description, name: description, widget: text },
+                        { label: Link Uri, name: linkUri, widget: string },
+                      ],
+                  },
+                  {
+                    label: Other,
+                    name: other,
                     widget: object,
                     fields:
                       [
@@ -770,6 +804,30 @@ collections:
                   },
                 ],
             }
+      - file: "src/pages/other/index.md"
+        label: "Other"
+        name: "other"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "other-page",
+            }
+          - { label: Title, name: title, widget: string }
+          - { label: SubTitle, name: subTitle, widget: string, required: false }
+      - file: "src/pages/other/cn.md"
+        label: "Other (Chinese)"
+        name: "other-cn"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "other-page-cn",
+            }
+          - { label: Title, name: title, widget: string }
+          - { label: SubTitle, name: subTitle, widget: string, required: false }
       - file: "src/pages/products/index.md"
         label: "Products"
         name: "products"
