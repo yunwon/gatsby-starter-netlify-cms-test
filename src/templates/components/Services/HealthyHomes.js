@@ -13,7 +13,7 @@ const RenderIcons = ({ data }) => (
   <div className={styles.items}>
     {data.map(item => (
       <div key={item.title}>
-        <Link to={`${item.linkUri}`}>
+        <Link to={`/${item.linkUri}`}>
           <div className={styles.iconWrapper}>
             <PreviewCompatibleImage
               imageInfo={{
