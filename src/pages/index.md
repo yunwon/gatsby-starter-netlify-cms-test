@@ -1,9 +1,9 @@
 ---
 templateKey: index-page
-title: We are making healthier home for you.
+title: 'We make warmer, drier & healthier home for you.'
 subTitle: >-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-  incididunt ut labore.
+  10-years experience in providing kiwi's with warm, dry and healthy places to
+  both live & work.
 mainButton: Talk To Us Now
 events:
   event:
@@ -102,7 +102,6 @@ ourProducts:
       title: Glass Wool
   title: Our Products
 partners:
-  title: Our Partners and Suppliers
   list:
     - image: /img/home/daikin.png
       title: daikin
@@ -116,6 +115,7 @@ partners:
       title: panasonic
     - image: /img/home/sunshine-solar.png
       title: sunshine-solar
+  title: Our Partners and Suppliers
 testimonials:
   testimonialList:
     - company: ABC Ltd.
@@ -144,3 +144,4 @@ contact:
   phoneNo: 09-818-6606
   title: Talk To Us Now
 ---
+
