@@ -40,7 +40,7 @@ const RenderKeyDatesList = ({ data }) => (
         <p>{item.description}</p>
         <div className={styles.countDown}>
           <FaClock />
-          <DateCountdown dateTo={`${item.dueDate} 00:00:00 GMT+03:00`} />
+          {/* <DateCountdown dateTo={item.dueDate} /> */}
         </div>
       </div>
     ))}
