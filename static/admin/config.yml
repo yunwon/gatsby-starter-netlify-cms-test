@@ -656,7 +656,7 @@ collections:
               fields:
                 [
                   { label: Title, name: title, widget: string },
-                  { label: Subtitle, name: subTitle, widget: string },
+                  { label: Subtitle, name: subtitle, widget: string },
                   { label: Description, name: description, widget: text },
                 ],
             }
@@ -742,7 +742,7 @@ collections:
               fields:
                 [
                   { label: Title, name: title, widget: string },
-                  { label: Subtitle, name: subTitle, widget: string },
+                  { label: Subtitle, name: subtitle, widget: string },
                   { label: Description, name: description, widget: text },
                 ],
             }
