@@ -39,6 +39,7 @@ export const InsulationCNPageQuery = graphql`
             }
           }
           description
+          linkUri
         }
       }
     }

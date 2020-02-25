@@ -557,6 +557,7 @@ collections:
                   { label: Image, name: image, widget: image },
                   { label: Title, name: title, widget: string },
                   { label: Description, name: description, widget: text },
+                  { label: Link Uri, name: linkUri, widget: string },
                 ],
             }
       - file: "src/pages/insulation/cn.md"
@@ -580,6 +581,7 @@ collections:
                   { label: Image, name: image, widget: image },
                   { label: Title, name: title, widget: string },
                   { label: Description, name: description, widget: text },
+                  { label: Link Uri, name: linkUri, widget: string },
                 ],
             }
       - file: "src/pages/healthyhomes/index.md"

@@ -1,4 +1,4 @@
-@import '../../stylesheets/2-abstracts/abstracts-dir';
+@import "../../stylesheets/2-abstracts/abstracts-dir";
 
 .button {
   background: $brand-main;
@@ -14,6 +14,11 @@
 
   svg {
     margin-right: 6px;
+  }
+
+  .arrow {
+    margin-right: 0;
+    margin-left: 6px;
   }
 
   &:hover {
