@@ -95,7 +95,7 @@ const HealthyHomesPageTemplate = ({
           <div className={styles.text}>
             <h2>{contact.title}</h2>
             <Link to={language === "English" ? `/contact` : `/contact/cn`}>
-              <Button title={contact.button} bigButton />
+              <Button title={contact.button} bigButton arrow />
             </Link>
           </div>
         </div>
