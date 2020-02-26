@@ -97,12 +97,23 @@ export const pageQuery = graphql`
         }
         whyChooseUs {
           whyChooseUs01 {
+            title
             description
           }
           whyChooseUs02 {
+            title
             description
           }
           whyChooseUs03 {
+            title
+            description
+          }
+          whyChooseUs04 {
+            title
+            description
+          }
+          whyChooseUs05 {
+            title
             description
           }
         }

@@ -144,21 +144,50 @@ collections:
                     name: whyChooseUs01,
                     widget: object,
                     fields:
-                      [{ label: Description, name: description, widget: text }],
+                      [
+                        { label: Title, name: title, widget: string },
+                        { label: Description, name: description, widget: text },
+                      ],
                   },
                   {
                     label: Why Choose Us 02,
                     name: whyChooseUs02,
                     widget: object,
                     fields:
-                      [{ label: Description, name: description, widget: text }],
+                      [
+                        { label: Title, name: title, widget: string },
+                        { label: Description, name: description, widget: text },
+                      ],
                   },
                   {
                     label: Why Choose Us 03,
                     name: whyChooseUs03,
                     widget: object,
                     fields:
-                      [{ label: Description, name: description, widget: text }],
+                      [
+                        { label: Title, name: title, widget: string },
+                        { label: Description, name: description, widget: text },
+                      ],
+                  },
+
+                    label: Why Choose Us 04,
+                    name: whyChooseUs04,
+                    widget: object,
+                    fields:
+                      [
+                        { label: Title, name: title, widget: string },
+                        { label: Description, name: description, widget: text },
+                      ],
+                  },
+                  {
+                    label: Why Choose Us 05,
+                    name: whyChooseUs05,
+                    widget: object,
+                    fields:
+                      [
+                        { label: Title, name: title, widget: string },
+                        { label: Description, name: description, widget: text },
+                      ],
                   },
                 ],
             }
@@ -360,27 +389,56 @@ collections:
               name: whyChooseUs,
               widget: object,
               fields:
-                [
+                                [
                   {
                     label: Why Choose Us 01,
                     name: whyChooseUs01,
                     widget: object,
                     fields:
-                      [{ label: Description, name: description, widget: text }],
+                      [
+                        { label: Title, name: title, widget: string },
+                        { label: Description, name: description, widget: text },
+                      ],
                   },
                   {
                     label: Why Choose Us 02,
                     name: whyChooseUs02,
                     widget: object,
                     fields:
-                      [{ label: Description, name: description, widget: text }],
+                      [
+                        { label: Title, name: title, widget: string },
+                        { label: Description, name: description, widget: text },
+                      ],
                   },
                   {
                     label: Why Choose Us 03,
                     name: whyChooseUs03,
                     widget: object,
                     fields:
-                      [{ label: Description, name: description, widget: text }],
+                      [
+                        { label: Title, name: title, widget: string },
+                        { label: Description, name: description, widget: text },
+                      ],
+                  },
+
+                    label: Why Choose Us 04,
+                    name: whyChooseUs04,
+                    widget: object,
+                    fields:
+                      [
+                        { label: Title, name: title, widget: string },
+                        { label: Description, name: description, widget: text },
+                      ],
+                  },
+                  {
+                    label: Why Choose Us 05,
+                    name: whyChooseUs05,
+                    widget: object,
+                    fields:
+                      [
+                        { label: Title, name: title, widget: string },
+                        { label: Description, name: description, widget: text },
+                      ],
                   },
                 ],
             }

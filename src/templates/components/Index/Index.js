@@ -150,15 +150,30 @@ class IndexPageTemplate extends React.Component {
         {/* 04. Why Choose Us */}
         <SectionWithIcons
           title="Why Choose Us"
+          titleArray={[
+            whyChooseUs.whyChooseUs01.title,
+            whyChooseUs.whyChooseUs02.title,
+            whyChooseUs.whyChooseUs03.title,
+            whyChooseUs.whyChooseUs04.title,
+            whyChooseUs.whyChooseUs05.title
+          ]}
           descriptionArray={[
             whyChooseUs.whyChooseUs01.description,
             whyChooseUs.whyChooseUs02.description,
-            whyChooseUs.whyChooseUs03.description
+            whyChooseUs.whyChooseUs03.description,
+            whyChooseUs.whyChooseUs04.description,
+            whyChooseUs.whyChooseUs05.description
           ]}
-          icons={[whyChooseUs01, whyChooseUs01, whyChooseUs01]}
+          icons={[
+            whyChooseUs01,
+            whyChooseUs01,
+            whyChooseUs01,
+            whyChooseUs01,
+            whyChooseUs01
+          ]}
         />
         {/* 05. Our Products */}
-        <div className={styles.ourProducts}>
+        {/* <div className={styles.ourProducts}>
           <div className={styles.title}>
             <h2>{ourProducts.title}</h2>
             <p>{ourProducts.description}</p>
@@ -183,7 +198,7 @@ class IndexPageTemplate extends React.Component {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
         {/* 06. Partners */}
         <div className={styles.partners}>
           <div className={styles.inner}>

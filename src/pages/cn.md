@@ -68,14 +68,27 @@ whatWeDo:
   title: What We Do
 whyChooseUs:
   whyChooseUs01:
+    title: 专业
     description: >-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua.
   whyChooseUs02:
+    title: 值得信赖
     description: >-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua.
   whyChooseUs03:
+    title: 经济划算
+    description: >-
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua.
+  whyChooseUs04:
+    title: 安全
+    description: >-
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua.
+  whyChooseUs05:
+    title: 准时
     description: >-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua.

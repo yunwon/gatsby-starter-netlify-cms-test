@@ -1,6 +1,6 @@
 ---
 templateKey: index-page
-title: 'We make warmer, drier & healthier home for you.'
+title: "We make warmer, drier & healthier home for you."
 subTitle: >-
   10-years experience in providing kiwi's with warm, dry and healthy places to
   both live & work.
@@ -68,14 +68,27 @@ whatWeDo:
   title: What We Do
 whyChooseUs:
   whyChooseUs01:
+    title: Professional
     description: >-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua.
   whyChooseUs02:
+    title: Reliable
     description: >-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua.
   whyChooseUs03:
+    title: Cost-efficient
+    description: >-
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua.
+  whyChooseUs04:
+    title: Safety
+    description: >-
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua.
+  whyChooseUs05:
+    title: On Time
     description: >-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua.
@@ -144,4 +157,3 @@ contact:
   phoneNo: 09-818-6606
   title: Talk To Us Now
 ---
-
