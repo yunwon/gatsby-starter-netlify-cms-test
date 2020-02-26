@@ -97,24 +97,16 @@ export const pageQuery = graphql`
           }
         }
         whyChooseUs {
-          whyChooseUs01 {
+          title
+          iconList {
             title
-            description
-          }
-          whyChooseUs02 {
-            title
-            description
-          }
-          whyChooseUs03 {
-            title
-            description
-          }
-          whyChooseUs04 {
-            title
-            description
-          }
-          whyChooseUs05 {
-            title
+            icon {
+              childImageSharp {
+                fluid {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
             description
           }
         }

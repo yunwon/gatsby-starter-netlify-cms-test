@@ -12,18 +12,13 @@ description: >-
   aim, to create a more environmentally sustainable building using the best of
   new technologies.....
 ourPurpose:
-  description: We are commited to looking after the earth's resources responsibly.
-  ourPurpose01:
-    description: >-
-      We set a new standard for living that will be better for our people and
-      for our planet
-  ourPurpose02:
-    description: >-
-      We provide New Zealand householders with products and services to reduce
-      their energy costs
-  ourPurpose03:
-    description: >-
-      We increase New Zealand householders’ comfort levels and make their homes
-      more environmentally friendly
+  title: Our Purpose
+  subtitle: We are commited to looking after the earth's resources responsibly.
+  iconList:
+    - icon: /img/about/about-01.png
+      description: We set a new standard for living that will be better for our people and for our planet
+    - icon: /img/about/about-02.png
+      description: We provide New Zealand householders with products and services to reduce their energy costs
+    - icon: /img/about/about-03.png
+      description: We increase New Zealand householders’ comfort levels and make their homes more environmentally friendly
 ---
-

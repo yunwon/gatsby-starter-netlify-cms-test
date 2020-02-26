@@ -19,16 +19,23 @@ const AboutPageTemplate = ({ title, subTitle, description, ourPurpose }) => {
           <p>{description}</p>
         </div>
       </div>
-      <SectionWithIcons
-        title="Our Purpose"
-        subtitle={ourPurpose.description}
-        descriptionArray={[
-          ourPurpose.ourPurpose01.description,
-          ourPurpose.ourPurpose02.description,
-          ourPurpose.ourPurpose03.description
-        ]}
-        icons={[About01, About02, About03]}
-      />
+      <div className={styles.ourPurpose}>
+        <div className={styles.inner}>
+          <h2 className={styles.title}>{ourPurpose.title}</h2>
+          <p className={styles.subtitle}>{ourPurpose.subtitle}</p>
+          <div className={styles.items}>
+            {ourPurpose.iconList.map(item => (
+              <div className={styles.item}>
+                {/* <div className={styles.icon}>{item.icon}</div> */}
+                <div className={styles.text}>
+                  {item.title && <h5>{item.title}</h5>}
+                  <p>{item.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

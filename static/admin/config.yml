@@ -134,58 +134,25 @@ collections:
                 ],
             }
           - {
-              label: Why Choose Us,
+              label: "Why Choose Us",
               name: whyChooseUs,
               widget: object,
               fields:
                 [
+                  { label: Title, name: title, widget: string },
                   {
-                    label: Why Choose Us 01,
-                    name: whyChooseUs01,
-                    widget: object,
+                    label: "IconList",
+                    name: iconList,
+                    widget: list,
                     fields:
                       [
-                        { label: Title, name: title, widget: string },
-                        { label: Description, name: description, widget: text },
-                      ],
-                  },
-                  {
-                    label: Why Choose Us 02,
-                    name: whyChooseUs02,
-                    widget: object,
-                    fields:
-                      [
-                        { label: Title, name: title, widget: string },
-                        { label: Description, name: description, widget: text },
-                      ],
-                  },
-                  {
-                    label: Why Choose Us 03,
-                    name: whyChooseUs03,
-                    widget: object,
-                    fields:
-                      [
-                        { label: Title, name: title, widget: string },
-                        { label: Description, name: description, widget: text },
-                      ],
-                  },
-
-                    label: Why Choose Us 04,
-                    name: whyChooseUs04,
-                    widget: object,
-                    fields:
-                      [
-                        { label: Title, name: title, widget: string },
-                        { label: Description, name: description, widget: text },
-                      ],
-                  },
-                  {
-                    label: Why Choose Us 05,
-                    name: whyChooseUs05,
-                    widget: object,
-                    fields:
-                      [
-                        { label: Title, name: title, widget: string },
+                        {
+                          label: Title,
+                          name: title,
+                          widget: string,
+                          required: false,
+                        },
+                        { label: Icon, name: icon, widget: image },
                         { label: Description, name: description, widget: text },
                       ],
                   },
@@ -385,58 +352,25 @@ collections:
                 ],
             }
           - {
-              label: Why Choose Us,
+              label: "Why Choose Us",
               name: whyChooseUs,
               widget: object,
               fields:
-                                [
+                [
+                  { label: Title, name: title, widget: string },
                   {
-                    label: Why Choose Us 01,
-                    name: whyChooseUs01,
-                    widget: object,
+                    label: "IconList",
+                    name: iconList,
+                    widget: list,
                     fields:
                       [
-                        { label: Title, name: title, widget: string },
-                        { label: Description, name: description, widget: text },
-                      ],
-                  },
-                  {
-                    label: Why Choose Us 02,
-                    name: whyChooseUs02,
-                    widget: object,
-                    fields:
-                      [
-                        { label: Title, name: title, widget: string },
-                        { label: Description, name: description, widget: text },
-                      ],
-                  },
-                  {
-                    label: Why Choose Us 03,
-                    name: whyChooseUs03,
-                    widget: object,
-                    fields:
-                      [
-                        { label: Title, name: title, widget: string },
-                        { label: Description, name: description, widget: text },
-                      ],
-                  },
-
-                    label: Why Choose Us 04,
-                    name: whyChooseUs04,
-                    widget: object,
-                    fields:
-                      [
-                        { label: Title, name: title, widget: string },
-                        { label: Description, name: description, widget: text },
-                      ],
-                  },
-                  {
-                    label: Why Choose Us 05,
-                    name: whyChooseUs05,
-                    widget: object,
-                    fields:
-                      [
-                        { label: Title, name: title, widget: string },
+                        {
+                          label: Title,
+                          name: title,
+                          widget: string,
+                          required: false,
+                        },
+                        { label: Icon, name: icon, widget: image },
                         { label: Description, name: description, widget: text },
                       ],
                   },
@@ -814,6 +748,30 @@ collections:
                   { label: Button, name: button, widget: string },
                 ],
             }
+      - file: "src/pages/heating-test/index.md"
+        label: "Heating Test"
+        name: "heatingTest"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "heating-test-page",
+            }
+          - { label: Title, name: title, widget: string }
+          - { label: SubTitle, name: subTitle, widget: string, required: false }
+      - file: "src/pages/heating-test/cn.md"
+        label: "Heating Test"
+        name: "heatingTest"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "heating-test-page-cn",
+            }
+          - { label: Title, name: title, widget: string }
+          - { label: SubTitle, name: subTitle, widget: string, required: false }
       - file: "src/pages/about/index.md"
         label: "About"
         name: "about"
@@ -833,32 +791,28 @@ collections:
               widget: object,
               fields:
                 [
+                  { label: Title, name: title, widget: string },
                   {
-                    label: description,
-                    name: description,
+                    label: SubTitle,
+                    name: subtitle,
                     widget: string,
                     required: false,
                   },
                   {
-                    label: Our Purpose 01,
-                    name: ourPurpose01,
-                    widget: object,
+                    label: "IconList",
+                    name: iconList,
+                    widget: list,
                     fields:
-                      [{ label: Description, name: description, widget: text }],
-                  },
-                  {
-                    label: Our Purpose 02,
-                    name: ourPurpose02,
-                    widget: object,
-                    fields:
-                      [{ label: Description, name: description, widget: text }],
-                  },
-                  {
-                    label: Our Purpose 03,
-                    name: ourPurpose03,
-                    widget: object,
-                    fields:
-                      [{ label: Description, name: description, widget: text }],
+                      [
+                        {
+                          label: Title,
+                          name: title,
+                          widget: string,
+                          required: false,
+                        },
+                        { label: Icon, name: icon, widget: image },
+                        { label: Description, name: description, widget: text },
+                      ],
                   },
                 ],
             }
@@ -881,32 +835,28 @@ collections:
               widget: object,
               fields:
                 [
+                  { label: Title, name: title, widget: string },
                   {
-                    label: description,
-                    name: description,
+                    label: SubTitle,
+                    name: subtitle,
                     widget: string,
                     required: false,
                   },
                   {
-                    label: Our Purpose 01,
-                    name: ourPurpose01,
-                    widget: object,
+                    label: "IconList",
+                    name: iconList,
+                    widget: list,
                     fields:
-                      [{ label: Description, name: description, widget: text }],
-                  },
-                  {
-                    label: Our Purpose 02,
-                    name: ourPurpose02,
-                    widget: object,
-                    fields:
-                      [{ label: Description, name: description, widget: text }],
-                  },
-                  {
-                    label: Our Purpose 03,
-                    name: ourPurpose03,
-                    widget: object,
-                    fields:
-                      [{ label: Description, name: description, widget: text }],
+                      [
+                        {
+                          label: Title,
+                          name: title,
+                          widget: string,
+                          required: false,
+                        },
+                        { label: Icon, name: icon, widget: image },
+                        { label: Description, name: description, widget: text },
+                      ],
                   },
                 ],
             }

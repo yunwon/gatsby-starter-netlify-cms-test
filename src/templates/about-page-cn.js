@@ -32,14 +32,16 @@ export const aboutCNPageQuery = graphql`
         subTitle
         description
         ourPurpose {
-          description
-          ourPurpose01 {
-            description
-          }
-          ourPurpose02 {
-            description
-          }
-          ourPurpose03 {
+          title
+          subtitle
+          iconList {
+            icon {
+              childImageSharp {
+                fluid {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
             description
           }
         }
