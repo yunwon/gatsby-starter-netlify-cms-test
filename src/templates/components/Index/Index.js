@@ -34,7 +34,7 @@ class IndexPageTemplate extends React.Component {
       events,
       whatWeDo,
       whyChooseUs,
-      ourProducts,
+      whyChooseUsIcons,
       partners,
       testimonials,
       contact,
@@ -152,9 +152,16 @@ class IndexPageTemplate extends React.Component {
           <div className={styles.inner}>
             <h2 className={styles.title}>{whyChooseUs.title}</h2>
             <div className={styles.items}>
-              {whyChooseUs.iconList.map(item => (
+              {whyChooseUsIcons.map(item => (
                 <div className={styles.item}>
-                  {/* <div className={styles.icon}>{item.icon}</div> */}
+                  <div className={styles.icon}>
+                    <PreviewCompatibleImage
+                      imageInfo={{
+                        image: item.image,
+                        alt: item.title
+                      }}
+                    />
+                  </div>
                   <div className={styles.text}>
                     {item.title && <h5>{item.title}</h5>}
                     <p>{item.description}</p>
@@ -231,7 +238,7 @@ IndexPageTemplate.propTypes = {
   mainButton: PropTypes.string,
   whatWeDo: PropTypes.object,
   whyChooseUs: PropTypes.object,
-  ourProducts: PropTypes.object,
+  whyChooseUsIcons: PropTypes.array,
   partners: PropTypes.object,
   testimonials: PropTypes.object,
   contact: PropTypes.object,

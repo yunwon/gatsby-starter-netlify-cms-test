@@ -68,54 +68,32 @@ whatWeDo:
   title: What We Do
 whyChooseUs:
   title: Why Choose Us
-  iconList:
-    - title: Professional
-      icon: /img/home-insulation.png
-      description: >-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
-    - title: Reliable
-      icon: /img/home-insulation.png
-      description: >-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
-    - title: Cost-efficient
-      icon: /img/home-insulation.png
-      description: >-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
-    - title: Safety
-      icon: /img/home-insulation.png
-      description: >-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
-    - title: On Time
-      icon: /img/home-insulation.png
-      description: >-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua
-ourProducts:
-  description: >-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua.
-  productList:
-    - description: >-
-        Natural wool insulation in blanket or batting form. Ideal for walls of
-        new buildings and ceilings in new and existing premises.
-      image: /img/home-woolproduct.png
-      title: Wool products
-    - description: >-
-        Snug Insulation is proud to introduce our high-performance range of 100%
-        polyester thermal and acoustic insulation products, designed for the
-        residential and commercial buildings.
-      image: /img/home-polyester.png
-      title: Polyester
-    - description: >-
-        EarthWool is rot-proof, odourless, non-hygroscopic, does not sustain
-        vermin and will not encourage the growth of fungi, mould or bacteria.
-      image: /img/home-glasswool.png
-      title: Glass Wool
-  title: Our Products
+whyChooseUsIcons:
+  - title: Professional
+    image: /img/heating.png
+    description:
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua.
+  - title: Reliable
+    image: /img/heating.png
+    description:
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua.
+  - title: Cost-efficient
+    image: /img/heating.png
+    description:
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua.
+  - title: Safety
+    image: /img/heating.png
+    description:
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua.
+  - title: On Time
+    image: /img/heating.png
+    description:
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua
 partners:
   title: Our Partners and Suppliers
   list:

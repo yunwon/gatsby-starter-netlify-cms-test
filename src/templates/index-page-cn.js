@@ -17,7 +17,7 @@ const IndexCNPage = ({ data }) => {
         mainButton={frontmatter.mainButton}
         whatWeDo={frontmatter.whatWeDo}
         whyChooseUs={frontmatter.whyChooseUs}
-        ourProducts={frontmatter.ourProducts}
+        whyChooseUsIcons={frontmatter.whyChooseUsIcons}
         partners={frontmatter.partners}
         testimonials={frontmatter.testimonials}
         contact={frontmatter.contact}
@@ -98,32 +98,17 @@ export const pageQuery = graphql`
         }
         whyChooseUs {
           title
-          iconList {
-            title
-            icon {
-              childImageSharp {
-                fluid {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-            description
-          }
         }
-        ourProducts {
+        whyChooseUsIcons {
           title
-          description
-          productList {
-            title
-            image {
-              childImageSharp {
-                fluid {
-                  ...GatsbyImageSharpFluid
-                }
+          image {
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid
               }
             }
-            description
           }
+          description
         }
         partners {
           title

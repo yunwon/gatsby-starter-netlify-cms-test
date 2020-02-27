@@ -15,6 +15,7 @@ const IndexCNPagePreview = ({ entry, getAsset }) => {
         events={data.events}
         whatWeDo={data.whatWeDo}
         whyChooseUs={data.whyChooseUs}
+        whyChooseUsIcons={data.whyChooseUsIcons}
         ourProducts={data.ourProducts}
         testimonials={data.testimonials}
         contact={data.contact}

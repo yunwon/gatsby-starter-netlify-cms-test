@@ -141,21 +141,27 @@ collections:
                 [
                   { label: Title, name: title, widget: string },
                   {
-                    label: "IconList",
-                    name: iconList,
-                    widget: list,
-                    fields:
-                      [
-                        {
-                          label: Title,
-                          name: title,
-                          widget: string,
-                          required: false,
-                        },
-                        { label: Icon, name: icon, widget: image },
-                        { label: Description, name: description, widget: text },
-                      ],
+                    label: Subtitle,
+                    name: subTitle,
+                    widget: string,
+                    required: false,
                   },
+                ],
+            }
+          - {
+              label: Why Choose Us Icons,
+              name: whyChooseUsIcons,
+              widget: list,
+              fields:
+                [
+                  { label: Image, name: image, widget: image, required: false },
+                  {
+                    label: Title,
+                    name: title,
+                    widget: string,
+                    required: false,
+                  },
+                  { label: Description, name: description, widget: text },
                 ],
             }
           - {
@@ -359,21 +365,27 @@ collections:
                 [
                   { label: Title, name: title, widget: string },
                   {
-                    label: "IconList",
-                    name: iconList,
-                    widget: list,
-                    fields:
-                      [
-                        {
-                          label: Title,
-                          name: title,
-                          widget: string,
-                          required: false,
-                        },
-                        { label: Icon, name: icon, widget: image },
-                        { label: Description, name: description, widget: text },
-                      ],
+                    label: Subtitle,
+                    name: subTitle,
+                    widget: string,
+                    required: false,
                   },
+                ],
+            }
+          - {
+              label: Why Choose Us Icons,
+              name: whyChooseUsIcons,
+              widget: list,
+              fields:
+                [
+                  { label: Image, name: image, widget: image, required: false },
+                  {
+                    label: Title,
+                    name: title,
+                    widget: string,
+                    required: false,
+                  },
+                  { label: Description, name: description, widget: text },
                 ],
             }
           - {
