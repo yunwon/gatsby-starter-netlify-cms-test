@@ -24,6 +24,7 @@ import OtherPagePreview from "./preview-templates/OtherPagePreview";
 import OtherPageCNPreview from "./preview-templates/OtherPageCNPreview";
 import HeatingTestPagePreview from "./preview-templates/HeatingTestPagePreview";
 import HeatingTestCNPagePreview from "./preview-templates/HeatingTestCNPagePreview";
+import VentilationTestPageCNPreview from "./preview-templates/VentilationTestPageCNPreview";
 
 // The following window and global config settings below were taken from here.
 // https://github.com/gatsbyjs/gatsby/blob/master/docs/docs/visual-testing-with-storybook.md
@@ -60,6 +61,11 @@ CMS.registerPreviewTemplate("healthyhomes", HealthyHomesPagePreview);
 CMS.registerPreviewTemplate("healthyhomes-cn", HealthyHomesCNPagePreview);
 CMS.registerPreviewTemplate("heating-test", HeatingTestPagePreview);
 CMS.registerPreviewTemplate("heating-test-cn", HeatingTestCNPagePreview);
+CMS.registerPreviewTemplate("ventilation-test", VentilationTestPagePreview);
+CMS.registerPreviewTemplate(
+  "ventilation-test-cn",
+  VentilationTestPageCNPreview
+);
 CMS.registerPreviewTemplate("other", OtherPagePreview);
 CMS.registerPreviewTemplate("other-cn", OtherPageCNPreview);
 CMS.registerPreviewTemplate("about", AboutPagePreview);

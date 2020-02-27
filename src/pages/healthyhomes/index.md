@@ -20,7 +20,7 @@ standardIcons:
     linkUri: heating-test
   - title: Insulation Test
     image: /img/insulation.png
-    linkUri: insulation-test
+    linkUri: insulation
   - title: Ventilation
     image: /img/ventilation.png
     linkUri: ventilation-test

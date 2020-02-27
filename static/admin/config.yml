@@ -773,7 +773,7 @@ collections:
           - { label: Title, name: title, widget: string }
           - { label: SubTitle, name: subTitle, widget: string, required: false }
       - file: "src/pages/heating-test/cn.md"
-        label: "Heating Test"
+        label: "Heating Test (Chinese)"
         name: "heatingTest"
         fields:
           - {
@@ -781,6 +781,30 @@ collections:
               name: "templateKey",
               widget: "hidden",
               default: "heating-test-page-cn",
+            }
+          - { label: Title, name: title, widget: string }
+          - { label: SubTitle, name: subTitle, widget: string, required: false }
+      - file: "src/pages/ventilation-test/index.md"
+        label: "Ventilation Test"
+        name: "ventilationTest"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "ventilation-test-page",
+            }
+          - { label: Title, name: title, widget: string }
+          - { label: SubTitle, name: subTitle, widget: string, required: false }
+      - file: "src/pages/ventilation-test/cn.md"
+        label: "Ventilation Test (Chinese)"
+        name: "ventilationTest"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "ventilation-test-page-cn",
             }
           - { label: Title, name: title, widget: string }
           - { label: SubTitle, name: subTitle, widget: string, required: false }
