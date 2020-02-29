@@ -722,7 +722,7 @@ collections:
           - { label: SubTitle, name: subTitle, widget: string, required: false }
       - file: "src/pages/heating-test/cn.md"
         label: "Heating Test (Chinese)"
-        name: "heatingTest"
+        name: "heatingTest-cn"
         fields:
           - {
               label: "Template Key",
@@ -746,7 +746,7 @@ collections:
           - { label: SubTitle, name: subTitle, widget: string, required: false }
       - file: "src/pages/ventilation-test/cn.md"
         label: "Ventilation Test (Chinese)"
-        name: "ventilationTest"
+        name: "ventilationTest-cn"
         fields:
           - {
               label: "Template Key",
@@ -758,7 +758,7 @@ collections:
           - { label: SubTitle, name: subTitle, widget: string, required: false }
       - file: "src/pages/moisture-test/index.md"
         label: "Moisture Test"
-        name: "moisture-test"
+        name: "moistureTest"
         fields:
           - {
               label: "Template Key",
@@ -770,7 +770,7 @@ collections:
           - { label: SubTitle, name: subTitle, widget: string, required: false }
       - file: "src/pages/moisture-test/cn.md"
         label: "Moisture Test (Chinese)"
-        name: "moisture-test-cn"
+        name: "moistureTest-cn"
         fields:
           - {
               label: "Template Key",
@@ -782,7 +782,7 @@ collections:
           - { label: SubTitle, name: subTitle, widget: string, required: false }
       - file: "src/pages/draught-test/index.md"
         label: "Draught Test"
-        name: "draught-test"
+        name: "draughtTest"
         fields:
           - {
               label: "Template Key",
@@ -794,7 +794,7 @@ collections:
           - { label: SubTitle, name: subTitle, widget: string, required: false }
       - file: "src/pages/draught-test/cn.md"
         label: "Draught Test (Chinese)"
-        name: "draught-test-cn"
+        name: "draughtTest-cn"
         fields:
           - {
               label: "Template Key",

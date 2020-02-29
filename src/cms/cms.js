@@ -64,17 +64,14 @@ CMS.registerPreviewTemplate("insulation", InsulationPagePreview);
 CMS.registerPreviewTemplate("insulation-cn", InsulationCNPagePreview);
 CMS.registerPreviewTemplate("healthyhomes", HealthyHomesPagePreview);
 CMS.registerPreviewTemplate("healthyhomes-cn", HealthyHomesCNPagePreview);
-CMS.registerPreviewTemplate("heating-test", HeatingTestPagePreview);
-CMS.registerPreviewTemplate("heating-test-cn", HeatingTestCNPagePreview);
-CMS.registerPreviewTemplate("ventilation-test", VentilationTestPagePreview);
-CMS.registerPreviewTemplate(
-  "ventilation-test-cn",
-  VentilationTestPageCNPreview
-);
-CMS.registerPreviewTemplate("moisture-test", MoistureTestPagePreview);
-CMS.registerPreviewTemplate("moisture-test-cn", MoistureTestCNPagePreview);
-CMS.registerPreviewTemplate("draught-test", DraughtTestPagePreview);
-CMS.registerPreviewTemplate("draught-test-cn", DraughtTestCNPagePreview);
+CMS.registerPreviewTemplate("heatingTest", HeatingTestPagePreview);
+CMS.registerPreviewTemplate("heatingTest-cn", HeatingTestCNPagePreview);
+CMS.registerPreviewTemplate("ventilationTest", VentilationTestPagePreview);
+CMS.registerPreviewTemplate("ventilationTest-cn", VentilationTestPageCNPreview);
+CMS.registerPreviewTemplate("moistureTest", MoistureTestPagePreview);
+CMS.registerPreviewTemplate("moistureTest-cn", MoistureTestCNPagePreview);
+CMS.registerPreviewTemplate("draughtTest", DraughtTestPagePreview);
+CMS.registerPreviewTemplate("draughtTest-cn", DraughtTestCNPagePreview);
 CMS.registerPreviewTemplate("other", OtherPagePreview);
 CMS.registerPreviewTemplate("other-cn", OtherPageCNPreview);
 CMS.registerPreviewTemplate("about", AboutPagePreview);
