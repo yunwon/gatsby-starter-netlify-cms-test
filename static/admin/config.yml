@@ -756,6 +756,54 @@ collections:
             }
           - { label: Title, name: title, widget: string }
           - { label: SubTitle, name: subTitle, widget: string, required: false }
+      - file: "src/pages/moisture-test/index.md"
+        label: "Moisture Test"
+        name: "moisture-test"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "moisture-test-page",
+            }
+          - { label: Title, name: title, widget: string }
+          - { label: SubTitle, name: subTitle, widget: string, required: false }
+      - file: "src/pages/moisture-test/cn.md"
+        label: "Moisture Test (Chinese)"
+        name: "moisture-test-cn"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "moisture-test-page-cn",
+            }
+          - { label: Title, name: title, widget: string }
+          - { label: SubTitle, name: subTitle, widget: string, required: false }
+      - file: "src/pages/draught-test/index.md"
+        label: "Draught Test"
+        name: "draught-test"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "draught-test-page",
+            }
+          - { label: Title, name: title, widget: string }
+          - { label: SubTitle, name: subTitle, widget: string, required: false }
+      - file: "src/pages/draught-test/cn.md"
+        label: "Draught Test (Chinese)"
+        name: "draught-test-cn"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "draught-test-page-cn",
+            }
+          - { label: Title, name: title, widget: string }
+          - { label: SubTitle, name: subTitle, widget: string, required: false }
       - file: "src/pages/about/index.md"
         label: "About"
         name: "about"

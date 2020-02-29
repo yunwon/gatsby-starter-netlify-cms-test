@@ -5,47 +5,39 @@ import useSiteMetadata from "../components/SiteMetadata";
 import { withPrefix } from "gatsby";
 import "typeface-poppins";
 
-//import "normalize.css";
 import "../stylesheets/index.scss";
 import styles from "./Layout.module.scss";
 
 import Header from "./Header/Header";
 import Footer from "./Footer/Footer";
 
-const DropdownMenu = () => {
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const [show, setShow] = React.useState(false);
-
-  const handleClick = event => {
-    setAnchorEl(event.currentTarget);
-    setShow(show === false ? true : false);
-  };
-
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
-
+const InsulationDropdownMenu = () => {
   return (
-    <div>
-      <a
-        aria-controls="dropdown-menu"
-        aria-haspopup="true"
-        onClick={handleClick}
-      >
-        公司服务
-      </a>
-      {show && (
-        <div
-          id="dropdown-menu"
-          anchorEl={anchorEl}
-          onClose={handleClose}
-          className="dropdownMenu"
-        >
-          <Link to="/ourworks/cn">我們的作品</Link>
-          <Link to="/insulation/cn">絕緣</Link>
-          <Link to="/healthyhomes/cn">健康的家</Link>
-        </div>
-      )}
+    <div className="dropdown">
+      <Link to="/insulation" className="dropbtn">
+        保温棉
+      </Link>
+      <div className="dropdown-content">
+        <Link to="/ourworks">图片展示</Link>
+        <Link to="/products">产品</Link>
+      </div>
+    </div>
+  );
+};
+
+const HealthyHomesDropdownMenu = () => {
+  return (
+    <div className="dropdown">
+      <Link to="/healthyhomes" className="dropbtn">
+        Healthy Homes
+      </Link>
+      <div className="dropdown-content">
+        <Link to="/heating-test">加热系统</Link>
+        <Link to="/insulation-test">Insulation Test</Link>
+        <Link to="/ventilation-test">Ventilation Test</Link>
+        <Link to="/moisture-test">Moisture Ingress and Drainage Test</Link>
+        <Link to="/draught-test">Draught Stopping Test</Link>
+      </div>
     </div>
   );
 };
@@ -98,26 +90,35 @@ const TemplateWrapper = ({ children }) => {
         />
       </Helmet>
       <Header
-        language="Chinese"
+        langauge="English"
         phoneNo="09-818-6606"
         menu={
           <>
-            <Link exact to="/cn">
+            <Link exact to="/">
               首页
             </Link>
-            <DropdownMenu />
-            <Link to="/products/cn">我们的产品</Link>
-            <Link to="/about/cn">公司介绍</Link>
-            <Link to="/support/cn">支持下载</Link>
-            <Link to="/contact/cn">联系我们</Link>
+            <InsulationDropdownMenu />
+            <HealthyHomesDropdownMenu />
+            <Link to="/other" className="primary-menu">
+              Other
+            </Link>
+            <Link to="/about" className="primary-menu">
+              关于我们
+            </Link>
+            <Link to="/support" className="primary-menu">
+              文件下载
+            </Link>
+            <Link to="/contact" className="primary-menu">
+              Contact Us
+            </Link>
           </>
         }
-        linkToHome="/cn"
+        linkToHome="/"
       />
       <div id="page-wrap" className={styles.main}>
         {children}
       </div>
-      <Footer language="Chinese" />
+      <Footer langauge="English" />
     </div>
   );
 };

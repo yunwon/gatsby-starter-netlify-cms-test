@@ -1,0 +1,66 @@
+@import "../../../stylesheets/2-abstracts/_abstracts-dir.scss";
+
+.wrapper {
+  &:nth-child(even) {
+    background-color: $bg-color !important;
+
+    @media #{$break-md} {
+      .section {
+        .image {
+          order: 2;
+          margin-left: 2.5rem;
+        }
+      }
+    }
+  }
+}
+
+.section {
+  @include container-maxwidth();
+  @include articlePadding();
+
+  .text {
+    width: 100%;
+    padding-top: 0;
+    order: 1;
+    text-align: center;
+
+    h4 {
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h5 {
+      margin-bottom: 0.5rem;
+      color: $brand-main;
+
+      span {
+        color: $grey;
+        margin-right: 0.5rem;
+      }
+    }
+  }
+
+  .image {
+    @include cardImage($maxHeight: 400px);
+  }
+
+  @media #{$break-md} {
+    display: flex;
+    width: 100%;
+
+    .text {
+      width: 50%;
+      text-align: left;
+
+      h4 {
+        margin-top: 0;
+      }
+    }
+
+    .image {
+      width: 50%;
+      margin-right: 2.5rem;
+    }
+  }
+}

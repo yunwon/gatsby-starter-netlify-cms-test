@@ -35,10 +35,8 @@ const HealthyHomesDropdownMenu = () => {
         <Link to="/heating-test">Heating Test</Link>
         <Link to="/insulation-test">Insulation Test</Link>
         <Link to="/ventilation-test">Ventilation Test</Link>
-        <Link to="/moisture-ingress-and-drainage-test">
-          Moisture Ingress and Drainage Test
-        </Link>
-        <Link to="/draught-stopping-test">Draught Stopping Test</Link>
+        <Link to="/moisture-test">Moisture Ingress and Drainage Test</Link>
+        <Link to="/draught-test">Draught Stopping Test</Link>
       </div>
     </div>
   );

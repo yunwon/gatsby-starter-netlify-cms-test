@@ -26,6 +26,10 @@ import HeatingTestPagePreview from "./preview-templates/HeatingTestPagePreview";
 import HeatingTestCNPagePreview from "./preview-templates/HeatingTestCNPagePreview";
 import VentilationTestPageCNPreview from "./preview-templates/VentilationTestPageCNPreview";
 import VentilationTestPagePreview from "./preview-templates/VentilationTestPagePreview";
+import MoistureTestPagePreview from "./preview-templates/MoistureTestPagePreview";
+import MoistureTestCNPagePreview from "./preview-templates/MoistureTestCNPagePreview";
+import DraughtTestPagePreview from "./preview-templates/DraughtTestPagePreview";
+import DraughtTestCNPagePreview from "./preview-templates/DraughtTestCNPagePreview";
 
 // The following window and global config settings below were taken from here.
 // https://github.com/gatsbyjs/gatsby/blob/master/docs/docs/visual-testing-with-storybook.md
@@ -67,6 +71,10 @@ CMS.registerPreviewTemplate(
   "ventilation-test-cn",
   VentilationTestPageCNPreview
 );
+CMS.registerPreviewTemplate("moisture-test", MoistureTestPagePreview);
+CMS.registerPreviewTemplate("moisture-test-cn", MoistureTestCNPagePreview);
+CMS.registerPreviewTemplate("draught-test", DraughtTestPagePreview);
+CMS.registerPreviewTemplate("draught-test-cn", DraughtTestCNPagePreview);
 CMS.registerPreviewTemplate("other", OtherPagePreview);
 CMS.registerPreviewTemplate("other-cn", OtherPageCNPreview);
 CMS.registerPreviewTemplate("about", AboutPagePreview);
