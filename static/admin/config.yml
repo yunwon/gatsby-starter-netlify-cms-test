@@ -165,32 +165,6 @@ collections:
                 ],
             }
           - {
-              label: "Our Products",
-              name: ourProducts,
-              widget: object,
-              fields:
-                [
-                  { label: Title, name: title, widget: string },
-                  {
-                    label: description,
-                    name: description,
-                    widget: string,
-                    required: false,
-                  },
-                  {
-                    label: "Product List",
-                    name: productList,
-                    widget: list,
-                    fields:
-                      [
-                        { label: Title, name: title, widget: string },
-                        { label: Image, name: image, widget: image },
-                        { label: Description, name: description, widget: text },
-                      ],
-                  },
-                ],
-            }
-          - {
               label: "Partners",
               name: partners,
               widget: object,
@@ -386,32 +360,6 @@ collections:
                     required: false,
                   },
                   { label: Description, name: description, widget: text },
-                ],
-            }
-          - {
-              label: "Our Products",
-              name: ourProducts,
-              widget: object,
-              fields:
-                [
-                  { label: Title, name: title, widget: string },
-                  {
-                    label: description,
-                    name: description,
-                    widget: string,
-                    required: false,
-                  },
-                  {
-                    label: "Product List",
-                    name: productList,
-                    widget: list,
-                    fields:
-                      [
-                        { label: Title, name: title, widget: string },
-                        { label: Image, name: image, widget: image },
-                        { label: Description, name: description, widget: text },
-                      ],
-                  },
                 ],
             }
           - {

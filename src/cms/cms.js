@@ -25,6 +25,7 @@ import OtherPageCNPreview from "./preview-templates/OtherPageCNPreview";
 import HeatingTestPagePreview from "./preview-templates/HeatingTestPagePreview";
 import HeatingTestCNPagePreview from "./preview-templates/HeatingTestCNPagePreview";
 import VentilationTestPageCNPreview from "./preview-templates/VentilationTestPageCNPreview";
+import VentilationTestPagePreview from "./preview-templates/VentilationTestPagePreview";
 
 // The following window and global config settings below were taken from here.
 // https://github.com/gatsbyjs/gatsby/blob/master/docs/docs/visual-testing-with-storybook.md
