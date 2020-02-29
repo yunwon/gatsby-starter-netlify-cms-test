@@ -14,12 +14,12 @@ import Footer from "./Footer/Footer";
 const InsulationDropdownMenu = () => {
   return (
     <div className="dropdown">
-      <Link to="/insulation" className="dropbtn">
+      <Link to="/insulation/cn" className="dropbtn">
         保温棉
       </Link>
       <div className="dropdown-content">
-        <Link to="/ourworks">图片展示</Link>
-        <Link to="/products">产品</Link>
+        <Link to="/ourworks/cn">图片展示</Link>
+        <Link to="/products/cn">产品</Link>
       </div>
     </div>
   );
@@ -28,15 +28,15 @@ const InsulationDropdownMenu = () => {
 const HealthyHomesDropdownMenu = () => {
   return (
     <div className="dropdown">
-      <Link to="/healthyhomes" className="dropbtn">
+      <Link to="/healthyhomes/cn" className="dropbtn">
         Healthy Homes
       </Link>
       <div className="dropdown-content">
-        <Link to="/heating-test">加热系统</Link>
-        <Link to="/insulation-test">Insulation Test</Link>
-        <Link to="/ventilation-test">Ventilation Test</Link>
-        <Link to="/moisture-test">Moisture Ingress and Drainage Test</Link>
-        <Link to="/draught-test">Draught Stopping Test</Link>
+        <Link to="/heating-test/cn">加热系统</Link>
+        <Link to="/insulation-test/cn">Insulation Test</Link>
+        <Link to="/ventilation-test/cn">Ventilation Test</Link>
+        <Link to="/moisture-test/cn">Moisture Ingress and Drainage Test</Link>
+        <Link to="/draught-test/cn">Draught Stopping Test</Link>
       </div>
     </div>
   );
@@ -94,21 +94,21 @@ const TemplateWrapper = ({ children }) => {
         phoneNo="09-818-6606"
         menu={
           <>
-            <Link exact to="/">
+            <Link exact to="/cn">
               首页
             </Link>
             <InsulationDropdownMenu />
             <HealthyHomesDropdownMenu />
-            <Link to="/other" className="primary-menu">
+            <Link to="/other/cn" className="primary-menu">
               Other
             </Link>
-            <Link to="/about" className="primary-menu">
+            <Link to="/about/cn" className="primary-menu">
               关于我们
             </Link>
-            <Link to="/support" className="primary-menu">
+            <Link to="/support/cn" className="primary-menu">
               文件下载
             </Link>
-            <Link to="/contact" className="primary-menu">
+            <Link to="/contact/cn" className="primary-menu">
               Contact Us
             </Link>
           </>
