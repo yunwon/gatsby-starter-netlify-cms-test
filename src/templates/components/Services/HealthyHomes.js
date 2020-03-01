@@ -8,6 +8,7 @@ import { Button } from "../../../components/Button/Button";
 import PreviewCompatibleImage from "../../../components/PreviewCompatibleImage";
 import { FaClock } from "react-icons/fa";
 import { Link } from "gatsby";
+import Countdown from "../../../components/Countdown/Countdown";
 
 const RenderIcons = ({ data }) => (
   <div className={styles.items}>
@@ -40,6 +41,7 @@ const RenderKeyDatesList = ({ data }) => (
         <p>{item.description}</p>
         <div className={styles.countDown}>
           <FaClock />
+          <Countdown date={`2021-12-24T00:00:00`} />
           {/* <DateCountdown dateTo={item.dueDate} /> */}
         </div>
       </div>
