@@ -598,7 +598,7 @@ collections:
                     widget: text,
                     required: false,
                   },
-                  { label: Due Date, name: dueDate, widget: string },
+                  { label: Due Year, name: dueYear, widget: string },
                 ],
             }
           - {
@@ -684,7 +684,7 @@ collections:
                     widget: text,
                     required: false,
                   },
-                  { label: Due Date, name: dueDate, widget: string },
+                  { label: Due Year, name: dueYear, widget: string },
                 ],
             }
           - {

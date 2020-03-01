@@ -4,7 +4,6 @@ import styles from "./HealthyHomes.module.scss";
 import HeroSection from "../../../components/HeroSection/HeroSection";
 import BgImage from "../../../assets/services/insulation/hero.png";
 import { Button } from "../../../components/Button/Button";
-// import DateCountdown from "react-date-countdown-timer";
 import PreviewCompatibleImage from "../../../components/PreviewCompatibleImage";
 import { FaClock } from "react-icons/fa";
 import { Link } from "gatsby";
@@ -41,8 +40,7 @@ const RenderKeyDatesList = ({ data }) => (
         <p>{item.description}</p>
         <div className={styles.countDown}>
           <FaClock />
-          <Countdown date={`2021-12-24T00:00:00`} />
-          {/* <DateCountdown dateTo={item.dueDate} /> */}
+          <Countdown date={`${item.dueYear}-07-01T00:00:00`} />
         </div>
       </div>
     ))}

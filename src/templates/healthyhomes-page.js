@@ -55,7 +55,7 @@ export const healthyhomesPageQuery = graphql`
         keyDatesList {
           title
           description
-          dueDate
+          dueYear
         }
         whatWeCanDo {
           title
