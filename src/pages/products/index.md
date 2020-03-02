@@ -1,111 +1,16 @@
 ---
 templateKey: product-page
 title: Our Product
-subTitle: >-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-  Sit amet porttitor eget dolor morbi non arcu risus quis.
+subTitle: "We uses only the best available\_natural, non-chemistry and high-quality insulation to install. "
 productList:
-  - title: Natural Wool Product
-    image: /img/product-wool.jpg
-    id: wool
-    intro: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      Sit amet porttitor eget dolor morbi non arcu risus quis.
-    descriptionList:
-      - title: Genuine Sheeps Wool
-        description:
-          - subDescription: >-
-              Supa-Fill is genuine sheep's wool. This is unlike some other forms
-              of synthetic materials that make reference to "wool" such as
-              Rockwool etc. Supa-Filll is a renewable resource produced
-              naturally by sheep.
-      - title: Batting and blanket wool fibre insulation
-        description:
-          - subDescription: >-
-              Natural wool insulation in blanket or batting form. Ideal for
-              walls of new buildings and ceilings in new and existing premises.
-      - title: Supa-Fill Machine Blown Wool Insulation
-        description:
-          - subDescription: >-
-              Supa-Fill is a natural wool fibre lofted insulation that has been
-              treated and processed to provide a cost effective efficient
-              insulation.
-      - title: Batting and blanket wool fibre insulation
-        description:
-          - subDescription: >-
-              Insulation material for walls and ceilings is available in either
-              wool blanket or batting form. It is available for installation
-              into the walls and ceilings of buildings. Material is safe and
-              healthy and requires no protective clothing for handling or
-              installing.
-      - title: Benefits of Wool
-        description:
-          - subTitle: WOOL IS A NATURAL CHOICE
-            subDescription: Wool is unique in its insulation properties and brings its proven characteristics into our residential and business environments. Wool is excellent in providing healthy, warm, dry and comfortable living environments. Wool has been proven through its years of use in fabrics, apparel, bedding and carpets. It is a natural fibre used universally for personal comfort and warmth.
-          - subTitle: WOOL BREATHES, WOOL IS NOT INERT
-            subDescription: Wool is the only insulation material that is not inert. Wool fibre breathes and reacts to climatic change which effectively allows your home and office to breathe. Wool is an extremely effective insulator when moisture is present within the environment. This is a continual occurrence due to the ever changing level of humidity within the atmosphere. Insulation products without absorption ability can be adversely effected by humidity. The presence of moisture is evidenced by water, condensation, mould and mildew within buildings.
-          - subTitle: WOOL IS A HYGROSCOPIC INSULATOR
-            subDescription: This means that wool can absorb moisture without becoming wet to touch. Wools natural insulation ability is not affected by moisture because of its built in natural crimp. As the fibres naturally repel each other, an amount of air is retained which provides an insulation effect. The fibre has the capability of absorbing up to 30% of its own weight in moisture, before it becomes wet to touch. Wool in essence, provides a form of natural air-conditioning!
-          - subTitle: WOOL IS HEALTHY
-            subDescription: Warm and dry environments are essential in providing healthy living conditions. Wool has a natural ability to achieve this by absorbing and desorbing moisture. Through this characteristic, benefits can be obtained by sufferers of a wide range of health conditions such as asthmatic and other respiratory ailments. Unlike some finer micron synthetic materials, the body does not absorb wool fibre through inhalation. Wool used for insulation is on average in the 25 – 40 micron range. Synthetic materials used in other forms of insulation products can be as low as 6 micron. Wool is a natural protein substance. The protein from wool fibre is currently being used in the cosmetic and pharmaceutical industries. This would obviously not occur if there was an element of risk or harmful effect.
-          - subTitle: WOOL IS NON ALLERGIC AND SAFE TO HANDLE
-            subDescription: Wool being a natural fibre contains no irritants, is non toxic and absolutely safe to handle. The fibre contains no dangerous dust and does not require breathing protection. No protective gloves or clothing are required in handling or installing.
-          - subTitle: WOOL ABSORBS GASES & FUMES
-            subDescription: Wool based products reduce the risk to health and environment as a result of its ability to absorb gases and fumes such as formaldehydes and dioxides that are present in construction and finishing materials associated with building. Wool can absorb many times more formaldahyde than is found in the average home.
-          - subTitle: WOOL IS VERY LOW IN CONDUCTIVITY
-            subDescription: Natural wool has very low conductivity which means that it is very difficult for heat to transfer through the fibre. Experience shows that wool does not settle or compact over time as some synthetic products do, thereby effecting thermal effectiveness.
-          - subTitle: WOOL IS FIRE RESISTANT
-            subDescription: Wool is naturally fire resistant and will not burn but melt away from its ignition source and extinguish. Wool has a higher fire resistance than cellulose and cellular plastic insulation. Wool used in insulation has been tested disclosing an ignitability and spread of flame index of zero and smoke developed index of 5.
-          - subTitle: WOOL IS ENVIRONMENTALLY FRIENDLY
-            subDescription: We live in a country proud of its ecological approach towards environmental management. Wool is a natural product that emits no harmful chemicals that pollute our atmosphere, soil or water ways. Wool is safe to our environment and is a renewable resource.
-  - title: Polyester
-    image: /img/product-polyester.png
-    id: polyester
-    intro: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      Sit amet porttitor eget dolor morbi non arcu risus quis.
-    descriptionList:
-      - title: Thermally bonded with no chemical additives
-        description:
-          - subDescription: >-
-              Polyester insulation products are made from 100% polyester fibre,
-              bonded using heat instead of traditional chemical binders.
-              Polyester is naturally resistant to fire, moisture, vermin,
-              insects, mould and bacteria, eliminating the need for any chemical
-              additives. Our polyester insulation materials are non-toxic,
-              non-irritating, non-allergenic and safe for anyone coming into
-              contact with them. And that means no nasty itching and scratching
-              and no ongoing health concerns for building occupiers.
-      - title: Eco-friendly manufacture and recycling practices
-        description:
-          - subDescription: >-
-              Our Polyester products are committed to Quality and Environmental
-              best practice through our ISO 9001 and ISO 14001 certified Quality
-              and Environmental Management Systems. Our Polyester insulation
-              products are made from only polyester fibres so they remain fully
-              recyclable at the end of their lives. Polyester products are
-              manufactured under our Zero Waste policy and using a low-energy
-              production process, putting them among the most
-              environmentally-friendly insulation solutions on the market.
-      - title: Safe and friendly solutions for new and existing homes
-        description:
-          - subDescription: Whether your building, renovating or just upgrading insulation in an existing home, Snug Insualtion has the right products for the job. When it comes to your home and family it just makes sense to insulate with a trusted, safe and friendly insulation product such as our NZ made GreenStuf® - its warmth you can really feel. We’ve got a great range of thermal and acoustic solutions for walls, ceilings and underfloors that will keep your home warm and dry in winter, cool in summer and energy-efficient all year round.
-  - title: Glass Wool
-    image: /img/product-glasswool.jpg
-    id: glassWool
-    intro: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      Sit amet porttitor eget dolor morbi non arcu risus quis.
-    descriptionList:
-      - title: What is EarthWool made of?
-        description:
+  - descriptionList:
+      - description:
           - subDescription: >-
               EarthWool is made using recycled glass bottles (up to 80% recycled
               content), sand and a revolutionary sustainable binder making it
               the best choice for environmentally conscious customers.
-      - title: Why is EarthWool different than other forms of insulation?
-        description:
+        title: What is EarthWool made of?
+      - description:
           - subDescription: >-
               Knauf Insulation’s new EarthWool products don’t look or feel like
               any insulation you’ve ever experienced, that’s because the natural
@@ -114,8 +19,8 @@ productList:
               ‘super soft’ feel comes from a revolutionary sustainable binder
               which does not contain the oil based chemicals, added formaldehyde
               or artificial colours commonly used in other insulation.
-      - title: Why is EarthWool brown?
-        description:
+        title: Why is EarthWool different than other forms of insulation?
+      - description:
           - subDescription: >-
               The distinctive brown colour of EarthWool® results from ECOSE®
               Technology. This natural binding process leads to a natural shade
@@ -125,12 +30,189 @@ productList:
               cases if EarthWool is exposed to UV radiation it may result in a
               white bleaching effect, however product performance is not
               diminished.
-      - title: Why is EarthWool softer and less itchy than traditional glasswool?
-        description:
+        title: Why is EarthWool brown?
+      - description:
           - subDescription: >-
-              EarthWool® uses a combination of new technologies which make the product more comfortable to handle. Firstly, Knauf Insulation’s proprietary fiberisation process creates longer strands resulting in less ‘ends’ to reduce mechanical irritation. Secondly, Knauf Insulation’s patented ECOSE Technology results in a much softer, less ‘crunchy’ and less dusty insulation product compared to our traditional glasswool products made using formaldehyde. EarthWool is easy to cut
-      - title: How does the use of EarthWool affect the air quality in living areas?
-        description:
+              EarthWool® uses a combination of new technologies which make the
+              product more comfortable to handle. Firstly, Knauf Insulation’s
+              proprietary fiberisation process creates longer strands resulting
+              in less ‘ends’ to reduce mechanical irritation. Secondly, Knauf
+              Insulation’s patented ECOSE Technology results in a much softer,
+              less ‘crunchy’ and less dusty insulation product compared to our
+              traditional glasswool products made using formaldehyde. EarthWool
+              is easy to cut
+        title: Why is EarthWool softer and less itchy than traditional glasswool?
+      - description:
           - subDescription: >-
-              With no added formaldehyde, EarthWool is suitable for use in households with allergies. Knauf has recently become the world’s first company to receive the coveted Eurofins Indoor Air Comfort Gold standard. The Gold standard certificate was awarded to Knauf Insulation’s revolutionary new EarthWool products made with ECOSE Technology.
+              With no added formaldehyde, EarthWool is suitable for use in
+              households with allergies. Knauf has recently become the world’s
+              first company to receive the coveted Eurofins Indoor Air Comfort
+              Gold standard. The Gold standard certificate was awarded to Knauf
+              Insulation’s revolutionary new EarthWool products made with ECOSE
+              Technology.
+        title: How does the use of EarthWool affect the air quality in living areas?
+    id: glassWool
+    image: /img/product-glasswool.jpg
+    intro: >-
+      Glass Wool insulation is one of the most common type of insulation that
+      Kiwis use. It is an insulating material made from fibres of glass arranged
+      using a binder into a texture similar to wool, which offers great thermal
+      performance and it is quite economical and practical.
+    title: Glass Wool
+  - descriptionList:
+      - description:
+          - subDescription: >-
+              Polyester insulation products are made from 100% polyester fibre,
+              bonded using heat instead of traditional chemical binders.
+              Polyester is naturally resistant to fire, moisture, vermin,
+              insects, mould and bacteria, eliminating the need for any chemical
+              additives. Our polyester insulation materials are non-toxic,
+              non-irritating, non-allergenic and safe for anyone coming into
+              contact with them. And that means no nasty itching and scratching
+              and no ongoing health concerns for building occupiers.
+        title: Thermally bonded with no chemical additives
+      - description:
+          - subDescription: >-
+              Our Polyester products are committed to Quality and Environmental
+              best practice through our ISO 9001 and ISO 14001 certified Quality
+              and Environmental Management Systems. Our Polyester insulation
+              products are made from only polyester fibres so they remain fully
+              recyclable at the end of their lives. Polyester products are
+              manufactured under our Zero Waste policy and using a low-energy
+              production process, putting them among the most
+              environmentally-friendly insulation solutions on the market.
+        title: Eco-friendly manufacture and recycling practices
+      - description:
+          - subDescription: >-
+              Whether your building, renovating or just upgrading insulation in
+              an existing home, Snug Insualtion has the right products for the
+              job. When it comes to your home and family it just makes sense to
+              insulate with a trusted, safe and friendly insulation product such
+              as our NZ made GreenStuf® - its warmth you can really feel. We’ve
+              got a great range of thermal and acoustic solutions for walls,
+              ceilings and underfloors that will keep your home warm and dry in
+              winter, cool in summer and energy-efficient all year round.
+        title: Safe and friendly solutions for new and existing homes
+    id: polyester
+    image: /img/product-polyester.png
+    intro: >-
+      The polyester insulation is normally made from recycled plastic which is
+      environmental friendly. Typically, it comes in the form of blankets or
+      rolls that are available in widths suited to standard spacings of wall
+      studs, ceiling or floor joists. They sometimes come in segments which are
+      often referred to as Batts or biscuits.
+    title: Polyester
+  - descriptionList:
+      - description:
+          - subDescription: >-
+              Supa-Fill is genuine sheep's wool. This is unlike some other forms
+              of synthetic materials that make reference to "wool" such as
+              Rockwool etc. Supa-Filll is a renewable resource produced
+              naturally by sheep.
+        title: Genuine Sheeps Wool
+      - description:
+          - subDescription: >-
+              Natural wool insulation in blanket or batting form. Ideal for
+              walls of new buildings and ceilings in new and existing premises.
+        title: Batting and blanket wool fibre insulation
+      - description:
+          - subDescription: >-
+              Supa-Fill is a natural wool fibre lofted insulation that has been
+              treated and processed to provide a cost effective efficient
+              insulation.
+        title: Supa-Fill Machine Blown Wool Insulation
+      - description:
+          - subDescription: >-
+              Insulation material for walls and ceilings is available in either
+              wool blanket or batting form. It is available for installation
+              into the walls and ceilings of buildings. Material is safe and
+              healthy and requires no protective clothing for handling or
+              installing.
+        title: Batting and blanket wool fibre insulation
+      - description:
+          - subDescription: >-
+              Wool is unique in its insulation properties and brings its proven
+              characteristics into our residential and business environments.
+              Wool is excellent in providing healthy, warm, dry and comfortable
+              living environments. Wool has been proven through its years of use
+              in fabrics, apparel, bedding and carpets. It is a natural fibre
+              used universally for personal comfort and warmth.
+            subTitle: WOOL IS A NATURAL CHOICE
+          - subDescription: >-
+              Wool is the only insulation material that is not inert. Wool fibre
+              breathes and reacts to climatic change which effectively allows
+              your home and office to breathe. Wool is an extremely effective
+              insulator when moisture is present within the environment. This is
+              a continual occurrence due to the ever changing level of humidity
+              within the atmosphere. Insulation products without absorption
+              ability can be adversely effected by humidity. The presence of
+              moisture is evidenced by water, condensation, mould and mildew
+              within buildings.
+            subTitle: 'WOOL BREATHES, WOOL IS NOT INERT'
+          - subDescription: >-
+              This means that wool can absorb moisture without becoming wet to
+              touch. Wools natural insulation ability is not affected by
+              moisture because of its built in natural crimp. As the fibres
+              naturally repel each other, an amount of air is retained which
+              provides an insulation effect. The fibre has the capability of
+              absorbing up to 30% of its own weight in moisture, before it
+              becomes wet to touch. Wool in essence, provides a form of natural
+              air-conditioning!
+            subTitle: WOOL IS A HYGROSCOPIC INSULATOR
+          - subDescription: >-
+              Warm and dry environments are essential in providing healthy
+              living conditions. Wool has a natural ability to achieve this by
+              absorbing and desorbing moisture. Through this characteristic,
+              benefits can be obtained by sufferers of a wide range of health
+              conditions such as asthmatic and other respiratory ailments.
+              Unlike some finer micron synthetic materials, the body does not
+              absorb wool fibre through inhalation. Wool used for insulation is
+              on average in the 25 – 40 micron range. Synthetic materials used
+              in other forms of insulation products can be as low as 6 micron.
+              Wool is a natural protein substance. The protein from wool fibre
+              is currently being used in the cosmetic and pharmaceutical
+              industries. This would obviously not occur if there was an element
+              of risk or harmful effect.
+            subTitle: WOOL IS HEALTHY
+          - subDescription: >-
+              Wool being a natural fibre contains no irritants, is non toxic and
+              absolutely safe to handle. The fibre contains no dangerous dust
+              and does not require breathing protection. No protective gloves or
+              clothing are required in handling or installing.
+            subTitle: WOOL IS NON ALLERGIC AND SAFE TO HANDLE
+          - subDescription: >-
+              Wool based products reduce the risk to health and environment as a
+              result of its ability to absorb gases and fumes such as
+              formaldehydes and dioxides that are present in construction and
+              finishing materials associated with building. Wool can absorb many
+              times more formaldahyde than is found in the average home.
+            subTitle: WOOL ABSORBS GASES & FUMES
+          - subDescription: >-
+              Natural wool has very low conductivity which means that it is very
+              difficult for heat to transfer through the fibre. Experience shows
+              that wool does not settle or compact over time as some synthetic
+              products do, thereby effecting thermal effectiveness.
+            subTitle: WOOL IS VERY LOW IN CONDUCTIVITY
+          - subDescription: >-
+              Wool is naturally fire resistant and will not burn but melt away
+              from its ignition source and extinguish. Wool has a higher fire
+              resistance than cellulose and cellular plastic insulation. Wool
+              used in insulation has been tested disclosing an ignitability and
+              spread of flame index of zero and smoke developed index of 5.
+            subTitle: WOOL IS FIRE RESISTANT
+          - subDescription: >-
+              We live in a country proud of its ecological approach towards
+              environmental management. Wool is a natural product that emits no
+              harmful chemicals that pollute our atmosphere, soil or water ways.
+              Wool is safe to our environment and is a renewable resource.
+            subTitle: WOOL IS ENVIRONMENTALLY FRIENDLY
+        title: Benefits of Wool
+    id: wool
+    image: /img/product-wool.jpg
+    intro: >-
+      Snug Fleece is a blend of sheep’s wool and polyester fibre used as a
+      thermal insulation material for use in walls, ceilings and roofs of
+      buildings.
+    title: Natural Wool Product
 ---
+
