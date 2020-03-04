@@ -11,32 +11,14 @@ import styles from "./Layout.module.scss";
 import Header from "./Header/Header";
 import Footer from "./Footer/Footer";
 
-const InsulationDropdownMenu = () => {
+const ServicesDropdownMenu = () => {
   return (
     <div className="dropdown">
-      <Link to="/insulation" className="dropbtn">
-        Insulation
-      </Link>
+      <Link className="dropbtn">Services</Link>
       <div className="dropdown-content">
         <Link to="/ourworks">Our Works</Link>
-        <Link to="/products">Products</Link>
-      </div>
-    </div>
-  );
-};
-
-const HealthyHomesDropdownMenu = () => {
-  return (
-    <div className="dropdown">
-      <Link to="/healthyhomes" className="dropbtn">
-        Healthy Homes
-      </Link>
-      <div className="dropdown-content">
-        <Link to="/heating-test">Heating Test</Link>
-        <Link to="/insulation-test">Insulation Test</Link>
-        <Link to="/ventilation-test">Ventilation Test</Link>
-        <Link to="/moisture-test">Moisture Ingress and Drainage Test</Link>
-        <Link to="/draught-test">Draught Stopping Test</Link>
+        <Link to="/insulation">Insulation</Link>
+        <Link to="/healthyhomes">Healthy Homes</Link>
       </div>
     </div>
   );
@@ -97,8 +79,10 @@ const TemplateWrapper = ({ children }) => {
             <Link exact to="/">
               Home
             </Link>
-            <InsulationDropdownMenu />
-            <HealthyHomesDropdownMenu />
+            <ServicesDropdownMenu />
+            <Link to="/products" className="primary-menu">
+              Products
+            </Link>
             <Link to="/other" className="primary-menu">
               Other
             </Link>

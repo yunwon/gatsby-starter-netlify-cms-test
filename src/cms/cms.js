@@ -22,14 +22,6 @@ import HealthyHomesPagePreview from "./preview-templates/HealthyHomesPagePreview
 import HealthyHomesCNPagePreview from "./preview-templates/HealthyHomesCNPagePreview";
 import OtherPagePreview from "./preview-templates/OtherPagePreview";
 import OtherPageCNPreview from "./preview-templates/OtherPageCNPreview";
-import HeatingTestPagePreview from "./preview-templates/HeatingTestPagePreview";
-import HeatingTestCNPagePreview from "./preview-templates/HeatingTestCNPagePreview";
-import VentilationTestPageCNPreview from "./preview-templates/VentilationTestPageCNPreview";
-import VentilationTestPagePreview from "./preview-templates/VentilationTestPagePreview";
-import MoistureTestPagePreview from "./preview-templates/MoistureTestPagePreview";
-import MoistureTestCNPagePreview from "./preview-templates/MoistureTestCNPagePreview";
-import DraughtTestPagePreview from "./preview-templates/DraughtTestPagePreview";
-import DraughtTestCNPagePreview from "./preview-templates/DraughtTestCNPagePreview";
 
 // The following window and global config settings below were taken from here.
 // https://github.com/gatsbyjs/gatsby/blob/master/docs/docs/visual-testing-with-storybook.md
@@ -64,14 +56,6 @@ CMS.registerPreviewTemplate("insulation", InsulationPagePreview);
 CMS.registerPreviewTemplate("insulation-cn", InsulationCNPagePreview);
 CMS.registerPreviewTemplate("healthyhomes", HealthyHomesPagePreview);
 CMS.registerPreviewTemplate("healthyhomes-cn", HealthyHomesCNPagePreview);
-CMS.registerPreviewTemplate("heatingTest", HeatingTestPagePreview);
-CMS.registerPreviewTemplate("heatingTest-cn", HeatingTestCNPagePreview);
-CMS.registerPreviewTemplate("ventilationTest", VentilationTestPagePreview);
-CMS.registerPreviewTemplate("ventilationTest-cn", VentilationTestPageCNPreview);
-CMS.registerPreviewTemplate("moistureTest", MoistureTestPagePreview);
-CMS.registerPreviewTemplate("moistureTest-cn", MoistureTestCNPagePreview);
-CMS.registerPreviewTemplate("draughtTest", DraughtTestPagePreview);
-CMS.registerPreviewTemplate("draughtTest-cn", DraughtTestCNPagePreview);
 CMS.registerPreviewTemplate("other", OtherPagePreview);
 CMS.registerPreviewTemplate("other-cn", OtherPageCNPreview);
 CMS.registerPreviewTemplate("about", AboutPagePreview);

@@ -10,7 +10,7 @@
     display: grid;
 
     .card {
-      @include card($maxHeight:220px);
+      @include card($maxHeight: 220px);
     }
 
     @media #{$break-md} {
@@ -24,93 +24,30 @@
     background-color: $bg-color !important;
   }
 }
+.sectionWithColor {
+  background-color: rgba(19, 82, 144, 0.06);
 
-.section {
-  @include articlePadding();
-  max-width: 900px;
-  margin: 0 auto;
+  .inner {
+    @include container-maxwidth();
+    @include articlePadding();
+    @include flex-center(column);
 
-  h4 {
-    margin-bottom: 1rem;
-  }
+    .titleDiv {
+      @include flex-center(column);
+      max-width: 580px;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
 
-  .image {
-    width: 100%;
-    margin-bottom: 2rem;
-    max-height: 220px;
-    border-radius: 4px;
-  }
-
-  @media #{$break-md} {
-    h4 {
-      margin-top: 0;
+    hr {
+      border-top: 2px solid rgba(19, 82, 144, 0.06);
+      // background: #d9dde1;
+      // height: 2px;
+      width: 100%;
     }
   }
-
-  .description {
-    :global .Collapsible {
-      margin-top: 1rem;
-      border-bottom: 1px solid $border-grey;
-
-      &:last-child {
-        border-bottom: none;
-      }
-
-      .Collapsible__trigger {
-        cursor: pointer;
-        color: $brand-main;
-
-        &:hover {
-          .trigger {
-
-            h5,
-            h6,
-            svg {
-              color: $brand-accent;
-            }
-          }
-        }
-
-        .trigger {
-          @include flex-center-justify();
-
-          h5,
-          h6 {
-            color: $brand-main;
-            display: inline;
-            margin-right: 1rem;
-          }
-
-          h6 {
-            color: $black;
-          }
-
-          svg {
-            vertical-align: middle;
-            margin-bottom: 2px;
-            margin-right: 0.5rem;
-          }
-        }
-
-        &.is-open {
-          svg {
-            transform: rotateZ(180deg);
-          }
-        }
-
-        &.is-disabled {
-          opacity: 0.5;
-          background-color: grey;
-        }
-      }
-
-      .Collapsible__contentOuter {
-        margin-top: 1rem;
-      }
-
-      .Collapsible__contentInner {
-        margin-bottom: 1rem;
-      }
-    }
+  .glassWool {
+    display: flex;
+    justify-content: space-between;
   }
 }

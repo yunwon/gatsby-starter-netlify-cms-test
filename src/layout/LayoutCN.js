@@ -11,32 +11,14 @@ import styles from "./Layout.module.scss";
 import Header from "./Header/Header";
 import Footer from "./Footer/Footer";
 
-const InsulationDropdownMenu = () => {
+const ServicesDropdownMenu = () => {
   return (
     <div className="dropdown">
-      <Link to="/insulation/cn" className="dropbtn">
-        保温棉
-      </Link>
+      <Link className="dropbtn">Services</Link>
       <div className="dropdown-content">
         <Link to="/ourworks/cn">图片展示</Link>
-        <Link to="/products/cn">产品</Link>
-      </div>
-    </div>
-  );
-};
-
-const HealthyHomesDropdownMenu = () => {
-  return (
-    <div className="dropdown">
-      <Link to="/healthyhomes/cn" className="dropbtn">
-        Healthy Homes
-      </Link>
-      <div className="dropdown-content">
-        <Link to="/heating-test/cn">加热系统</Link>
-        <Link to="/insulation-test/cn">Insulation Test</Link>
-        <Link to="/ventilation-test/cn">Ventilation Test</Link>
-        <Link to="/moisture-test/cn">Moisture Ingress and Drainage Test</Link>
-        <Link to="/draught-test/cn">Draught Stopping Test</Link>
+        <Link to="/insulation/cn">保温棉</Link>
+        <Link to="/healthyhomes/cn">健康屋</Link>
       </div>
     </div>
   );
@@ -97,8 +79,10 @@ const TemplateWrapper = ({ children }) => {
             <Link exact to="/cn">
               首页
             </Link>
-            <InsulationDropdownMenu />
-            <HealthyHomesDropdownMenu />
+            <ServicesDropdownMenu />
+            <Link to="/products/cn" className="primary-menu">
+              产品
+            </Link>
             <Link to="/other/cn" className="primary-menu">
               Other
             </Link>

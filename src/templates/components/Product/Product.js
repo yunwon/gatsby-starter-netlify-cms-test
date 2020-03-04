@@ -9,10 +9,11 @@ import { LearnMoreButton } from "../../../components/LearnMoreButton/LearnMoreBu
 
 import Collapsible from "react-collapsible";
 import { FaChevronDown } from "react-icons/fa";
+import { Divider } from "../../../components/Divider/Divider";
 
 class ProductPageTemplate extends React.Component {
   render() {
-    const { title, subTitle, productList, language } = this.props;
+    const { title, subTitle, productList, language, glassWool } = this.props;
 
     return (
       <div>
@@ -41,55 +42,52 @@ class ProductPageTemplate extends React.Component {
           </div>
         </div>
         {/* 02. More Info */}
-        {productList.map(product => (
-          <div className={styles.wrapper} key={product.id}>
-            <div className={styles.section} id={product.id}>
-              <h4>{product.title}</h4>
-              <PreviewCompatibleImage
-                imageInfo={{
-                  image: product.image,
-                  alt: product.title
-                }}
-                className={styles.image}
-              />
+        <div className={styles.sectionWithColor}>
+          <div className={styles.inner}>
+            <div className={styles.titleDiv}>
+              <h2 className={styles.title}>Glass Wool</h2>
+              <Divider className={styles.divider} />
+              <p className={styles.subtitle}>
+                Our Glasswool is super soft, making it more comfortable to
+                handle. Pluse, you'll know you're keeping your home warmer in
+                the winter, cooler in the summer, and quieter all year round.{" "}
+              </p>
+            </div>
+            <hr />
+            {/* 02. Glasswool */}
+            <div className={styles.glassWool}>
+              <div className={styles.logo}>
+                Logo
+                {/* <PreviewCompatibleImage
+                  imageInfo={{
+                    image: glassWool.logo,
+                    alt: glassWool.title
+                  }}
+                  className={styles.image}
+                /> */}
+              </div>
               <div className={styles.description}>
-                {product.descriptionList.map(item => (
-                  <Collapsible
-                    transitionTime={400}
-                    trigger={
-                      <div className="trigger">
-                        <h5>{item.title}</h5>
-                        <FaChevronDown />
-                      </div>
-                    }
-                    easing={"cubic-bezier(0.175, 0.885, 0.32, 2.275)"}
-                  >
-                    {item.description.map(item => (
-                      <>
-                        {item.subTitle ? (
-                          <Collapsible
-                            transitionTime={400}
-                            trigger={
-                              <div className="trigger">
-                                <h6>{item.subTitle}</h6>
-                                <FaChevronDown />
-                              </div>
-                            }
-                            easing={"cubic-bezier(0.175, 0.885, 0.32, 2.275)"}
-                          >
-                            <p>{item.subDescription}</p>
-                          </Collapsible>
-                        ) : (
-                          <p>{item.subDescription}</p>
-                        )}
-                      </>
-                    ))}
-                  </Collapsible>
-                ))}
+                <div className={styles.image}>image</div>
+                <div className={styles.paragraph}>description</div>
+                <div className={styles.benefits}>
+                  <div>Benefits</div>
+                  <div>
+                    <ul>
+                      <li>Exceptional thermal and acoustic performance</li>
+                      <li>Reduces energy bills</li>
+                      <li>Softer - virtually itch free</li>
+                      <li>No added formaldehyde</li>
+                      <li>Odourless</li>
+                      <li>Naturally brown - no artificial colours added</li>
+                      <li>Fire resistant</li>
+                      <li>Manufactured using recycled glass bottles</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        ))}
+        </div>
       </div>
     );
   }
